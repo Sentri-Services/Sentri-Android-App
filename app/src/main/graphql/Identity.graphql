@@ -1,0 +1,31 @@
+query GetMe {
+  biosafety {
+    me {
+      status
+      record { user_id username display_name oauth_id role access_modules }
+      errors { err_msg }
+    }
+  }
+}
+query GetFarmInfo {
+  biosafety {
+    farm_info { id name domain is_initialized }
+  }
+}
+query GetFarmSelectionList($oauthId: String!) {
+  biosafety {
+    farm_selection_list(oauth_id: $oauthId) {
+      status
+      records { oauth_id user_id farm_id is_choosed is_default }
+      errors { code err_msg }
+    }
+  }
+}
+mutation ChooseFarm($commandInput: BiosafetyChooseFarmInput!) {
+  biosafety {
+    choose_farm(command_input: $commandInput) {
+      status
+      errors { err_msg }
+    }
+  }
+}

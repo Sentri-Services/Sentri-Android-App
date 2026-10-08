@@ -1,0 +1,5 @@
+> Task :app:generateSentriApolloOptions
+> Task :app:generateSentriApolloSources
+
+BUILD SUCCESSFUL in 765ms
+2 actionable tasks: 2 executed

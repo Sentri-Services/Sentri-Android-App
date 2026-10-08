@@ -1,0 +1,29 @@
+<resources>
+    <string name="integration_title">Sentri 原生接入验证</string>
+    <string name="environment">环境：%1$s</string>
+    <string name="signed_out">尚未登录</string>
+    <string name="signing_in">正在登录</string>
+    <string name="signing_out">正在退出登录</string>
+    <string name="signed_in">已登录</string>
+    <string name="choose_farm">选择厂区</string>
+    <string name="login">登录</string>
+    <string name="logout">退出登录</string>
+    <string name="cancel">取消</string>
+    <string name="select">选择</string>
+    <string name="refresh">刷新 / 重试</string>
+    <string name="switch_farm">切换厂区</string>
+    <string name="no_farms">当前账号没有可选厂区，请重新登录或联系管理员。</string>
+    <string name="previously_chosen">上次选择的厂区</string>
+    <string name="default_farm">默认厂区</string>
+    <string name="farm_id">厂区 ID：%1$s</string>
+    <string name="farm_name">厂区：%1$s</string>
+    <string name="user_name">用户：%1$s</string>
+    <string name="user_role">角色：%1$s</string>
+    <string name="query_success">原生 GraphQL 认证查询成功</string>
+    <string name="native_endpoint">GraphQL：%1$s</string>
+    <string name="network_error">网络或服务暂不可用，请重试。</string>
+    <string name="session_expired">会话已失效，请重新登录。</string>
+    <string name="login_error">登录未完成，请重新尝试。</string>
+    <string name="business_error">服务端未接受本次操作。</string>
+    <string name="unknown_error">接入验证失败，请重试并检查配置。</string>
+</resources>

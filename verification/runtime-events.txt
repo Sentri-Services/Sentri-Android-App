@@ -1,0 +1,10 @@
+10-08 17:51:29.027  6004  6004 I SentriIntegration: failure_network
+10-08 17:52:17.051  6004  6004 I SentriIntegration: login_started
+10-08 17:53:55.582  6004  6004 I SentriIntegration: login_exchange_succeeded
+10-08 17:53:55.582  6004  6004 I SentriIntegration: refresh_token_available
+10-08 17:54:15.519  6004  6004 I SentriIntegration: token_refresh_succeeded
+10-08 17:54:15.792  6004  6004 I SentriIntegration: native_account_query_succeeded
+10-08 17:54:38.241  7405  7405 I SentriIntegration: native_account_query_succeeded
+10-08 17:55:03.472  7405  7442 I SentriIntegration: token_revocation_succeeded
+10-08 17:55:03.484  7405  7405 I SentriIntegration: local_session_cleared
+10-08 17:55:50.796  7575  7575 I SentriIntegration: login_started

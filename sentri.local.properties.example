@@ -1,0 +1,7 @@
+# Public client configuration. Copy to ignored sentri.local.properties to override.
+auth.endpoint=https://auth.sentri.cn/oidc
+auth.clientId=hakfcyqmu5daasjwv2p6i
+auth.redirectUri=https://mobile_sentri_android/index.html
+dev.graphqlUrl=https://dev.sentri.cn/hasura/v1/graphql
+demo.graphqlUrl=https://demo.sentri.cn/hasura/v1/graphql
+prod.graphqlUrl=https://sentri.cn/hasura/v1/graphql

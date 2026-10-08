@@ -1,0 +1,239 @@
+{
+  "date": "2026-10-08",
+  "jvm": {
+    "tests": 27,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "device": {
+    "tests": 5,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "schemaSha256": "c328f04f1bcf2e1fb01875d5895d1a24bb2e2c32ba889190dfd4e8c8efc81569",
+  "skillsRevision": "b0618bc436ad893b3c5e84e55fba86586d34a404",
+  "buildFlavors": [
+    "devDebug",
+    "demoDebug",
+    "prodDebug"
+  ],
+  "suites": {
+    "jvm": [
+      {
+        "name": "com.sentri.nativeapp.auth.AuthRepositoryTest",
+        "tests": [
+          {
+            "classname": "com.sentri.nativeapp.auth.AuthRepositoryTest",
+            "name": "logout after in-flight refresh cannot resurrect session"
+          },
+          {
+            "classname": "com.sentri.nativeapp.auth.AuthRepositoryTest",
+            "name": "restores existing session without refresh"
+          },
+          {
+            "classname": "com.sentri.nativeapp.auth.AuthRepositoryTest",
+            "name": "logout revokes refresh grant after clearing local state"
+          },
+          {
+            "classname": "com.sentri.nativeapp.auth.AuthRepositoryTest",
+            "name": "login completion requires pending request and clears selection"
+          },
+          {
+            "classname": "com.sentri.nativeapp.auth.AuthRepositoryTest",
+            "name": "network failure preserves persistent session"
+          },
+          {
+            "classname": "com.sentri.nativeapp.auth.AuthRepositoryTest",
+            "name": "concurrent server rejections share refreshed token"
+          },
+          {
+            "classname": "com.sentri.nativeapp.auth.AuthRepositoryTest",
+            "name": "concurrent expired requests share one refresh"
+          },
+          {
+            "classname": "com.sentri.nativeapp.auth.AuthRepositoryTest",
+            "name": "remote revocation failure cannot retain local session"
+          },
+          {
+            "classname": "com.sentri.nativeapp.auth.AuthRepositoryTest",
+            "name": "farm selection forces token refresh before persisting context"
+          },
+          {
+            "classname": "com.sentri.nativeapp.auth.AuthRepositoryTest",
+            "name": "invalid grant clears persistent session and farm"
+          },
+          {
+            "classname": "com.sentri.nativeapp.auth.AuthRepositoryTest",
+            "name": "logout removes pending login and prevents token access"
+          }
+        ]
+      },
+      {
+        "name": "com.sentri.nativeapp.auth.CallbackPolicyTest",
+        "tests": [
+          {
+            "classname": "com.sentri.nativeapp.auth.CallbackPolicyTest",
+            "name": "accepts existing synthetic callback with code and state"
+          },
+          {
+            "classname": "com.sentri.nativeapp.auth.CallbackPolicyTest",
+            "name": "rejects lookalike hosts userinfo ports paths and schemes"
+          }
+        ]
+      },
+      {
+        "name": "com.sentri.nativeapp.network.AuthErrorPolicyTest",
+        "tests": [
+          {
+            "classname": "com.sentri.nativeapp.network.AuthErrorPolicyTest",
+            "name": "recognizes existing Hasura and Logto expiry errors"
+          },
+          {
+            "classname": "com.sentri.nativeapp.network.AuthErrorPolicyTest",
+            "name": "permission and business failures do not trigger token refresh"
+          }
+        ]
+      },
+      {
+        "name": "com.sentri.nativeapp.network.GraphqlFarmRepositoryTest",
+        "tests": [
+          {
+            "classname": "com.sentri.nativeapp.network.GraphqlFarmRepositoryTest",
+            "name": "native request sends current token language and exact operation"
+          },
+          {
+            "classname": "com.sentri.nativeapp.network.GraphqlFarmRepositoryTest",
+            "name": "HTTP 503 is a network failure and preserves session"
+          },
+          {
+            "classname": "com.sentri.nativeapp.network.GraphqlFarmRepositoryTest",
+            "name": "mutation is never replayed after authentication failure"
+          },
+          {
+            "classname": "com.sentri.nativeapp.network.GraphqlFarmRepositoryTest",
+            "name": "HTTP 401 has the same refresh behavior"
+          },
+          {
+            "classname": "com.sentri.nativeapp.network.GraphqlFarmRepositoryTest",
+            "name": "repeated authentication failure clears session instead of looping"
+          },
+          {
+            "classname": "com.sentri.nativeapp.network.GraphqlFarmRepositoryTest",
+            "name": "query authentication failure refreshes and retries once"
+          },
+          {
+            "classname": "com.sentri.nativeapp.network.GraphqlFarmRepositoryTest",
+            "name": "business failure preserves session without refreshing"
+          }
+        ]
+      },
+      {
+        "name": "com.sentri.nativeapp.ui.ConnectionViewModelTest",
+        "tests": [
+          {
+            "classname": "com.sentri.nativeapp.ui.ConnectionViewModelTest",
+            "name": "logout clears account while provider logout is pending"
+          },
+          {
+            "classname": "com.sentri.nativeapp.ui.ConnectionViewModelTest",
+            "name": "multiple farms require explicit selection"
+          },
+          {
+            "classname": "com.sentri.nativeapp.ui.ConnectionViewModelTest",
+            "name": "restored session fetches native account"
+          },
+          {
+            "classname": "com.sentri.nativeapp.ui.ConnectionViewModelTest",
+            "name": "single farm automatically follows existing choose refresh query flow"
+          },
+          {
+            "classname": "com.sentri.nativeapp.ui.ConnectionViewModelTest",
+            "name": "mismatched restored farm is not shown as successful"
+          }
+        ]
+      }
+    ],
+    "device": [
+      {
+        "name": "com.sentri.nativeapp.ConnectionScreenTest",
+        "tests": [
+          {
+            "classname": "com.sentri.nativeapp.ConnectionScreenTest",
+            "name": "signedOutScreenExposesLoginAction"
+          },
+          {
+            "classname": "com.sentri.nativeapp.OidcRequestTest",
+            "name": "defaultAuthorizationPreservesBrowserConsentAndPkceContract"
+          },
+          {
+            "classname": "com.sentri.nativeapp.OidcRequestTest",
+            "name": "forcedLoginIncludesLoginAndConsent"
+          },
+          {
+            "classname": "com.sentri.nativeapp.SessionStoreTest",
+            "name": "encryptedSessionSurvivesStoreRecreationAndIsClearedOnLogout"
+          },
+          {
+            "classname": "com.sentri.nativeapp.SessionStoreTest",
+            "name": "corruptedCiphertextClearsUnreadableSession"
+          }
+        ]
+      }
+    ]
+  },
+  "sourceSha256": {
+    "app/build.gradle.kts": "e4390be0bd43834a13f3d11ac0982f77a958b8ac31055038bbd11bf83fd30041",
+    "app/src/androidTest/java/com/sentri/nativeapp/ConnectionScreenTest.kt": "eeb17f6ab9ff7abf37a3fafa8168a076d2362c14a86087a5c485a8801c174e64",
+    "app/src/androidTest/java/com/sentri/nativeapp/OidcRequestTest.kt": "5590d6030ae8c43cf59599baa7a25fa0001fd53df40ad5f6554f77bd6b3e0b1c",
+    "app/src/androidTest/java/com/sentri/nativeapp/SessionStoreTest.kt": "b23099e9871c370865860e3e7a5f1bad52253256c3b661d4749acbb0d611ae85",
+    "app/src/main/AndroidManifest.xml": "d4e0a701f2f4d6cf23544a80eedbcbc9bd07ce97439113ead33ab25e886dd9f4",
+    "app/src/main/graphql/Identity.graphql": "c1794ba57deb3bbec36adb0ddce4a2eecb5c1bf1d30cd3d4ad1a77939626296b",
+    "app/src/main/graphql/schema.graphqls": "c328f04f1bcf2e1fb01875d5895d1a24bb2e2c32ba889190dfd4e8c8efc81569",
+    "app/src/main/java/com/sentri/nativeapp/AppContainer.kt": "e38444af79153432ba00480deb1392df9d7c61f8b4af84e6db97a7c1d04b813d",
+    "app/src/main/java/com/sentri/nativeapp/DiagnosticLog.kt": "7fa51a71b6f3fd6fc7cc1887feaff838aa3622932fd228efcedd29fe29ba90bf",
+    "app/src/main/java/com/sentri/nativeapp/MainActivity.kt": "84503cf91d942466a1dce774b9ecf576fe474db7c44c9cd5826a27256d660afc",
+    "app/src/main/java/com/sentri/nativeapp/SentriApplication.kt": "36cd631293f886bdc6eaa4498b56a9efbef9c8c8b77bc470a4f4c8da5a2d8d90",
+    "app/src/main/java/com/sentri/nativeapp/auth/AuthModels.kt": "f5b59c95c716785249a4e827762f9222a2b618f320026f921592b89a1357125e",
+    "app/src/main/java/com/sentri/nativeapp/auth/AuthRepository.kt": "677e1c6357501423cd800567992607a122848d8eab606b3345902db9df858418",
+    "app/src/main/java/com/sentri/nativeapp/auth/CallbackPolicy.kt": "98a3bad429bbfe5800893d19ddde3b626bc2d2f3bb0b34a1f50054f0a1dc5b7a",
+    "app/src/main/java/com/sentri/nativeapp/auth/EncryptedSessionStore.kt": "ddd8a3fb08779ac20042c808251db0277618e1e0745804212e1bf2fa9ed02e1b",
+    "app/src/main/java/com/sentri/nativeapp/auth/LogtoAuthGateway.kt": "fffe243c9fb30b785a3cbf8279ae551103931af9a6ee8160b69f98ee86748066",
+    "app/src/main/java/com/sentri/nativeapp/config/AppConfig.kt": "20917dd3abb5e5908fcb888d1bb6b40f9fe19bee7b2a0fc83dce22a5d947bd41",
+    "app/src/main/java/com/sentri/nativeapp/network/ApiFailure.kt": "8dc6f392d77a89dae61f5847151353bdc3edc721242f0c5cba18372961509530",
+    "app/src/main/java/com/sentri/nativeapp/network/FarmRepository.kt": "f7369dac4112cebe801d40b4b414a2de7d117452618d632c52e40e6ccdc8ac91",
+    "app/src/main/java/com/sentri/nativeapp/network/GraphqlFarmRepository.kt": "b94567aeba02a529770686e52055c92d1864b6d755ed4adc18b3ae2c63aec968",
+    "app/src/main/java/com/sentri/nativeapp/ui/ConnectionScreen.kt": "3e6e517e4e83ce143372940ba352e9d3458a792d933f357ae6666d881efb7d37",
+    "app/src/main/java/com/sentri/nativeapp/ui/ConnectionViewModel.kt": "05ccc49d7adc47d7c013bff22817845fc177780600392045e6e3edfc607108a0",
+    "app/src/main/java/com/sentri/nativeapp/ui/LoginWebView.kt": "4ad7f1d32963299030d90d5939baeccbfd15eb565ca07a42c0a644ca17f9fd14",
+    "app/src/main/res/values/strings.xml": "3bb2276bbcd2b9f681718b4da02e17659e17c78fe59771262b7e652032b8ed6a",
+    "app/src/main/res/values/styles.xml": "1a28d6a7a311c519f88b4ed87d564c792fd075048f43d5b7951f05148a3c6843",
+    "app/src/main/res/values-en/strings.xml": "2e15d8c8f165afca5a31a84a4cf6de98c46541f196781a9ab3cccb2c997a83f6",
+    "app/src/main/res/xml/data_extraction_rules.xml": "af30a818d33f2a026e98a9da0c41e65a2641ee26066b499290c5ba8afd8a9921",
+    "app/src/test/java/com/sentri/nativeapp/auth/AuthRepositoryTest.kt": "8aad17d4a01af470aaf008a914290f7312d0803fd940073c7e9744b52a59eb9d",
+    "app/src/test/java/com/sentri/nativeapp/auth/CallbackPolicyTest.kt": "def8083d327e8bbe0bffdfcd7f4c562c7a15dfb2b0cdcfe625a5020f9a7b36d9",
+    "app/src/test/java/com/sentri/nativeapp/network/AuthErrorPolicyTest.kt": "b7d8cc174053810c7b0fe0e3dbb7da35d3cee87f901ec9333d11773a5e139fe6",
+    "app/src/test/java/com/sentri/nativeapp/network/GraphqlFarmRepositoryTest.kt": "27c1429642d6713218cc6f834ff4c7f83b7c536ea71542f6f34679fe83edd17a",
+    "app/src/test/java/com/sentri/nativeapp/ui/ConnectionViewModelTest.kt": "9bb6e3f39604eaabd8abc8d73ec89c47d9fdd0c20cff74341925dbb3ea779ceb",
+    "build.gradle.kts": "2109ba108dcf0af66114e8e363096f1461abff4af5f7e8da70174a7828033ea9",
+    "gradle/libs.versions.toml": "b3ff5adc992367b4125cdaba155d790686e745b392544d1ed335d9233098382f",
+    "settings.gradle.kts": "bd8c96904e9638b3de55841f3e86f56508cd83bffdcd764212b5dc633f6e591b"
+  },
+  "runtime": {
+    "environment": "dev",
+    "device": "Sentri_Dev_API_36 / Android 16 API 36",
+    "realLogin": true,
+    "nativeAuthenticatedQuery": true,
+    "forcedRefresh": true,
+    "processRestartRestored": true,
+    "refreshGrantRevoked": true,
+    "logoutRestartSignedOut": true,
+    "cancelClearedPending": true,
+    "naturalExpiryLiveTest": false
+  },
+  "lint": {
+    "errors": 0,
+    "warnings": 23
+  }
+}

@@ -1,0 +1,29 @@
+<resources>
+    <string name="integration_title">Sentri native integration</string>
+    <string name="environment">Environment: %1$s</string>
+    <string name="signed_out">Not signed in</string>
+    <string name="signing_in">Signing in</string>
+    <string name="signing_out">Signing out</string>
+    <string name="signed_in">Signed in</string>
+    <string name="choose_farm">Choose a farm</string>
+    <string name="login">Sign in</string>
+    <string name="logout">Sign out</string>
+    <string name="cancel">Cancel</string>
+    <string name="select">Select</string>
+    <string name="refresh">Refresh / Retry</string>
+    <string name="switch_farm">Switch farm</string>
+    <string name="no_farms">No farms are available for this account. Sign in again or contact an administrator.</string>
+    <string name="previously_chosen">Previously selected</string>
+    <string name="default_farm">Default farm</string>
+    <string name="farm_id">Farm ID: %1$s</string>
+    <string name="farm_name">Farm: %1$s</string>
+    <string name="user_name">User: %1$s</string>
+    <string name="user_role">Role: %1$s</string>
+    <string name="query_success">Native authenticated GraphQL query succeeded</string>
+    <string name="native_endpoint">GraphQL: %1$s</string>
+    <string name="network_error">Network or service unavailable. Please retry.</string>
+    <string name="session_expired">Session expired. Please sign in again.</string>
+    <string name="login_error">Sign-in was not completed. Please try again.</string>
+    <string name="business_error">The server did not accept this operation.</string>
+    <string name="unknown_error">Integration failed. Retry and check configuration.</string>
+</resources>

@@ -1,0 +1,2 @@
+PASS: reviewed collection and metadata replacement
+PASS: injected metadata failure restores collection, lock and license
