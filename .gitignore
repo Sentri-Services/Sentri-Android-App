@@ -3,6 +3,9 @@
 **/build/
 local.properties
 sentri.local.properties
+sentri.signing.properties
+release-upload/
+ENTERPRISE.CER
 .idea/
 *.iml
 .DS_Store

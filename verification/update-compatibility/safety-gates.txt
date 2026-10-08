@@ -1,0 +1,3 @@
+PASS: Local Debug cannot publish
+PASS: Published identity requires original signing material
+PASS: Aggregate assemble cannot emit unsigned Release without original signing material

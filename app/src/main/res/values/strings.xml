@@ -26,4 +26,14 @@
     <string name="login_error">登录未完成，请重新尝试。</string>
     <string name="business_error">服务端未接受本次操作。</string>
     <string name="unknown_error">接入验证失败，请重试并检查配置。</string>
+    <string name="app_update">应用更新</string>
+    <string name="update_checking">正在检查应用更新</string>
+    <string name="update_downloading">正在下载更新：%1$d%%</string>
+    <string name="update_ready">新版本 %1$s 已下载并通过校验。</string>
+    <string name="update_required">需要安装此更新后继续使用。</string>
+    <string name="update_install">安装更新</string>
+    <string name="update_skip">稍后更新</string>
+    <string name="update_failed">更新暂不可用或校验失败，可以重试或继续使用当前版本。</string>
+    <string name="update_continue">继续使用当前版本</string>
+    <string name="update_install_unavailable">系统无法打开安装界面，请检查安装权限或联系设备管理员。</string>
 </resources>

@@ -26,4 +26,14 @@
     <string name="login_error">Sign-in was not completed. Please try again.</string>
     <string name="business_error">The server did not accept this operation.</string>
     <string name="unknown_error">Integration failed. Retry and check configuration.</string>
+    <string name="app_update">App update</string>
+    <string name="update_checking">Checking for updates</string>
+    <string name="update_downloading">Downloading update: %1$d%%</string>
+    <string name="update_ready">Version %1$s is downloaded and verified.</string>
+    <string name="update_required">Install this update to continue.</string>
+    <string name="update_install">Install update</string>
+    <string name="update_skip">Update later</string>
+    <string name="update_failed">Update unavailable or validation failed. Retry or continue with the current version.</string>
+    <string name="update_continue">Continue with current version</string>
+    <string name="update_install_unavailable">Unable to open the installer. Check installation permission or contact the device administrator.</string>
 </resources>

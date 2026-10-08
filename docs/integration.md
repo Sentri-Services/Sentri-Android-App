@@ -30,7 +30,7 @@
 6. 页面只消费 AccountContext。返回的厂区必须与保存选择一致，否则清空该上下文并提示重新确认。
 7. 重启读取加密会话；Token 过期前 60 秒刷新。并发请求共用 mutex 与拒绝 Token 比较，避免重复刷新。
 8. query 的认证错误最多刷新并重试一次；再次拒绝清空该会话。mutation 可以准备刷新 Token，但不自动重放写请求。
-9. 网络失败保留会话；invalid_grant/invalid_token 清除会话和厂区。退出先清除本地状态，按旧 SDK 尝试撤销 refresh grant（最长 5 秒，失败不撤销本地退出），再进入现有 end-session 页面；完成或取消后清理 WebView Cookie/WebStorage。
+9. 网络失败保留会话；invalid_grant/invalid_token 清除会话和厂区。退出先清除本地状态，按旧 SDK 尝试撤销 refresh grant（最长 5 秒，失败不撤销本地退出），再进入现有 end-session 页面；完成或取消后清理 WebView Cookie 与认证 origin 的 WebStorage。覆盖升级后与旧应用共用沙箱，因此不全局删除旧业务 origin 的存储，避免损失尚未迁移的离线数据。
 
 目前 WebView allowlist 对应已调查的第一方 Logto 页面。如果启用外部社交身份提供商，需要明确补充实际 connector 跳转域名并验证，不能将任意 HTTPS 域名纳入授权完成来源。
 

@@ -1,0 +1,208 @@
+> Task :app:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :app:prepareEnterpriseCertificate
+> Task :app:preBuild
+> Task :app:preDevDebugBuild
+> Task :app:generateDevDebugBuildConfig
+> Task :app:generateSentriApolloOptions
+> Task :app:checkDevDebugAarMetadata
+> Task :app:generateDevDebugResValues
+> Task :app:mapDevDebugSourceSetPaths
+> Task :app:generateDevDebugResources
+> Task :app:generateSentriApolloSources
+> Task :app:packageDevDebugResources
+> Task :app:createDevDebugCompatibleScreenManifests
+> Task :app:extractDeepLinksDevDebug
+> Task :app:mergeDevDebugResources
+> Task :app:parseDevDebugLocalResources
+> Task :app:processDevDebugMainManifest
+> Task :app:processDevDebugManifest
+> Task :app:processDevDebugManifestForPackage
+> Task :app:javaPreCompileDevDebug
+> Task :app:preDevDebugAndroidTestBuild SKIPPED
+> Task :app:processDevDebugResources
+> Task :app:processDevDebugAndroidTestManifest
+> Task :app:generateDevDebugAndroidTestBuildConfig
+> Task :app:checkDevDebugAndroidTestAarMetadata
+> Task :app:generateDevDebugAndroidTestResValues
+> Task :app:mapDevDebugAndroidTestSourceSetPaths
+> Task :app:generateDevDebugAndroidTestResources
+> Task :app:javaPreCompileDevDebugAndroidTest
+> Task :app:mergeDevDebugShaders
+> Task :app:compileDevDebugShaders NO-SOURCE
+> Task :app:generateDevDebugAssets UP-TO-DATE
+> Task :app:mergeDevDebugAndroidTestResources
+> Task :app:mergeDevDebugAssets
+> Task :app:desugarDevDebugFileDependencies
+> Task :app:compressDevDebugAssets
+> Task :app:processDevDebugAndroidTestResources
+> Task :app:mergeDevDebugJniLibFolders
+> Task :app:checkDevDebugDuplicateClasses
+> Task :app:mergeDevDebugNativeLibs
+
+> Task :app:compileDevDebugKotlin
+w: file:///Users/zhangzhaoxu/code/yy/Sentri-Android-App/app/src/main/java/com/sentri/nativeapp/ui/LoginWebView.kt:53:30 This declaration overrides a deprecated member but is not marked as deprecated itself. Add the '@Deprecated' annotation or suppress the diagnostic.
+
+> Task :app:compileDevDebugJavaWithJavac
+> Task :app:bundleDevDebugClassesToCompileJar
+> Task :app:dexBuilderDevDebug
+> Task :app:mergeExtDexDevDebug
+> Task :app:mergeDevDebugGlobalSynthetics
+> Task :app:processDevDebugJavaRes
+> Task :app:mergeLibDexDevDebug
+> Task :app:validateSigningDevDebug
+> Task :app:mergeProjectDexDevDebug
+> Task :app:writeDevDebugAppMetadata
+
+> Task :app:stripDevDebugDebugSymbols
+Unable to strip the following libraries, packaging them as they are: libandroidx.graphics.path.so. Run with --info option to learn more.
+
+> Task :app:writeDevDebugSigningConfigVersions
+> Task :app:mergeDevDebugAndroidTestShaders
+> Task :app:compileDevDebugAndroidTestShaders NO-SOURCE
+> Task :app:generateDevDebugAndroidTestAssets UP-TO-DATE
+> Task :app:mergeDevDebugAndroidTestAssets
+> Task :app:compressDevDebugAndroidTestAssets
+> Task :app:desugarDevDebugAndroidTestFileDependencies
+> Task :app:checkDevDebugAndroidTestDuplicateClasses
+> Task :app:mergeDevDebugAndroidTestJniLibFolders
+> Task :app:compileDevDebugAndroidTestKotlin
+> Task :app:mergeDevDebugJavaResource
+> Task :app:compileDevDebugAndroidTestJavaWithJavac
+> Task :app:dexBuilderDevDebugAndroidTest
+> Task :app:mergeDevDebugAndroidTestGlobalSynthetics
+> Task :app:processDevDebugAndroidTestJavaRes
+> Task :app:mergeLibDexDevDebugAndroidTest
+> Task :app:mergeProjectDexDevDebugAndroidTest
+> Task :app:mergeDevDebugAndroidTestNativeLibs NO-SOURCE
+> Task :app:stripDevDebugAndroidTestDebugSymbols NO-SOURCE
+> Task :app:validateSigningDevDebugAndroidTest
+> Task :app:writeDevDebugAndroidTestSigningConfigVersions
+> Task :app:mergeExtDexDevDebugAndroidTest
+> Task :app:bundleDevDebugClassesToRuntimeJar
+> Task :app:mergeDevDebugAndroidTestJavaResource
+> Task :app:preDevDebugUnitTestBuild
+> Task :app:javaPreCompileDevDebugUnitTest
+> Task :app:generateDevDebugAndroidTestLintModel
+> Task :app:extractProguardFiles
+> Task :app:generateDevDebugLintReportModel
+> Task :app:generateDevDebugUnitTestLintModel
+> Task :app:packageDevDebug
+> Task :app:createDevDebugApkListingFileRedirect
+> Task :app:preDemoDebugBuild
+> Task :app:mergeDemoDebugNativeDebugMetadata NO-SOURCE
+> Task :app:packageDevDebugAndroidTest
+> Task :app:createDevDebugAndroidTestApkListingFileRedirect
+> Task :app:compileDevDebugUnitTestKotlin
+> Task :app:lintAnalyzeDevDebugAndroidTest
+> Task :app:lintAnalyzeDevDebugUnitTest
+> Task :app:lintAnalyzeDevDebug
+
+> Task :app:connectedDevDebugAndroidTest
+Starting 9 tests on Sentri_Dev_API_36(AVD) - 16
+
+Finished 9 tests on Sentri_Dev_API_36(AVD) - 16
+
+> Task :app:compileDevDebugUnitTestJavaWithJavac NO-SOURCE
+> Task :app:processDevDebugUnitTestJavaRes
+> Task :app:testDevDebugUnitTest
+> Task :app:generateDemoDebugBuildConfig
+> Task :app:generateDemoDebugResValues
+> Task :app:mapDemoDebugSourceSetPaths
+> Task :app:generateDemoDebugResources
+
+> Task :app:lintReportDevDebug
+Wrote HTML report to file:///Users/zhangzhaoxu/code/yy/Sentri-Android-App/app/build/reports/lint-results-devDebug.html
+
+> Task :app:checkDemoDebugAarMetadata
+> Task :app:lintDevDebug
+> Task :app:packageDemoDebugResources
+> Task :app:createDemoDebugCompatibleScreenManifests
+> Task :app:extractDeepLinksDemoDebug
+> Task :app:parseDemoDebugLocalResources
+> Task :app:processDemoDebugMainManifest
+> Task :app:processDemoDebugManifest
+> Task :app:javaPreCompileDemoDebug
+> Task :app:mergeDemoDebugShaders
+> Task :app:compileDemoDebugShaders NO-SOURCE
+> Task :app:generateDemoDebugAssets UP-TO-DATE
+> Task :app:mergeDemoDebugAssets
+> Task :app:desugarDemoDebugFileDependencies
+> Task :app:compressDemoDebugAssets
+> Task :app:mergeDemoDebugJniLibFolders
+> Task :app:processDemoDebugManifestForPackage
+> Task :app:validateSigningDemoDebug
+> Task :app:mergeDemoDebugNativeLibs
+> Task :app:writeDemoDebugAppMetadata
+> Task :app:writeDemoDebugSigningConfigVersions
+> Task :app:preProdDebugBuild
+> Task :app:mergeProdDebugNativeDebugMetadata NO-SOURCE
+
+> Task :app:stripDemoDebugDebugSymbols
+Unable to strip the following libraries, packaging them as they are: libandroidx.graphics.path.so. Run with --info option to learn more.
+
+> Task :app:generateProdDebugBuildConfig
+> Task :app:mergeDemoDebugResources
+> Task :app:checkDemoDebugDuplicateClasses
+> Task :app:checkProdDebugAarMetadata
+> Task :app:generateProdDebugResValues
+> Task :app:mergeLibDexDemoDebug
+> Task :app:mapProdDebugSourceSetPaths
+> Task :app:generateProdDebugResources
+> Task :app:processDemoDebugResources
+> Task :app:packageProdDebugResources
+> Task :app:createProdDebugCompatibleScreenManifests
+> Task :app:extractDeepLinksProdDebug
+> Task :app:parseProdDebugLocalResources
+> Task :app:mergeProdDebugResources
+> Task :app:processProdDebugMainManifest
+> Task :app:processProdDebugManifest
+> Task :app:javaPreCompileProdDebug
+> Task :app:mergeProdDebugShaders
+> Task :app:compileProdDebugShaders NO-SOURCE
+> Task :app:generateProdDebugAssets UP-TO-DATE
+> Task :app:mergeProdDebugAssets
+> Task :app:desugarProdDebugFileDependencies
+> Task :app:compressProdDebugAssets
+> Task :app:mergeProdDebugJniLibFolders
+> Task :app:checkProdDebugDuplicateClasses
+> Task :app:mergeProdDebugNativeLibs
+> Task :app:mergeLibDexProdDebug
+> Task :app:validateSigningProdDebug
+
+> Task :app:stripProdDebugDebugSymbols
+Unable to strip the following libraries, packaging them as they are: libandroidx.graphics.path.so. Run with --info option to learn more.
+
+> Task :app:writeProdDebugAppMetadata
+> Task :app:writeProdDebugSigningConfigVersions
+> Task :app:processProdDebugManifestForPackage
+> Task :app:processProdDebugResources
+
+> Task :app:compileProdDebugKotlin
+w: file:///Users/zhangzhaoxu/code/yy/Sentri-Android-App/app/src/main/java/com/sentri/nativeapp/ui/LoginWebView.kt:53:30 This declaration overrides a deprecated member but is not marked as deprecated itself. Add the '@Deprecated' annotation or suppress the diagnostic.
+
+> Task :app:compileDemoDebugKotlin
+w: file:///Users/zhangzhaoxu/code/yy/Sentri-Android-App/app/src/main/java/com/sentri/nativeapp/ui/LoginWebView.kt:53:30 This declaration overrides a deprecated member but is not marked as deprecated itself. Add the '@Deprecated' annotation or suppress the diagnostic.
+
+> Task :app:compileProdDebugJavaWithJavac
+> Task :app:compileDemoDebugJavaWithJavac
+> Task :app:dexBuilderDemoDebug
+> Task :app:mergeDemoDebugGlobalSynthetics
+> Task :app:processDemoDebugJavaRes
+> Task :app:mergeProjectDexDemoDebug
+> Task :app:mergeDemoDebugJavaResource
+> Task :app:dexBuilderProdDebug
+> Task :app:mergeProdDebugGlobalSynthetics
+> Task :app:processProdDebugJavaRes
+> Task :app:mergeProjectDexProdDebug
+> Task :app:mergeProdDebugJavaResource
+> Task :app:mergeExtDexDemoDebug
+> Task :app:mergeExtDexProdDebug
+> Task :app:packageDemoDebug
+> Task :app:createDemoDebugApkListingFileRedirect
+> Task :app:assembleDemoDebug
+> Task :app:packageProdDebug
+> Task :app:createProdDebugApkListingFileRedirect
+> Task :app:assembleProdDebug
+
+BUILD SUCCESSFUL in 1m 10s
+158 actionable tasks: 158 executed

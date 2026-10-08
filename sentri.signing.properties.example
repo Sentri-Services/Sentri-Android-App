@@ -1,0 +1,8 @@
+# Copy to ignored sentri.signing.properties, or inject the corresponding environment variables.
+# Use the existing signing materials. Never generate a replacement key for an upgrade.
+storeFile=../Sentri-Android/key.jks
+keyAlias=sentri
+# storePassword=              # SENTRI_STORE_PASSWORD
+# keyPassword=                # SENTRI_KEY_PASSWORD
+enterpriseCertificate=../Sentri-Android/ENTERPRISE.CER
+# CI: SENTRI_KEYSTORE_FILE, SENTRI_KEY_ALIAS, SENTRI_ENTERPRISE_CERTIFICATE

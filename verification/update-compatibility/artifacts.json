@@ -1,0 +1,47 @@
+[
+  {
+    "environment": "dev",
+    "schemaVersion": 1,
+    "applicationId": "com.sentri.jingan.dev",
+    "versionCode": 136,
+    "versionName": "1.3.6",
+    "buildType": "debug",
+    "apkUrl": "Sentri_1.3.6_136_dev_debug.apk",
+    "fileSize": 13727421,
+    "sha256": "ec110d8816e7e397b959566a24f9e60524c9254cda1bd938f9c298bb1a6c70d3",
+    "forceUpdate": true,
+    "signingCertificateSha256": "2d458afc199a5cf9cc04fc35a91cba4b5cc3e52e4898a7e6df7cd0fa35b7ebe6",
+    "enterpriseCertificateMatches": true,
+    "legacyLastZipMatches": true
+  },
+  {
+    "environment": "demo",
+    "schemaVersion": 1,
+    "applicationId": "com.sentri.jingan.demo",
+    "versionCode": 137,
+    "versionName": "1.3.7",
+    "buildType": "debug",
+    "apkUrl": "Sentri_1.3.7_137_demo_debug.apk",
+    "fileSize": 13727425,
+    "sha256": "a6191c39351b3036997712e5b286c37aa148b4e2769c423df1516f1dc75103fc",
+    "forceUpdate": true,
+    "signingCertificateSha256": "2d458afc199a5cf9cc04fc35a91cba4b5cc3e52e4898a7e6df7cd0fa35b7ebe6",
+    "enterpriseCertificateMatches": true,
+    "legacyLastZipMatches": true
+  },
+  {
+    "environment": "prod",
+    "schemaVersion": 1,
+    "applicationId": "com.sentri.jingan",
+    "versionCode": 135,
+    "versionName": "1.3.5",
+    "buildType": "debug",
+    "apkUrl": "Sentri_1.3.5_135_prod_debug.apk",
+    "fileSize": 13727413,
+    "sha256": "873a4ddf49eca14e9573890b7367971a01a1f053718ed486221c37fcc088fbc7",
+    "forceUpdate": true,
+    "signingCertificateSha256": "2d458afc199a5cf9cc04fc35a91cba4b5cc3e52e4898a7e6df7cd0fa35b7ebe6",
+    "enterpriseCertificateMatches": true,
+    "legacyLastZipMatches": true
+  }
+]

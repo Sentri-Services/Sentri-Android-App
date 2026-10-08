@@ -23,7 +23,7 @@
 
 本机全局 Gradle 配置可能指定失效的本地代理。遇到依赖下载失败时，使用 `SENTRI_GRADLE_DIRECT=1 ./scripts/verify.sh` 绕过该代理，不修改全局配置。
 
-环境为 dev / demo / prod；开发包 `com.sentri.nativeapp.dev` 与旧应用独立并装。prod 包也使用独立身份 `com.sentri.nativeapp.prod`，当前尚未决定生产签名、覆盖升级与旧离线数据切换方案。
+环境为 dev / demo / prod。发布构建沿用旧包名、签名和 OSS APK 更新通道，支持覆盖安装。版本分别记录在 `versions.properties`，不会互相推进。普通本地 Debug 在旧环境包名后加 `.local`，不会覆盖已安装的旧应用；发布 Debug 使用 `-PenableApkUpdate=true`，必须注入原签名材料。签名配置和发布命令见 [发布与更新](docs/release.md)。
 
 ## GraphQL
 
@@ -40,6 +40,7 @@
 | `app/src/main/java/com/sentri/nativeapp/network/` | 原生 Apollo 调用、错误分类、业务模型 |
 | `app/src/main/java/com/sentri/nativeapp/config/` | 环境配置 |
 | `app/src/main/java/com/sentri/nativeapp/ui/` | ViewModel、登录 WebView、接入验证页 |
+| `app/src/main/java/com/sentri/nativeapp/update/` | 兼容旧清单的 APK 检查、下载校验与系统安装 |
 | `app/src/main/graphql/` | schema 快照与手写 operations |
 | `app/src/test/`、`app/src/androidTest/` | JVM 行为测试与设备验证 |
 | `.agents/skills/` | 完整、固定版本的 Matt Pocock Skills |

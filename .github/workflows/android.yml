@@ -1,0 +1,109 @@
+name: Android CI
+
+on:
+  push:
+    branches: [main, master]
+    tags: ["android-dev-v*", "android-demo-v*", "android-prod-v*", "android-all-r*"]
+  pull_request:
+    branches: [main, master]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: android-${{ github.ref_type == 'tag' && 'oss-publication' || github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with:
+          java-version: "21"
+          distribution: temurin
+          cache: gradle
+      - name: Resolve release scope
+        shell: bash
+        run: |
+          release_tag="$GITHUB_REF_NAME"
+          is_release=false
+          release_scope=all
+          expected_version=""
+          gradle_task=assembleDebug
+          if [[ "$GITHUB_REF_TYPE" == tag ]]; then
+            if [[ "$release_tag" =~ ^android-(dev|demo|prod)-v([0-9]+\.[0-9]+\.[0-9]+)$ ]]; then
+              is_release=true
+              release_scope="${BASH_REMATCH[1]}"
+              expected_version="${BASH_REMATCH[2]}"
+              case "$release_scope" in
+                dev) gradle_task=assembleDevDebug ;;
+                demo) gradle_task=assembleDemoDebug ;;
+                prod) gradle_task=assembleProdDebug ;;
+              esac
+            elif [[ "$release_tag" =~ ^android-all-r[0-9]{14}$ ]]; then
+              is_release=true
+            else
+              echo "Invalid Android release tag" >&2
+              exit 1
+            fi
+          fi
+          echo "IS_RELEASE=$is_release" >> "$GITHUB_ENV"
+          echo "RELEASE_SCOPE=$release_scope" >> "$GITHUB_ENV"
+          echo "EXPECTED_VERSION=$expected_version" >> "$GITHUB_ENV"
+          echo "GRADLE_TASK=$gradle_task" >> "$GITHUB_ENV"
+      - name: Restore existing signing material
+        if: env.IS_RELEASE == 'true'
+        env:
+          KEYSTORE_BASE64: ${{ secrets.SENTRI_KEYSTORE_BASE64 }}
+          ENTERPRISE_BASE64: ${{ secrets.SENTRI_ENTERPRISE_CERTIFICATE_BASE64 }}
+        shell: bash
+        run: |
+          test -n "$KEYSTORE_BASE64"
+          test -n "$ENTERPRISE_BASE64"
+          umask 077
+          printf '%s' "$KEYSTORE_BASE64" | base64 --decode > "$RUNNER_TEMP/sentri-key.jks"
+          printf '%s' "$ENTERPRISE_BASE64" | base64 --decode > "$RUNNER_TEMP/ENTERPRISE.CER"
+          echo "SENTRI_KEYSTORE_FILE=$RUNNER_TEMP/sentri-key.jks" >> "$GITHUB_ENV"
+          echo "SENTRI_ENTERPRISE_CERTIFICATE=$RUNNER_TEMP/ENTERPRISE.CER" >> "$GITHUB_ENV"
+      - name: Verify local variants
+        if: env.IS_RELEASE != 'true'
+        run: ./gradlew assembleDebug :app:testDevDebugUnitTest :app:lintDevDebug
+      - name: Build published variants
+        if: env.IS_RELEASE == 'true'
+        env:
+          SENTRI_STORE_PASSWORD: ${{ secrets.SENTRI_STORE_PASSWORD }}
+          SENTRI_KEY_PASSWORD: ${{ secrets.SENTRI_KEY_PASSWORD }}
+          SENTRI_KEY_ALIAS: sentri
+        run: ./gradlew "$GRADLE_TASK" -PenableApkUpdate=true :app:testDevDebugUnitTest :app:lintDevDebug
+      - name: Prepare compatible update artifacts
+        if: env.IS_RELEASE == 'true'
+        run: python3 scripts/apk_release.py "$RELEASE_SCOPE" "$EXPECTED_VERSION"
+      - name: Upload versioned APK and legacy last.zip
+        if: env.IS_RELEASE == 'true'
+        uses: Menci/upload-to-oss@beta-v3
+        with:
+          access-key-id: ${{ secrets.ALIYUN_ACCESS_KEY_ID }}
+          access-key-secret: ${{ secrets.ALIYUN_ACCESS_KEY_SECRET }}
+          bucket: ${{ secrets.ALIYUN_OSS_BUCKET }}
+          endpoint: ${{ secrets.ALIYUN_OSS_ENDPOINT }}
+          local-path: release-upload
+          remote-path: apks
+          include-regex: '(^|/)(Sentri_.*\.apk|last\.zip)$'
+          no-delete-remote-files: true
+      - name: Upload manifests after APK upload succeeds
+        if: env.IS_RELEASE == 'true'
+        uses: Menci/upload-to-oss@beta-v3
+        with:
+          access-key-id: ${{ secrets.ALIYUN_ACCESS_KEY_ID }}
+          access-key-secret: ${{ secrets.ALIYUN_ACCESS_KEY_SECRET }}
+          bucket: ${{ secrets.ALIYUN_OSS_BUCKET }}
+          endpoint: ${{ secrets.ALIYUN_OSS_ENDPOINT }}
+          local-path: release-upload
+          remote-path: apks
+          include-regex: '(^|/)manifest\.json$'
+          no-delete-remote-files: true
+      - name: Remove signing material
+        if: always()
+        run: rm -f "$RUNNER_TEMP/sentri-key.jks" "$RUNNER_TEMP/ENTERPRISE.CER"

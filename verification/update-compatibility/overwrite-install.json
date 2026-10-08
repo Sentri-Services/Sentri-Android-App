@@ -1,0 +1,29 @@
+[
+  {
+    "environment": "dev",
+    "package": "com.sentri.jingan.dev",
+    "fromVersionCode": 135,
+    "toVersionCode": 136,
+    "install": "Performing Streamed Install\nSuccess",
+    "sameUid": true,
+    "privateFilePreserved": true
+  },
+  {
+    "environment": "demo",
+    "package": "com.sentri.jingan.demo",
+    "fromVersionCode": 136,
+    "toVersionCode": 137,
+    "install": "Performing Streamed Install\nSuccess",
+    "sameUid": true,
+    "privateFilePreserved": true
+  },
+  {
+    "environment": "prod",
+    "package": "com.sentri.jingan",
+    "fromVersionCode": 132,
+    "toVersionCode": 135,
+    "install": "Performing Streamed Install\nSuccess",
+    "sameUid": true,
+    "privateFilePreserved": true
+  }
+]

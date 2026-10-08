@@ -1,0 +1,12 @@
+{
+  "applicationIds": {
+    "dev": "com.sentri.jingan.dev",
+    "demo": "com.sentri.jingan.demo",
+    "prod": "com.sentri.jingan"
+  },
+  "certificateSha256": "2d458afc199a5cf9cc04fc35a91cba4b5cc3e52e4898a7e6df7cd0fa35b7ebe6",
+  "updateBaseUrl": "https://farm-apk.sentri.cn/apks",
+  "legacyBaseUrl": "https://farm-apk.oss-cn-beijing.aliyuncs.com/apks",
+  "publishedBuildType": "debug",
+  "enterpriseCertificateSha256": "4d7ea3d3e2bc64aee6cb0327df11c0a8bbea81e133bd5d2c37ad0c4cfa7e4912"
+}

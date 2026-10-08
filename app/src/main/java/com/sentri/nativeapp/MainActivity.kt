@@ -8,12 +8,18 @@ import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.runtime.getValue
+import androidx.compose.runtime.LaunchedEffect
+import android.widget.Toast
+import android.net.Uri
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import androidx.lifecycle.viewmodel.compose.viewModel
 import androidx.lifecycle.viewmodel.initializer
 import androidx.lifecycle.viewmodel.viewModelFactory
 import com.sentri.nativeapp.ui.ConnectionScreen
 import com.sentri.nativeapp.ui.ConnectionViewModel
+import com.sentri.nativeapp.update.ApkUpdateViewModel
+import com.sentri.nativeapp.update.ApkUpdateScreen
+import com.sentri.nativeapp.update.UpdatePhase
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -25,12 +31,26 @@ class MainActivity : ComponentActivity() {
                 initializer { ConnectionViewModel(container.auth, container.farms) }
             })
             val state by model.state.collectAsStateWithLifecycle()
+            val updateModel: ApkUpdateViewModel = viewModel(factory = viewModelFactory {
+                initializer { ApkUpdateViewModel(container.updates) }
+            })
+            val updateState by updateModel.state.collectAsStateWithLifecycle()
+            LaunchedEffect(updateState.phase) {
+                // Match the old startup policy: an unavailable check does not block app access.
+                if (updateState.phase == UpdatePhase.FAILED) {
+                    Toast.makeText(this@MainActivity, R.string.update_failed, Toast.LENGTH_LONG).show()
+                    updateModel.proceed()
+                }
+            }
             fun clearBrowserSession() {
                 CookieManager.getInstance().removeAllCookies { CookieManager.getInstance().flush() }
-                WebStorage.getInstance().deleteAllData()
+                val issuer = Uri.parse(container.config.authIssuer)
+                // The upgrade shares the old sandbox; preserve legacy business/offline origins.
+                WebStorage.getInstance().deleteOrigin("${issuer.scheme}://${issuer.encodedAuthority}")
             }
             MaterialTheme {
-                ConnectionScreen(state, container.config, model::login, model::refresh, model::selectFarm,
+                if (updateState.phase != UpdatePhase.IDLE) ApkUpdateScreen(updateState, updateModel)
+                else ConnectionScreen(state, container.config, model::login, model::refresh, model::selectFarm,
                     model::switchFarm, model::signOut,
                     onCallback = { url ->
                         if (state.loggingOut) clearBrowserSession()

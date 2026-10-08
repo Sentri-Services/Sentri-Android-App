@@ -1,0 +1,233 @@
+Verified 38 complete skills at b0618bc436ad893b3c5e84e55fba86586d34a404
+> Task :app:prepareEnterpriseCertificate
+> Task :app:preBuild
+> Task :app:preDevDebugBuild
+> Task :app:mergeDevDebugNativeDebugMetadata NO-SOURCE
+> Task :app:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :app:generateDevDebugBuildConfig
+> Task :app:generateSentriApolloOptions UP-TO-DATE
+> Task :app:generateSentriApolloSources UP-TO-DATE
+> Task :app:checkDevDebugAarMetadata UP-TO-DATE
+> Task :app:generateDevDebugResValues UP-TO-DATE
+> Task :app:mapDevDebugSourceSetPaths UP-TO-DATE
+> Task :app:generateDevDebugResources UP-TO-DATE
+> Task :app:mergeDevDebugResources UP-TO-DATE
+> Task :app:packageDevDebugResources UP-TO-DATE
+> Task :app:parseDevDebugLocalResources UP-TO-DATE
+> Task :app:createDevDebugCompatibleScreenManifests
+> Task :app:extractDeepLinksDevDebug UP-TO-DATE
+> Task :app:processDevDebugMainManifest
+> Task :app:processDevDebugManifest
+> Task :app:javaPreCompileDevDebug UP-TO-DATE
+> Task :app:mergeDevDebugShaders UP-TO-DATE
+> Task :app:compileDevDebugShaders NO-SOURCE
+> Task :app:generateDevDebugAssets UP-TO-DATE
+> Task :app:mergeDevDebugAssets UP-TO-DATE
+> Task :app:compressDevDebugAssets UP-TO-DATE
+> Task :app:desugarDevDebugFileDependencies UP-TO-DATE
+> Task :app:checkDevDebugDuplicateClasses UP-TO-DATE
+> Task :app:mergeExtDexDevDebug UP-TO-DATE
+> Task :app:mergeLibDexDevDebug UP-TO-DATE
+> Task :app:mergeDevDebugJniLibFolders UP-TO-DATE
+> Task :app:mergeDevDebugNativeLibs UP-TO-DATE
+> Task :app:stripDevDebugDebugSymbols UP-TO-DATE
+> Task :app:validateSigningDevDebug UP-TO-DATE
+> Task :app:writeDevDebugAppMetadata UP-TO-DATE
+> Task :app:writeDevDebugSigningConfigVersions UP-TO-DATE
+> Task :app:preDevDebugUnitTestBuild
+> Task :app:javaPreCompileDevDebugUnitTest UP-TO-DATE
+> Task :app:preDevDebugAndroidTestBuild SKIPPED
+> Task :app:generateDevDebugAndroidTestResValues UP-TO-DATE
+> Task :app:extractProguardFiles UP-TO-DATE
+> Task :app:processDevDebugManifestForPackage
+> Task :app:processDevDebugResources
+> Task :app:compileDevDebugKotlin
+> Task :app:compileDevDebugJavaWithJavac
+> Task :app:dexBuilderDevDebug
+> Task :app:mergeDevDebugGlobalSynthetics UP-TO-DATE
+> Task :app:processDevDebugJavaRes
+> Task :app:generateDevDebugLintReportModel
+> Task :app:mergeProjectDexDevDebug
+> Task :app:bundleDevDebugClassesToCompileJar
+> Task :app:bundleDevDebugClassesToRuntimeJar
+> Task :app:compileDevDebugUnitTestKotlin
+> Task :app:generateDevDebugAndroidTestLintModel
+> Task :app:compileDevDebugUnitTestJavaWithJavac NO-SOURCE
+> Task :app:processDevDebugUnitTestJavaRes UP-TO-DATE
+> Task :app:mergeDevDebugJavaResource
+> Task :app:testDevDebugUnitTest
+> Task :app:generateDevDebugUnitTestLintModel
+> Task :app:packageDevDebug
+> Task :app:createDevDebugApkListingFileRedirect
+> Task :app:assembleDevDebug
+> Task :app:lintAnalyzeDevDebugAndroidTest
+> Task :app:lintAnalyzeDevDebugUnitTest
+> Task :app:lintAnalyzeDevDebug
+
+> Task :app:lintReportDevDebug
+Wrote HTML report to file:///Users/zhangzhaoxu/code/yy/Sentri-Android-App/app/build/reports/lint-results-devDebug.html
+
+> Task :app:lintDevDebug
+
+BUILD SUCCESSFUL in 7s
+56 actionable tasks: 27 executed, 29 up-to-date
+> Task :app:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :app:prepareEnterpriseCertificate UP-TO-DATE
+> Task :app:preBuild UP-TO-DATE
+> Task :app:preDevDebugBuild UP-TO-DATE
+> Task :app:generateDevDebugBuildConfig UP-TO-DATE
+> Task :app:generateSentriApolloOptions UP-TO-DATE
+> Task :app:generateSentriApolloSources UP-TO-DATE
+> Task :app:checkDevDebugAarMetadata UP-TO-DATE
+> Task :app:generateDevDebugResValues UP-TO-DATE
+> Task :app:mapDevDebugSourceSetPaths UP-TO-DATE
+> Task :app:generateDevDebugResources UP-TO-DATE
+> Task :app:mergeDevDebugResources UP-TO-DATE
+> Task :app:packageDevDebugResources UP-TO-DATE
+> Task :app:parseDevDebugLocalResources UP-TO-DATE
+> Task :app:createDevDebugCompatibleScreenManifests UP-TO-DATE
+> Task :app:extractDeepLinksDevDebug UP-TO-DATE
+> Task :app:processDevDebugMainManifest UP-TO-DATE
+> Task :app:processDevDebugManifest UP-TO-DATE
+> Task :app:processDevDebugManifestForPackage UP-TO-DATE
+> Task :app:processDevDebugResources UP-TO-DATE
+> Task :app:compileDevDebugKotlin UP-TO-DATE
+> Task :app:javaPreCompileDevDebug UP-TO-DATE
+> Task :app:compileDevDebugJavaWithJavac UP-TO-DATE
+> Task :app:bundleDevDebugClassesToCompileJar UP-TO-DATE
+> Task :app:preDevDebugAndroidTestBuild SKIPPED
+> Task :app:processDevDebugAndroidTestManifest UP-TO-DATE
+> Task :app:generateDevDebugAndroidTestBuildConfig UP-TO-DATE
+> Task :app:checkDevDebugAndroidTestAarMetadata UP-TO-DATE
+> Task :app:generateDevDebugAndroidTestResValues UP-TO-DATE
+> Task :app:mapDevDebugAndroidTestSourceSetPaths UP-TO-DATE
+> Task :app:generateDevDebugAndroidTestResources UP-TO-DATE
+> Task :app:mergeDevDebugAndroidTestResources UP-TO-DATE
+> Task :app:processDevDebugAndroidTestResources UP-TO-DATE
+> Task :app:javaPreCompileDevDebugAndroidTest UP-TO-DATE
+> Task :app:mergeDevDebugShaders UP-TO-DATE
+> Task :app:compileDevDebugShaders NO-SOURCE
+> Task :app:generateDevDebugAssets UP-TO-DATE
+> Task :app:mergeDevDebugAssets UP-TO-DATE
+> Task :app:compressDevDebugAssets UP-TO-DATE
+> Task :app:desugarDevDebugFileDependencies UP-TO-DATE
+> Task :app:dexBuilderDevDebug UP-TO-DATE
+> Task :app:mergeDevDebugGlobalSynthetics UP-TO-DATE
+> Task :app:processDevDebugJavaRes UP-TO-DATE
+> Task :app:mergeDevDebugJavaResource UP-TO-DATE
+> Task :app:checkDevDebugDuplicateClasses UP-TO-DATE
+> Task :app:mergeExtDexDevDebug UP-TO-DATE
+> Task :app:mergeLibDexDevDebug UP-TO-DATE
+> Task :app:mergeProjectDexDevDebug UP-TO-DATE
+> Task :app:mergeDevDebugJniLibFolders UP-TO-DATE
+> Task :app:mergeDevDebugNativeLibs UP-TO-DATE
+> Task :app:stripDevDebugDebugSymbols UP-TO-DATE
+> Task :app:validateSigningDevDebug UP-TO-DATE
+> Task :app:writeDevDebugAppMetadata UP-TO-DATE
+> Task :app:writeDevDebugSigningConfigVersions UP-TO-DATE
+> Task :app:packageDevDebug UP-TO-DATE
+> Task :app:createDevDebugApkListingFileRedirect UP-TO-DATE
+> Task :app:mergeDevDebugAndroidTestShaders UP-TO-DATE
+> Task :app:compileDevDebugAndroidTestShaders NO-SOURCE
+> Task :app:generateDevDebugAndroidTestAssets UP-TO-DATE
+> Task :app:mergeDevDebugAndroidTestAssets UP-TO-DATE
+> Task :app:compressDevDebugAndroidTestAssets UP-TO-DATE
+> Task :app:desugarDevDebugAndroidTestFileDependencies UP-TO-DATE
+> Task :app:checkDevDebugAndroidTestDuplicateClasses UP-TO-DATE
+> Task :app:mergeExtDexDevDebugAndroidTest UP-TO-DATE
+> Task :app:mergeLibDexDevDebugAndroidTest UP-TO-DATE
+> Task :app:mergeDevDebugAndroidTestJniLibFolders UP-TO-DATE
+> Task :app:compileDevDebugAndroidTestKotlin
+> Task :app:mergeDevDebugAndroidTestNativeLibs NO-SOURCE
+> Task :app:compileDevDebugAndroidTestJavaWithJavac UP-TO-DATE
+> Task :app:dexBuilderDevDebugAndroidTest UP-TO-DATE
+> Task :app:mergeDevDebugAndroidTestGlobalSynthetics UP-TO-DATE
+> Task :app:processDevDebugAndroidTestJavaRes UP-TO-DATE
+> Task :app:mergeDevDebugAndroidTestJavaResource UP-TO-DATE
+> Task :app:mergeProjectDexDevDebugAndroidTest UP-TO-DATE
+> Task :app:stripDevDebugAndroidTestDebugSymbols NO-SOURCE
+> Task :app:validateSigningDevDebugAndroidTest UP-TO-DATE
+> Task :app:writeDevDebugAndroidTestSigningConfigVersions UP-TO-DATE
+> Task :app:packageDevDebugAndroidTest UP-TO-DATE
+> Task :app:createDevDebugAndroidTestApkListingFileRedirect UP-TO-DATE
+
+> Task :app:connectedDevDebugAndroidTest
+Starting 9 tests on Sentri_Dev_API_36(AVD) - 16
+
+Finished 9 tests on Sentri_Dev_API_36(AVD) - 16
+
+BUILD SUCCESSFUL in 11s
+70 actionable tasks: 2 executed, 68 up-to-date
+Verified 38 complete skills at b0618bc436ad893b3c5e84e55fba86586d34a404
+> Task :app:prepareEnterpriseCertificate
+> Task :app:preBuild
+> Task :app:preDevDebugBuild
+> Task :app:mergeDevDebugNativeDebugMetadata NO-SOURCE
+> Task :app:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :app:generateDevDebugBuildConfig UP-TO-DATE
+> Task :app:generateSentriApolloOptions UP-TO-DATE
+> Task :app:generateSentriApolloSources UP-TO-DATE
+> Task :app:checkDevDebugAarMetadata UP-TO-DATE
+> Task :app:generateDevDebugResValues UP-TO-DATE
+> Task :app:mapDevDebugSourceSetPaths UP-TO-DATE
+> Task :app:generateDevDebugResources UP-TO-DATE
+> Task :app:mergeDevDebugResources UP-TO-DATE
+> Task :app:packageDevDebugResources UP-TO-DATE
+> Task :app:parseDevDebugLocalResources UP-TO-DATE
+> Task :app:createDevDebugCompatibleScreenManifests UP-TO-DATE
+> Task :app:extractDeepLinksDevDebug UP-TO-DATE
+> Task :app:processDevDebugMainManifest UP-TO-DATE
+> Task :app:processDevDebugManifest UP-TO-DATE
+> Task :app:processDevDebugManifestForPackage UP-TO-DATE
+> Task :app:processDevDebugResources UP-TO-DATE
+> Task :app:compileDevDebugKotlin UP-TO-DATE
+> Task :app:javaPreCompileDevDebug UP-TO-DATE
+> Task :app:compileDevDebugJavaWithJavac UP-TO-DATE
+> Task :app:mergeDevDebugShaders UP-TO-DATE
+> Task :app:compileDevDebugShaders NO-SOURCE
+> Task :app:generateDevDebugAssets UP-TO-DATE
+> Task :app:mergeDevDebugAssets UP-TO-DATE
+> Task :app:compressDevDebugAssets UP-TO-DATE
+> Task :app:desugarDevDebugFileDependencies UP-TO-DATE
+> Task :app:dexBuilderDevDebug UP-TO-DATE
+> Task :app:mergeDevDebugGlobalSynthetics UP-TO-DATE
+> Task :app:processDevDebugJavaRes UP-TO-DATE
+> Task :app:mergeDevDebugJavaResource UP-TO-DATE
+> Task :app:checkDevDebugDuplicateClasses UP-TO-DATE
+> Task :app:mergeExtDexDevDebug UP-TO-DATE
+> Task :app:mergeLibDexDevDebug UP-TO-DATE
+> Task :app:mergeProjectDexDevDebug UP-TO-DATE
+> Task :app:mergeDevDebugJniLibFolders UP-TO-DATE
+> Task :app:mergeDevDebugNativeLibs UP-TO-DATE
+> Task :app:stripDevDebugDebugSymbols UP-TO-DATE
+> Task :app:validateSigningDevDebug UP-TO-DATE
+> Task :app:writeDevDebugAppMetadata UP-TO-DATE
+> Task :app:writeDevDebugSigningConfigVersions UP-TO-DATE
+> Task :app:packageDevDebug UP-TO-DATE
+> Task :app:createDevDebugApkListingFileRedirect UP-TO-DATE
+> Task :app:assembleDevDebug UP-TO-DATE
+> Task :app:bundleDevDebugClassesToRuntimeJar UP-TO-DATE
+> Task :app:bundleDevDebugClassesToCompileJar UP-TO-DATE
+> Task :app:compileDevDebugUnitTestKotlin UP-TO-DATE
+> Task :app:preDevDebugUnitTestBuild
+> Task :app:javaPreCompileDevDebugUnitTest UP-TO-DATE
+> Task :app:compileDevDebugUnitTestJavaWithJavac NO-SOURCE
+> Task :app:processDevDebugUnitTestJavaRes UP-TO-DATE
+> Task :app:testDevDebugUnitTest UP-TO-DATE
+> Task :app:preDevDebugAndroidTestBuild SKIPPED
+> Task :app:generateDevDebugAndroidTestResValues UP-TO-DATE
+> Task :app:generateDevDebugAndroidTestLintModel
+> Task :app:extractProguardFiles UP-TO-DATE
+> Task :app:generateDevDebugLintReportModel
+> Task :app:generateDevDebugUnitTestLintModel
+> Task :app:lintAnalyzeDevDebugAndroidTest
+> Task :app:lintAnalyzeDevDebugUnitTest
+> Task :app:lintAnalyzeDevDebug
+
+> Task :app:lintReportDevDebug
+Wrote HTML report to file:///Users/zhangzhaoxu/code/yy/Sentri-Android-App/app/build/reports/lint-results-devDebug.html
+
+> Task :app:lintDevDebug
+
+BUILD SUCCESSFUL in 6s
+56 actionable tasks: 9 executed, 47 up-to-date

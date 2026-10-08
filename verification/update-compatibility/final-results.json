@@ -1,0 +1,21 @@
+{
+  "jvm": {
+    "tests": 36,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "device": {
+    "tests": 9,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "lint": {
+    "Warning": 27
+  },
+  "workflowYamlParsed": true,
+  "legacyDevStartsLogin": true,
+  "legacyProdContinuesAfterManifestUnavailable": true,
+  "remotePublicationExecuted": false
+}

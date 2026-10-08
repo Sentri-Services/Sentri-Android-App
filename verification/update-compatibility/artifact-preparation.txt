@@ -1,0 +1,15 @@
+/Users/zhangzhaoxu/Library/Android/sdk/cmdline-tools/latest/bin/apkanalyzer: line 173: test: : integer expression expected
+/Users/zhangzhaoxu/Library/Android/sdk/cmdline-tools/latest/bin/apkanalyzer: line 173: test: : integer expression expected
+/Users/zhangzhaoxu/Library/Android/sdk/cmdline-tools/latest/bin/apkanalyzer: line 173: test: : integer expression expected
+/Users/zhangzhaoxu/Library/Android/sdk/cmdline-tools/latest/bin/apkanalyzer: line 173: test: : integer expression expected
+/Users/zhangzhaoxu/Library/Android/sdk/cmdline-tools/latest/bin/apkanalyzer: line 173: test: : integer expression expected
+/Users/zhangzhaoxu/Library/Android/sdk/cmdline-tools/latest/bin/apkanalyzer: line 173: test: : integer expression expected
+/Users/zhangzhaoxu/Library/Android/sdk/cmdline-tools/latest/bin/apkanalyzer: line 173: test: : integer expression expected
+/Users/zhangzhaoxu/Library/Android/sdk/cmdline-tools/latest/bin/apkanalyzer: line 173: test: : integer expression expected
+/Users/zhangzhaoxu/Library/Android/sdk/cmdline-tools/latest/bin/apkanalyzer: line 173: test: : integer expression expected
+/Users/zhangzhaoxu/Library/Android/sdk/cmdline-tools/latest/bin/apkanalyzer: line 173: test: : integer expression expected
+/Users/zhangzhaoxu/Library/Android/sdk/cmdline-tools/latest/bin/apkanalyzer: line 173: test: : integer expression expected
+/Users/zhangzhaoxu/Library/Android/sdk/cmdline-tools/latest/bin/apkanalyzer: line 173: test: : integer expression expected
+Prepared dev: 1.3.6 (136)
+Prepared demo: 1.3.7 (137)
+Prepared prod: 1.3.5 (135)

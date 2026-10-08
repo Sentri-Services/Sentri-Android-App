@@ -1,0 +1,214 @@
+> Task :app:prepareEnterpriseCertificate
+> Task :app:preBuild
+> Task :app:preDevDebugBuild
+> Task :app:mergeDevDebugNativeDebugMetadata NO-SOURCE
+> Task :app:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :app:generateDevDebugBuildConfig
+> Task :app:generateSentriApolloOptions UP-TO-DATE
+> Task :app:generateSentriApolloSources UP-TO-DATE
+> Task :app:checkDevDebugAarMetadata UP-TO-DATE
+> Task :app:generateDevDebugResValues UP-TO-DATE
+> Task :app:mapDevDebugSourceSetPaths UP-TO-DATE
+> Task :app:generateDevDebugResources UP-TO-DATE
+> Task :app:mergeDevDebugResources UP-TO-DATE
+> Task :app:packageDevDebugResources UP-TO-DATE
+> Task :app:parseDevDebugLocalResources UP-TO-DATE
+> Task :app:createDevDebugCompatibleScreenManifests
+> Task :app:extractDeepLinksDevDebug UP-TO-DATE
+> Task :app:processDevDebugMainManifest
+> Task :app:processDevDebugManifest
+> Task :app:javaPreCompileDevDebug UP-TO-DATE
+> Task :app:mergeDevDebugShaders UP-TO-DATE
+> Task :app:compileDevDebugShaders NO-SOURCE
+> Task :app:generateDevDebugAssets UP-TO-DATE
+> Task :app:mergeDevDebugAssets UP-TO-DATE
+> Task :app:compressDevDebugAssets UP-TO-DATE
+> Task :app:desugarDevDebugFileDependencies UP-TO-DATE
+> Task :app:checkDevDebugDuplicateClasses UP-TO-DATE
+> Task :app:mergeExtDexDevDebug UP-TO-DATE
+> Task :app:mergeLibDexDevDebug UP-TO-DATE
+> Task :app:mergeDevDebugJniLibFolders UP-TO-DATE
+> Task :app:mergeDevDebugNativeLibs UP-TO-DATE
+> Task :app:stripDevDebugDebugSymbols UP-TO-DATE
+> Task :app:validateSigningDevDebug UP-TO-DATE
+> Task :app:writeDevDebugAppMetadata UP-TO-DATE
+> Task :app:writeDevDebugSigningConfigVersions UP-TO-DATE
+> Task :app:preDemoDebugBuild
+> Task :app:mergeDemoDebugNativeDebugMetadata NO-SOURCE
+> Task :app:generateDemoDebugBuildConfig
+> Task :app:checkDemoDebugAarMetadata UP-TO-DATE
+> Task :app:generateDemoDebugResValues UP-TO-DATE
+> Task :app:mapDemoDebugSourceSetPaths UP-TO-DATE
+> Task :app:generateDemoDebugResources UP-TO-DATE
+> Task :app:mergeDemoDebugResources UP-TO-DATE
+> Task :app:packageDemoDebugResources UP-TO-DATE
+> Task :app:parseDemoDebugLocalResources UP-TO-DATE
+> Task :app:createDemoDebugCompatibleScreenManifests
+> Task :app:extractDeepLinksDemoDebug UP-TO-DATE
+> Task :app:processDemoDebugMainManifest
+> Task :app:processDemoDebugManifest
+> Task :app:javaPreCompileDemoDebug UP-TO-DATE
+> Task :app:mergeDemoDebugShaders UP-TO-DATE
+> Task :app:compileDemoDebugShaders NO-SOURCE
+> Task :app:generateDemoDebugAssets UP-TO-DATE
+> Task :app:mergeDemoDebugAssets UP-TO-DATE
+> Task :app:compressDemoDebugAssets UP-TO-DATE
+> Task :app:desugarDemoDebugFileDependencies UP-TO-DATE
+> Task :app:checkDemoDebugDuplicateClasses UP-TO-DATE
+> Task :app:mergeExtDexDemoDebug UP-TO-DATE
+> Task :app:mergeLibDexDemoDebug UP-TO-DATE
+> Task :app:mergeDemoDebugJniLibFolders UP-TO-DATE
+> Task :app:mergeDemoDebugNativeLibs UP-TO-DATE
+> Task :app:stripDemoDebugDebugSymbols UP-TO-DATE
+> Task :app:validateSigningDemoDebug UP-TO-DATE
+> Task :app:writeDemoDebugAppMetadata UP-TO-DATE
+> Task :app:writeDemoDebugSigningConfigVersions UP-TO-DATE
+> Task :app:preProdDebugBuild
+> Task :app:mergeProdDebugNativeDebugMetadata NO-SOURCE
+> Task :app:generateProdDebugBuildConfig
+> Task :app:checkProdDebugAarMetadata UP-TO-DATE
+> Task :app:generateProdDebugResValues UP-TO-DATE
+> Task :app:mapProdDebugSourceSetPaths UP-TO-DATE
+> Task :app:processDemoDebugManifestForPackage
+> Task :app:generateProdDebugResources UP-TO-DATE
+> Task :app:mergeProdDebugResources UP-TO-DATE
+> Task :app:packageProdDebugResources UP-TO-DATE
+> Task :app:parseProdDebugLocalResources UP-TO-DATE
+> Task :app:createProdDebugCompatibleScreenManifests
+> Task :app:extractDeepLinksProdDebug UP-TO-DATE
+> Task :app:processProdDebugMainManifest
+> Task :app:processProdDebugManifest
+> Task :app:javaPreCompileProdDebug UP-TO-DATE
+> Task :app:mergeProdDebugShaders UP-TO-DATE
+> Task :app:compileProdDebugShaders NO-SOURCE
+> Task :app:generateProdDebugAssets UP-TO-DATE
+> Task :app:mergeProdDebugAssets UP-TO-DATE
+> Task :app:compressProdDebugAssets UP-TO-DATE
+> Task :app:checkProdDebugDuplicateClasses UP-TO-DATE
+> Task :app:desugarProdDebugFileDependencies UP-TO-DATE
+> Task :app:mergeExtDexProdDebug UP-TO-DATE
+> Task :app:mergeLibDexProdDebug UP-TO-DATE
+> Task :app:mergeProdDebugJniLibFolders UP-TO-DATE
+> Task :app:mergeProdDebugNativeLibs UP-TO-DATE
+> Task :app:stripProdDebugDebugSymbols UP-TO-DATE
+> Task :app:validateSigningProdDebug UP-TO-DATE
+> Task :app:writeProdDebugAppMetadata UP-TO-DATE
+> Task :app:writeProdDebugSigningConfigVersions UP-TO-DATE
+> Task :app:preProdReleaseBuild
+> Task :app:mergeProdReleaseJniLibFolders
+> Task :app:mergeProdReleaseNativeLibs
+> Task :app:buildKotlinToolingMetadata
+
+> Task :app:stripProdReleaseDebugSymbols
+Unable to strip the following libraries, packaging them as they are: libandroidx.graphics.path.so. Run with --info option to learn more.
+
+> Task :app:processProdDebugManifestForPackage
+> Task :app:generateProdReleaseBuildConfig
+> Task :app:extractProdReleaseNativeSymbolTables
+> Task :app:generateProdReleaseResValues
+> Task :app:mergeProdReleaseNativeDebugMetadata NO-SOURCE
+> Task :app:checkProdReleaseDuplicateClasses
+> Task :app:mapProdReleaseSourceSetPaths
+> Task :app:generateProdReleaseResources
+> Task :app:checkProdReleaseAarMetadata
+> Task :app:processProdDebugResources
+> Task :app:processDemoDebugResources
+> Task :app:mergeProdReleaseResources
+> Task :app:packageProdReleaseResources
+> Task :app:createProdReleaseCompatibleScreenManifests
+> Task :app:extractDeepLinksProdRelease
+> Task :app:parseProdReleaseLocalResources
+> Task :app:processProdReleaseMainManifest
+> Task :app:processProdReleaseManifest
+> Task :app:javaPreCompileProdRelease
+> Task :app:processDevDebugManifestForPackage
+> Task :app:mergeProdReleaseArtProfile
+> Task :app:extractProguardFiles UP-TO-DATE
+> Task :app:mergeProdReleaseStartupProfile
+> Task :app:mergeProdReleaseShaders
+> Task :app:compileProdReleaseShaders NO-SOURCE
+> Task :app:generateProdReleaseAssets UP-TO-DATE
+> Task :app:mergeProdReleaseAssets
+> Task :app:compressProdReleaseAssets
+> Task :app:extractProdReleaseVersionControlInfo
+> Task :app:collectProdReleaseDependencies
+> Task :app:sdkProdReleaseDependencyData
+> Task :app:validateSigningProdRelease
+> Task :app:writeProdReleaseAppMetadata
+> Task :app:writeProdReleaseSigningConfigVersions
+> Task :app:preDevDebugUnitTestBuild
+> Task :app:javaPreCompileDevDebugUnitTest UP-TO-DATE
+> Task :app:preDevDebugAndroidTestBuild SKIPPED
+> Task :app:generateDevDebugAndroidTestResValues UP-TO-DATE
+> Task :app:processProdReleaseManifestForPackage
+> Task :app:processDevDebugResources
+> Task :app:processProdReleaseResources
+> Task :app:optimizeProdReleaseResources
+> Task :app:compileProdDebugKotlin
+> Task :app:compileDemoDebugKotlin
+> Task :app:compileDevDebugKotlin
+> Task :app:compileProdDebugJavaWithJavac
+> Task :app:compileDevDebugJavaWithJavac
+> Task :app:dexBuilderDevDebug
+> Task :app:mergeDevDebugGlobalSynthetics UP-TO-DATE
+> Task :app:processDevDebugJavaRes
+> Task :app:mergeProjectDexDevDebug
+> Task :app:compileDemoDebugJavaWithJavac
+> Task :app:dexBuilderDemoDebug
+> Task :app:mergeDemoDebugGlobalSynthetics UP-TO-DATE
+> Task :app:processDemoDebugJavaRes
+> Task :app:mergeProjectDexDemoDebug
+> Task :app:dexBuilderProdDebug
+> Task :app:mergeProdDebugGlobalSynthetics UP-TO-DATE
+> Task :app:processProdDebugJavaRes
+> Task :app:mergeProjectDexProdDebug
+> Task :app:generateDevDebugLintReportModel
+> Task :app:bundleDevDebugClassesToRuntimeJar
+> Task :app:bundleDevDebugClassesToCompileJar
+> Task :app:mergeDemoDebugJavaResource
+> Task :app:mergeDevDebugJavaResource
+> Task :app:mergeProdDebugJavaResource
+> Task :app:compileDevDebugUnitTestKotlin
+> Task :app:generateDevDebugAndroidTestLintModel
+> Task :app:compileDevDebugUnitTestJavaWithJavac NO-SOURCE
+> Task :app:processDevDebugUnitTestJavaRes UP-TO-DATE
+
+> Task :app:compileProdReleaseKotlin
+w: file:///Users/zhangzhaoxu/code/yy/Sentri-Android-App/app/src/main/java/com/sentri/nativeapp/ui/LoginWebView.kt:53:30 This declaration overrides a deprecated member but is not marked as deprecated itself. Add the '@Deprecated' annotation or suppress the diagnostic.
+
+> Task :app:testDevDebugUnitTest
+> Task :app:compileProdReleaseJavaWithJavac
+> Task :app:mergeProdReleaseGeneratedProguardFiles
+> Task :app:processProdReleaseJavaRes
+> Task :app:packageProdDebug
+> Task :app:createProdDebugApkListingFileRedirect
+> Task :app:assembleProdDebug
+> Task :app:generateProdReleaseLintVitalReportModel
+> Task :app:generateDevDebugUnitTestLintModel
+> Task :app:packageDemoDebug
+> Task :app:createDemoDebugApkListingFileRedirect
+> Task :app:assembleDemoDebug
+> Task :app:packageDevDebug
+> Task :app:createDevDebugApkListingFileRedirect
+> Task :app:assembleDevDebug
+> Task :app:mergeProdReleaseJavaResource
+> Task :app:expandProdReleaseArtProfileWildcards
+> Task :app:lintAnalyzeDevDebugAndroidTest
+> Task :app:lintAnalyzeDevDebugUnitTest
+> Task :app:lintVitalAnalyzeProdRelease
+> Task :app:lintVitalReportProdRelease
+> Task :app:lintVitalProdRelease
+> Task :app:lintAnalyzeDevDebug
+
+> Task :app:lintReportDevDebug
+Wrote HTML report to file:///Users/zhangzhaoxu/code/yy/Sentri-Android-App/app/build/reports/lint-results-devDebug.html
+
+> Task :app:lintDevDebug
+> Task :app:minifyProdReleaseWithR8
+> Task :app:compileProdReleaseArtProfile
+> Task :app:packageProdRelease
+> Task :app:createProdReleaseApkListingFileRedirect
+> Task :app:assembleProdRelease
+
+BUILD SUCCESSFUL in 40s
+177 actionable tasks: 102 executed, 75 up-to-date
