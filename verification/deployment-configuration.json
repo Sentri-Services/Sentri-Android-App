@@ -1,0 +1,23 @@
+{
+  "date": "2026-10-09",
+  "repository": "Sentri-Services/Sentri-Android-App",
+  "branch": "master",
+  "configuredSecretNames": [
+    "SENTRI_ENTERPRISE_CERTIFICATE_BASE64",
+    "SENTRI_KEYSTORE_BASE64",
+    "SENTRI_KEY_PASSWORD",
+    "SENTRI_STORE_PASSWORD"
+  ],
+  "missingRequiredSecretNames": [
+    "ALIYUN_ACCESS_KEY_ID",
+    "ALIYUN_ACCESS_KEY_SECRET",
+    "ALIYUN_OSS_BUCKET",
+    "ALIYUN_OSS_ENDPOINT"
+  ],
+  "originalSigningCertificateVerifiedBeforeUpload": true,
+  "originalEnterpriseCertificateVerifiedBeforeUpload": true,
+  "remoteReleaseTagsBeforeBranchSync": [],
+  "publicationRequested": false,
+  "apkUploadExecuted": false,
+  "versionFileChanged": false
+}

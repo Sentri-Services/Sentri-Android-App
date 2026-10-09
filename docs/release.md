@@ -85,7 +85,9 @@ GitHub 仓库需提供：
 - `SENTRI_STORE_PASSWORD`、`SENTRI_KEY_PASSWORD`。
 - 原 `ALIYUN_ACCESS_KEY_ID`、`ALIYUN_ACCESS_KEY_SECRET`、`ALIYUN_OSS_BUCKET`、`ALIYUN_OSS_ENDPOINT`。
 
-2026-10-09 已确认 origin 为 `git@github.com:Sentri-Services/Sentri-Android-App.git`，仓库默认分支为 master，四个发布入口的 Gradle dry-run 与版本脚本预览通过。GitHub 返回的仓库级 Actions Secrets 数量为 0，仍需一次性配置以上八项；原仓库的 Secrets 不会随代码或 remote 配置转移。若采用组织级 Secrets，需确保授权此仓库使用。
+2026-10-09 已确认 origin 为 `git@github.com:Sentri-Services/Sentri-Android-App.git`，仓库默认分支为 master，四个发布入口的 Gradle dry-run 与版本脚本预览通过。已从本地原签名材料配置四项 SENTRI Secrets，上传前签名证书与企业证书指纹均与部署契约一致。
+
+四项 ALIYUN Secrets 已存在于旧仓库，新仓库仍待配置。GitHub 只返回已保存 Secret 的名称和时间等元数据，不提供原值，因此不能从旧仓库自动复制；本地参考项目和当前环境中也未找到原 OSS 配置。需要提供原配置文件或在新仓库填写同名配置。若采用组织级 Secrets，需确保授权此仓库使用。
 
 四项 ALIYUN 配置沿用原 OSS 账号、Bucket 和 Endpoint。新增四项 SENTRI 配置用于安全注入旧仓库中的原签名材料，不能替换为新生成的 key。可以在 [新仓库 Actions Secrets](https://github.com/Sentri-Services/Sentri-Android-App/settings/secrets/actions) 配置，也可使用已登录的 GitHub CLI；例如将两个原文件直接传入，不在终端打印内容：
 
@@ -97,7 +99,7 @@ gh secret set SENTRI_STORE_PASSWORD --repo Sentri-Services/Sentri-Android-App
 gh secret set SENTRI_KEY_PASSWORD --repo Sentri-Services/Sentri-Android-App
 ```
 
-本轮只读取远端信息，没有设置 Secrets、推送 Tag、上传 APK 或改动线上指针。新仓库的 master push 已触发普通 CI，此类构建不会上传；实际发布仍需配置完成后验证。同一 OSS 通道应有一个发布源，避免新旧仓库流水线竞争。
+本轮按用户授权配置签名 Secrets，并同步普通 master 分支，没有推送发布 Tag、上传 APK 或改动线上指针。新仓库的首次普通 CI 已通过，此类构建不会上传；实际发布仍需配置完成后验证。同一 OSS 通道应有一个发布源，避免新旧仓库流水线竞争。
 
 ## 应用内更新
 
