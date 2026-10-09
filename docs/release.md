@@ -58,6 +58,17 @@ python3 scripts/apk_release.py all
 
 沿用 `releaseDev / releaseDemo / releaseProd / releaseAll` Gradle 入口。这些命令会增加对应环境 versionCode 与 versionName patch，提交版本文件、创建 Tag 并原子推送当前 main/master 分支与 Tag，**执行即触发外部发布**。
 
+在新仓库的干净 master 分支、已与 origin/master 同步时，操作与旧项目一致，按需选择一个命令：
+
+```bash
+./gradlew releaseDev
+./gradlew releaseDemo
+./gradlew releaseProd
+./gradlew releaseAll
+```
+
+本地需要 JDK 21、Python 3.9+ 与 Git 推送权限。macOS 可用 `./scripts/gradle.sh releaseDev` 自动选择 Android Studio 自带 JBR；全局 Gradle 代理不可用时加 `SENTRI_GRADLE_DIRECT=1`。发布入口只负责版本提交与 Tag 推送，APK 在 Actions 构建，因此执行这些入口不需要本地注入签名密码。
+
 只预览、不修改文件或远端：
 
 ```bash
@@ -74,7 +85,19 @@ GitHub 仓库需提供：
 - `SENTRI_STORE_PASSWORD`、`SENTRI_KEY_PASSWORD`。
 - 原 `ALIYUN_ACCESS_KEY_ID`、`ALIYUN_ACCESS_KEY_SECRET`、`ALIYUN_OSS_BUCKET`、`ALIYUN_OSS_ENDPOINT`。
 
-当前工作区未配置 origin，本轮没有推送、上传或改动线上指针。后续需明确接替旧仓库还是启用新仓库，并配置对应 Secrets；同一 OSS 通道应有一个发布源，避免新旧流水线竞争。CI YAML 已就绪，实际远端运行仍需配置后验证。
+2026-10-09 已确认 origin 为 `git@github.com:Sentri-Services/Sentri-Android-App.git`，仓库默认分支为 master，四个发布入口的 Gradle dry-run 与版本脚本预览通过。GitHub 返回的仓库级 Actions Secrets 数量为 0，仍需一次性配置以上八项；原仓库的 Secrets 不会随代码或 remote 配置转移。若采用组织级 Secrets，需确保授权此仓库使用。
+
+四项 ALIYUN 配置沿用原 OSS 账号、Bucket 和 Endpoint。新增四项 SENTRI 配置用于安全注入旧仓库中的原签名材料，不能替换为新生成的 key。可以在 [新仓库 Actions Secrets](https://github.com/Sentri-Services/Sentri-Android-App/settings/secrets/actions) 配置，也可使用已登录的 GitHub CLI；例如将两个原文件直接传入，不在终端打印内容：
+
+```bash
+base64 < ../Sentri-Android/key.jks | gh secret set SENTRI_KEYSTORE_BASE64 --repo Sentri-Services/Sentri-Android-App
+base64 < ../Sentri-Android/ENTERPRISE.CER | gh secret set SENTRI_ENTERPRISE_CERTIFICATE_BASE64 --repo Sentri-Services/Sentri-Android-App
+# 交互输入原签名密码；不要把明文写进命令历史。
+gh secret set SENTRI_STORE_PASSWORD --repo Sentri-Services/Sentri-Android-App
+gh secret set SENTRI_KEY_PASSWORD --repo Sentri-Services/Sentri-Android-App
+```
+
+本轮只读取远端信息，没有设置 Secrets、推送 Tag、上传 APK 或改动线上指针。新仓库的 master push 已触发普通 CI，此类构建不会上传；实际发布仍需配置完成后验证。同一 OSS 通道应有一个发布源，避免新旧仓库流水线竞争。
 
 ## 应用内更新
 
