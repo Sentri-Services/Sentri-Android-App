@@ -2,6 +2,8 @@ package com.sentri.nativeapp.ui
 
 import android.annotation.SuppressLint
 import android.net.Uri
+import android.view.ViewGroup
+import android.widget.FrameLayout
 import android.webkit.CookieManager
 import android.webkit.WebResourceError
 import android.webkit.WebResourceRequest
@@ -62,5 +64,13 @@ fun LoginWebView(url: String, config: AppConfig, onCallback: (String) -> Unit, o
     DisposableEffect(webView) {
         onDispose { webView.stopLoading(); webView.destroy() }
     }
-    AndroidView(factory = { webView }, modifier = modifier)
+    AndroidView(factory = { hostContext ->
+        // Keep the webpage's editable focus inside a native view group rather than making
+        // WebView itself the Compose interop focus target.
+        FrameLayout(hostContext).apply {
+            descendantFocusability = ViewGroup.FOCUS_AFTER_DESCENDANTS
+            addView(webView, FrameLayout.LayoutParams(
+                ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT))
+        }
+    }, modifier = modifier)
 }
