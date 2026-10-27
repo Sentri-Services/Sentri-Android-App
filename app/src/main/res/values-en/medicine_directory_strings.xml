@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="medicine_directory_title">Medicines</string>
+    <string name="medicine_directory_read_only">This catalogue is for reference. Categories, brands and withdrawal periods are not connected yet. Formulation names below come from the existing API and are not brands.</string>
+    <string name="medicine_directory_refresh">Refresh catalogue</string>
+    <string name="medicine_directory_loading">Loading medicines…</string>
+    <string name="medicine_directory_failed">Could not load medicines. Try again.</string>
+    <string name="medicine_directory_formulations_failed">Could not load formulations. Medicine names remain available.</string>
+    <string name="medicine_directory_offline">This catalogue comes from a saved offline snapshot.</string>
+    <string name="medicine_directory_search">Search medicines or formulations</string>
+    <string name="medicine_directory_count">%1$d items</string>
+    <string name="medicine_directory_empty">No medicines recorded for this farm.</string>
+    <string name="medicine_directory_no_match">No matching medicines.</string>
+</resources>

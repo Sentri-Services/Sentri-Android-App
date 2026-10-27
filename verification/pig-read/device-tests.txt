@@ -1,0 +1,16 @@
+
+com.sentri.nativeapp.ConnectionScreenTest:..
+com.sentri.nativeapp.DeviceInputTest:..
+com.sentri.nativeapp.LivePigReadTest:
+com.sentri.nativeapp.LivePigReadTest:
+com.sentri.nativeapp.OidcRequestTest:..
+com.sentri.nativeapp.PigCacheTest:..........
+com.sentri.nativeapp.SessionStoreTest:..
+com.sentri.nativeapp.UpdateContractTest:...
+com.sentri.nativeapp.UpdateDownloadTest:.
+
+Time: 17.155
+
+OK (24 tests)
+
+

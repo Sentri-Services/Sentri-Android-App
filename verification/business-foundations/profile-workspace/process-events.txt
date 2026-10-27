@@ -1,0 +1,2 @@
+I/System.out( 2778): PROFILE_WORKSPACE_PREPARED pid=2778 snapshots=3 commands=2 property=IN_FLIGHT previewPersisted=false
+I/System.out( 2914): PROFILE_WORKSPACE_RESTORED previousPid=2778 pid=2914 remoteReadsBeforeRefresh=0 unknownResends=0 decimalExact=true confirmedCacheUnchangedBeforeRead=true receiptWaitsForRead=true rolePreviewAfterExplicitEvidence=true

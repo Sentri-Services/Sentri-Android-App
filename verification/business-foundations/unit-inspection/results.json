@@ -1,0 +1,13 @@
+{
+  "date": "2026-10-19",
+  "scope": "task 13 unit inspection and remark foundation only",
+  "graphql": { "operations": 70, "consumerFields": 718, "contract": "passed" },
+  "language": { "entries": 442, "canonicalMappings": 302, "check": "passed" },
+  "verifyScript": { "result": "passed", "jvmTests": 208, "jvmFailures": 0, "lint": "passed" },
+  "targetedAndroidTests": { "class": "com.sentri.nativeapp.UnitInspectionQueueTest", "passed": 2, "failed": 0, "device": "emulator-5554" },
+  "backendGap": "SubmitUnitInspectionCommand handler does not pass cleanliness/compliance to UnitInspection.create",
+  "realBackendReads": "not run",
+  "realBackendWrites": "not run",
+  "automaticReplay": "not enabled",
+  "remainingInTask13": ["pig health and image attachments", "body measurement", "location inventory"]
+}

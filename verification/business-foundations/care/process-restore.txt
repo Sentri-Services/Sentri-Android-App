@@ -1,0 +1,8 @@
+
+com.sentri.nativeapp.CareProcessRestoreTest:.
+
+Time: 0.071
+
+OK (1 test)
+
+

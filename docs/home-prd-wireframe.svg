@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="940" viewBox="0 0 880 940" role="img" aria-labelledby="title desc">
+  <title id="title">首页总览与单元范围的结构示意</title>
+  <desc id="desc">左侧为分区总览，包含待上传记录、两张任务示例、全部任务入口、七天预告和已关闭；实际首页默认显示前五张。右侧为单元范围，增加单元概况，同一任务卡只缩小计数。</desc>
+  <rect width="880" height="940" fill="#f2f3ed"/>
+  <text x="47" y="39" fill="#374236" font-family="sans-serif" font-size="18" font-weight="700">首页信息结构示意</text>
+  <text x="47" y="61" fill="#6e786c" font-family="sans-serif" font-size="11">概念图 · 仅画两张主卡示例，真实默认前五张</text>
+  <defs>
+    <style>
+      .phone{fill:#f9faf5;stroke:#ccd4c8;stroke-width:2}.card{fill:white;stroke:#d9e0d5;stroke-width:1.2}.slot{fill:#eef2e7}.ink{fill:#27352b;font-family:sans-serif}.muted{fill:#708071;font-family:sans-serif}.accent{fill:#326a4b;font-family:sans-serif}.line{stroke:#e2e8de;stroke-width:1}.pill{fill:#e1ead9}.button{fill:#294f3d}
+    </style>
+  </defs>
+  <g transform="translate(48 82)">
+    <rect class="phone" width="374" height="816" rx="29"/>
+    <text class="muted" x="22" y="37" font-size="11">示例农场</text>
+    <text class="ink" x="22" y="64" font-size="20" font-weight="700">分娩区⌄</text>
+    <text class="accent" x="290" y="59" font-size="13">助手入口</text>
+    <rect class="slot" x="18" y="83" width="338" height="49" rx="14"/>
+    <rect class="card" x="23" y="88" width="139" height="39" rx="11"/>
+    <text class="ink" x="70" y="113" font-size="13">总览</text>
+    <text class="muted" x="200" y="113" font-size="13">选择单元 ⌄</text>
+    <rect class="pill" x="18" y="145" width="338" height="56" rx="14"/>
+    <text class="accent" x="33" y="168" font-size="13" font-weight="700">本机保存 3 条记录</text>
+    <text class="muted" x="33" y="187" font-size="11">无网络 · 等待明确上传</text>
+    <text class="ink" x="18" y="238" font-size="18" font-weight="700">今日工作</text>
+    <text class="muted" x="272" y="237" font-size="11">10 月 12 日</text>
+    <rect class="card" x="18" y="255" width="338" height="160" rx="18"/>
+    <text class="ink" x="35" y="281" font-size="14" font-weight="700">分娩 · 第 28 批</text>
+    <text class="muted" x="35" y="301" font-size="11">进行中 · 涉及 3 个单元</text>
+    <text class="accent" x="35" y="342" font-size="31" font-weight="700">2</text>
+    <text class="ink" x="73" y="340" font-size="13">头正在分娩</text>
+    <text class="muted" x="35" y="362" font-size="11">另有 4 头今日预产</text>
+    <line class="line" x1="35" y1="377" x2="339" y2="377"/>
+    <text class="muted" x="35" y="397" font-size="11">分娩终记录 7 / 18 头</text>
+    <rect class="card" x="18" y="425" width="338" height="133" rx="18"/>
+    <text class="ink" x="35" y="452" font-size="14" font-weight="700">仔猪处理 · 第 27 批</text>
+    <text class="muted" x="35" y="474" font-size="11">进行中 · 下次护理：明天</text>
+    <text class="ink" x="35" y="504" font-size="13">当前无到期护理 · 任务仍在进行</text>
+    <text class="muted" x="35" y="537" font-size="11">全计划护理已完成 1 / 8 窝</text>
+    <rect class="slot" x="18" y="569" width="338" height="40" rx="12"/>
+    <text class="accent" x="77" y="594" font-size="13">查看全部 12 项 · 另有 2 项逾期</text>
+    <text class="ink" x="18" y="640" font-size="16" font-weight="700">接下来 · 未来 7 天</text>
+    <rect class="card" x="18" y="651" width="338" height="65" rx="13"/>
+    <text class="ink" x="32" y="677" font-size="12">断奶检查 · 第 26 批</text>
+    <text class="muted" x="32" y="698" font-size="11">周四开始 · 2 个单元</text>
+    <text class="muted" x="18" y="742" font-size="13">已关闭（今天 3 项）⌄</text>
+    <line class="line" x1="18" y1="770" x2="356" y2="770"/>
+    <text class="accent" x="38" y="796" font-size="13">首页</text>
+    <rect class="button" x="163" y="765" width="50" height="50" rx="25"/>
+    <text x="179" y="797" fill="white" font-family="sans-serif" font-size="22">⌗</text>
+    <text class="muted" x="294" y="796" font-size="13">工具箱</text>
+  </g>
+  <g transform="translate(458 82)">
+    <rect class="phone" width="374" height="816" rx="29"/>
+    <text class="muted" x="22" y="37" font-size="11">示例农场</text>
+    <text class="ink" x="22" y="64" font-size="20" font-weight="700">分娩区⌄</text>
+    <text class="accent" x="290" y="59" font-size="13">助手入口</text>
+    <rect class="slot" x="18" y="83" width="338" height="49" rx="14"/>
+    <text class="muted" x="65" y="113" font-size="13">总览</text>
+    <rect class="card" x="163" y="88" width="187" height="39" rx="11"/>
+    <text class="ink" x="210" y="113" font-size="13">单元 6 ⌄</text>
+    <rect class="pill" x="18" y="145" width="338" height="56" rx="14"/>
+    <text class="accent" x="33" y="168" font-size="13" font-weight="700">本机保存 3 条记录</text>
+    <text class="muted" x="33" y="187" font-size="11">跨分区、单元的本机队列</text>
+    <rect class="card" x="18" y="213" width="338" height="127" rx="18"/>
+    <text class="ink" x="35" y="241" font-size="14" font-weight="700">单元 6 概况</text>
+    <text class="muted" x="35" y="263" font-size="11">当前存栏 8 头 · 已占栏位 4 个</text>
+    <text class="muted" x="35" y="284" font-size="11">今日最近巡检 09:10</text>
+    <text class="accent" x="35" y="318" font-size="13">巡检此单元 →</text>
+    <text class="ink" x="18" y="375" font-size="18" font-weight="700">今日工作</text>
+    <text class="muted" x="272" y="374" font-size="11">10 月 12 日</text>
+    <rect class="card" x="18" y="391" width="338" height="160" rx="18"/>
+    <text class="ink" x="35" y="417" font-size="14" font-weight="700">分娩 · 第 28 批</text>
+    <text class="muted" x="35" y="437" font-size="11">进行中 · 当前单元 6</text>
+    <text class="accent" x="35" y="478" font-size="31" font-weight="700">1</text>
+    <text class="ink" x="73" y="476" font-size="13">头正在分娩</text>
+    <text class="muted" x="35" y="498" font-size="11">另有 2 头今日预产</text>
+    <line class="line" x1="35" y1="513" x2="339" y2="513"/>
+    <text class="muted" x="35" y="533" font-size="11">分娩终记录 4 / 8 头</text>
+    <rect class="card" x="18" y="561" width="338" height="115" rx="18"/>
+    <text class="ink" x="35" y="588" font-size="14" font-weight="700">仔猪处理 · 第 27 批</text>
+    <text class="muted" x="35" y="610" font-size="11">进行中 · 下次护理：明天</text>
+    <text class="ink" x="35" y="640" font-size="13">当前无到期护理</text>
+    <text class="muted" x="35" y="660" font-size="11">全计划护理已完成 1 / 4 窝</text>
+    <text class="muted" x="18" y="742" font-size="13">接下来／已关闭按同一范围过滤</text>
+    <line class="line" x1="18" y1="770" x2="356" y2="770"/>
+    <text class="accent" x="38" y="796" font-size="13">首页</text>
+    <rect class="button" x="163" y="765" width="50" height="50" rx="25"/>
+    <text x="179" y="797" fill="white" font-family="sans-serif" font-size="22">⌗</text>
+    <text class="muted" x="294" y="796" font-size="13">工具箱</text>
+  </g>
+</svg>

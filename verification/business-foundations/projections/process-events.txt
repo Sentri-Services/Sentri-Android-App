@@ -1,0 +1,2 @@
+10-09 19:21:58.326 24027 24041 I System.out: PROJECTION_PREPARED serverSnapshots=2 metadata=1 commands=2 previewPersisted=false
+10-09 19:22:11.982 24067 24080 I System.out: PROJECTION_RESTORED newProcess=true serverSnapshots=2 metadata=1 commands=2 unknownResends=0 dependentPreviewBlocked=true confirmedCacheUnchanged=true

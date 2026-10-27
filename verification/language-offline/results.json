@@ -1,0 +1,67 @@
+{
+  "date": "2026-10-09",
+  "status": "complete",
+  "jvm": {
+    "tests": 67,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "android": {
+    "executed": 30,
+    "failed": 0,
+    "defaultOptInSkipped": 3,
+    "scope": "Android 16/API 36 emulator; 2 live backend tests and 1 staged process test skipped by default"
+  },
+  "processRestore": {
+    "prepareExecuted": 1,
+    "restoreExecuted": 1,
+    "differentProcessAsserted": true,
+    "languagePersisted": true,
+    "inFlightToUncertain": true,
+    "automaticResends": 0,
+    "simulatedReceiptConfirmed": true
+  },
+  "language": {
+    "resourceEntries": 127,
+    "enumMappings": 41,
+    "noLanguagePickerOrScreenChanges": true,
+    "requestLanguageGuardTestPassed": true,
+    "accountLanguageCacheTestPassed": true
+  },
+  "graphql": {
+    "operations": 9,
+    "consumedFields": 115,
+    "checkerScenarios": 8,
+    "manifestSha256": "c63b9079e0d35955eb1e66fd9d6afb8abbb07e130c4cb5e3da37f87770b00c52",
+    "realBackendWrites": 0,
+    "testsUseMockWebServer": true
+  },
+  "offline": {
+    "sqliteTests": 6,
+    "dispatcherUsesSimulatedTransportOnlyInTests": true,
+    "realTransportRegistered": false,
+    "automaticWorkerRegistered": false
+  },
+  "builds": {
+    "verifyScript": true,
+    "devDebug": true,
+    "demoDebug": true,
+    "prodDebug": true
+  },
+  "references": [
+    {
+      "repository": "Sentri",
+      "head": "4c1a2ff49e8d938e1af053d844018cc140c63f38",
+      "worktreeClean": true
+    },
+    {
+      "repository": "Sentri-Android",
+      "head": "ee0f6c333fa99014ca067fc5b47c538d36285cff",
+      "worktreeClean": true
+    }
+  ],
+  "releaseTriggered": false,
+  "versionsIncremented": false,
+  "legacyIndexedDbSwitchedOrCleared": false
+}

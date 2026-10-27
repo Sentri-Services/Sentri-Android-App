@@ -1,0 +1,54 @@
+{
+  "uiFiles": [
+    {
+      "path": "app/src/main/java/com/sentri/nativeapp/MainActivity.kt",
+      "unchanged": true
+    },
+    {
+      "path": "app/src/main/java/com/sentri/nativeapp/devices/DeviceVerificationScreen.kt",
+      "unchanged": true
+    },
+    {
+      "path": "app/src/main/java/com/sentri/nativeapp/pigs/PigScreen.kt",
+      "unchanged": true
+    },
+    {
+      "path": "app/src/main/java/com/sentri/nativeapp/ui/ConnectionScreen.kt",
+      "unchanged": true
+    },
+    {
+      "path": "app/src/main/java/com/sentri/nativeapp/ui/ConnectionViewModel.kt",
+      "unchanged": true
+    },
+    {
+      "path": "app/src/main/java/com/sentri/nativeapp/ui/LoginWebView.kt",
+      "unchanged": true
+    },
+    {
+      "path": "app/src/main/java/com/sentri/nativeapp/update/ApkUpdateScreen.kt",
+      "unchanged": true
+    },
+    {
+      "path": "app/src/main/res/values/styles.xml",
+      "unchanged": true
+    }
+  ],
+  "releaseAndVersionFiles": [
+    "versions.properties",
+    "deployment/contract.json",
+    "scripts/release.py",
+    "scripts/apk_release.py",
+    ".github/workflows/android.yml"
+  ],
+  "releaseAndVersionConfigDiffEmpty": true,
+  "references": {
+    "Sentri": {
+      "head": "4c1a2ff49e8d938e1af053d844018cc140c63f38",
+      "workingTreeClean": true
+    },
+    "Sentri-Android": {
+      "head": "ee0f6c333fa99014ca067fc5b47c538d36285cff",
+      "workingTreeClean": true
+    }
+  }
+}

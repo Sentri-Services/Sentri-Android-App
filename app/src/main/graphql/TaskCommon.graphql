@@ -1,0 +1,6 @@
+mutation NativeMarkTaskPig($input: ProductionMarkTaskPigCommandStrawberryInput!) {
+  production { mark_task_pig(command_input: $input) { status errors { err_msg } } }
+}
+mutation NativeCompleteProductionTask($input: ProductionCompleteTaskCommandStrawberryInput!) {
+  production { complete_task(command_input: $input) { status errors { err_msg } } }
+}

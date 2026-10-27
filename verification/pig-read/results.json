@@ -1,0 +1,78 @@
+{
+  "tests": 60,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "device": {
+    "executed": 22,
+    "failed": 0,
+    "optInSkipped": 2,
+    "scope": "Android 16 / API 36 emulator; standard suite final code, encrypted session/OIDC/cache/Compose/device SDK/update tests"
+  },
+  "liveOnline": {
+    "executed": 1,
+    "passed": true,
+    "units": 3,
+    "pens": 11,
+    "selectedUnitTotal": 200,
+    "checks": [
+      "authenticated dev",
+      "farm scope",
+      "offset paging",
+      "case-sensitive ear search",
+      "pen filter when present",
+      "detail",
+      "database reopen"
+    ]
+  },
+  "liveOffline": {
+    "executed": 1,
+    "passed": true,
+    "activeNetwork": false,
+    "freshProcess": true,
+    "checks": [
+      "persisted session",
+      "cached account",
+      "browse restoration",
+      "locations network fallback",
+      "page network fallback",
+      "detail network fallback"
+    ]
+  },
+  "uiOfflineRestart": {
+    "businessEntry": true,
+    "accountCacheLabel": true,
+    "restoredDetail": true,
+    "cacheTimestampLabel": true,
+    "refreshFailureLabel": true
+  },
+  "networkRestored": true,
+  "releaseTriggered": false,
+  "status": "complete within the A/B/C phase scope; physical hardware and later business write rollout remain explicitly unverified",
+  "date": "2026-10-09",
+  "logoutRestart": {
+    "logoutTapped": true,
+    "tokenRevocationSucceeded": true,
+    "localSessionCleared": true,
+    "freshProcess": true,
+    "loginEntryVisible": true,
+    "businessEntryHidden": true,
+    "deviceEntryHidden": true,
+    "logoutEntryHidden": true,
+    "sessionPreferenceAbsent": true,
+    "pendingPreferenceAbsent": true
+  },
+  "hardware": {
+    "physicalScannerVerified": false,
+    "physicalUsbRfidVerified": false,
+    "simulatedEventTestsPassed": true,
+    "androidSdkNoDeviceTestPassed": true
+  },
+  "builds": {
+    "verifyScriptPassed": true,
+    "devDebug": true,
+    "demoDebug": true,
+    "prodDebug": true,
+    "localMinifiedDevRelease": true
+  }
+}

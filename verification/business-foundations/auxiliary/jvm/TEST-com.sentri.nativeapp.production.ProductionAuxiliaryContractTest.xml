@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.sentri.nativeapp.production.ProductionAuxiliaryContractTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2026-10-10T02:27:01.775Z" hostname="Mac" time="0.468">
+  <properties/>
+  <testcase name="invalidRelationshipsCodesFiltersAndDuplicateRowsAreRefused" classname="com.sentri.nativeapp.production.ProductionAuxiliaryContractTest" time="0.426"/>
+  <testcase name="absentAndDefaultBatchDetailsRemainDistinct" classname="com.sentri.nativeapp.production.ProductionAuxiliaryContractTest" time="0.009"/>
+  <testcase name="recheckViewKeepsLocalizedLocationExactTimeAndTaskPigIdentity" classname="com.sentri.nativeapp.production.ProductionAuxiliaryContractTest" time="0.016"/>
+  <testcase name="batchPaginationKeepsLineStatePlansAndExtraRowProof" classname="com.sentri.nativeapp.production.ProductionAuxiliaryContractTest" time="0.007"/>
+  <testcase name="changedScopeAndInvalidRequestCannotYieldUsableData" classname="com.sentri.nativeapp.production.ProductionAuxiliaryContractTest" time="0.008"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

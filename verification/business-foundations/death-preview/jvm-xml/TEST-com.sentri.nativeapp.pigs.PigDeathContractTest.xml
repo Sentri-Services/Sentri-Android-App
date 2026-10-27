@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.sentri.nativeapp.pigs.PigDeathContractTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2026-10-10T04:16:18.930Z" hostname="Mac" time="0.051">
+  <properties/>
+  <testcase name="reportWirePreservesAnonymousMaternalAndActualPigsAndImageOrder" classname="com.sentri.nativeapp.pigs.PigDeathContractTest" time="0.021"/>
+  <testcase name="authenticationFailureDoesNotReplayReport" classname="com.sentri.nativeapp.pigs.PigDeathContractTest" time="0.005"/>
+  <testcase name="receiptCodecPreservesEscapedServerFieldsAndRejectsIncompleteOrCoercedProof" classname="com.sentri.nativeapp.pigs.PigDeathContractTest" time="0.004"/>
+  <testcase name="failureAndMalformedSuccessNeverBecomeConfirmedUploads" classname="com.sentri.nativeapp.pigs.PigDeathContractTest" time="0.014"/>
+  <testcase name="uploadWireRetainsOriginalDataAndBothReceiptFields" classname="com.sentri.nativeapp.pigs.PigDeathContractTest" time="0.006"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

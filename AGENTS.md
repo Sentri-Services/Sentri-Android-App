@@ -1,13 +1,14 @@
 # Sentri 原生 Android
 
-本项目以 Kotlin + Compose 重构现有 UI 与架构。业务规则与后端契约沿用参考项目。当前阶段是工程基础、GraphQL 与 Logto 登录接入，正式设计规范尚未提供。
+本项目以 Kotlin + Compose 重构现有 UI 与架构。业务规则与后端契约沿用参考项目。原生业务 UI 开发参照相邻的 Sentri-UI；设计成熟度按具体 feature 核对。
 
 ## 开始工作
 
 - 先看 [README.md](README.md) 的命令和目录；认证或接口改动再读 [接入说明](docs/integration.md)。
 - 技术决定见 [ADR](docs/adr/0001-foundation.md)，当前结果和剩余项见 [进度](docs/status.md)。
+- 开发业务界面时，按 [Sentri-UI 实现与反哺流程](../Sentri-UI/docs/implementation-workflow.md) 读取 `../Sentri-UI/features/<slug>/PRD.md`、`feature.json`、原型和组件规则，记录设计版本，并把实现发现回写设计源。
 - `../Sentri-Android` 和 `../Sentri/mobile_webapp` 只读参考。不要把旧 Web 的样式/代码约定直接套给新原生工程。
-- 使用标准 Compose 组件验证接入，等待产品给出设计规范后再建立设计系统。
+- 接入验证页可使用标准 Compose 组件；业务 UI 按对应 feature 的已确认设计实现。占位、设计中和候选内容按未决状态处理。
 
 ## 实现边界
 

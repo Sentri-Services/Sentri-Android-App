@@ -1,0 +1,33 @@
+{
+  "referenceHead": "4c1a2ff49e8d938e1af053d844018cc140c63f38",
+  "sources": [
+    {
+      "path": "backend/apps/production_v2/src/production_v2/domain/models/pig.py",
+      "sha256": "e94c5983a9957c8960832eba845df862c69e79e3dc4f240ffa1db78fae16cec7"
+    },
+    {
+      "path": "backend/apps/production_v2/src/production_v2/domain/services/pig_lifecycle.py",
+      "sha256": "f87b216701f21b287c34ba6fdb53c33a9ff3feb4a071cb3db1e295922fbb0f77"
+    },
+    {
+      "path": "backend/apps/production_v2/src/production_v2/adapters/repository.py",
+      "sha256": "192e1f07bdc857413641a7bda0de0325931e4c3295a5f12d7b00caa4f609e347"
+    },
+    {
+      "path": "backend/apps/production_v2/src/production_v2/service_layer/handlers/commands/pig.py",
+      "sha256": "f3b604878abe3d14ead916b570e3ab944670cb6460e36d4ae50b5390766be189"
+    },
+    {
+      "path": "backend/apps/production_v2/src/production_v2/service_layer/handlers/commands/utils/pig_task_membership.py",
+      "sha256": "dad9f6ecf43b6e1773cdc7d564f3651eb45a3d68482523a812775a919df64c9f"
+    }
+  ],
+  "rules": [
+    "Death report validates unresolved sow litters for every actual pig before applying any row. SDL lacks is_exported, so no default is guessed.",
+    "Death membership includes PLANNED/SCHEDULED/RUNNING across batches; actual per-type query returns first row without order, so multiple matches cannot be selected deterministically.",
+    "Maternal death side effects reduce all related lactation/farrowing/piglet handling litters; first matching identity by nonempty tag OR notch is removed, anonymous count clamps at zero.",
+    "Known absent actual pig and repeated DEAD pig are skipped; mother reference is modified litter owner, never a death target.",
+    "Actual death writes truthy location_code; full location relation awaits a read if changed.",
+    "Unexposed death mortality/export flags and server-generated image metadata, ids and timestamps remain pending."
+  ]
+}

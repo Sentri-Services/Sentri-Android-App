@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.sentri.nativeapp.devices.DeviceReadTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2026-10-10T02:35:57.561Z" hostname="Mac" time="0.006">
+  <properties/>
+  <testcase name="rfid timeout cancellation disconnect and failure stop inventory exactly once" classname="com.sentri.nativeapp.devices.DeviceReadTest" time="0.003"/>
+  <testcase name="keyboard accepts only selected device key down frame once and preserves content" classname="com.sentri.nativeapp.devices.DeviceReadTest" time="0.0"/>
+  <testcase name="rfid duplicate late result and old timeout cannot complete the new request" classname="com.sentri.nativeapp.devices.DeviceReadTest" time="0.002"/>
+  <testcase name="keyboard timeout disconnect cancel and malformed frames do not produce identifiers" classname="com.sentri.nativeapp.devices.DeviceReadTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

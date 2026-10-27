@@ -1,0 +1,38 @@
+query NativeLocations($farmId: String!) {
+  units: farm_view_farm_unit(where: {farm_id: {_eq: $farmId}}, order_by: {unit_id: asc}) {
+    unit_id farm_id name_cn name_en code area_type
+    section { section_id code name_cn name_en zone { code name_cn name_en } }
+  }
+  pens: farm_view_pen_index(where: {farm_id: {_eq: $farmId}}, order_by: {id: asc}) {
+    id farm_id unit_id pen_location pen_number unit_location
+  }
+}
+query NativePigList($where: farm_view_pig_bool_exp!, $offset: Int!, $limit: Int!) {
+  pigs: farm_view_pig(where: $where, order_by: {id: asc}, offset: $offset, limit: $limit) {
+    id farm_id ear_tag ear_notch location_code role sex lifecycle_status
+    last_production_status sow_parity weight birthday entry_date remark
+    current_batch { id sn }
+    location { unit_id unit_location pen_location pen_number row { code } }
+    healthy {
+      triage_level body_temperature_celsius
+      symptoms { symptom { id name_cn name_en } }
+      diseases { disease { id name_cn name_en } }
+    }
+  }
+  count: farm_view_pig_aggregate(where: $where) { aggregate { count } }
+}
+query NativePigDetail($id: String!, $farmId: String!) {
+  pigs: farm_view_pig(where: {id: {_eq: $id}, farm_id: {_eq: $farmId}}, limit: 1) {
+    id farm_id ear_tag ear_notch location_code role sex lifecycle_status
+    last_production_status sow_parity weight birthday entry_date remark
+    current_batch { id sn }
+    location { unit_id unit_location pen_location pen_number row { code } }
+    healthy {
+      triage_level body_temperature_celsius
+      symptoms { symptom { id name_cn name_en } }
+      diseases { disease { id name_cn name_en } }
+    }
+    death_image_urls
+    healthy { healthy_records { id created_at healthy_event remark symptoms diseases } }
+  }
+}

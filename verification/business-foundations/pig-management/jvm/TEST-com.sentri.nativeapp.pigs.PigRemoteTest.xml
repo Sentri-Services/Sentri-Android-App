@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.sentri.nativeapp.pigs.PigRemoteTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2026-10-10T02:35:57.986Z" hostname="Mac" time="0.033">
+  <properties/>
+  <testcase name="cross farm response is rejected" classname="com.sentri.nativeapp.pigs.PigRemoteTest" time="0.012"/>
+  <testcase name="list weight and detail temperature and health json never pass through rounded doubles" classname="com.sentri.nativeapp.pigs.PigRemoteTest" time="0.012"/>
+  <testcase name="query combines scope literal search deterministic paging and typed scalars" classname="com.sentri.nativeapp.pigs.PigRemoteTest" time="0.005"/>
+  <testcase name="malformed timestamp is protocol failure instead of network fallback" classname="com.sentri.nativeapp.pigs.PigRemoteTest" time="0.004"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

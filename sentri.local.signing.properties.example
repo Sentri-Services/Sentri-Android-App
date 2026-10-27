@@ -1,0 +1,6 @@
+# Optional dedicated signing key for local Debug APKs only.
+# Copy to ignored sentri.local.signing.properties after generating your own key.
+storeFile=.local-signing/sentri-native-device-test.jks
+storePassword=replace-with-local-store-password
+keyPassword=replace-with-local-key-password
+keyAlias=sentri-native-device

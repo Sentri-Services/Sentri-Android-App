@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.sentri.nativeapp.production.TaskCommonContractTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2026-10-09T11:17:53.283Z" hostname="Mac" time="0.085">
+  <properties/>
+  <testcase name="absence and context changes are separate from a valid metadata snapshot" classname="com.sentri.nativeapp.production.TaskCommonContractTest" time="0.016"/>
+  <testcase name="catalog refuses foreign relationships duplicate rows wrong filters and totals" classname="com.sentri.nativeapp.production.TaskCommonContractTest" time="0.027"/>
+  <testcase name="common mutations preserve batch kind null remark empty remark and exact time" classname="com.sentri.nativeapp.production.TaskCommonContractTest" time="0.016"/>
+  <testcase name="completed window respects offsets submillisecond precision and every other filter" classname="com.sentri.nativeapp.production.TaskCommonContractTest" time="0.007"/>
+  <testcase name="metadata includes plans siblings pig references materials raw json and exact decimal" classname="com.sentri.nativeapp.production.TaskCommonContractTest" time="0.007"/>
+  <testcase name="home catalog applies farm filters half open completed window and stable order" classname="com.sentri.nativeapp.production.TaskCommonContractTest" time="0.01"/>
+  <testcase name="invalid identities pagination and dates cannot become common requests" classname="com.sentri.nativeapp.production.TaskCommonContractTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -561,6 +561,7 @@ type BiosafetyFarmInfoStrawberryType {
   logo_url: String!
   media_url: String!
   name: String!
+  timezone: String!
   video_domain: String!
 }
 

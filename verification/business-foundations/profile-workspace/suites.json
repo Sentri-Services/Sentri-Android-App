@@ -1,0 +1,1306 @@
+{
+  "jvm": [
+    {
+      "class": "com.sentri.nativeapp.auth.AuthRepositoryTest",
+      "name": "logout after in-flight refresh cannot resurrect session",
+      "skipped": false
+    },
+    {
+      "class": "com.sentri.nativeapp.auth.AuthRepositoryTest",
+      "name": "restores existing session without refresh",
+      "skipped": false
+    },
+    {
+      "class": "com.sentri.nativeapp.auth.AuthRepositoryTest",
+      "name": "old request cannot refresh or invalidate a new login even if token text repeats",
+      "skipped": false
+    },
+    {
+      "class": "com.sentri.nativeapp.auth.AuthRepositoryTest",
+      "name": "logout revokes refresh grant after clearing local state",
+      "skipped": false
+    },
+    {
+      "class": "com.sentri.nativeapp.auth.AuthRepositoryTest",
+      "name": "login completion requires pending request and clears selection",
+      "skipped": false
+    },
+    {
+      "class": "com.sentri.nativeapp.auth.AuthRepositoryTest",
+      "name": "network failure preserves persistent session",
+      "skipped": false
+    },
+    {
+      "class": "com.sentri.nativeapp.auth.AuthRepositoryTest",
+      "name": "concurrent server rejections share refreshed token",
+      "skipped": false
+    },
+    {
+      "class": "com.sentri.nativeapp.auth.AuthRepositoryTest",
+      "name": "context guard is checked after waiting for auth mutex",
+      "skipped": false
+    },
+    {
+      "class": "com.sentri.nativeapp.auth.AuthRepositoryTest",
+      "name": "concurrent expired requests share one refresh",
+      "skipped": false
+    },
+    {
+      "class": "com.sentri.nativeapp.auth.AuthRepositoryTest",
+      "name": "remote revocation failure cannot retain local session",
+      "skipped": false
+    },
+    {
+      "class": "com.sentri.nativeapp.auth.AuthRepositoryTest",
+      "name": "farm selection forces token refresh before persisting context",
+      "skipped": false
+    },
+    {
+      "class": "com.sentri.nativeapp.auth.AuthRepositoryTest",
+      "name": "invalid grant clears persistent session and farm",
+      "skipped": false
+    },
+    {
+      "class": "com.sentri.nativeapp.auth.AuthRepositoryTest",
+      "name": "logout removes pending login and prevents token access",
+      "skipped": false
+    },
+    {
+      "class": "com.sentri.nativeapp.auth.CallbackPolicyTest",
+      "name": "accepts existing synthetic callback with code and state",
+      "skipped": false
+    },
+    {
+      "class": "com.sentri.nativeapp.auth.CallbackPolicyTest",
+      "name": "rejects lookalike hosts userinfo ports paths and schemes",
+      "skipped": false
+    },
+    {
+      "class": "com.sentri.nativeapp.devices.DeviceReadTest",
+      "name": "rfid timeout cancellation disconnect and failure stop inventory exactly once",
+      "skipped": false
+    },
+    {
+      "class": "com.sentri.nativeapp.devices.DeviceReadTest",
+      "name": "keyboard accepts only selected device key down frame once and preserves content",
+      "skipped": false
+    },
+    {
+      "class": "com.sentri.nativeapp.devices.DeviceReadTest",
+      "name": "rfid duplicate late result and old timeout cannot complete the new request",
+      "skipped": false
+    },
+    {
+      "class": "com.sentri.nativeapp.devices.DeviceReadTest",
+      "name": "keyboard timeout disconnect cancel and malformed frames do not produce identifiers",
+      "skipped": false
+    },
+    {
+      "class": "com.sentri.nativeapp.i18n.AppLanguageTest",
+      "name": "selection persists resolves system changes and unsupported languages",
+      "skipped": false
+    },
+    {
+      "class": "com.sentri.nativeapp.i18n.AppLanguageTest",
+      "name": "formatting keeps precision uses explicit timezone and bilingual fallback",
+      "skipped": false
+    },
+    {
+      "class": "com.sentri.nativeapp.i18n.AppLanguageTest",
+      "name": "enum keys preserve canonical case unknown values and domain distinctions",
+      "skipped": false
+    },
+    {
+      "class": "com.sentri.nativeapp.network.AuthErrorPolicyTest",
+      "name": "recognizes existing Hasura and Logto expiry errors",
+      "skipped": false
+    },
+    {
+      "class": "com.sentri.nativeapp.network.AuthErrorPolicyTest",
+      "name": "permission and business failures do not trigger token refresh",
+      "skipped": false
+    },
+    {
+      "class": "com.sentri.nativeapp.network.GraphqlFarmRepositoryTest",
+      "name": "native request sends current token language and exact operation",
+      "skipped": false
+    },
+    {
+      "class": "com.sentri.nativeapp.network.GraphqlFarmRepositoryTest",
+      "name": "HTTP 503 is a network failure and preserves session",
+      "skipped": false
+    },
+    {
+      "class": "com.sentri.nativeapp.network.GraphqlFarmRepositoryTest",
+      "name": "mutation is never replayed after authentication failure",
+      "skipped": false
+    },
+    {
+      "class": "com.sentri.nativeapp.network.GraphqlFarmRepositoryTest",
+      "name": "HTTP 401 has the same refresh behavior",
+      "skipped": false
+    },
+    {
+      "class": "com.sentri.nativeapp.network.GraphqlFarmRepositoryTest",
+      "name": "repeated authentication failure clears session instead of looping",
+      "skipped": false
+    },
+    {
+      "class": "com.sentri.nativeapp.network.GraphqlFarmRepositoryTest",
+      "name": "query authentication failure refreshes and retries once",
+      "skipped": false
+    },
+    {
+      "class": "com.sentri.nativeapp.network.GraphqlFarmRepositoryTest",
+      "name": "business failure preserves session without refreshing",
+      "skipped": false
+    },
+    {
+      "class": "com.sentri.nativeapp.offline.CommandPolicyTest",
+      "name": "explicit dependencies wait for completion cancellation and correct scope",
+      "skipped": false
+    },
+    {
+      "class": "com.sentri.nativeapp.offline.CommandPolicyTest",
+      "name": "auth context network and delay gate scheduling",
+      "skipped": false
+    },
+    {
+      "class": "com.sentri.nativeapp.offline.CommandPolicyTest",
+      "name": "process death or timeout requires reconciliation instead of replay",
+      "skipped": false
+    },
+    {
+      "class": "com.sentri.nativeapp.offline.CommandPolicyTest",
+      "name": "same timestamp preserves check submit and mating order",
+      "skipped": false
+    },
+    {
+      "class": "com.sentri.nativeapp.offline.CommandPolicyTest",
+      "name": "shared entities serialize and failed predecessor blocks without affecting another scope",
+      "skipped": false
+    },
+    {
+      "class": "com.sentri.nativeapp.pigs.PigContractTest",
+      "name": "logout and login to same farm cannot reuse an old lease",
+      "skipped": false
+    },
+    {
+      "class": "com.sentri.nativeapp.pigs.PigContractTest",
+      "name": "farm changes invalidate leases and token refresh does not",
+      "skipped": false
+    },
+    {
+      "class": "com.sentri.nativeapp.pigs.PigContractTest",
+      "name": "cache keys distinguish case null delimiters filters offset and page size",
+      "skipped": false
+    },
+    {
+      "class": "com.sentri.nativeapp.pigs.PigContractTest",
+      "name": "timestamps retain timezone microseconds and reject invalid calendar dates",
+      "skipped": false
+    },
+    {
+      "class": "com.sentri.nativeapp.pigs.PigContractTest",
+      "name": "case sensitive literal search and unit regex preserve web semantics",
+      "skipped": false
+    },
+    {
+      "class": "com.sentri.nativeapp.pigs.PigContractTest",
+      "name": "decimal and nested JSON preserve precision and null values",
+      "skipped": false
+    },
+    {
+      "class": "com.sentri.nativeapp.pigs.PigDeathContractTest",
+      "name": "reportWirePreservesAnonymousMaternalAndActualPigsAndImageOrder",
+      "skipped": false
+    },
+    {
+      "class": "com.sentri.nativeapp.pigs.PigDeathContractTest",
+      "name": "authenticationFailureDoesNotReplayReport",
+      "skipped": false
+    },
+    {
+      "class": "com.sentri.nativeapp.pigs.PigDeathContractTest",
+      "name": "receiptCodecPreservesEscapedServerFieldsAndRejectsIncompleteOrCoercedProof",
+      "skipped": false
+    },
+    {
+      "class": "com.sentri.nativeapp.pigs.PigDeathContractTest",
+      "name": "failureAndMalformedSuccessNeverBecomeConfirmedUploads",
+      "skipped": false
+    },
+    {
+      "class": "com.sentri.nativeapp.pigs.PigDeathContractTest",
+      "name": "uploadWireRetainsOriginalDataAndBothReceiptFields",
+      "skipped": false
+    },
+    {
+      "class": "com.sentri.nativeapp.pigs.PigManagementContractTest",
+      "name": "backendRefusalRemainsARefusalAndNewOperationsDoNotRetryWrites",
+      "skipped": false
+    },
+    {
+      "class": "com.sentri.nativeapp.pigs.PigManagementContractTest",
+      "name": "propertyWireKeepsNullEmptyZeroAndPreciseDecimalString",
+      "skipped": false
+    },
+    {
+      "class": "com.sentri.nativeapp.pigs.PigManagementContractTest",
+      "name": "allBreederActionsKeepIdentityParentIdsSelectionOrderAndCapturedTime",
+      "skipped": false
+    },
+    {
+      "class": "com.sentri.nativeapp.pigs.PigProfileRemoteTest",
+      "name": "contextChangedAfterResponseIsRejectedBeforeReturningProfiles",
+      "skipped": false
+    },
+    {
+      "class": "com.sentri.nativeapp.pigs.PigProfileRemoteTest",
+      "name": "fullWireMapsPreciseScalarsRelationsReferencesAndMissingValues",
+      "skipped": false
+    },
+    {
+      "class": "com.sentri.nativeapp.pigs.PigProfileRemoteTest",
+      "name": "unknownReadCodesAreRetainedAndUnavailablePigRemainsAbsent",
+      "skipped": false
+    },
+    {
+      "class": "com.sentri.nativeapp.pigs.PigProfileRemoteTest",
+      "name": "wrongScopeReferencesDuplicateRowsMissingCountAndMalformedDatesAreRejected",
+      "skipped": false
+    },
+    {
+      "class": "com.sentri.nativeapp.pigs.PigProfileRemoteTest",
+      "name": "typedFiltersOrderingCountOptOutAndEmptyIdsHaveDistinctWireMeaning",
+      "skipped": false
+    },
+    {
+      "class": "com.sentri.nativeapp.pigs.PigRemoteTest",
+      "name": "cross farm response is rejected",
+      "skipped": false
+    },
+    {
+      "class": "com.sentri.nativeapp.pigs.PigRemoteTest",
+      "name": "list weight and detail temperature and health json never pass through rounded doubles",
+      "skipped": false
+    },
+    {
+      "class": "com.sentri.nativeapp.pigs.PigRemoteTest",
+      "name": "query combines scope literal search deterministic paging and typed scalars",
+      "skipped": false
+    },
+    {
+      "class": "com.sentri.nativeapp.pigs.PigRemoteTest",
+      "name": "malformed timestamp is protocol failure instead of network fallback",
+      "skipped": false
+    },
+    {
+      "class": "com.sentri.nativeapp.pigs.PigViewModelTest",
+      "name": "pagination failure keeps current page and retry uses failed offset",
+      "skipped": false
+    },
+    {
+      "class": "com.sentri.nativeapp.pigs.PigViewModelTest",
+      "name": "cancelled filter cannot overwrite newer response even if dependency ignores cancellation",
+      "skipped": false
+    },
+    {
+      "class": "com.sentri.nativeapp.pigs.PigViewModelTest",
+      "name": "logout invalidates displayed data and late responses",
+      "skipped": false
+    },
+    {
+      "class": "com.sentri.nativeapp.pigs.PigViewModelTest",
+      "name": "restored detail and cache mode remain saved and detail failure can retry",
+      "skipped": false
+    },
+    {
+      "class": "com.sentri.nativeapp.production.CareContractTest",
+      "name": "farrowing mutation retains partial state zero and null versus empty counts",
+      "skipped": false
+    },
+    {
+      "class": "com.sentri.nativeapp.production.CareContractTest",
+      "name": "invalid care IDs weights and timestamp fail before network",
+      "skipped": false
+    },
+    {
+      "class": "com.sentri.nativeapp.production.CareContractTest",
+      "name": "foreign nested owners unknown codes duplicate identities and negative quantities reject whole query",
+      "skipped": false
+    },
+    {
+      "class": "com.sentri.nativeapp.production.CareContractTest",
+      "name": "unified foster derives stage at backend while retaining recipient selection and zero",
+      "skipped": false
+    },
+    {
+      "class": "com.sentri.nativeapp.production.CareContractTest",
+      "name": "queries preserve nested piglet data numeric precision time and raw json",
+      "skipped": false
+    },
+    {
+      "class": "com.sentri.nativeapp.production.CareContractTest",
+      "name": "piglet item and information inputs preserve selections identity and decimal wire strings",
+      "skipped": false
+    },
+    {
+      "class": "com.sentri.nativeapp.production.CareContractTest",
+      "name": "weight mutation keeps exact decimal and business refusal",
+      "skipped": false
+    },
+    {
+      "class": "com.sentri.nativeapp.production.EstrusContractTest",
+      "name": "language switch rejects delayed response without clearing authenticated session",
+      "skipped": false
+    },
+    {
+      "class": "com.sentri.nativeapp.production.EstrusContractTest",
+      "name": "slice query scopes task and pigs preserves enum date and language",
+      "skipped": false
+    },
+    {
+      "class": "com.sentri.nativeapp.production.EstrusContractTest",
+      "name": "compiled mutation sends canonical input explicit null and no assumed dedupe header",
+      "skipped": false
+    },
+    {
+      "class": "com.sentri.nativeapp.production.EstrusContractTest",
+      "name": "submit contract keeps ordered IDs explicit null default and override",
+      "skipped": false
+    },
+    {
+      "class": "com.sentri.nativeapp.production.EstrusContractTest",
+      "name": "absent task differs from malformed response and input keeps explicit null",
+      "skipped": false
+    },
+    {
+      "class": "com.sentri.nativeapp.production.MatingContractTest",
+      "name": "cross farm material and foreign task or pig records are rejected",
+      "skipped": false
+    },
+    {
+      "class": "com.sentri.nativeapp.production.MatingContractTest",
+      "name": "invalid identity and local batch placeholders cannot become server semen IDs",
+      "skipped": false
+    },
+    {
+      "class": "com.sentri.nativeapp.production.MatingContractTest",
+      "name": "both mutation contracts use correct IDs and explicitly disable automatic estrus",
+      "skipped": false
+    },
+    {
+      "class": "com.sentri.nativeapp.production.MatingContractTest",
+      "name": "read keeps material history precision and farm scope",
+      "skipped": false
+    },
+    {
+      "class": "com.sentri.nativeapp.production.PigManagementProjectionTest",
+      "name": "role identity updates common metadata but completed growing aggregate keeps its breeder flag",
+      "skipped": false
+    },
+    {
+      "class": "com.sentri.nativeapp.production.PigManagementProjectionTest",
+      "name": "property null is no change while zero empty and exact decimals propagate to growing fields",
+      "skipped": false
+    },
+    {
+      "class": "com.sentri.nativeapp.production.PigManagementProjectionTest",
+      "name": "unknown result blocks same pig production while successful role requires read reflection",
+      "skipped": false
+    },
+    {
+      "class": "com.sentri.nativeapp.production.PigManagementProjectionTest",
+      "name": "both cancel actions require breeder and inactive pigs cannot be revived by properties",
+      "skipped": false
+    },
+    {
+      "class": "com.sentri.nativeapp.production.PigManagementProjectionTest",
+      "name": "changed identities propagate to all ten task pig relationships and leave unrelated pigs unchanged",
+      "skipped": false
+    },
+    {
+      "class": "com.sentri.nativeapp.production.PigManagementProjectionTest",
+      "name": "duplicate role targets preserve backend last input and repeated aggregate rejection atomically",
+      "skipped": false
+    },
+    {
+      "class": "com.sentri.nativeapp.production.PigManagementProjectionTest",
+      "name": "missing identity sex profile or grower result does not partially change a batch",
+      "skipped": false
+    },
+    {
+      "class": "com.sentri.nativeapp.production.PigManagementProjectionTest",
+      "name": "unknown growing identity update and role changes block each other across task location groups",
+      "skipped": false
+    },
+    {
+      "class": "com.sentri.nativeapp.production.PigManagementProjectionTest",
+      "name": "scope validation and deterministic recomputation retain confirmed original profiles",
+      "skipped": false
+    },
+    {
+      "class": "com.sentri.nativeapp.production.PigManagementProjectionTest",
+      "name": "mark role uses updated sex and identity and upgrade ignores supplied sex and parents",
+      "skipped": false
+    },
+    {
+      "class": "com.sentri.nativeapp.production.PigManagementProjectionTest",
+      "name": "explicit writes update stale task fields even when equal to the separately read profile",
+      "skipped": false
+    },
+    {
+      "class": "com.sentri.nativeapp.production.ProductionAuxiliaryContractTest",
+      "name": "invalidRelationshipsCodesFiltersAndDuplicateRowsAreRefused",
+      "skipped": false
+    },
+    {
+      "class": "com.sentri.nativeapp.production.ProductionAuxiliaryContractTest",
+      "name": "absentAndDefaultBatchDetailsRemainDistinct",
+      "skipped": false
+    },
+    {
+      "class": "com.sentri.nativeapp.production.ProductionAuxiliaryContractTest",
+      "name": "recheckViewKeepsLocalizedLocationExactTimeAndTaskPigIdentity",
+      "skipped": false
+    },
+    {
+      "class": "com.sentri.nativeapp.production.ProductionAuxiliaryContractTest",
+      "name": "batchPaginationKeepsLineStatePlansAndExtraRowProof",
+      "skipped": false
+    },
+    {
+      "class": "com.sentri.nativeapp.production.ProductionAuxiliaryContractTest",
+      "name": "changedScopeAndInvalidRequestCannotYieldUsableData",
+      "skipped": false
+    },
+    {
+      "class": "com.sentri.nativeapp.production.ProductionProjectionTest",
+      "name": "successful receipts require read reconciliation before adding more stock",
+      "skipped": false
+    },
+    {
+      "class": "com.sentri.nativeapp.production.ProductionProjectionTest",
+      "name": "mating attempts use local operation identities without fabricating server execution records",
+      "skipped": false
+    },
+    {
+      "class": "com.sentri.nativeapp.production.ProductionProjectionTest",
+      "name": "estrus preview gates next mating membership on actual or auto estrus and remains batch scoped",
+      "skipped": false
+    },
+    {
+      "class": "com.sentri.nativeapp.production.ProductionProjectionTest",
+      "name": "unknown rejected dependencies and cycles retain intents without changing server values",
+      "skipped": false
+    },
+    {
+      "class": "com.sentri.nativeapp.production.ProductionProjectionTest",
+      "name": "mark and completion retain existing status and cannot borrow a different batch",
+      "skipped": false
+    },
+    {
+      "class": "com.sentri.nativeapp.production.ProductionProjectionTest",
+      "name": "scope isolation restart style recomputation and integer overflow keep snapshots unchanged",
+      "skipped": false
+    },
+    {
+      "class": "com.sentri.nativeapp.production.ProductionProjectionTest",
+      "name": "foster transfers both mothers and cross task counts atomically with exact identity weight",
+      "skipped": false
+    },
+    {
+      "class": "com.sentri.nativeapp.production.ProductionProjectionTest",
+      "name": "lactation foster preserves breeder and missing identity selectors do not partially transfer",
+      "skipped": false
+    },
+    {
+      "class": "com.sentri.nativeapp.production.ProductionProjectionTest",
+      "name": "growing aggregate remains atomic and nursery does not fabricate fattening locations",
+      "skipped": false
+    },
+    {
+      "class": "com.sentri.nativeapp.production.ProductionProjectionTest",
+      "name": "postpartum preserves all prolapse input and lactation absent assessment keeps old check",
+      "skipped": false
+    },
+    {
+      "class": "com.sentri.nativeapp.production.ProductionProjectionTest",
+      "name": "re estrus and pregnancy submissions apply typed results and cross task disable in dependency order",
+      "skipped": false
+    },
+    {
+      "class": "com.sentri.nativeapp.production.ProductionProjectionTest",
+      "name": "farrowing cumulative snapshots only grow stock and retain server records separately",
+      "skipped": false
+    },
+    {
+      "class": "com.sentri.nativeapp.production.ProductionProjectionTest",
+      "name": "piglet information replaces identities preserves decimal and handles null differently from weight",
+      "skipped": false
+    },
+    {
+      "class": "com.sentri.nativeapp.production.StageContractTest",
+      "name": "growing pair sends entire location aggregate identities decimal zero and null",
+      "skipped": false
+    },
+    {
+      "class": "com.sentri.nativeapp.production.StageContractTest",
+      "name": "invalid location identity quantities and stage cannot become network input",
+      "skipped": false
+    },
+    {
+      "class": "com.sentri.nativeapp.production.StageContractTest",
+      "name": "missing task absent check and context switch remain separate",
+      "skipped": false
+    },
+    {
+      "class": "com.sentri.nativeapp.production.StageContractTest",
+      "name": "postpartum wire preserves nullable prolapse and explicit obsoletion",
+      "skipped": false
+    },
+    {
+      "class": "com.sentri.nativeapp.production.StageContractTest",
+      "name": "queries preserve sow raw json lactation identity and nursery location aggregates",
+      "skipped": false
+    },
+    {
+      "class": "com.sentri.nativeapp.production.StageContractTest",
+      "name": "foreign ownership negative quantities and unknown identity sex reject snapshots",
+      "skipped": false
+    },
+    {
+      "class": "com.sentri.nativeapp.production.StageContractTest",
+      "name": "lactation allows absent sow assessment and retains empty lists differently from piglet info",
+      "skipped": false
+    },
+    {
+      "class": "com.sentri.nativeapp.production.TaskCommonContractTest",
+      "name": "absence and context changes are separate from a valid metadata snapshot",
+      "skipped": false
+    },
+    {
+      "class": "com.sentri.nativeapp.production.TaskCommonContractTest",
+      "name": "catalog refuses foreign relationships duplicate rows wrong filters and totals",
+      "skipped": false
+    },
+    {
+      "class": "com.sentri.nativeapp.production.TaskCommonContractTest",
+      "name": "common mutations preserve batch kind null remark empty remark and exact time",
+      "skipped": false
+    },
+    {
+      "class": "com.sentri.nativeapp.production.TaskCommonContractTest",
+      "name": "completed window respects offsets submillisecond precision and every other filter",
+      "skipped": false
+    },
+    {
+      "class": "com.sentri.nativeapp.production.TaskCommonContractTest",
+      "name": "metadata includes plans siblings pig references materials raw json and exact decimal",
+      "skipped": false
+    },
+    {
+      "class": "com.sentri.nativeapp.production.TaskCommonContractTest",
+      "name": "home catalog applies farm filters half open completed window and stable order",
+      "skipped": false
+    },
+    {
+      "class": "com.sentri.nativeapp.production.TaskCommonContractTest",
+      "name": "invalid identities pagination and dates cannot become common requests",
+      "skipped": false
+    },
+    {
+      "class": "com.sentri.nativeapp.production.UnitRoundContractTest",
+      "name": "pregnancy mutation pair keeps null zero and nonzero recheck input distinct",
+      "skipped": false
+    },
+    {
+      "class": "com.sentri.nativeapp.production.UnitRoundContractTest",
+      "name": "re estrus mutation pair sends explicit time null and ordered pig IDs without unit metadata",
+      "skipped": false
+    },
+    {
+      "class": "com.sentri.nativeapp.production.UnitRoundContractTest",
+      "name": "input rejects invalid IDs empty batch and malformed timestamp without forbidding all unit selector",
+      "skipped": false
+    },
+    {
+      "class": "com.sentri.nativeapp.production.UnitRoundContractTest",
+      "name": "both queries preserve raw time enum flags and location",
+      "skipped": false
+    },
+    {
+      "class": "com.sentri.nativeapp.production.UnitRoundContractTest",
+      "name": "foreign task farm pig and unknown enum cannot become valid records",
+      "skipped": false
+    },
+    {
+      "class": "com.sentri.nativeapp.ui.ConnectionViewModelTest",
+      "name": "logout clears account while provider logout is pending",
+      "skipped": false
+    },
+    {
+      "class": "com.sentri.nativeapp.ui.ConnectionViewModelTest",
+      "name": "multiple farms require explicit selection",
+      "skipped": false
+    },
+    {
+      "class": "com.sentri.nativeapp.ui.ConnectionViewModelTest",
+      "name": "restored session fetches native account",
+      "skipped": false
+    },
+    {
+      "class": "com.sentri.nativeapp.ui.ConnectionViewModelTest",
+      "name": "single farm automatically follows existing choose refresh query flow",
+      "skipped": false
+    },
+    {
+      "class": "com.sentri.nativeapp.ui.ConnectionViewModelTest",
+      "name": "mismatched restored farm is not shown as successful",
+      "skipped": false
+    },
+    {
+      "class": "com.sentri.nativeapp.update.ApkUpdateViewModelTest",
+      "name": "repeated checks share one active download",
+      "skipped": false
+    },
+    {
+      "class": "com.sentri.nativeapp.update.ApkUpdateViewModelTest",
+      "name": "failed check permits current app and retry",
+      "skipped": false
+    },
+    {
+      "class": "com.sentri.nativeapp.update.ApkUpdateViewModelTest",
+      "name": "local debug does not access update channel",
+      "skipped": false
+    },
+    {
+      "class": "com.sentri.nativeapp.update.ApkUpdateViewModelTest",
+      "name": "force update cannot be skipped while optional update can",
+      "skipped": false
+    },
+    {
+      "class": "com.sentri.nativeapp.update.UpdatePolicyTest",
+      "name": "reject wrong package build type schema and malformed digest",
+      "skipped": false
+    },
+    {
+      "class": "com.sentri.nativeapp.update.UpdatePolicyTest",
+      "name": "reject plaintext and credential-bearing download URLs",
+      "skipped": false
+    },
+    {
+      "class": "com.sentri.nativeapp.update.UpdatePolicyTest",
+      "name": "relative manifest uses same channel and only higher version installs",
+      "skipped": false
+    },
+    {
+      "class": "com.sentri.nativeapp.update.UpdatePolicyTest",
+      "name": "download identity must match version and installed certificate",
+      "skipped": false
+    },
+    {
+      "class": "com.sentri.nativeapp.update.UpdatePolicyTest",
+      "name": "length and SHA256 detect corrupt APK before package parsing",
+      "skipped": false
+    }
+  ],
+  "android": [
+    {
+      "class": "com.sentri.nativeapp.AuxiliaryProcessRestoreTest",
+      "name": "auxiliaryPagesAndAbsentDetailSurviveProcessStop",
+      "skipped": true
+    },
+    {
+      "class": "com.sentri.nativeapp.CareFoundationTest",
+      "name": "carePayloadsPersistExactValuesAndKeepReplayIdentityAfterReopen",
+      "skipped": false
+    },
+    {
+      "class": "com.sentri.nativeapp.CareFoundationTest",
+      "name": "malformedCarePayloadCannotCoerceNumbersFlagsEnumsOrNestedFields",
+      "skipped": false
+    },
+    {
+      "class": "com.sentri.nativeapp.CareFoundationTest",
+      "name": "careSnapshotsPersistDecimalsJsonAndNestedResultsWithScopedOfflineFallback",
+      "skipped": false
+    },
+    {
+      "class": "com.sentri.nativeapp.CareFoundationTest",
+      "name": "uncertainFosterBlocksBothSowsButDoesNotSerializeUnrelatedPig",
+      "skipped": false
+    },
+    {
+      "class": "com.sentri.nativeapp.CareFoundationTest",
+      "name": "changingFosterStageOrRecipientCannotReuseOperationIdentity",
+      "skipped": false
+    },
+    {
+      "class": "com.sentri.nativeapp.CareFoundationTest",
+      "name": "nullEmptySelectionsZeroAndScientificDecimalScaleRemainDistinct",
+      "skipped": false
+    },
+    {
+      "class": "com.sentri.nativeapp.CareProcessRestoreTest",
+      "name": "fosterAndCarePayloadsAndSnapshotsSurviveProcessStop",
+      "skipped": true
+    },
+    {
+      "class": "com.sentri.nativeapp.ConnectionScreenTest",
+      "name": "signedOutScreenExposesLoginAction",
+      "skipped": false
+    },
+    {
+      "class": "com.sentri.nativeapp.ConnectionScreenTest",
+      "name": "offlineAccountIsLabelledAsCacheInsteadOfSuccessfulNetworkQuery",
+      "skipped": false
+    },
+    {
+      "class": "com.sentri.nativeapp.DeviceInputTest",
+      "name": "injectedAndroidKeyEventsDecodeThroughTheKeyboardFrameContract",
+      "skipped": false
+    },
+    {
+      "class": "com.sentri.nativeapp.DeviceInputTest",
+      "name": "readerSdkEnumeratesAndMissingDeviceFailsWithoutPermissionOrInventory",
+      "skipped": false
+    },
+    {
+      "class": "com.sentri.nativeapp.EstrusQueueTest",
+      "name": "interruptedTransportAndContextSwitchKeepOriginalOwnership",
+      "skipped": false
+    },
+    {
+      "class": "com.sentri.nativeapp.EstrusQueueTest",
+      "name": "conflictDependencyCancellationNetworkAndTransactionRollback",
+      "skipped": false
+    },
+    {
+      "class": "com.sentri.nativeapp.EstrusQueueTest",
+      "name": "responseLossRestartConfirmationAndStaleReceipt",
+      "skipped": false
+    },
+    {
+      "class": "com.sentri.nativeapp.EstrusQueueTest",
+      "name": "twoDatabaseOwnersCannotClaimTheSameAttemptAndFinishRollsBackWithJournal",
+      "skipped": false
+    },
+    {
+      "class": "com.sentri.nativeapp.EstrusQueueTest",
+      "name": "notSentDelayCorruptionAndAttemptJournalAreDurable",
+      "skipped": false
+    },
+    {
+      "class": "com.sentri.nativeapp.EstrusQueueTest",
+      "name": "persistentSuccessDuplicatePayloadAndScopeIsolation",
+      "skipped": false
+    },
+    {
+      "class": "com.sentri.nativeapp.FoundationProcessRestoreTest",
+      "name": "languageAndUnacknowledgedCommandSurviveProcessStop",
+      "skipped": true
+    },
+    {
+      "class": "com.sentri.nativeapp.LanguageFoundationTest",
+      "name": "accountFallbackAndDelayedResponseRespectSelectedLanguage",
+      "skipped": false
+    },
+    {
+      "class": "com.sentri.nativeapp.LanguageFoundationTest",
+      "name": "persistedSelectionResourcesAndLanguageScopedAccountCache",
+      "skipped": false
+    },
+    {
+      "class": "com.sentri.nativeapp.LivePigReadTest",
+      "name": "developmentReadSearchPagingAndPersistentSnapshots",
+      "skipped": true
+    },
+    {
+      "class": "com.sentri.nativeapp.LivePigReadTest",
+      "name": "disconnectedProcessRestoresAccountBrowseAndData",
+      "skipped": true
+    },
+    {
+      "class": "com.sentri.nativeapp.OidcRequestTest",
+      "name": "defaultAuthorizationPreservesBrowserConsentAndPkceContract",
+      "skipped": false
+    },
+    {
+      "class": "com.sentri.nativeapp.OidcRequestTest",
+      "name": "forcedLoginIncludesLoginAndConsent",
+      "skipped": false
+    },
+    {
+      "class": "com.sentri.nativeapp.PigCacheTest",
+      "name": "replacingAccountBindingCannotResurrectOldUserAfterClearingCurrentScope",
+      "skipped": false
+    },
+    {
+      "class": "com.sentri.nativeapp.PigCacheTest",
+      "name": "replacingSnapshotRollsBackIfInsertFails",
+      "skipped": false
+    },
+    {
+      "class": "com.sentri.nativeapp.PigCacheTest",
+      "name": "schemaUpgradeRetainsScopedRows",
+      "skipped": false
+    },
+    {
+      "class": "com.sentri.nativeapp.PigCacheTest",
+      "name": "corruptJsonAndAccountOwnershipAreRejected",
+      "skipped": false
+    },
+    {
+      "class": "com.sentri.nativeapp.PigCacheTest",
+      "name": "isolatedByEnvironmentUserFarmAndRequestParameters",
+      "skipped": false
+    },
+    {
+      "class": "com.sentri.nativeapp.PigCacheTest",
+      "name": "networkFallbackDoesNotHidePermissionDenial",
+      "skipped": false
+    },
+    {
+      "class": "com.sentri.nativeapp.PigCacheTest",
+      "name": "retentionKeepsNewestSnapshotWithEqualTimestampsAndPreservesMetadataAndOtherScopes",
+      "skipped": false
+    },
+    {
+      "class": "com.sentri.nativeapp.PigCacheTest",
+      "name": "clearOnlyCurrentScopeAndRejectCorruptSnapshots",
+      "skipped": false
+    },
+    {
+      "class": "com.sentri.nativeapp.PigCacheTest",
+      "name": "cacheSurvivesReopenWithoutNetworkAndPreservesScalars",
+      "skipped": false
+    },
+    {
+      "class": "com.sentri.nativeapp.PigCacheTest",
+      "name": "lateResponseAfterFarmSwitchCannotWriteEitherScope",
+      "skipped": false
+    },
+    {
+      "class": "com.sentri.nativeapp.PigDeathProcessRestoreTest",
+      "name": "partialUploadsSurviveProcessStopAndReportRetryReusesReceipts",
+      "skipped": true
+    },
+    {
+      "class": "com.sentri.nativeapp.PigDeathQueueTest",
+      "name": "unknownUploadBlocksReportAndRetryReusesConfirmedReceipts",
+      "skipped": false
+    },
+    {
+      "class": "com.sentri.nativeapp.PigDeathQueueTest",
+      "name": "cancellingOneImageNeverSatisfiesReportAndParentCancelIsAtomic",
+      "skipped": false
+    },
+    {
+      "class": "com.sentri.nativeapp.PigDeathQueueTest",
+      "name": "wholeDraftIsAtomicIdempotentAndStrictlyRestored",
+      "skipped": false
+    },
+    {
+      "class": "com.sentri.nativeapp.PigDeathQueueTest",
+      "name": "completionBarrierAndContextGateIncludeUploadsWithoutSendingOnAnotherScope",
+      "skipped": false
+    },
+    {
+      "class": "com.sentri.nativeapp.PigDeathQueueTest",
+      "name": "foreignReferencesAndSlotsCannotBeBorrowed",
+      "skipped": false
+    },
+    {
+      "class": "com.sentri.nativeapp.PigDeathQueueTest",
+      "name": "imagePayloadLargerThanCursorWindowRestoresWithoutTruncation",
+      "skipped": false
+    },
+    {
+      "class": "com.sentri.nativeapp.PigManagementProcessRestoreTest",
+      "name": "propertyAndMultiPigRoleSurviveProcessStopWithoutUnknownResend",
+      "skipped": true
+    },
+    {
+      "class": "com.sentri.nativeapp.PigManagementQueueTest",
+      "name": "knownProductionCommandsSharePigOrderAndOperationIdentityChecksFullInput",
+      "skipped": false
+    },
+    {
+      "class": "com.sentri.nativeapp.PigManagementQueueTest",
+      "name": "twoPayloadsReopenWithExactWeightNullFieldsParentsAndOrderedDuplicateSelection",
+      "skipped": false
+    },
+    {
+      "class": "com.sentri.nativeapp.PigManagementQueueTest",
+      "name": "strictPayloadDecodeRejectsCoercedNumbersEnumsMalformedDatesAndExtraFields",
+      "skipped": false
+    },
+    {
+      "class": "com.sentri.nativeapp.PigManagementQueueTest",
+      "name": "unknownPropertyBlocksMultiPigRoleButOtherPigAndScopeRemainIndependent",
+      "skipped": false
+    },
+    {
+      "class": "com.sentri.nativeapp.PigProfileCacheTest",
+      "name": "profileKindsShareReadBudgetAndCacheClearLeavesCommandsIntact",
+      "skipped": false
+    },
+    {
+      "class": "com.sentri.nativeapp.PigProfileCacheTest",
+      "name": "onlyNetworkOrAuthUnavailableFallsBackAndContextChangePreventsWrite",
+      "skipped": false
+    },
+    {
+      "class": "com.sentri.nativeapp.PigProfileCacheTest",
+      "name": "allScopesRequestFieldsAndSetOrderHaveCorrectCacheIdentity",
+      "skipped": false
+    },
+    {
+      "class": "com.sentri.nativeapp.PigProfileCacheTest",
+      "name": "completeProfilesReopenWithExactValuesAbsenceAndIndependentBasicSchema",
+      "skipped": false
+    },
+    {
+      "class": "com.sentri.nativeapp.PigProfileCacheTest",
+      "name": "malformedCompletePayloadCannotFallBackToApparentlyValidBasicData",
+      "skipped": false
+    },
+    {
+      "class": "com.sentri.nativeapp.PigProfileCacheTest",
+      "name": "completeHealthHistoryBeyondCursorWindowIsRestoredExactly",
+      "skipped": false
+    },
+    {
+      "class": "com.sentri.nativeapp.PigProfileProcessRestoreTest",
+      "name": "fullProfilesAndMissingDetailSurviveProcessStopWithoutRemoteReads",
+      "skipped": true
+    },
+    {
+      "class": "com.sentri.nativeapp.ProductionAuxiliaryCacheTest",
+      "name": "auxiliaryKindsShareBoundedReadRetentionWithoutEvictingAccountOrLocations",
+      "skipped": false
+    },
+    {
+      "class": "com.sentri.nativeapp.ProductionAuxiliaryCacheTest",
+      "name": "malformedSchemasEnumsTypesDuplicatedRowsAndForeignScopeAreRejected",
+      "skipped": false
+    },
+    {
+      "class": "com.sentri.nativeapp.ProductionAuxiliaryCacheTest",
+      "name": "auxiliarySnapshotsReopenWithPreciseTimeNamesNullAbsenceAndSource",
+      "skipped": false
+    },
+    {
+      "class": "com.sentri.nativeapp.ProductionAuxiliaryCacheTest",
+      "name": "fullScopeAndEachFilterUseIndependentKeys",
+      "skipped": false
+    },
+    {
+      "class": "com.sentri.nativeapp.ProductionAuxiliaryCacheTest",
+      "name": "onlyConnectivityAndUnavailableAuthFallbackAndScopeChangeCannotReplaceCache",
+      "skipped": false
+    },
+    {
+      "class": "com.sentri.nativeapp.ProductionAuxiliaryCacheTest",
+      "name": "codecsPreserveIndependentEnvelopeKindsAndExplicitNullableFields",
+      "skipped": false
+    },
+    {
+      "class": "com.sentri.nativeapp.ProductionCommandQueueTest",
+      "name": "typedPayloadRejectsUnknownOperationsFieldsAndCoercedValues",
+      "skipped": false
+    },
+    {
+      "class": "com.sentri.nativeapp.ProductionCommandQueueTest",
+      "name": "unrelatedChecksDoNotBecomeSubmitDependenciesAndPayloadReuseIsRejected",
+      "skipped": false
+    },
+    {
+      "class": "com.sentri.nativeapp.ProductionCommandQueueTest",
+      "name": "submitInfersScopedChecksAndRetainsDependencyAcrossReopenAndConfirmation",
+      "skipped": false
+    },
+    {
+      "class": "com.sentri.nativeapp.ProductionCommandQueueTest",
+      "name": "legacyDatabaseUpgradeKeepsPayloadDependenciesAttemptsAndUncertainRecovery",
+      "skipped": false
+    },
+    {
+      "class": "com.sentri.nativeapp.ProductionCommandQueueTest",
+      "name": "matingStaysBlockedByUncertainEstrusAcrossDifferentTasksAndRetainsBothPayloads",
+      "skipped": false
+    },
+    {
+      "class": "com.sentri.nativeapp.ProductionProcessRestoreTest",
+      "name": "unitRoundsAndReadSnapshotsSurviveProcessStop",
+      "skipped": true
+    },
+    {
+      "class": "com.sentri.nativeapp.ProductionTaskCacheTest",
+      "name": "noSnapshotFromOtherScopeTypeOrRequestCanBeBorrowed",
+      "skipped": false
+    },
+    {
+      "class": "com.sentri.nativeapp.ProductionTaskCacheTest",
+      "name": "cachedAbsenceDiffersFromNeverFetchedAndCorruptPayload",
+      "skipped": false
+    },
+    {
+      "class": "com.sentri.nativeapp.ProductionTaskCacheTest",
+      "name": "delayedTaskResponseCannotPopulateCacheAfterScopeSwitch",
+      "skipped": false
+    },
+    {
+      "class": "com.sentri.nativeapp.ProductionTaskCacheTest",
+      "name": "businessProtocolAndContextErrorsDoNotMaskWithGoodCache",
+      "skipped": false
+    },
+    {
+      "class": "com.sentri.nativeapp.ProductionTaskCacheTest",
+      "name": "fourTaskSchemasPersistAndRestorePrecisionEnumsAndNestedRecords",
+      "skipped": false
+    },
+    {
+      "class": "com.sentri.nativeapp.ProductionTaskCacheTest",
+      "name": "taskSnapshotEvictionAndCacheClearNeverRemovePendingCommands",
+      "skipped": false
+    },
+    {
+      "class": "com.sentri.nativeapp.ProductionWorkspaceTest",
+      "name": "localCancellationAndUnknownRecoveryAreVisibleWithoutRewritingSnapshots",
+      "skipped": false
+    },
+    {
+      "class": "com.sentri.nativeapp.ProductionWorkspaceTest",
+      "name": "unavailableSiblingStopsAtomicCrossTaskProjectionAndReportsItsExactReadFailure",
+      "skipped": false
+    },
+    {
+      "class": "com.sentri.nativeapp.ProductionWorkspaceTest",
+      "name": "contextChangesDuringAssemblyCannotPublishTheOldWorkspace",
+      "skipped": false
+    },
+    {
+      "class": "com.sentri.nativeapp.ProductionWorkspaceTest",
+      "name": "persistedQueueRebuildsCrossTaskPreviewAndKeepsConfirmedCacheUnchanged",
+      "skipped": false
+    },
+    {
+      "class": "com.sentri.nativeapp.ProductionWorkspaceTest",
+      "name": "anotherScopeCannotBorrowSnapshotsCommandsOrReconciliationProof",
+      "skipped": false
+    },
+    {
+      "class": "com.sentri.nativeapp.ProductionWorkspaceTest",
+      "name": "successReceiptWaitsForExplicitReadEvidenceAndKnownFailureRemovesOnlyItsPreview",
+      "skipped": false
+    },
+    {
+      "class": "com.sentri.nativeapp.ProfileWorkspaceProcessRestoreTest",
+      "name": "profilesAndManagementPreviewRebuildWithoutUnknownReplayOrSnapshotMutation",
+      "skipped": true
+    },
+    {
+      "class": "com.sentri.nativeapp.ProfileWorkspaceTest",
+      "name": "queueChangesDuringProfileFetchAreVisibleInPublishedProjection",
+      "skipped": false
+    },
+    {
+      "class": "com.sentri.nativeapp.ProfileWorkspaceTest",
+      "name": "exactIdsAreChunkedStablyAndKnownAbsentProfilesRetainPageProvenance",
+      "skipped": false
+    },
+    {
+      "class": "com.sentri.nativeapp.ProfileWorkspaceTest",
+      "name": "matingWorkspaceLoadsBoarReferencesFromMaterialsRecordsAndPendingInput",
+      "skipped": false
+    },
+    {
+      "class": "com.sentri.nativeapp.ProfileWorkspaceTest",
+      "name": "unavailableAndAbsentProfilesRemainDistinctAndMissingAtomicContextCannotApplyPartially",
+      "skipped": false
+    },
+    {
+      "class": "com.sentri.nativeapp.ProfileWorkspaceTest",
+      "name": "persistedGrowingAndRoleCommandsSharePigOrderingWhileOtherPigsRemainIndependent",
+      "skipped": false
+    },
+    {
+      "class": "com.sentri.nativeapp.ProfileWorkspaceTest",
+      "name": "atomicRoleTargetsAndExplicitPrerequisitesExpandContextWithoutLoadingUnrelatedQueueOrParents",
+      "skipped": false
+    },
+    {
+      "class": "com.sentri.nativeapp.ProfileWorkspaceTest",
+      "name": "onlyNetworkOrUnavailableAuthFallsBackAndProtocolBusinessCancellationOrInvalidCachePropagates",
+      "skipped": false
+    },
+    {
+      "class": "com.sentri.nativeapp.ProfileWorkspaceTest",
+      "name": "scopeSwitchDuringProfileReadCannotPublishAnOldWorkspaceOrBorrowAnotherScopesCache",
+      "skipped": false
+    },
+    {
+      "class": "com.sentri.nativeapp.ProfileWorkspaceTest",
+      "name": "restoredProfileAndRoleIntentRebuildTaskAndMetadataWithoutRewritingAnySnapshot",
+      "skipped": false
+    },
+    {
+      "class": "com.sentri.nativeapp.ProjectionProcessRestoreTest",
+      "name": "serverSnapshotsAndQueueRebuildPreviewAfterProcessStop",
+      "skipped": true
+    },
+    {
+      "class": "com.sentri.nativeapp.SessionStoreTest",
+      "name": "encryptedSessionSurvivesStoreRecreationAndIsClearedOnLogout",
+      "skipped": false
+    },
+    {
+      "class": "com.sentri.nativeapp.SessionStoreTest",
+      "name": "corruptedCiphertextClearsUnreadableSession",
+      "skipped": false
+    },
+    {
+      "class": "com.sentri.nativeapp.StageFoundationTest",
+      "name": "postpartumAndLactationSharePigOrderingAcrossTasksAndFoster",
+      "skipped": false
+    },
+    {
+      "class": "com.sentri.nativeapp.StageFoundationTest",
+      "name": "sameLocationWaitsForUncertainAggregateWhileDifferentLocationRemainsIndependent",
+      "skipped": false
+    },
+    {
+      "class": "com.sentri.nativeapp.StageFoundationTest",
+      "name": "corruptedNestedEnumBooleanDecimalIntegerAndMissingFieldsRejectRestore",
+      "skipped": false
+    },
+    {
+      "class": "com.sentri.nativeapp.StageFoundationTest",
+      "name": "fourOperationsPersistAcrossReopenWithNestedEnumsDecimalAndNulls",
+      "skipped": false
+    },
+    {
+      "class": "com.sentri.nativeapp.StageFoundationTest",
+      "name": "assessmentNullableFlagsAndAggregateSelectionsKeepExactSemantics",
+      "skipped": false
+    },
+    {
+      "class": "com.sentri.nativeapp.StageFoundationTest",
+      "name": "fourSnapshotsRestoreSowJsonLactationBreederAndNurseryDecimalLocations",
+      "skipped": false
+    },
+    {
+      "class": "com.sentri.nativeapp.StageProcessRestoreTest",
+      "name": "sowAndLocationCommandsAndFourSnapshotsSurviveProcessStop",
+      "skipped": true
+    },
+    {
+      "class": "com.sentri.nativeapp.TaskCatalogCacheTest",
+      "name": "businessAuthenticationAndDelayedContextChangesDoNotFallbackOrReplaceVerifiedSnapshot",
+      "skipped": false
+    },
+    {
+      "class": "com.sentri.nativeapp.TaskCatalogCacheTest",
+      "name": "corruptedTypesVersionsEnumsAndScopeCannotBeAcceptedAsOfflineData",
+      "skipped": false
+    },
+    {
+      "class": "com.sentri.nativeapp.TaskCatalogCacheTest",
+      "name": "filtersSortPaginationTimeWindowsAndFullScopeHaveIndependentCacheKeys",
+      "skipped": false
+    },
+    {
+      "class": "com.sentri.nativeapp.TaskCatalogCacheTest",
+      "name": "catalogCapacitySharesTheReadBudgetAndKeepsLocationsAndAccounts",
+      "skipped": false
+    },
+    {
+      "class": "com.sentri.nativeapp.TaskCatalogCacheTest",
+      "name": "metadataAndPagesReopenWithRawJsonDecimalTimeAndCachedAbsence",
+      "skipped": false
+    },
+    {
+      "class": "com.sentri.nativeapp.TaskCommonProcessRestoreTest",
+      "name": "lateCompletionDependenciesAndCatalogSurviveProcessStop",
+      "skipped": true
+    },
+    {
+      "class": "com.sentri.nativeapp.TaskCommonQueueTest",
+      "name": "completionWaitsForAllTaskPigsIncludingKnownFailureAndUnknownAttempt",
+      "skipped": false
+    },
+    {
+      "class": "com.sentri.nativeapp.TaskCommonQueueTest",
+      "name": "commonPayloadsKeepNullEmptyBatchKindAndTimeOnReopen",
+      "skipped": false
+    },
+    {
+      "class": "com.sentri.nativeapp.TaskCommonQueueTest",
+      "name": "rejectedCompletionCanWaitForRepairAndOnlyRetryAfterConfirmation",
+      "skipped": false
+    },
+    {
+      "class": "com.sentri.nativeapp.TaskCommonQueueTest",
+      "name": "duplicateAndTransitiveCompletionDependenciesCannotCreateCycles",
+      "skipped": false
+    },
+    {
+      "class": "com.sentri.nativeapp.TaskCommonQueueTest",
+      "name": "lateLocationAggregateIsIncludedWithoutSplittingIntoPigCommands",
+      "skipped": false
+    },
+    {
+      "class": "com.sentri.nativeapp.TaskCommonQueueTest",
+      "name": "lateTaskWritesGrowCompletionBarrierPersistentlyDespiteClockReversal",
+      "skipped": false
+    },
+    {
+      "class": "com.sentri.nativeapp.TaskCommonQueueTest",
+      "name": "completionStartedUnknownAndSyncedRefuseNewTaskWritesButKeepIdentityAndOtherTasks",
+      "skipped": false
+    },
+    {
+      "class": "com.sentri.nativeapp.UnitRoundQueueTest",
+      "name": "integerNullZeroAndRangeAreDurableAndCoercionIsRejected",
+      "skipped": false
+    },
+    {
+      "class": "com.sentri.nativeapp.UnitRoundQueueTest",
+      "name": "explicitRoundDependenciesWinWhenClockMovesBackwards",
+      "skipped": false
+    },
+    {
+      "class": "com.sentri.nativeapp.UnitRoundQueueTest",
+      "name": "dependencyInferenceKeepsUnitModuleTaskAndScopeBoundaries",
+      "skipped": false
+    },
+    {
+      "class": "com.sentri.nativeapp.UnitRoundQueueTest",
+      "name": "eachModuleCreatesUnitRoundBarrierNotJustSelectedPigDependencies",
+      "skipped": false
+    },
+    {
+      "class": "com.sentri.nativeapp.UpdateContractTest",
+      "name": "parsesExistingManifestContract",
+      "skipped": false
+    },
+    {
+      "class": "com.sentri.nativeapp.UpdateContractTest",
+      "name": "currentAndArchiveCertificatesAreReadFromActualApk",
+      "skipped": false
+    },
+    {
+      "class": "com.sentri.nativeapp.UpdateContractTest",
+      "name": "installationProviderExposesOnlyUpdateCacheDirectory",
+      "skipped": false
+    },
+    {
+      "class": "com.sentri.nativeapp.UpdateDownloadTest",
+      "name": "httpsManifestStreamsAndValidatesRealSignedApk",
+      "skipped": false
+    }
+  ]
+}

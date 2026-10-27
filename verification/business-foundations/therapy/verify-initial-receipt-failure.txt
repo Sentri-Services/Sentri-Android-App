@@ -1,0 +1,99 @@
+Verified 38 complete skills at b0618bc436ad893b3c5e84e55fba86586d34a404
+Language contract verified: 285 entries, 199 canonical enum mappings.
+Language checker regression passed: digit-bearing enum key checked; missing bilingual mapping rejected.
+GraphQL contract verified: 53 operations, 462 fields; candidate schema read locally.
+7 contract scenarios passed: unrelated addition allowed; removed field, output nullability, required input, enum, default and operation drift rejected.
+Fragment alias/definition drift rejected.
+> Task :app:prepareEnterpriseCertificate UP-TO-DATE
+> Task :app:preBuild UP-TO-DATE
+> Task :app:preDevDebugBuild UP-TO-DATE
+> Task :app:mergeDevDebugNativeDebugMetadata NO-SOURCE
+> Task :app:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :app:generateDevDebugBuildConfig UP-TO-DATE
+> Task :app:generateSentriApolloOptions UP-TO-DATE
+> Task :app:generateSentriApolloSources UP-TO-DATE
+> Task :app:checkDevDebugAarMetadata UP-TO-DATE
+> Task :app:generateDevDebugResValues UP-TO-DATE
+> Task :app:mapDevDebugSourceSetPaths UP-TO-DATE
+> Task :app:generateDevDebugResources UP-TO-DATE
+> Task :app:mergeDevDebugResources UP-TO-DATE
+> Task :app:packageDevDebugResources UP-TO-DATE
+> Task :app:parseDevDebugLocalResources UP-TO-DATE
+> Task :app:createDevDebugCompatibleScreenManifests UP-TO-DATE
+> Task :app:extractDeepLinksDevDebug UP-TO-DATE
+> Task :app:processDevDebugMainManifest UP-TO-DATE
+> Task :app:processDevDebugManifest UP-TO-DATE
+> Task :app:processDevDebugManifestForPackage UP-TO-DATE
+> Task :app:processDevDebugResources UP-TO-DATE
+> Task :app:javaPreCompileDevDebug UP-TO-DATE
+> Task :app:mergeDevDebugShaders UP-TO-DATE
+> Task :app:compileDevDebugShaders NO-SOURCE
+> Task :app:generateDevDebugAssets UP-TO-DATE
+> Task :app:mergeDevDebugAssets UP-TO-DATE
+> Task :app:compressDevDebugAssets UP-TO-DATE
+> Task :app:desugarDevDebugFileDependencies UP-TO-DATE
+> Task :app:checkDevDebugDuplicateClasses UP-TO-DATE
+> Task :app:mergeExtDexDevDebug UP-TO-DATE
+> Task :app:mergeLibDexDevDebug UP-TO-DATE
+> Task :app:mergeDevDebugJniLibFolders UP-TO-DATE
+> Task :app:mergeDevDebugNativeLibs UP-TO-DATE
+> Task :app:stripDevDebugDebugSymbols UP-TO-DATE
+> Task :app:validateSigningDevDebug UP-TO-DATE
+> Task :app:writeDevDebugAppMetadata UP-TO-DATE
+> Task :app:writeDevDebugSigningConfigVersions UP-TO-DATE
+> Task :app:preDevDebugUnitTestBuild UP-TO-DATE
+> Task :app:javaPreCompileDevDebugUnitTest UP-TO-DATE
+> Task :app:preDevDebugAndroidTestBuild SKIPPED
+> Task :app:generateDevDebugAndroidTestResValues UP-TO-DATE
+> Task :app:extractProguardFiles UP-TO-DATE
+> Task :app:compileDevDebugKotlin
+> Task :app:compileDevDebugJavaWithJavac UP-TO-DATE
+> Task :app:dexBuilderDevDebug
+> Task :app:mergeDevDebugGlobalSynthetics UP-TO-DATE
+> Task :app:processDevDebugJavaRes
+> Task :app:generateDevDebugLintReportModel
+> Task :app:mergeDevDebugJavaResource
+> Task :app:bundleDevDebugClassesToRuntimeJar
+> Task :app:bundleDevDebugClassesToCompileJar
+> Task :app:mergeProjectDexDevDebug
+> Task :app:generateDevDebugAndroidTestLintModel
+> Task :app:generateDevDebugUnitTestLintModel
+> Task :app:packageDevDebug
+> Task :app:createDevDebugApkListingFileRedirect UP-TO-DATE
+> Task :app:assembleDevDebug
+> Task :app:compileDevDebugUnitTestKotlin
+> Task :app:compileDevDebugUnitTestJavaWithJavac NO-SOURCE
+> Task :app:processDevDebugUnitTestJavaRes
+
+> Task :app:testDevDebugUnitTest
+
+TherapyContractTest > receiptStrictlyBindsOperationAndRecordAndRejectsCoercionDuplicatesAndTrailingData FAILED
+    java.lang.NullPointerException at TherapyContractTest.kt:81
+
+TherapyContractTest > completeAndSkipSendOnlyScheduledTaskTargetsAndCapturedTimeOrReason FAILED
+    java.lang.NullPointerException at TherapyContractTest.kt:31
+
+TherapyContractTest > addAndRemovePreserveAllTargetFieldsAndDuplicateOrderingWithoutInventedTherapyFilter FAILED
+    java.lang.NullPointerException at TherapyContractTest.kt:44
+
+TherapyContractTest > terminationKeepsPrescriptionAndTherapyIdentitySeparateAndNullVersusEmptyReason FAILED
+    java.lang.NullPointerException at TherapyContractTest.kt:55
+
+164 tests completed, 4 failed
+
+> Task :app:testDevDebugUnitTest FAILED
+> Task :app:lintAnalyzeDevDebugAndroidTest
+> Task :app:lintAnalyzeDevDebugUnitTest
+> Task :app:lintAnalyzeDevDebug
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':app:testDevDebugUnitTest'.
+> There were failing tests. See the report at: file:///Users/zhangzhaoxu/code/yy/Sentri-Android-App/app/build/reports/tests/testDevDebugUnitTest/index.html
+
+* Try:
+> Run with --scan to get full insights.
+
+BUILD FAILED in 1m 1s
+54 actionable tasks: 17 executed, 37 up-to-date

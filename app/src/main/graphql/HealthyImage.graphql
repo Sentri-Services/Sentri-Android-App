@@ -1,0 +1,5 @@
+mutation NativeUploadHealthyImage($input: BiosafetyUploadHealthyImageInput!) {
+  biosafety { upload_healthy_image(command_input: $input) {
+    status file_key file_url errors { err_msg }
+  } }
+}

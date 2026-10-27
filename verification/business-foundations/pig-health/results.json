@@ -1,0 +1,13 @@
+{
+  "date": "2026-10-19",
+  "scope": "task 13 six pig health mutations and bilingual reference catalog",
+  "graphql": { "operations": 77, "consumerFields": 729, "contract": "passed" },
+  "language": { "entries": 450, "canonicalMappings": 310, "check": "passed" },
+  "verifyScript": { "result": "passed", "jvmTests": 212, "jvmFailures": 0, "lint": "passed" },
+  "targetedAndroidTests": { "class": "com.sentri.nativeapp.PigHealthQueueTest", "passed": 3, "failed": 0, "device": "emulator-5554" },
+  "backendGap": "add_pig_disease and add_pig_symptom GraphQL entrypoints do not pass image_urls to commands",
+  "realBackendReads": "not run",
+  "realBackendWrites": "not run",
+  "automaticReplay": "not enabled",
+  "remainingInTask13": ["health image upload and event linkage", "body weight and backfat measurement", "location inventory"]
+}

@@ -1,0 +1,2 @@
+I/System.out(30774): PIG_DEATH_PREPARED pid=30774 commands=3 uploadsSynced=1 uploadsInFlight=1
+I/System.out(30811): PIG_DEATH_RESTORED pid=30811 newProcess=true commands=3 unknownResends=0 confirmedUploadResends=0 reportAttempts=2 imageOrder=true scopeIsolated=true

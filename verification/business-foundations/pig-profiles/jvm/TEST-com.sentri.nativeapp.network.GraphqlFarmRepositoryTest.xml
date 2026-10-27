@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.sentri.nativeapp.network.GraphqlFarmRepositoryTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2026-10-10T03:13:44.099Z" hostname="Mac" time="0.056">
+  <properties/>
+  <testcase name="native request sends current token language and exact operation" classname="com.sentri.nativeapp.network.GraphqlFarmRepositoryTest" time="0.013"/>
+  <testcase name="HTTP 503 is a network failure and preserves session" classname="com.sentri.nativeapp.network.GraphqlFarmRepositoryTest" time="0.008"/>
+  <testcase name="mutation is never replayed after authentication failure" classname="com.sentri.nativeapp.network.GraphqlFarmRepositoryTest" time="0.011"/>
+  <testcase name="HTTP 401 has the same refresh behavior" classname="com.sentri.nativeapp.network.GraphqlFarmRepositoryTest" time="0.007"/>
+  <testcase name="repeated authentication failure clears session instead of looping" classname="com.sentri.nativeapp.network.GraphqlFarmRepositoryTest" time="0.006"/>
+  <testcase name="query authentication failure refreshes and retries once" classname="com.sentri.nativeapp.network.GraphqlFarmRepositoryTest" time="0.006"/>
+  <testcase name="business failure preserves session without refreshing" classname="com.sentri.nativeapp.network.GraphqlFarmRepositoryTest" time="0.005"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

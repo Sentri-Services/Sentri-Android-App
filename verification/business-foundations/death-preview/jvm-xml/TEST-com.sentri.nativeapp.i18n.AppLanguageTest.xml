@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.sentri.nativeapp.i18n.AppLanguageTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2026-10-10T04:16:18.542Z" hostname="Mac" time="0.016">
+  <properties/>
+  <testcase name="selection persists resolves system changes and unsupported languages" classname="com.sentri.nativeapp.i18n.AppLanguageTest" time="0.003"/>
+  <testcase name="formatting keeps precision uses explicit timezone and bilingual fallback" classname="com.sentri.nativeapp.i18n.AppLanguageTest" time="0.012"/>
+  <testcase name="enum keys preserve canonical case unknown values and domain distinctions" classname="com.sentri.nativeapp.i18n.AppLanguageTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

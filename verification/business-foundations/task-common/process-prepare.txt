@@ -1,0 +1,8 @@
+
+com.sentri.nativeapp.TaskCommonProcessRestoreTest:.
+
+Time: 0.324
+
+OK (1 test)
+
+

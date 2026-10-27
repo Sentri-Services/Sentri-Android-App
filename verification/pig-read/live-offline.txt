@@ -1,0 +1,9 @@
+
+com.sentri.nativeapp.LivePigReadTest:
+com.sentri.nativeapp.LivePigReadTest:.
+
+Time: 0.862
+
+OK (2 tests)
+
+

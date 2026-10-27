@@ -1,0 +1,8 @@
+<resources>
+    <string name="sentri_field_optional">选填</string>
+    <string name="sentri_field_disabled">当前不可编辑</string>
+    <string name="sentri_stepper_minimum">最低为 %1$d</string>
+    <string name="sentri_stepper_maximum">最高为 %1$d</string>
+    <string name="sentri_stepper_unsaved">%1$s，尚未保存</string>
+    <string name="sentri_stepper_loading">正在保存…</string>
+</resources>

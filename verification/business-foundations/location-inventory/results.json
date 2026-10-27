@@ -1,0 +1,13 @@
+{
+  "date": "2026-10-19",
+  "scope": "task 13 location headcount reconciliation and current active pig snapshot",
+  "graphql": { "operations": 84, "consumerFields": 748, "contract": "passed" },
+  "language": { "entries": 455, "canonicalMappings": 315, "check": "passed" },
+  "verifyScript": { "result": "passed", "jvmTests": 220, "jvmFailures": 0, "lint": "passed" },
+  "targetedAndroidTests": { "class": "com.sentri.nativeapp.LocationInventoryQueueTest", "passed": 2, "failed": 0, "device": "emulator-5554" },
+  "realBackendReads": "not run",
+  "realBackendWrites": "not run",
+  "automaticReplay": "not enabled",
+  "serverReceiptLimitation": "success returns only location_code, not a change ID or difference list",
+  "remainingInTask13": ["real backend read/write verification", "health image event linkage", "inspection cleanliness and compliance backend persistence"]
+}

@@ -12,9 +12,8 @@ import javax.crypto.SecretKey
 import javax.crypto.spec.GCMParameterSpec
 
 /** App-private preferences contain only AES-GCM ciphertext; keys stay in Android Keystore. */
-class EncryptedSessionStore(context: Context) : SessionStore {
-    private val preferences = context.getSharedPreferences("sentri_session", Context.MODE_PRIVATE)
-    private val alias = "sentri.session.v1"
+class EncryptedSessionStore(context: Context, preferencesName: String = "sentri_session", private val alias: String = "sentri.session.v1") : SessionStore {
+    private val preferences = context.getSharedPreferences(preferencesName, Context.MODE_PRIVATE)
 
     override fun readSession(): Session? = decode("session") {
         Session(it.getString("authState"), it.getString("accessToken"), it.getLong("expiresAt"),

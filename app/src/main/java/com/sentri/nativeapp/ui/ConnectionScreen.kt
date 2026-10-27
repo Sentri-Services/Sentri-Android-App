@@ -23,11 +23,12 @@ import com.sentri.nativeapp.R
 import com.sentri.nativeapp.config.AppConfig
 import com.sentri.nativeapp.network.FarmChoice
 
-/** Temporary integration screen using stock Material 3; no product design system is defined. */
+/** Temporary integration screen. Business previews use the separate Sentri design foundation. */
 @Composable
 fun ConnectionScreen(state: ConnectionUiState, config: AppConfig, onLogin: () -> Unit, onRefresh: () -> Unit,
     onChoose: (FarmChoice) -> Unit, onSwitch: () -> Unit, onLogout: () -> Unit,
-    onCallback: (String) -> Unit, onCloseWeb: () -> Unit, onWebFailure: () -> Unit) {
+    onCallback: (String) -> Unit, onCloseWeb: () -> Unit, onWebFailure: () -> Unit, onBusiness: () -> Unit = {},
+    onHomePreview: () -> Unit = {}, onDevices: (() -> Unit)? = null) {
     Scaffold { insets ->
         Column(Modifier.fillMaxSize().padding(insets).padding(16.dp), verticalArrangement = Arrangement.spacedBy(12.dp)) {
             Text(stringResource(R.string.integration_title), style = MaterialTheme.typography.headlineSmall)
@@ -52,7 +53,10 @@ fun ConnectionScreen(state: ConnectionUiState, config: AppConfig, onLogin: () ->
                         failure.detail?.takeIf { it.isNotBlank() }?.let { Text(it) }
                     }
                     when (state.page) {
-                        Page.LOGIN -> Button(onClick = onLogin, enabled = !state.busy) { Text(stringResource(R.string.login)) }
+                        Page.LOGIN -> {
+                            Button(onClick = onLogin, enabled = !state.busy) { Text(stringResource(R.string.login)) }
+                            OutlinedButton(onClick = onHomePreview) { Text(stringResource(R.string.home_preview_entry)) }
+                        }
                         Page.FARMS -> {
                             if (state.farms.isEmpty() && !state.busy && state.failure == null) Text(stringResource(R.string.no_farms))
                             state.farms.forEach { farm ->
@@ -67,7 +71,10 @@ fun ConnectionScreen(state: ConnectionUiState, config: AppConfig, onLogin: () ->
                             }
                         }
                         Page.ACCOUNT -> state.account?.let { account ->
-                            Text(stringResource(R.string.query_success))
+                            OutlinedButton(onClick = onHomePreview) { Text(stringResource(R.string.home_preview_entry)) }
+                            Button(onClick = onBusiness, enabled = !state.busy) { Text(stringResource(R.string.pig_read_title)) }
+                            onDevices?.let { callback -> OutlinedButton(onClick = callback, enabled = !state.busy) { Text(stringResource(R.string.device_validation)) } }
+                            Text(stringResource(if (account.cachedAtMillis == null) R.string.query_success else R.string.cached_account))
                             Text(stringResource(R.string.user_name, account.identity.displayName ?: account.identity.username))
                             Text(stringResource(R.string.farm_name, account.farm.name))
                             Text(stringResource(R.string.farm_id, account.farm.id))

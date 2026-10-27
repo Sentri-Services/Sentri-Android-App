@@ -1,0 +1,6 @@
+mutation NativeExecuteVaccinationTask($input: BiosafetyExecuteVaccinationTaskInput!) {
+  biosafety { execute_vaccination_task(command_input: $input) { status recordId errors { err_msg } } }
+}
+mutation NativeFinishVaccinationTask($input: BiosafetyFinishVaccinationTaskInput!) {
+  biosafety { finish_vaccination_task(command_input: $input) { status recordId errors { err_msg } } }
+}

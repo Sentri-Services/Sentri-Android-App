@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.sentri.nativeapp.auth.AuthRepositoryTest" tests="13" skipped="0" failures="0" errors="0" timestamp="2026-10-10T03:52:39.781Z" hostname="Mac" time="0.079">
+  <properties/>
+  <testcase name="logout after in-flight refresh cannot resurrect session" classname="com.sentri.nativeapp.auth.AuthRepositoryTest" time="0.063"/>
+  <testcase name="restores existing session without refresh" classname="com.sentri.nativeapp.auth.AuthRepositoryTest" time="0.001"/>
+  <testcase name="old request cannot refresh or invalidate a new login even if token text repeats" classname="com.sentri.nativeapp.auth.AuthRepositoryTest" time="0.001"/>
+  <testcase name="logout revokes refresh grant after clearing local state" classname="com.sentri.nativeapp.auth.AuthRepositoryTest" time="0.001"/>
+  <testcase name="login completion requires pending request and clears selection" classname="com.sentri.nativeapp.auth.AuthRepositoryTest" time="0.001"/>
+  <testcase name="network failure preserves persistent session" classname="com.sentri.nativeapp.auth.AuthRepositoryTest" time="0.001"/>
+  <testcase name="concurrent server rejections share refreshed token" classname="com.sentri.nativeapp.auth.AuthRepositoryTest" time="0.002"/>
+  <testcase name="context guard is checked after waiting for auth mutex" classname="com.sentri.nativeapp.auth.AuthRepositoryTest" time="0.002"/>
+  <testcase name="concurrent expired requests share one refresh" classname="com.sentri.nativeapp.auth.AuthRepositoryTest" time="0.002"/>
+  <testcase name="remote revocation failure cannot retain local session" classname="com.sentri.nativeapp.auth.AuthRepositoryTest" time="0.0"/>
+  <testcase name="farm selection forces token refresh before persisting context" classname="com.sentri.nativeapp.auth.AuthRepositoryTest" time="0.001"/>
+  <testcase name="invalid grant clears persistent session and farm" classname="com.sentri.nativeapp.auth.AuthRepositoryTest" time="0.001"/>
+  <testcase name="logout removes pending login and prevents token access" classname="com.sentri.nativeapp.auth.AuthRepositoryTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

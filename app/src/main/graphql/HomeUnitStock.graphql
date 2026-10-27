@@ -1,0 +1,8 @@
+query NativeHomeUnitStock($unit: farm_view_pig_bool_exp!, $withPen: farm_view_pig_bool_exp!) {
+  current: farm_view_pig_aggregate(where: $unit) {
+    aggregate { count }
+  }
+  occupied: farm_view_pig_aggregate(where: $withPen) {
+    aggregate { pens: count(columns: [location_code], distinct: true) }
+  }
+}

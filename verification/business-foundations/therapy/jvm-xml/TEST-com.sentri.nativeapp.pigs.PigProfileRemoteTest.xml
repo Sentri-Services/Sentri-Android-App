@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.sentri.nativeapp.pigs.PigProfileRemoteTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2026-10-10T04:35:07.439Z" hostname="Mac" time="0.069">
+  <properties/>
+  <testcase name="contextChangedAfterResponseIsRejectedBeforeReturningProfiles" classname="com.sentri.nativeapp.pigs.PigProfileRemoteTest" time="0.026"/>
+  <testcase name="fullWireMapsPreciseScalarsRelationsReferencesAndMissingValues" classname="com.sentri.nativeapp.pigs.PigProfileRemoteTest" time="0.007"/>
+  <testcase name="unknownReadCodesAreRetainedAndUnavailablePigRemainsAbsent" classname="com.sentri.nativeapp.pigs.PigProfileRemoteTest" time="0.007"/>
+  <testcase name="wrongScopeReferencesDuplicateRowsMissingCountAndMalformedDatesAreRejected" classname="com.sentri.nativeapp.pigs.PigProfileRemoteTest" time="0.022"/>
+  <testcase name="typedFiltersOrderingCountOptOutAndEmptyIdsHaveDistinctWireMeaning" classname="com.sentri.nativeapp.pigs.PigProfileRemoteTest" time="0.007"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

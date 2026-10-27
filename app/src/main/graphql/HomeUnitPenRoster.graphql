@@ -1,0 +1,7 @@
+query NativeHomeUnitPenRoster($where: farm_view_pig_bool_exp!, $offset: Int!, $limit: Int!) {
+  pigs: farm_view_pig(where: $where, offset: $offset, limit: $limit, order_by: [{id: asc}]) {
+    id farm_id lifecycle_status location_code
+    location { unit_id pen_location pen_number }
+  }
+  count: farm_view_pig_aggregate(where: $where) { aggregate { count } }
+}

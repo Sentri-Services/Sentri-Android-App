@@ -1,0 +1,14 @@
+10-09 12:22:35.217 12865 12865 I SentriIntegration: login_exchange_succeeded
+10-09 12:22:35.217 12865 12865 I SentriIntegration: refresh_token_available
+10-09 12:23:27.447 12865 12865 I SentriIntegration: token_refresh_succeeded
+10-09 12:23:29.244 12865 12865 I SentriIntegration: native_account_query_succeeded
+10-09 12:25:27.149 13339 13357 I System.out: LIVE_READ_OK units=3 pens=11 unitTotal=200 paging=true search=true detail=true dbReopen=true
+10-09 12:28:01.087 13634 13649 I System.out: OFFLINE_PROCESS_OK activeNetwork=false accountCache=true browse=true locations=true page=true detail=true
+10-09 12:28:59.240 13676 13676 I SentriIntegration: native_account_query_succeeded
+10-09 12:48:32.928 14377 14377 I SentriIntegration: native_account_query_succeeded
+10-09 12:59:29.048 14858 14872 I System.out: LIVE_READ_OK units=3 pens=11 unitTotal=200 paging=true search=true detail=true dbReopen=true
+10-09 13:11:19.999 15415 15433 I System.out: LIVE_READ_OK units=3 pens=11 unitTotal=200 paging=true search=true detail=true dbReopen=true
+10-09 13:12:54.963 15569 15646 I System.out: OFFLINE_PROCESS_OK activeNetwork=false accountCache=true browse=true locations=true page=true detail=true
+10-09 13:21:13.945 16271 16271 I SentriIntegration: native_account_query_succeeded
+10-09 13:26:15.460 16271 16297 I SentriIntegration: token_revocation_succeeded
+10-09 13:26:15.512 16271 16271 I SentriIntegration: local_session_cleared

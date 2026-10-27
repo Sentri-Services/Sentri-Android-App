@@ -1,0 +1,16 @@
+{
+  "jvm": {
+    "tests": 120,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "passed": 120
+  },
+  "android": {
+    "tests": 95,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 10,
+    "passed": 85
+  }
+}

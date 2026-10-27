@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.sentri.nativeapp.network.AuthErrorPolicyTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2026-10-10T03:13:44.096Z" hostname="Mac" time="0.001">
+  <properties/>
+  <testcase name="recognizes existing Hasura and Logto expiry errors" classname="com.sentri.nativeapp.network.AuthErrorPolicyTest" time="0.001"/>
+  <testcase name="permission and business failures do not trigger token refresh" classname="com.sentri.nativeapp.network.AuthErrorPolicyTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

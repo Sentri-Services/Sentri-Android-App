@@ -1,0 +1,50 @@
+query NativeTherapyRows($farmId: String!, $filter: farm_view_prescription_therapy_bool_exp!, $order: [farm_view_prescription_therapy_order_by!]!, $offset: Int!, $limit: Int!) {
+  rows: farm_view_prescription_therapy(where: {_and: [{farm_id: {_eq: $farmId}}, $filter]}, order_by: $order, offset: $offset, limit: $limit) {
+    id farm_id prescription_id created_at dosage interval medication_id medication_catalog_id operator_id remark start_date status times treatment_id unit
+    medication { id farm_id name_cn name_en }
+    medication_catalog { id farm_id medication_id name_cn name_en form_cn form_en }
+    treatment { id name_cn name_en detail_cn detail_en }
+    prescription {
+      id farm_id created_at operator_id symptoms diseases remark status
+      operator { display_name avatar_url }
+      therapies_aggregate { aggregate { count } }
+    }
+    tasks(order_by: [{task_id: asc}, {target_id: asc}, {times: asc}]) {
+      farm_id prescription_id therapy_id task_id target_id times status scheduled_at executed_at executed_by operator_id remark
+      pig {
+        id farm_id breeder_code ear_notch ear_tag lifecycle_status location_code origin sex breed_type birthday teat_count role current_batch_id
+        location {
+          farm_id pen_location row_location section_location unit_location zone_location pen_number
+          zone { name_cn name_en }
+          section { name_cn name_en }
+          unit { name_cn name_en }
+          row { code }
+        }
+      }
+    }
+  }
+}
+
+query NativeTherapyMedications($farmId: String!) {
+  rows: farm_view_medication(where: {farm_id: {_eq: $farmId}}, order_by: {id: asc}) { id farm_id name_cn name_en }
+}
+
+query NativeTherapyMedicationCatalog($farmId: String!) {
+  rows: farm_view_medication_catalog(where: {farm_id: {_eq: $farmId}}, order_by: {id: asc}) {
+    id farm_id medication_id name_cn name_en form_cn form_en
+  }
+}
+
+query NativeTherapyTreatments {
+  rows: farm_view_treatment(order_by: {id: asc}) { id name_cn name_en detail_cn detail_en }
+}
+
+query NativeTherapyPrescriptionContext($farmId: String!, $prescriptionId: String!) {
+  value: farm_view_prescription_by_pk(farm_id: $farmId, id: $prescriptionId) {
+    id farm_id status
+    targets(order_by: {target_id: asc}) { farm_id prescription_id target_id }
+    targets_aggregate { aggregate { count } }
+    therapies(order_by: {id: asc}) { id farm_id prescription_id status }
+    therapies_aggregate { aggregate { count } }
+  }
+}

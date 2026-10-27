@@ -1,0 +1,119 @@
+{
+  "date": "2026-10-09",
+  "overallGoal": "in_progress",
+  "batch": "task 8 pending projections and single-task related reads; auxiliary queries and later modules remain",
+  "jvm": {
+    "tests": 112,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "passed": 112
+  },
+  "android": {
+    "tests": 83,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 8,
+    "passed": 75
+  },
+  "verifyPassed": true,
+  "device": "Android 16/API 36 emulator-5554",
+  "graphQL": {
+    "operations": 39,
+    "consumedFields": 345,
+    "newOperationsThisBatch": 0,
+    "transport": "MockWebServer only"
+  },
+  "language": {
+    "resourceEntries": 219,
+    "enumMappings": 133
+  },
+  "offline": {
+    "supportedCommandCount": 19,
+    "taskSnapshotTypeCount": 10,
+    "projectionRegisteredInputBranches": 19,
+    "projectionDispositionCount": 10,
+    "confirmedSnapshotsUnchanged": true,
+    "crossTaskPreviewAtomic": true,
+    "realMutationTransportRegistered": false,
+    "syncedDisposition": "WAITING_REFRESH until caller supplies read-reflection evidence; no automatic evidence verifier registered",
+    "workspaceReads": "primary metadata and typed detail plus active batch siblings; independent timestamps; preview never persisted",
+    "unsupportedContextExamples": [
+      "Farrowing/Piglet identified foster into Lactation lacks breeder source field",
+      "Growing identity pig absent from current task snapshot",
+      "missing or ambiguous active sibling task"
+    ],
+    "newJvmProjectionTests": 13,
+    "newAndroidWorkspaceTests": 6
+  },
+  "processRestore": {
+    "preparePassed": true,
+    "restorePassed": true,
+    "pids": [
+      "24027",
+      "24067"
+    ],
+    "newPidAsserted": true,
+    "persistedDetailSnapshots": 2,
+    "persistedMetadata": 1,
+    "persistedCommands": 2,
+    "unconfirmedAutomaticResends": 0,
+    "dependentPreviewBlocked": true,
+    "previewPersisted": false
+  },
+  "uiFiles": [
+    {
+      "path": "app/src/main/java/com/sentri/nativeapp/MainActivity.kt",
+      "unchanged": true
+    },
+    {
+      "path": "app/src/main/java/com/sentri/nativeapp/devices/DeviceVerificationScreen.kt",
+      "unchanged": true
+    },
+    {
+      "path": "app/src/main/java/com/sentri/nativeapp/pigs/PigScreen.kt",
+      "unchanged": true
+    },
+    {
+      "path": "app/src/main/java/com/sentri/nativeapp/ui/ConnectionScreen.kt",
+      "unchanged": true
+    },
+    {
+      "path": "app/src/main/java/com/sentri/nativeapp/ui/ConnectionViewModel.kt",
+      "unchanged": true
+    },
+    {
+      "path": "app/src/main/java/com/sentri/nativeapp/ui/LoginWebView.kt",
+      "unchanged": true
+    },
+    {
+      "path": "app/src/main/java/com/sentri/nativeapp/update/ApkUpdateScreen.kt",
+      "unchanged": true
+    },
+    {
+      "path": "app/src/main/res/values/styles.xml",
+      "unchanged": true
+    }
+  ],
+  "releaseAndVersionFiles": [
+    "versions.properties",
+    "deployment/contract.json",
+    "scripts/release.py",
+    "scripts/apk_release.py",
+    ".github/workflows/android.yml"
+  ],
+  "releaseAndVersionConfigDiffEmpty": true,
+  "references": {
+    "Sentri": {
+      "head": "4c1a2ff49e8d938e1af053d844018cc140c63f38",
+      "workingTreeClean": true
+    },
+    "Sentri-Android": {
+      "head": "ee0f6c333fa99014ca067fc5b47c538d36285cff",
+      "workingTreeClean": true
+    }
+  },
+  "realBackendWritesExecuted": false,
+  "pushOrReleaseExecuted": false,
+  "remaining": "Task 8 production auxiliary queries, complete associated data and metadata preview consistency, operation-specific read reflection evidence. Tasks 9-18 still pending."
+}

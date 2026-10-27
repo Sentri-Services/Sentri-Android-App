@@ -1,0 +1,65 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<testsuite name="com.sentri.nativeapp.ConnectionScreenTest" tests="49" failures="0" errors="0" skipped="4" time="5.543" timestamp="2026-10-09T09:34:47" hostname="localhost">
+  <properties>
+    <property name="device" value="Sentri_Dev_API_36(AVD) - 16" />
+    <property name="flavor" value="dev" />
+    <property name="project" value=":app" />
+  </properties>
+  <testcase name="signedOutScreenExposesLoginAction" classname="com.sentri.nativeapp.ConnectionScreenTest" time="1.547" />
+  <testcase name="offlineAccountIsLabelledAsCacheInsteadOfSuccessfulNetworkQuery" classname="com.sentri.nativeapp.ConnectionScreenTest" time="1.06" />
+  <testcase name="injectedAndroidKeyEventsDecodeThroughTheKeyboardFrameContract" classname="com.sentri.nativeapp.DeviceInputTest" time="0.0" />
+  <testcase name="readerSdkEnumeratesAndMissingDeviceFailsWithoutPermissionOrInventory" classname="com.sentri.nativeapp.DeviceInputTest" time="0.033" />
+  <testcase name="interruptedTransportAndContextSwitchKeepOriginalOwnership" classname="com.sentri.nativeapp.EstrusQueueTest" time="0.294" />
+  <testcase name="conflictDependencyCancellationNetworkAndTransactionRollback" classname="com.sentri.nativeapp.EstrusQueueTest" time="0.03" />
+  <testcase name="responseLossRestartConfirmationAndStaleReceipt" classname="com.sentri.nativeapp.EstrusQueueTest" time="0.057" />
+  <testcase name="twoDatabaseOwnersCannotClaimTheSameAttemptAndFinishRollsBackWithJournal" classname="com.sentri.nativeapp.EstrusQueueTest" time="0.031" />
+  <testcase name="notSentDelayCorruptionAndAttemptJournalAreDurable" classname="com.sentri.nativeapp.EstrusQueueTest" time="0.028" />
+  <testcase name="persistentSuccessDuplicatePayloadAndScopeIsolation" classname="com.sentri.nativeapp.EstrusQueueTest" time="0.068" />
+  <testcase name="languageAndUnacknowledgedCommandSurviveProcessStop" classname="com.sentri.nativeapp.FoundationProcessRestoreTest" time="0.001">
+    <skipped />
+  </testcase>
+  <testcase name="accountFallbackAndDelayedResponseRespectSelectedLanguage" classname="com.sentri.nativeapp.LanguageFoundationTest" time="0.061" />
+  <testcase name="persistedSelectionResourcesAndLanguageScopedAccountCache" classname="com.sentri.nativeapp.LanguageFoundationTest" time="0.034" />
+  <testcase name="developmentReadSearchPagingAndPersistentSnapshots" classname="com.sentri.nativeapp.LivePigReadTest" time="0.002">
+    <skipped />
+  </testcase>
+  <testcase name="disconnectedProcessRestoresAccountBrowseAndData" classname="com.sentri.nativeapp.LivePigReadTest" time="0.001">
+    <skipped />
+  </testcase>
+  <testcase name="defaultAuthorizationPreservesBrowserConsentAndPkceContract" classname="com.sentri.nativeapp.OidcRequestTest" time="0.0" />
+  <testcase name="forcedLoginIncludesLoginAndConsent" classname="com.sentri.nativeapp.OidcRequestTest" time="0.001" />
+  <testcase name="replacingAccountBindingCannotResurrectOldUserAfterClearingCurrentScope" classname="com.sentri.nativeapp.PigCacheTest" time="0.034" />
+  <testcase name="replacingSnapshotRollsBackIfInsertFails" classname="com.sentri.nativeapp.PigCacheTest" time="0.001" />
+  <testcase name="schemaUpgradeRetainsScopedRows" classname="com.sentri.nativeapp.PigCacheTest" time="0.027" />
+  <testcase name="corruptJsonAndAccountOwnershipAreRejected" classname="com.sentri.nativeapp.PigCacheTest" time="0.034" />
+  <testcase name="isolatedByEnvironmentUserFarmAndRequestParameters" classname="com.sentri.nativeapp.PigCacheTest" time="0.0" />
+  <testcase name="networkFallbackDoesNotHidePermissionDenial" classname="com.sentri.nativeapp.PigCacheTest" time="0.0" />
+  <testcase name="retentionKeepsNewestSnapshotWithEqualTimestampsAndPreservesMetadataAndOtherScopes" classname="com.sentri.nativeapp.PigCacheTest" time="0.401" />
+  <testcase name="clearOnlyCurrentScopeAndRejectCorruptSnapshots" classname="com.sentri.nativeapp.PigCacheTest" time="0.0" />
+  <testcase name="cacheSurvivesReopenWithoutNetworkAndPreservesScalars" classname="com.sentri.nativeapp.PigCacheTest" time="0.0" />
+  <testcase name="lateResponseAfterFarmSwitchCannotWriteEitherScope" classname="com.sentri.nativeapp.PigCacheTest" time="0.035" />
+  <testcase name="typedPayloadRejectsUnknownOperationsFieldsAndCoercedValues" classname="com.sentri.nativeapp.ProductionCommandQueueTest" time="0.001" />
+  <testcase name="unrelatedChecksDoNotBecomeSubmitDependenciesAndPayloadReuseIsRejected" classname="com.sentri.nativeapp.ProductionCommandQueueTest" time="0.001" />
+  <testcase name="submitInfersScopedChecksAndRetainsDependencyAcrossReopenAndConfirmation" classname="com.sentri.nativeapp.ProductionCommandQueueTest" time="0.035" />
+  <testcase name="legacyDatabaseUpgradeKeepsPayloadDependenciesAttemptsAndUncertainRecovery" classname="com.sentri.nativeapp.ProductionCommandQueueTest" time="0.0" />
+  <testcase name="matingStaysBlockedByUncertainEstrusAcrossDifferentTasksAndRetainsBothPayloads" classname="com.sentri.nativeapp.ProductionCommandQueueTest" time="0.063" />
+  <testcase name="unitRoundsAndReadSnapshotsSurviveProcessStop" classname="com.sentri.nativeapp.ProductionProcessRestoreTest" time="0.0">
+    <skipped />
+  </testcase>
+  <testcase name="noSnapshotFromOtherScopeTypeOrRequestCanBeBorrowed" classname="com.sentri.nativeapp.ProductionTaskCacheTest" time="0.0" />
+  <testcase name="cachedAbsenceDiffersFromNeverFetchedAndCorruptPayload" classname="com.sentri.nativeapp.ProductionTaskCacheTest" time="0.001" />
+  <testcase name="delayedTaskResponseCannotPopulateCacheAfterScopeSwitch" classname="com.sentri.nativeapp.ProductionTaskCacheTest" time="0.033" />
+  <testcase name="businessProtocolAndContextErrorsDoNotMaskWithGoodCache" classname="com.sentri.nativeapp.ProductionTaskCacheTest" time="0.0" />
+  <testcase name="fourTaskSchemasPersistAndRestorePrecisionEnumsAndNestedRecords" classname="com.sentri.nativeapp.ProductionTaskCacheTest" time="0.027" />
+  <testcase name="taskSnapshotEvictionAndCacheClearNeverRemovePendingCommands" classname="com.sentri.nativeapp.ProductionTaskCacheTest" time="0.374" />
+  <testcase name="encryptedSessionSurvivesStoreRecreationAndIsClearedOnLogout" classname="com.sentri.nativeapp.SessionStoreTest" time="0.001" />
+  <testcase name="corruptedCiphertextClearsUnreadableSession" classname="com.sentri.nativeapp.SessionStoreTest" time="0.0" />
+  <testcase name="integerNullZeroAndRangeAreDurableAndCoercionIsRejected" classname="com.sentri.nativeapp.UnitRoundQueueTest" time="0.001" />
+  <testcase name="explicitRoundDependenciesWinWhenClockMovesBackwards" classname="com.sentri.nativeapp.UnitRoundQueueTest" time="0.036" />
+  <testcase name="dependencyInferenceKeepsUnitModuleTaskAndScopeBoundaries" classname="com.sentri.nativeapp.UnitRoundQueueTest" time="0.001" />
+  <testcase name="eachModuleCreatesUnitRoundBarrierNotJustSelectedPigDependencies" classname="com.sentri.nativeapp.UnitRoundQueueTest" time="0.095" />
+  <testcase name="parsesExistingManifestContract" classname="com.sentri.nativeapp.UpdateContractTest" time="0.001" />
+  <testcase name="currentAndArchiveCertificatesAreReadFromActualApk" classname="com.sentri.nativeapp.UpdateContractTest" time="0.0" />
+  <testcase name="installationProviderExposesOnlyUpdateCacheDirectory" classname="com.sentri.nativeapp.UpdateContractTest" time="0.032" />
+  <testcase name="httpsManifestStreamsAndValidatesRealSignedApk" classname="com.sentri.nativeapp.UpdateDownloadTest" time="0.525" />
+</testsuite>

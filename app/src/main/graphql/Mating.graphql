@@ -1,0 +1,30 @@
+query NativeMatingTask($taskId: String!, $farmId: String!) {
+  tasks: farm_view_task(where: {id: {_eq: $taskId}, batch: {farm_id: {_eq: $farmId}}}, limit: 1) {
+    id batch_id status task_type
+    batch { farm_id }
+    pigs(where: {pig: {farm_id: {_eq: $farmId}}}, order_by: {pig_id: asc}) {
+      pig_id disabled
+      pig { id farm_id ear_tag ear_notch location_code location { unit_id unit_location pen_location } }
+      mating_pig {
+        task_id pig_id mating_count estrus_at created_at
+        first_mating_at first_mating_with last_mating_at last_mating_with
+      }
+      mating_pig_records(order_by: [{mating_at: desc}, {mating_times: desc}]) {
+        task_id pig_id mating_at mating_times mating_with operator_id
+        mating_boar { ...NativeMatingMaterial }
+        mating_semen { ...NativeMatingMaterial }
+      }
+    }
+  }
+}
+fragment NativeMatingMaterial on farm_view_task_mating_material {
+  id task_id boar_id semen_id semen_breeder_type semen_collect_at semen_count
+  boar { id farm_id ear_tag ear_notch }
+}
+# Compiled contracts; the application has no registered write transport or background replay.
+mutation NativeMateWithBoar($input: ProductionMateWithBoarCommandStrawberryInput!) {
+  production { mate_with_boar(command_input: $input) { status errors { err_msg } } }
+}
+mutation NativeMateWithSemen($input: ProductionMateWithSemenCommandStrawberryInput!) {
+  production { mate_with_semen(command_input: $input) { status errors { err_msg } } }
+}

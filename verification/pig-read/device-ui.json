@@ -1,0 +1,7 @@
+{
+  "deviceEntry": true,
+  "noExternalKeyboard": true,
+  "noUsbHidReader": true,
+  "cancelAction": true,
+  "physicalHardwareVerified": false
+}

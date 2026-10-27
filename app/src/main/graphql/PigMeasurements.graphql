@@ -1,0 +1,15 @@
+mutation NativeRecordPigWeights($input: ProductionRecordPigWeightsInput!) {
+  production { record_pig_weights(command_input: $input) { status recordIds errors { err_msg } } }
+}
+mutation NativeRecordPigBackfat($input: ProductionRecordPigBackfatInput!) {
+  production { record_pig_backfat(command_input: $input) { status recordId errors { err_msg } } }
+}
+mutation NativeRecordPigTemperature($input: ProductionRecordPigTemperatureInput!) {
+  production { record_pig_temperature(command_input: $input) { status recordId errors { err_msg } } }
+}
+query NativePigMeasurements($where: farm_view_pig_bool_exp) {
+  farm_view_pig(where: $where) {
+    id farm_id weight backfat_mm backfat_level backfat_recorded_at
+    body_temperature body_temperature_recorded_at
+  }
+}

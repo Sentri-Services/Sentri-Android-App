@@ -1,0 +1,55 @@
+mutation NativeTransferOut($input: ProductionTransferOutCommandStrawberryInput!) {
+  production { transfer_out(command_input: $input) { status transfer_id errors { err_msg } } }
+}
+mutation NativeTransferIn($input: ProductionTransferInCommandStrawberryInput!) {
+  production { transfer_in(command_input: $input) { status transfer_id errors { err_msg } } }
+}
+mutation NativeAddTransferTaskItems($input: ProductionAddTransferTaskItemsCommandStrawberryInput!) {
+  production { add_transfer_task_items(command_input: $input) { status transfer_id errors { err_msg } } }
+}
+mutation NativeRemoveTransferTaskItems($input: ProductionRemoveTransferTaskItemsCommandStrawberryInput!) {
+  production { remove_transfer_task_items(command_input: $input) { status transfer_id errors { err_msg } } }
+}
+mutation NativeResetTransferTaskItems($input: ProductionResetTransferTaskItemsCommandStrawberryInput!) {
+  production { reset_transfer_task_items(command_input: $input) { status transfer_id errors { err_msg } } }
+}
+mutation NativeAddTransferInUnit($input: ProductionAddTransferInUnitCommandStrawberryInput!) {
+  production { add_transfer_in_unit(command_input: $input) { status transfer_id errors { err_msg } } }
+}
+mutation NativeCompleteTransferTask($input: ProductionCompleteTransferTaskCommandStrawberryInput!) {
+  production { complete_transfer_task(command_input: $input) { status transfer_id errors { err_msg } } }
+}
+mutation NativeTransferPig($input: ProductionTransferPigCommandStrawberryInput!) {
+  production { transfer_pig(command_input: $input) { status recordId errors { err_msg } } }
+}
+
+query NativeTransferTasks($where: farm_view_transfer_task_bool_exp, $limit: Int, $offset: Int,
+  $order: [farm_view_transfer_task_order_by!]) {
+  farm_view_transfer_task(where: $where, limit: $limit, offset: $offset, order_by: $order) {
+    transfer_id farm_id batch_id transfer_type status planned_transfer_time actual_start_time
+    completed_at created_at modified_at remark operator_id
+    batch { farm_id sn }
+    transfer_in_unit { farm_id transfer_id unit_code transfer_in_count last_operation_time operator_id }
+    transfer_out_unit { farm_id transfer_id unit_code transfer_out_count transfer_total_count last_operation_time operator_id }
+    items {
+      farm_id transfer_id pig_id batch_id status source_location_code destination_location_code
+      actual_transfer_time failure_reason remark created_at modified_at operator_id
+      pig { id farm_id ear_tag ear_notch location_code role lifecycle_status }
+    }
+  }
+}
+
+query NativeTransferTask($id: String!) {
+  farm_view_transfer_task_by_pk(transfer_id: $id) {
+    transfer_id farm_id batch_id transfer_type status planned_transfer_time actual_start_time
+    completed_at created_at modified_at remark operator_id
+    batch { farm_id sn }
+    transfer_in_unit { farm_id transfer_id unit_code transfer_in_count last_operation_time operator_id }
+    transfer_out_unit { farm_id transfer_id unit_code transfer_out_count transfer_total_count last_operation_time operator_id }
+    items {
+      farm_id transfer_id pig_id batch_id status source_location_code destination_location_code
+      actual_transfer_time failure_reason remark created_at modified_at operator_id
+      pig { id farm_id ear_tag ear_notch location_code role lifecycle_status }
+    }
+  }
+}

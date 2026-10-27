@@ -1,0 +1,41 @@
+[
+  {
+    "name": "com.sentri.nativeapp.AuxiliaryProcessRestoreTest",
+    "classes": [
+      "com.sentri.nativeapp.AuxiliaryProcessRestoreTest",
+      "com.sentri.nativeapp.CareFoundationTest",
+      "com.sentri.nativeapp.CareProcessRestoreTest",
+      "com.sentri.nativeapp.ConnectionScreenTest",
+      "com.sentri.nativeapp.DeviceInputTest",
+      "com.sentri.nativeapp.EstrusQueueTest",
+      "com.sentri.nativeapp.FoundationProcessRestoreTest",
+      "com.sentri.nativeapp.LanguageFoundationTest",
+      "com.sentri.nativeapp.LivePigReadTest",
+      "com.sentri.nativeapp.OidcRequestTest",
+      "com.sentri.nativeapp.PigCacheTest",
+      "com.sentri.nativeapp.PigDeathProcessRestoreTest",
+      "com.sentri.nativeapp.PigDeathQueueTest",
+      "com.sentri.nativeapp.PigManagementProcessRestoreTest",
+      "com.sentri.nativeapp.PigManagementQueueTest",
+      "com.sentri.nativeapp.ProductionAuxiliaryCacheTest",
+      "com.sentri.nativeapp.ProductionCommandQueueTest",
+      "com.sentri.nativeapp.ProductionProcessRestoreTest",
+      "com.sentri.nativeapp.ProductionTaskCacheTest",
+      "com.sentri.nativeapp.ProductionWorkspaceTest",
+      "com.sentri.nativeapp.ProjectionProcessRestoreTest",
+      "com.sentri.nativeapp.SessionStoreTest",
+      "com.sentri.nativeapp.StageFoundationTest",
+      "com.sentri.nativeapp.StageProcessRestoreTest",
+      "com.sentri.nativeapp.TaskCatalogCacheTest",
+      "com.sentri.nativeapp.TaskCommonProcessRestoreTest",
+      "com.sentri.nativeapp.TaskCommonQueueTest",
+      "com.sentri.nativeapp.UnitRoundQueueTest",
+      "com.sentri.nativeapp.UpdateContractTest",
+      "com.sentri.nativeapp.UpdateDownloadTest"
+    ],
+    "tests": 102,
+    "skipped": 11,
+    "failures": 0,
+    "errors": 0
+  }
+]

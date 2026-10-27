@@ -1,0 +1,20 @@
+query NativeHomeTransferTasks($farmId: String!, $offset: Int!, $limit: Int!) {
+  rows: farm_view_transfer_task(
+    where: {farm_id: {_eq: $farmId}, status: {_in: [PLANNED, IN_PROGRESS]}}
+    order_by: [{transfer_id: asc}], offset: $offset, limit: $limit) {
+    transfer_id farm_id status transfer_type planned_transfer_time batch_id
+    batch { farm_id sn }
+    transfer_out_unit(order_by: [{unit_code: asc}]) {
+      farm_id transfer_id unit_code
+    }
+    transfer_out_unit_aggregate { aggregate { count } }
+    transfer_in_unit(order_by: [{unit_code: asc}]) {
+      farm_id transfer_id unit_code
+    }
+    transfer_in_unit_aggregate { aggregate { count } }
+  }
+  total: farm_view_transfer_task_aggregate(
+    where: {farm_id: {_eq: $farmId}, status: {_in: [PLANNED, IN_PROGRESS]}}) {
+    aggregate { count }
+  }
+}

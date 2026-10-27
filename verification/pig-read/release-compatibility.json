@@ -1,0 +1,10 @@
+{
+  "localMinifiedDevReleaseBuild": true,
+  "applicationId": "com.sentri.jingan.dev",
+  "versionCode": 136,
+  "versionName": "1.3.6",
+  "certificateSha256": "2d458afc199a5cf9cc04fc35a91cba4b5cc3e52e4898a7e6df7cd0fa35b7ebe6",
+  "apkSha256": "33758b05fd0db1dd711f6c2a04be15e575856108d8e155e7c35138617ef82422",
+  "uploaded": false,
+  "runtimeScope": "dev local Debug; Release validated by R8 and binary identity/signature inspection"
+}

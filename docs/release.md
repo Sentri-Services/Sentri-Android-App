@@ -18,6 +18,8 @@
 
 普通 Debug 为 `<旧环境 applicationId>.local`，禁用启动更新并使用本机调试签名。开启 `-PenableApkUpdate=true` 后，Debug 恢复旧 applicationId、原签名与启动检查，成为可发布构建。Release 同样要求原签名。两类产物不能混淆。
 
+本地真机验证包可在忽略提交的 `sentri.local.signing.properties` 中指定独立 keystore；普通 Debug 会优先使用它。本机 2026-10-11 的 devDebug 证书 SHA-256 为 `dbbc2d7d19466da6d9364d6fd9c0219c1ad7388656f824750a9b0b3eaff7555e`，与上述旧发布证书不同。这个新 key 仅用于 `.local` 包，不可用于覆盖旧发布包；发布 Debug/Release 仍由原签名配置和安全门槛控制。复制到其他开发机时需安全保管 keystore 及密码，否则无法覆盖安装同包名的本地验证包。
+
 ## 原签名材料
 
 所有环境沿用 `sentri` alias。期望签名证书 SHA-256：

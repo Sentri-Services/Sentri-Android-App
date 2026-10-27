@@ -1,0 +1,29 @@
+query NativeProductionBatches($farmId: String!, $filter: farm_view_batch_bool_exp!, $offset: Int!, $limit: Int!) {
+  batches: farm_view_batch(where: {_and: [{farm_id: {_eq: $farmId}}, $filter]}, order_by: {id: asc}, offset: $offset, limit: $limit) {
+    id farm_id sn status line_id
+    line { id farm_id name status }
+    tasks(order_by: {id: asc}) {
+      id batch_id task_type status
+      batch_task { task_id batch_id task_type planned_start_time planned_duration_days }
+    }
+  }
+}
+query NativeProductionRecheckPigs($farmId: String!, $filter: farm_view_recheck_pig_bool_exp!, $offset: Int!, $limit: Int!) {
+  pigs: farm_view_recheck_pig(
+    where: {_and: [{pig: {farm_id: {_eq: $farmId}}, task: {batch: {farm_id: {_eq: $farmId}}}}, $filter]},
+    order_by: [{task_id: asc}, {pig_id: asc}], offset: $offset, limit: $limit
+  ) {
+    task_id pig_id is_in_re_estrus check_status check_at re_estrus_at mating_at mating_by submitted_at operator_id
+    task { id batch_id task_type batch { farm_id } }
+    pig {
+      id farm_id ear_tag ear_notch location_code
+      location {
+        farm_id unit_id unit_location pen_location pen_number
+        zone { code name_cn name_en }
+        unit { code name_cn name_en }
+        section { code name_cn name_en }
+        row { code row_number }
+      }
+    }
+  }
+}

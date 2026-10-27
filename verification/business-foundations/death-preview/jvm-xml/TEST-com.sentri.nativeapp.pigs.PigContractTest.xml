@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.sentri.nativeapp.pigs.PigContractTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2026-10-10T04:16:18.910Z" hostname="Mac" time="0.018">
+  <properties/>
+  <testcase name="logout and login to same farm cannot reuse an old lease" classname="com.sentri.nativeapp.pigs.PigContractTest" time="0.002"/>
+  <testcase name="farm changes invalidate leases and token refresh does not" classname="com.sentri.nativeapp.pigs.PigContractTest" time="0.001"/>
+  <testcase name="cache keys distinguish case null delimiters filters offset and page size" classname="com.sentri.nativeapp.pigs.PigContractTest" time="0.003"/>
+  <testcase name="timestamps retain timezone microseconds and reject invalid calendar dates" classname="com.sentri.nativeapp.pigs.PigContractTest" time="0.002"/>
+  <testcase name="case sensitive literal search and unit regex preserve web semantics" classname="com.sentri.nativeapp.pigs.PigContractTest" time="0.008"/>
+  <testcase name="decimal and nested JSON preserve precision and null values" classname="com.sentri.nativeapp.pigs.PigContractTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

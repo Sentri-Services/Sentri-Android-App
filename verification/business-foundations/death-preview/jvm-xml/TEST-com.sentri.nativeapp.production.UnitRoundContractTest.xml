@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.sentri.nativeapp.production.UnitRoundContractTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2026-10-10T04:16:19.773Z" hostname="Mac" time="0.047">
+  <properties/>
+  <testcase name="pregnancy mutation pair keeps null zero and nonzero recheck input distinct" classname="com.sentri.nativeapp.production.UnitRoundContractTest" time="0.012"/>
+  <testcase name="re estrus mutation pair sends explicit time null and ordered pig IDs without unit metadata" classname="com.sentri.nativeapp.production.UnitRoundContractTest" time="0.011"/>
+  <testcase name="input rejects invalid IDs empty batch and malformed timestamp without forbidding all unit selector" classname="com.sentri.nativeapp.production.UnitRoundContractTest" time="0.001"/>
+  <testcase name="both queries preserve raw time enum flags and location" classname="com.sentri.nativeapp.production.UnitRoundContractTest" time="0.01"/>
+  <testcase name="foreign task farm pig and unknown enum cannot become valid records" classname="com.sentri.nativeapp.production.UnitRoundContractTest" time="0.013"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

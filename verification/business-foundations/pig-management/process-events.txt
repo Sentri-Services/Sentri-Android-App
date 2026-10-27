@@ -1,0 +1,2 @@
+10-10 10:37:03.800 29833 29847 I System.out: PIG_MANAGEMENT_PREPARED commands=3 property=IN_FLIGHT
+10-10 10:37:46.531 29870 29884 I System.out: PIG_MANAGEMENT_RESTORED newProcess=true commands=3 decimalExact=true orderedParents=true unknownResends=0 multiPigRoleBlocked=true independentPig=1 confirmedThenRoleClaimed=true

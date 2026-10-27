@@ -1,0 +1,13 @@
+{
+  "date": "2026-10-19",
+  "scope": "task 13 healthy image upload and pig weights, backfat, temperature non-UI foundations",
+  "graphql": { "operations": 82, "consumerFields": 744, "contract": "passed" },
+  "language": { "entries": 454, "canonicalMappings": 314, "check": "passed" },
+  "verifyScript": { "result": "passed", "jvmTests": 217, "jvmFailures": 0, "lint": "passed" },
+  "targetedAndroidTests": { "class": "com.sentri.nativeapp.PigHealthQueueTest", "passed": 6, "failed": 0, "device": "emulator-5554" },
+  "realBackendReads": "not run",
+  "realBackendWrites": "not run",
+  "automaticReplay": "not enabled",
+  "backendGap": "health GraphQL entrypoints do not pass image_urls to commands; uploaded image is not proven to be linked to a health event",
+  "remainingInTask13": ["health event image linkage", "location inventory reconciliation", "real backend read/write verification"]
+}

@@ -1,0 +1,37 @@
+mutation NativeSubmitUnitInspection($input: BiosafetySubmitUnitInspectionCommandStrawberryInput!) {
+  biosafety { submit_unit_inspection(command_input: $input) {
+    status recordId errors { err_msg }
+  } }
+}
+
+mutation NativeSubmitUnitRemark($input: BiosafetySubmitUnitRemarkCommandStrawberryInput!) {
+  biosafety { submit_unit_remark(command_input: $input) {
+    status recordId errors { err_msg }
+  } }
+}
+
+query NativeUnitInspections($where: farm_view_unit_inspection_bool_exp) {
+  farm_view_unit_inspection(where: $where) {
+    id farm_id unit_code created_at operator_id temperature humidity ammonia co2
+    illumination ventilation water_consumption feed_consumption env_remarks
+    cleanliness compliance bio_remarks
+  }
+}
+
+query NativeLatestUnitCheckIn($where: farm_view_unit_inspection_bool_exp!) {
+  farm_view_unit_inspection(where: $where, order_by: [{created_at: desc_nulls_last}, {id: desc}], limit: 1) {
+    id farm_id unit_code created_at operator { display_name }
+  }
+}
+
+query NativeRecentUnitCheckIns($where: farm_view_unit_inspection_bool_exp!, $offset: Int!) {
+  farm_view_unit_inspection(where: $where, order_by: [{created_at: desc_nulls_last}, {id: desc}], limit: 21, offset: $offset) {
+    id farm_id unit_code created_at operator { display_name }
+  }
+}
+
+query NativeUnitRemarks($where: farm_view_unit_remark_bool_exp) {
+  farm_view_unit_remark(where: $where) {
+    farm_id unit_code remark created_at operator_id
+  }
+}

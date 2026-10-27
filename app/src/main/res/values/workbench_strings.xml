@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="wb_production">生产任务</string><string name="wb_health">健康</string><string name="wb_other">其他</string>
+    <string name="wb_schedule_link">日程 ›</string><string name="wb_closed_today">今日已结束</string><string name="wb_closed_count">%1$d 项今日已结束</string>
+    <string name="wb_nothing_open">暂无进行中的工作</string><string name="wb_loading">正在读取任务</string><string name="wb_loading_detail">请稍候</string>
+    <string name="wb_no_permission">无权查看此分区</string><string name="wb_no_permission_detail">请联系管理员核对访问权限。</string>
+    <string name="wb_read_error">任务读取失败</string><string name="wb_read_error_detail">下拉刷新重试。</string>
+    <string name="wb_to_treat">待处理</string><string name="wb_monitoring">观察中</string><string name="wb_nothing_marked">暂无标记</string>
+    <string name="wb_waiting_yesterday">%1$d 头自昨天起等待</string><string name="wb_units_summary">单元 %1$s</string>
+    <string name="wb_ready_to_close">待结束任务</string><string name="wb_count_tomorrow">明天 %1$d 头</string><string name="wb_none_now">当前无待处理</string>
+    <string name="wb_status_confirm">状态待核对</string><string name="wb_overdue_count">%1$d 逾期</string><string name="wb_count_now">%1$d 当前</string>
+    <string name="wb_count_watch">%1$d 待观察</string><string name="wb_count_due">%1$d 待处理</string>
+    <string name="wb_count_farrowing">%1$d 正在分娩</string><string name="wb_count_litters">%1$d 窝待护理</string>
+    <string name="wb_day_of">第 %1$d/%2$d 天</string><string name="wb_day_overdue">超出计划 %1$d 天</string>
+    <string name="wb_pens">栏</string><string name="wb_pigs">头</string><string name="wb_withdrawal_block">%1$d 头在休药期</string>
+    <string name="wb_pen">栏位</string><string name="wb_last_checked">上次巡查</string><string name="wb_checked_yesterday">昨天</string>
+    <string name="wb_no_flags">暂无异常标记</string><string name="wb_attention_unknown">健康与饲喂汇总暂不可用</string>
+    <string name="wb_feed">饲喂</string><string name="wb_maintenance">维修</string><string name="wb_environment">环境与设备</string>
+    <string name="wb_environment_values">22.4 °C · 64% · 8 ppm NH₃</string><string name="wb_one_device">1 台设备</string>
+    <string name="wb_no_tasks_progress">暂无进行中的任务</string><string name="wb_inspect_anyway">仍可巡查单元并记录发现。</string>
+    <string name="wb_sows_farrowing">头母猪正在分娩</string><string name="wb_due_unit">头待处理</string><string name="wb_local_count">↑ %1$d 条本机记录</string>
+    <string name="wb_week_section">第 %1$d 周 · %2$s</string><string name="wb_how_to_read">如何看日程</string><string name="wb_all">全部</string>
+    <string name="wb_nothing_planned">本周暂无安排</string><string name="wb_previous_week">‹ 第 %1$d 周</string><string name="wb_next_week">第 %1$d 周 ›</string>
+    <string name="wb_tap_row">点按一行查看该任务一周的数量</string><string name="wb_key_done">已记录</string><string name="wb_key_today">今天待做</string>
+    <string name="wb_key_planned">已确定的计划</string><string name="wb_key_estimate">预计数量</string><string name="wb_key_waiting">等待今日结果</string>
+    <string name="wb_key_past">超出计划仍在进行</string><string name="wb_key_none">当日无待做</string>
+    <string name="wb_key_continues">跨周继续</string>
+    <string name="wb_row_done">%1$s 已记录</string><string name="wb_row_due">%1$s 今天待做</string><string name="wb_row_planned">%1$s 计划</string>
+    <string name="wb_row_estimated">约 %1$s 预计</string><string name="wb_row_past">%1$s 待做 · 超出计划</string>
+    <string name="wb_heat_check">查情</string><string name="wb_return_heat">查返情</string><string name="wb_vaccination">疫苗接种</string>
+    <string name="wb_treatment">治疗</string><string name="wb_pig_transfer">转舍</string><string name="wb_outbound">出栏</string><string name="wb_sampling">采样</string>
+    <string name="wb_batch_n">批次 %1$s</string><string name="wb_plan_n">计划 %1$s</string><string name="wb_order_n">医嘱 %1$s</string>
+    <string name="wb_section_meta">%1$d 个单元 · %2$d 头猪 · %3$d 个任务</string>
+    <string name="wb_find_pig">查找猪只或栏位</string><string name="wb_records">记录</string><string name="wb_sections_units">分区和单元</string>
+    <string name="wb_records_preview">记录预览</string><string name="wb_task_preview">任务预览</string>
+    <string name="wb_no_new_records">暂无新记录</string><string name="wb_records_empty_detail">夜间复查的问题得到补充后，会显示在这里。</string>
+    <string name="wb_record_clarification">移动去向已补充</string><string name="wb_record_context">单元 7 · 栏位 A2 · 演示记录</string>
+    <string name="wb_records_mock_note">此列表仅为当前演示数据。</string>
+    <string name="wb_task_preview_detail">此任务的详情页面尚未接入。任务在各次工作之间仍保持进行中。</string>
+    <string name="wb_task_complete">任务已完成</string><string name="wb_task_ended_early">任务已提前结束</string>
+    <string name="wb_completed_at">已完成 · 今天 %1$s</string><string name="wb_ended_early">已提前结束 · 今天</string>
+    <string name="wb_hold_to_end_mock">长按模拟提前结束</string><string name="wb_sync_owned">保存的工作由数据同步功能负责；首页只展示入口。本页不上传任何记录。</string>
+    <string name="wb_saved_work_waiting_n">%1$d 条记录保存在本机，联网后自动上传</string>
+    <string name="wb_saved_work_uploading_n">正在自动上传 %1$d 条本机记录</string>
+    <string name="wb_saved_work_attention_n">%1$d 条本机记录需要处理，查看原因</string>
+    <string name="wb_saved_work_fix_short">异常</string>
+    <string name="wb_mock_end_note">仅改变本机演示画面，不会提交任务。</string>
+    <string name="wb_inspection_owned">巡检由独立功能负责；当前仅展示首页入口。</string>
+    <string name="wb_ob77_title">出栏 · 14:00 装车</string><string name="wb_ob78_title">出栏 · 16:30 装车</string>
+    <string name="wb_tr241_title">转入分娩区单元 6</string><string name="wb_tr242_title">转入单元 9</string>
+    <string name="wb_s11_title">PRRS 血样采集</string><string name="wb_s12_title">口腔液采样</string><string name="wb_tr250_title">转入保育区单元 12</string>
+    <string name="wb_where_7_8">单元 7、8</string><string name="wb_where_7_9">单元 7、9</string><string name="wb_where_8">单元 8</string>
+    <string name="wb_from_7_8">来自单元 7、8</string><string name="wb_from_6">来自单元 6 的断奶猪</string><string name="wb_from_8_moved">来自单元 8 · 已转 12/20 头</string>
+    <string name="wb_hospital">病猪栏</string><string name="wb_in_place">原栏治疗</string>
+    <string name="wb_lameness">跛行</string><string name="wb_fever">发热</string><string name="wb_shoulder_sore">肩部损伤</string>
+    <string name="wb_coughing">咳嗽</string><string name="wb_off_feed">不采食</string><string name="wb_thin">消瘦</string><string name="wb_vulva_discharge">外阴分泌物</string>
+</resources>

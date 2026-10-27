@@ -1,0 +1,42 @@
+{
+  "date": "2026-10-18",
+  "scope": "Task 11 vaccination write foundation only; no read snapshots, local dose projection, UI, real mutation sending or release",
+  "reference": {
+    "webServicesVaccineSha256": "bfe2c65f6c37780dc50106eb6c7eb771479d2782db614a3a38e1511fbef0dbbc",
+    "webOfflineAdapterSha256": "fbddfac5c54c8034f8b2eb746b92f90f801ba59846f16144e834ebbefe1c2fc4",
+    "webCompletionSha256": "d771f08493bead4f355f23effacc5e4037f7e1f84808ddd30c607d075207092f",
+    "backendVaccineModelSha256": "552e56a13b07066aac35159a86d95489bbaa02c4ffabeed9a0f733348d53193f",
+    "backendProjectionSha256": "bc7d1b7945fbd583d9dba94ac94fac6f1e2a9fbb174bf1ce9a01585d7f255297"
+  },
+  "graphql": {
+    "operations": ["NativeExecuteVaccinationTask", "NativeFinishVaccinationTask"],
+    "contractOperations": 60,
+    "contractConsumedFields": 523,
+    "contractCheck": "passed against local schema snapshot"
+  },
+  "implementation": {
+    "inputs": "task ID, ordered targets including duplicates, nullable original timestamp",
+    "payload": "two typed operations registered in existing format-2 SQLite command envelope; schema unchanged",
+    "dependencies": "same task commands ordered by explicit dependencies even when device time moves backwards; finish waits for pending doses and blocks later dose commands",
+    "receipt": "strict format-1 operation and task recordId, checked again before SQLite success acknowledgement",
+    "language": "388 paired entries, 225 canonical enum mappings",
+    "serverRule": "execution increments each unique selected target by one dose; a new per-target dose row is created until dose_count; finish can end an incomplete task",
+    "webDifference": "old optimistic update marks each selected target completed after one execution and is unsuitable for multi-dose tasks"
+  },
+  "verification": {
+    "verifyCommand": "SENTRI_GRADLE_DIRECT=1 ./scripts/verify.sh",
+    "verify": "passed: GraphQL and language contracts, APK assembly, JVM tests and Android lint",
+    "verifyHistory": "one full run timed out in pre-existing TherapyReadRemoteTest.prescriptionContextRequiresCompleteFarmScopedMembership; that test passed alone and the complete verify rerun passed (183 JVM, zero failures)",
+    "jvm": {"tests": 183, "failures": 0, "skipped": 0, "newVaccinationTests": 4},
+    "androidRegular": {"tests": 146, "passed": 130, "skippedOptIn": 16, "failures": 0, "newVaccinationTests": 4},
+    "vaccinationProcessRestore": "not run; next task phase",
+    "realBackendRead": "not run",
+    "realBackendWrite": "not run"
+  },
+  "remaining": [
+    "Task list and detail GraphQL reads with complete per-target dose rows and farm relation checks",
+    "Scoped SQLite read snapshots and explicit new-process restore",
+    "Multi-dose local projection and read-reflection evidence",
+    "Real backend verification; no mutation transport is registered"
+  ]
+}

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.sentri.nativeapp.ui.ConnectionViewModelTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2026-10-10T04:35:07.907Z" hostname="Mac" time="0.005">
+  <properties/>
+  <testcase name="logout clears account while provider logout is pending" classname="com.sentri.nativeapp.ui.ConnectionViewModelTest" time="0.002"/>
+  <testcase name="multiple farms require explicit selection" classname="com.sentri.nativeapp.ui.ConnectionViewModelTest" time="0.001"/>
+  <testcase name="restored session fetches native account" classname="com.sentri.nativeapp.ui.ConnectionViewModelTest" time="0.0"/>
+  <testcase name="single farm automatically follows existing choose refresh query flow" classname="com.sentri.nativeapp.ui.ConnectionViewModelTest" time="0.0"/>
+  <testcase name="mismatched restored farm is not shown as successful" classname="com.sentri.nativeapp.ui.ConnectionViewModelTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,54 @@
+query NativeFarrowingTask($taskId: String!, $farmId: String!) {
+  tasks: farm_view_task(where: {id: {_eq: $taskId}, batch: {farm_id: {_eq: $farmId}}}, limit: 1) {
+    id batch_id status task_type
+    batch { farm_id }
+    pigs(where: {pig: {farm_id: {_eq: $farmId}}}, order_by: {pig_id: asc}) {
+      pig_id disabled
+      pig { id farm_id ear_tag ear_notch location_code location { unit_id unit_location pen_location } }
+      farrowing_pig {
+        task_id pig_id status is_disabled adopt_count foster_count no_identity_count
+        first_farrowing_at last_farrowing_at mating_at mating_by re_check_at operator_id
+        identity_piglets(order_by: {piglet_seq: asc}) { task_id pig_id piglet_seq birth_weight ear_tag ear_notch sex }
+        piglet_statistic(order_by: {piglet_type: asc}) { task_id pig_id piglet_type count }
+        records(order_by: {id: asc}) { task_id pig_id id alive_count dead_count submitted_at operator_id }
+      }
+    }
+  }
+}
+query NativePigletTask($taskId: String!, $farmId: String!) {
+  tasks: farm_view_task(where: {id: {_eq: $taskId}, batch: {farm_id: {_eq: $farmId}}}, limit: 1) {
+    id batch_id status task_type
+    batch { farm_id }
+    pigs(where: {pig: {farm_id: {_eq: $farmId}}}, order_by: {pig_id: asc}) {
+      pig_id disabled
+      pig { id farm_id ear_tag ear_notch location_code location { unit_id unit_location pen_location } }
+      piglet_handling_pig {
+        task_id pig_id is_disabled is_farrowed adopt_count foster_count no_identity_count female_count male_count litter_number last_farrowing_at total_weight items
+        identity_piglets(order_by: {piglet_seq: asc}) { task_id pig_id piglet_seq birth_weight ear_tag ear_notch sex }
+        todo_items(order_by: {item_type: asc}) { task_id pig_id item_type plan_days completed_at operator_id }
+      }
+    }
+  }
+}
+mutation NativeSubmitFarrowingPiglet($input: ProductionSubmitFarrowingPigletCommandStrawberryInput!) {
+  production { submit_farrowing_piglet(command_input: $input) { status errors { err_msg } } }
+}
+mutation NativeSubmitPigletHandlingItem($input: ProductionSubmitPigletHandlingItemCommandStrawberryInput!) {
+  production { submit_piglet_handling_item(command_input: $input) { status errors { err_msg } } }
+}
+mutation NativeSubmitPigletInfo($input: ProductionSubmitPigletInfoCommandStrawberryInput!) {
+  production { submit_piglet_info(command_input: $input) { status errors { err_msg } } }
+}
+mutation NativeSubmitPigletTotalWeight($input: ProductionSubmitPigletTotalWeightCommandStrawberryInput!) {
+  production { submit_piglet_total_weight(command_input: $input) { status errors { err_msg } } }
+}
+mutation NativeFosterPiglet($input: ProductionFosterPigletCommandStrawberryInput!) {
+  production { foster_piglet(command_input: $input) { status errors { err_msg } } }
+}
+# Legacy stage contracts still present in the reference SDL. Current offline handlers use NativeFosterPiglet.
+mutation NativeFosterFarrowingPiglet($input: ProductionFosterFarrowingPigletCommandStrawberryInput!) {
+  production { foster_farrowing_piglet(command_input: $input) { status errors { err_msg } } }
+}
+mutation NativeFosterPigletHandling($input: ProductionFosterPigletHandlingCommandStrawberryInput!) {
+  production { foster_piglet_handling(command_input: $input) { status errors { err_msg } } }
+}

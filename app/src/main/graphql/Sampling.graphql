@@ -1,0 +1,5 @@
+mutation NativeSubmitSampled($input: BiosafetySubmitSampledInput!) {
+  biosafety { submit_sampled(command_input: $input) {
+    status recordId record { sampling_task_id } errors { err_msg }
+  } }
+}

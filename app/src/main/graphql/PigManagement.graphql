@@ -1,0 +1,6 @@
+mutation NativeUpdatePigProperty($input: ProductionUpdatePigPropertyCommandStrawberryInput!) {
+  production { update_pig_property(command_input: $input) { status errors { err_msg } } }
+}
+mutation NativeUpdateBreederRole($input: ProductionUpdateBreederRoleCommandStrawberryInput!) {
+  production { update_breeder_role(command_input: $input) { status errors { err_msg } } }
+}

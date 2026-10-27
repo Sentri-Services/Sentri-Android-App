@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="931" viewBox="0 0 900 931" role="img" aria-label="产后检查 · 展示分支"><title>产后检查 · 展示分支</title><style>
+  text{font-family:'PingFang SC','Noto Sans CJK SC','Microsoft YaHei',sans-serif}
+  .title{fill:#26372d;font-size:16px;font-weight:700}
+  .sub{fill:#748274;font-size:10px}
+  .number{font-size:37px;font-weight:700}
+  .action{fill:#26372d;font-size:14px;font-weight:600}
+  .quiet{fill:#26372d;font-size:15px;font-weight:600}
+  .support{fill:#6c7c6d;font-size:11px}
+  .caption{fill:#697c6d;font-size:10px}
+  .caption.value{fill:#354b3b;font-weight:600}
+  .footer{fill:#506e54;font-size:11px}
+</style><rect width="900" height="931" fill="#f0f4ee"/><text x="28" y="42" font-size="22" font-weight="700" fill="#26372d">产后检查 · 展示分支</text><text x="28" y="62" font-size="11" fill="#748274">同一任务类型按事实择一显示；示例数据不是业务默认值</text><text x="40" y="92" font-size="12" font-weight="700" fill="#426b4c">产后评估已到期</text><g transform="translate(16 102)">
+  <rect x="8" y="8" width="416" height="236" rx="18" fill="#ffffff" stroke="#d9e3d7" stroke-width="1.4"/>
+  <rect x="26" y="27" width="34" height="34" rx="10" fill="#e8f0e6"/>
+  <text x="43" y="50" text-anchor="middle" font-size="15" font-weight="700" fill="#426b4c">产</text>
+  <text x="73" y="43" class="title">产后检查</text>
+  <text x="73" y="59" class="sub">第 28 批 · 本次评估</text>
+  <rect x="334" y="28" width="73" height="24" rx="12" fill="#e8f0e6"/>
+  <text x="370.5" y="45" text-anchor="middle" font-size="11" fill="#426b4c">进行中</text>
+  <rect x="27" y="79" width="378" height="84" rx="13" fill="#f5f8f2"/>
+  <text x="48" y="133" class="number" fill="#426b4c">3</text><text x="88" y="129" class="action">头母猪待检查</text><text x="48" y="152" class="support">产后评估窗口已开</text>
+  <text x="32" y="187" class="caption">产后检查已记录</text><text x="400" y="187" class="caption value" text-anchor="end">6 / 9 头</text><rect x="32" y="198" width="368" height="6" rx="3" fill="#e8eee5"/><rect x="32" y="198" width="245.3" height="6" rx="3" fill="#426b4c"/>
+  <line x1="26" y1="216" x2="406" y2="216" stroke="#e4eae0"/>
+  <text x="32" y="232" class="footer">涉及 2 个单元 · 查看任务</text>
+  <path d="M388 226l5 5-5 5" fill="none" stroke="#426b4c" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</g><text x="482" y="92" font-size="12" font-weight="700" fill="#426b4c">明确检查截止已过</text><g transform="translate(458 102)">
+  <rect x="8" y="8" width="416" height="236" rx="18" fill="#ffffff" stroke="#d9e3d7" stroke-width="1.4"/>
+  <rect x="26" y="27" width="34" height="34" rx="10" fill="#e8f0e6"/>
+  <text x="43" y="50" text-anchor="middle" font-size="15" font-weight="700" fill="#426b4c">产</text>
+  <text x="73" y="43" class="title">产后检查</text>
+  <text x="73" y="59" class="sub">第 28 批 · 本次评估</text>
+  <rect x="334" y="28" width="73" height="24" rx="12" fill="#e8f0e6"/>
+  <text x="370.5" y="45" text-anchor="middle" font-size="11" fill="#426b4c">进行中</text>
+  <rect x="27" y="79" width="378" height="84" rx="13" fill="#f5f8f2"/>
+  <text x="48" y="133" class="number" fill="#426b4c">3</text><text x="88" y="129" class="action">头母猪待检查</text><text x="48" y="152" class="support">其中 1 头超过明确截止</text>
+  <text x="32" y="187" class="caption">产后检查已记录</text><text x="400" y="187" class="caption value" text-anchor="end">6 / 9 头</text><rect x="32" y="198" width="368" height="6" rx="3" fill="#e8eee5"/><rect x="32" y="198" width="245.3" height="6" rx="3" fill="#426b4c"/>
+  <line x1="26" y1="216" x2="406" y2="216" stroke="#e4eae0"/>
+  <text x="32" y="232" class="footer">涉及 2 个单元 · 查看任务</text>
+  <path d="M388 226l5 5-5 5" fill="none" stroke="#426b4c" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</g><text x="40" y="374" font-size="12" font-weight="700" fill="#426b4c">明确复查到期</text><g transform="translate(16 384)">
+  <rect x="8" y="8" width="416" height="236" rx="18" fill="#ffffff" stroke="#d9e3d7" stroke-width="1.4"/>
+  <rect x="26" y="27" width="34" height="34" rx="10" fill="#e8f0e6"/>
+  <text x="43" y="50" text-anchor="middle" font-size="15" font-weight="700" fill="#426b4c">产</text>
+  <text x="73" y="43" class="title">产后检查</text>
+  <text x="73" y="59" class="sub">第 28 批 · 本次评估</text>
+  <rect x="334" y="28" width="73" height="24" rx="12" fill="#e8f0e6"/>
+  <text x="370.5" y="45" text-anchor="middle" font-size="11" fill="#426b4c">进行中</text>
+  <rect x="27" y="79" width="378" height="84" rx="13" fill="#f5f8f2"/>
+  <text x="48" y="133" class="number" fill="#426b4c">2</text><text x="88" y="129" class="action">头母猪待产后复查</text><text x="48" y="152" class="support">明确复查 · 今天 15:00</text>
+  <text x="32" y="187" class="caption">产后检查已记录</text><text x="400" y="187" class="caption value" text-anchor="end">3 / 5 头</text><rect x="32" y="198" width="368" height="6" rx="3" fill="#e8eee5"/><rect x="32" y="198" width="220.8" height="6" rx="3" fill="#426b4c"/>
+  <line x1="26" y1="216" x2="406" y2="216" stroke="#e4eae0"/>
+  <text x="32" y="232" class="footer">涉及 2 个单元 · 查看任务</text>
+  <path d="M388 226l5 5-5 5" fill="none" stroke="#426b4c" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</g><text x="482" y="374" font-size="12" font-weight="700" fill="#426b4c">等待下一评估</text><g transform="translate(458 384)">
+  <rect x="8" y="8" width="416" height="236" rx="18" fill="#ffffff" stroke="#d9e3d7" stroke-width="1.4"/>
+  <rect x="26" y="27" width="34" height="34" rx="10" fill="#e8f0e6"/>
+  <text x="43" y="50" text-anchor="middle" font-size="15" font-weight="700" fill="#426b4c">产</text>
+  <text x="73" y="43" class="title">产后检查</text>
+  <text x="73" y="59" class="sub">第 28 批 · 本次评估</text>
+  <rect x="334" y="28" width="73" height="24" rx="12" fill="#e8f0e6"/>
+  <text x="370.5" y="45" text-anchor="middle" font-size="11" fill="#426b4c">进行中</text>
+  <rect x="27" y="79" width="378" height="84" rx="13" fill="#f5f8f2"/>
+  <text x="48" y="120" class="quiet">当前无到期产后检查</text><text x="48" y="143" class="support">下次评估：明天 09:00</text>
+  <text x="32" y="187" class="caption">产后检查已记录</text><text x="400" y="187" class="caption value" text-anchor="end">6 / 9 头</text><rect x="32" y="198" width="368" height="6" rx="3" fill="#e8eee5"/><rect x="32" y="198" width="245.3" height="6" rx="3" fill="#426b4c"/>
+  <line x1="26" y1="216" x2="406" y2="216" stroke="#e4eae0"/>
+  <text x="32" y="232" class="footer">涉及 2 个单元 · 查看任务</text>
+  <path d="M388 226l5 5-5 5" fill="none" stroke="#426b4c" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</g><text x="40" y="656" font-size="12" font-weight="700" fill="#426b4c">等待真实分娩</text><g transform="translate(16 666)">
+  <rect x="8" y="8" width="416" height="236" rx="18" fill="#ffffff" stroke="#d9e3d7" stroke-width="1.4"/>
+  <rect x="26" y="27" width="34" height="34" rx="10" fill="#e8f0e6"/>
+  <text x="43" y="50" text-anchor="middle" font-size="15" font-weight="700" fill="#426b4c">产</text>
+  <text x="73" y="43" class="title">产后检查</text>
+  <text x="73" y="59" class="sub">第 28 批 · 本次评估</text>
+  <rect x="334" y="28" width="73" height="24" rx="12" fill="#e8f0e6"/>
+  <text x="370.5" y="45" text-anchor="middle" font-size="11" fill="#426b4c">进行中</text>
+  <rect x="27" y="79" width="378" height="84" rx="13" fill="#f5f8f2"/>
+  <text x="48" y="120" class="quiet">等待分娩记录</text><text x="48" y="143" class="support">有实际分娩时间后计算检查窗口</text>
+  <text x="32" y="188" class="caption">仅显示已确认的任务与时间信息</text>
+  <line x1="26" y1="216" x2="406" y2="216" stroke="#e4eae0"/>
+  <text x="32" y="232" class="footer">涉及 2 个单元 · 查看任务</text>
+  <path d="M388 226l5 5-5 5" fill="none" stroke="#426b4c" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</g></svg>

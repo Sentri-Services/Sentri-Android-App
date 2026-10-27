@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.sentri.nativeapp.production.EstrusContractTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2026-10-10T03:52:40.327Z" hostname="Mac" time="0.025">
+  <properties/>
+  <testcase name="language switch rejects delayed response without clearing authenticated session" classname="com.sentri.nativeapp.production.EstrusContractTest" time="0.006"/>
+  <testcase name="slice query scopes task and pigs preserves enum date and language" classname="com.sentri.nativeapp.production.EstrusContractTest" time="0.004"/>
+  <testcase name="compiled mutation sends canonical input explicit null and no assumed dedupe header" classname="com.sentri.nativeapp.production.EstrusContractTest" time="0.004"/>
+  <testcase name="submit contract keeps ordered IDs explicit null default and override" classname="com.sentri.nativeapp.production.EstrusContractTest" time="0.006"/>
+  <testcase name="absent task differs from malformed response and input keeps explicit null" classname="com.sentri.nativeapp.production.EstrusContractTest" time="0.005"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

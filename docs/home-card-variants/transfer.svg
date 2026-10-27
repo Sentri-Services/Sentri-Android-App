@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="931" viewBox="0 0 900 931" role="img" aria-label="转舍 · 展示分支"><title>转舍 · 展示分支</title><style>
+  text{font-family:'PingFang SC','Noto Sans CJK SC','Microsoft YaHei',sans-serif}
+  .title{fill:#26372d;font-size:16px;font-weight:700}
+  .sub{fill:#748274;font-size:10px}
+  .number{font-size:37px;font-weight:700}
+  .action{fill:#26372d;font-size:14px;font-weight:600}
+  .quiet{fill:#26372d;font-size:15px;font-weight:600}
+  .support{fill:#6c7c6d;font-size:11px}
+  .caption{fill:#697c6d;font-size:10px}
+  .caption.value{fill:#354b3b;font-weight:600}
+  .footer{fill:#506e54;font-size:11px}
+</style><rect width="900" height="931" fill="#f0f4ee"/><text x="28" y="42" font-size="22" font-weight="700" fill="#26372d">转舍 · 展示分支</text><text x="28" y="62" font-size="11" fill="#748274">同一任务类型按事实择一显示；示例数据不是业务默认值</text><text x="40" y="92" font-size="12" font-weight="700" fill="#426b4c">接收位置有已确认问题</text><g transform="translate(16 102)">
+  <rect x="8" y="8" width="416" height="236" rx="18" fill="#ffffff" stroke="#d9e3d7" stroke-width="1.4"/>
+  <rect x="26" y="27" width="34" height="34" rx="10" fill="#eee9f4"/>
+  <text x="43" y="50" text-anchor="middle" font-size="15" font-weight="700" fill="#765893">转</text>
+  <text x="73" y="43" class="title">转舍</text>
+  <text x="73" y="59" class="sub">转舍单 M-42 · 转出／转入</text>
+  <rect x="334" y="28" width="73" height="24" rx="12" fill="#eee9f4"/>
+  <text x="370.5" y="45" text-anchor="middle" font-size="11" fill="#765893">进行中</text>
+  <rect x="27" y="79" width="378" height="84" rx="13" fill="#faf8fc"/>
+  <text x="48" y="133" class="number" fill="#765893">1</text><text x="88" y="129" class="action">处接收位置需处理</text><text x="48" y="152" class="support">已确认 · 影响转舍单 M-42</text>
+  <text x="32" y="187" class="caption">已确认转舍</text><text x="400" y="187" class="caption value" text-anchor="end">12 / 20 头</text><rect x="32" y="198" width="368" height="6" rx="3" fill="#e8eee5"/><rect x="32" y="198" width="220.8" height="6" rx="3" fill="#765893"/>
+  <line x1="26" y1="216" x2="406" y2="216" stroke="#e4eae0"/>
+  <text x="32" y="232" class="footer">涉及 2 个单元 · 查看任务</text>
+  <path d="M388 226l5 5-5 5" fill="none" stroke="#765893" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</g><text x="482" y="92" font-size="12" font-weight="700" fill="#426b4c">当前可确认移动</text><g transform="translate(458 102)">
+  <rect x="8" y="8" width="416" height="236" rx="18" fill="#ffffff" stroke="#d9e3d7" stroke-width="1.4"/>
+  <rect x="26" y="27" width="34" height="34" rx="10" fill="#eee9f4"/>
+  <text x="43" y="50" text-anchor="middle" font-size="15" font-weight="700" fill="#765893">转</text>
+  <text x="73" y="43" class="title">转舍</text>
+  <text x="73" y="59" class="sub">转舍单 M-42 · 转出／转入</text>
+  <rect x="334" y="28" width="73" height="24" rx="12" fill="#eee9f4"/>
+  <text x="370.5" y="45" text-anchor="middle" font-size="11" fill="#765893">进行中</text>
+  <rect x="27" y="79" width="378" height="84" rx="13" fill="#faf8fc"/>
+  <text x="48" y="133" class="number" fill="#765893">8</text><text x="88" y="129" class="action">头猪待确认转舍</text><text x="48" y="152" class="support">配怀区单元 3 → 分娩区单元 6</text>
+  <text x="32" y="187" class="caption">已确认转舍</text><text x="400" y="187" class="caption value" text-anchor="end">12 / 20 头</text><rect x="32" y="198" width="368" height="6" rx="3" fill="#e8eee5"/><rect x="32" y="198" width="220.8" height="6" rx="3" fill="#765893"/>
+  <line x1="26" y1="216" x2="406" y2="216" stroke="#e4eae0"/>
+  <text x="32" y="232" class="footer">涉及 2 个单元 · 查看任务</text>
+  <path d="M388 226l5 5-5 5" fill="none" stroke="#765893" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</g><text x="40" y="374" font-size="12" font-weight="700" fill="#426b4c">等待接收窗口</text><g transform="translate(16 384)">
+  <rect x="8" y="8" width="416" height="236" rx="18" fill="#ffffff" stroke="#d9e3d7" stroke-width="1.4"/>
+  <rect x="26" y="27" width="34" height="34" rx="10" fill="#eee9f4"/>
+  <text x="43" y="50" text-anchor="middle" font-size="15" font-weight="700" fill="#765893">转</text>
+  <text x="73" y="43" class="title">转舍</text>
+  <text x="73" y="59" class="sub">转舍单 M-42 · 转出／转入</text>
+  <rect x="334" y="28" width="73" height="24" rx="12" fill="#eee9f4"/>
+  <text x="370.5" y="45" text-anchor="middle" font-size="11" fill="#765893">进行中</text>
+  <rect x="27" y="79" width="378" height="84" rx="13" fill="#faf8fc"/>
+  <text x="48" y="120" class="quiet">当前无待确认转舍</text><text x="48" y="143" class="support">下一接收窗口：明天 09:00</text>
+  <text x="32" y="187" class="caption">已确认转舍</text><text x="400" y="187" class="caption value" text-anchor="end">12 / 20 头</text><rect x="32" y="198" width="368" height="6" rx="3" fill="#e8eee5"/><rect x="32" y="198" width="220.8" height="6" rx="3" fill="#765893"/>
+  <line x1="26" y1="216" x2="406" y2="216" stroke="#e4eae0"/>
+  <text x="32" y="232" class="footer">涉及 2 个单元 · 查看任务</text>
+  <path d="M388 226l5 5-5 5" fill="none" stroke="#765893" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</g><text x="482" y="374" font-size="12" font-weight="700" fill="#426b4c">接收位置未定</text><g transform="translate(458 384)">
+  <rect x="8" y="8" width="416" height="236" rx="18" fill="#ffffff" stroke="#d9e3d7" stroke-width="1.4"/>
+  <rect x="26" y="27" width="34" height="34" rx="10" fill="#eee9f4"/>
+  <text x="43" y="50" text-anchor="middle" font-size="15" font-weight="700" fill="#765893">转</text>
+  <text x="73" y="43" class="title">转舍</text>
+  <text x="73" y="59" class="sub">转舍单 M-42 · 转出／转入</text>
+  <rect x="334" y="28" width="73" height="24" rx="12" fill="#eee9f4"/>
+  <text x="370.5" y="45" text-anchor="middle" font-size="11" fill="#765893">进行中</text>
+  <rect x="27" y="79" width="378" height="84" rx="13" fill="#faf8fc"/>
+  <text x="48" y="120" class="quiet">接收位置待确定</text><text x="48" y="143" class="support">转舍单 M-42 · 查看任务</text>
+  <text x="32" y="187" class="caption">已确认转舍</text><text x="400" y="187" class="caption value" text-anchor="end">12 / 20 头</text><rect x="32" y="198" width="368" height="6" rx="3" fill="#e8eee5"/><rect x="32" y="198" width="220.8" height="6" rx="3" fill="#765893"/>
+  <line x1="26" y1="216" x2="406" y2="216" stroke="#e4eae0"/>
+  <text x="32" y="232" class="footer">涉及 2 个单元 · 查看任务</text>
+  <path d="M388 226l5 5-5 5" fill="none" stroke="#765893" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</g><text x="40" y="656" font-size="12" font-weight="700" fill="#426b4c">单元范围：转出</text><g transform="translate(16 666)">
+  <rect x="8" y="8" width="416" height="236" rx="18" fill="#ffffff" stroke="#d9e3d7" stroke-width="1.4"/>
+  <rect x="26" y="27" width="34" height="34" rx="10" fill="#eee9f4"/>
+  <text x="43" y="50" text-anchor="middle" font-size="15" font-weight="700" fill="#765893">转</text>
+  <text x="73" y="43" class="title">转舍</text>
+  <text x="73" y="59" class="sub">转舍单 M-42 · 单元 3 转出</text>
+  <rect x="334" y="28" width="73" height="24" rx="12" fill="#eee9f4"/>
+  <text x="370.5" y="45" text-anchor="middle" font-size="11" fill="#765893">进行中</text>
+  <rect x="27" y="79" width="378" height="84" rx="13" fill="#faf8fc"/>
+  <text x="48" y="133" class="number" fill="#765893">5</text><text x="88" y="129" class="action">头猪待确认转出</text><text x="48" y="152" class="support">转往分娩区单元 6</text>
+  <text x="32" y="187" class="caption">已确认转舍</text><text x="400" y="187" class="caption value" text-anchor="end">7 / 12 头</text><rect x="32" y="198" width="368" height="6" rx="3" fill="#e8eee5"/><rect x="32" y="198" width="214.7" height="6" rx="3" fill="#765893"/>
+  <line x1="26" y1="216" x2="406" y2="216" stroke="#e4eae0"/>
+  <text x="32" y="232" class="footer">当前单元 · 查看转出工作</text>
+  <path d="M388 226l5 5-5 5" fill="none" stroke="#765893" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</g><text x="482" y="656" font-size="12" font-weight="700" fill="#426b4c">单元范围：转入</text><g transform="translate(458 666)">
+  <rect x="8" y="8" width="416" height="236" rx="18" fill="#ffffff" stroke="#d9e3d7" stroke-width="1.4"/>
+  <rect x="26" y="27" width="34" height="34" rx="10" fill="#eee9f4"/>
+  <text x="43" y="50" text-anchor="middle" font-size="15" font-weight="700" fill="#765893">转</text>
+  <text x="73" y="43" class="title">转舍</text>
+  <text x="73" y="59" class="sub">转舍单 M-42 · 单元 6 转入</text>
+  <rect x="334" y="28" width="73" height="24" rx="12" fill="#eee9f4"/>
+  <text x="370.5" y="45" text-anchor="middle" font-size="11" fill="#765893">进行中</text>
+  <rect x="27" y="79" width="378" height="84" rx="13" fill="#faf8fc"/>
+  <text x="48" y="133" class="number" fill="#765893">3</text><text x="88" y="129" class="action">头猪待确认转入</text><text x="48" y="152" class="support">来自配怀区单元 3</text>
+  <text x="32" y="187" class="caption">已确认转舍</text><text x="400" y="187" class="caption value" text-anchor="end">9 / 12 头</text><rect x="32" y="198" width="368" height="6" rx="3" fill="#e8eee5"/><rect x="32" y="198" width="276.0" height="6" rx="3" fill="#765893"/>
+  <line x1="26" y1="216" x2="406" y2="216" stroke="#e4eae0"/>
+  <text x="32" y="232" class="footer">当前单元 · 查看转入工作</text>
+  <path d="M388 226l5 5-5 5" fill="none" stroke="#765893" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</g></svg>

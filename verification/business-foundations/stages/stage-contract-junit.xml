@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.sentri.nativeapp.production.StageContractTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2026-10-09T10:14:53.712Z" hostname="Mac" time="0.099">
+  <properties/>
+  <testcase name="growing pair sends entire location aggregate identities decimal zero and null" classname="com.sentri.nativeapp.production.StageContractTest" time="0.015"/>
+  <testcase name="invalid location identity quantities and stage cannot become network input" classname="com.sentri.nativeapp.production.StageContractTest" time="0.003"/>
+  <testcase name="missing task absent check and context switch remain separate" classname="com.sentri.nativeapp.production.StageContractTest" time="0.017"/>
+  <testcase name="postpartum wire preserves nullable prolapse and explicit obsoletion" classname="com.sentri.nativeapp.production.StageContractTest" time="0.009"/>
+  <testcase name="queries preserve sow raw json lactation identity and nursery location aggregates" classname="com.sentri.nativeapp.production.StageContractTest" time="0.024"/>
+  <testcase name="foreign ownership negative quantities and unknown identity sex reject snapshots" classname="com.sentri.nativeapp.production.StageContractTest" time="0.017"/>
+  <testcase name="lactation allows absent sow assessment and retains empty lists differently from piglet info" classname="com.sentri.nativeapp.production.StageContractTest" time="0.013"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

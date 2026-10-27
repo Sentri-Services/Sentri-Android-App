@@ -1,0 +1,47 @@
+{
+  "date": "2026-10-19",
+  "scope": "Task 12 non-UI sampling foundation: GraphQL, models, offline command, dependencies, snapshots, preview, bilingual resources",
+  "reference": {
+    "webQueriesSha256": "d8d6a74dc8137d97c14269055ce042a256bf817047a262ef494471ad25c84c81",
+    "webMutationsSha256": "6f8b0b220d52975f38a6ddf7a8a0c864f16fad49c33ba580989fc52dd5bba050",
+    "webOfflineAdapterSha256": "db1791c562a5172cc41b4c89a457c01c55d2ab4d6cfe7a5ffc8981eb9d25af4d",
+    "backendModelSha256": "cd3d6348672d13e7410c7cadc2915c56727a36422f18e46ddffceadb2deb3ee4",
+    "backendGraphqlResolverSha256": "fc7509ea0a30c22b4f23ea1f205d051f2e812220b3e066aaae8f9bb0126081f5"
+  },
+  "implementation": {
+    "operations": ["NativeSubmitSampled", "NativeSamplingTasks"],
+    "write": "sampling_task_id and nullable remark only; successful recordId must match task; nullable resolver record accepted",
+    "queue": "format-2 typed payload in schema-2 SQLite; same-task duplicate or unconfirmed result blocks another submission; distinct tasks remain independent",
+    "reads": "full and UNSAMPLED_OR_SAMPLED_IN_WINDOW pages have distinct keys; farm+ID detail; five target types, sampling test targets, and report relationships",
+    "cache": "sampling_page and sampling_detail included in scoped 256-row read eviction, separate from durable commands",
+    "projection": "QUEUED intent previews isSampled and remark while server timestamp/operator remain unknown; uncertain, failed, synced-awaiting-refresh and disabled states are distinct",
+    "language": "operation, target/sample/project/container/result enums, queue conflicts and preview states have Chinese/English mappings"
+  },
+  "verification": {
+    "verifyCommand": "SENTRI_GRADLE_DIRECT=1 ./scripts/verify.sh",
+    "verify": "passed: GraphQL and language contracts, JVM tests, APK assembly and Android lint",
+    "jvm": {"tests": 201, "failures": 0, "skipped": 0},
+    "androidRegular": {"tests": 156, "passed": 138, "skippedOptIn": 18, "failures": 0},
+    "processRestore": {
+      "method": "assemble and install both APKs; am instrument prepare; am force-stop target package; am instrument restore",
+      "prepare": "passed, PID 18485",
+      "restore": "passed, PID 18525",
+      "snapshotsRestored": 3,
+      "uncertainCommandsRestored": 1,
+      "remoteReadsOnRestore": 0,
+      "automaticResends": 0,
+      "workspacePreview": "WAITING_CONFIRMATION without confirmed snapshot mutation"
+    },
+    "graphql": {"contractOperations": 63, "contractConsumedFields": 672},
+    "language": {"pairedEntries": 425, "canonicalEnumMappings": 281},
+    "realBackendRead": "not run",
+    "realBackendWrite": "not run"
+  },
+  "remaining": [
+    "Automatic read-reflection evidence for successful sampling commands",
+    "Real backend read/write verification; no mutation transport is registered",
+    "Simplified entry sampling is task 17",
+    "Tasks 8–11 remaining work, tasks 13–18 and final cross-business audit"
+  ],
+  "unchanged": ["No business UI", "No version or signing change", "No release"]
+}

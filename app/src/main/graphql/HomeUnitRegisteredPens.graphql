@@ -1,0 +1,9 @@
+query NativeHomeUnitRegisteredPens($farmId: String!, $unitId: String!, $offset: Int!, $limit: Int!) {
+  pens: farm_view_pen_index(
+    where: {farm_id: {_eq: $farmId}, unit_id: {_eq: $unitId}},
+    order_by: {id: asc}, offset: $offset, limit: $limit) {
+    id farm_id unit_id pen_location pen_number
+  }
+  count: farm_view_pen_index_aggregate(
+    where: {farm_id: {_eq: $farmId}, unit_id: {_eq: $unitId}}) { aggregate { count } }
+}

@@ -39,6 +39,32 @@ class FakeAuthGateway : AuthGateway {
 fun validSession() = Session("serialized-test-state", "test-token", 1_000_000, "test-user", "test-farm")
 
 class AuthRepositoryTest {
+    @Test fun `old request cannot refresh or invalidate a new login even if token text repeats`() = runTest {
+        val store = MemorySessionStore(validSession()); val gateway = FakeAuthGateway()
+        val repo = AuthRepository(store, gateway) { 0 }; val original = repo.contextRevision
+        repo.beginLogin(); repo.completeLogin("callback")
+        assertEquals("test-token", repo.session.value?.accessToken)
+        for (call in listOf<suspend () -> Unit>(
+            { repo.token(original); Unit },
+            { repo.refreshRejectedToken("test-token", original); Unit },
+            { repo.invalidateRejectedToken("test-token", original) },
+        )) {
+            try { call(); fail("Old request accepted") } catch (_: kotlinx.coroutines.CancellationException) { }
+        }
+        assertNotNull(repo.session.value); assertEquals(0, gateway.refreshCalls)
+    }
+    @Test fun `context guard is checked after waiting for auth mutex`() = runTest {
+        val gateway = FakeAuthGateway().apply { gate = CompletableDeferred() }
+        val repo = AuthRepository(MemorySessionStore(validSession().copy(expiresAtMillis = 0)), gateway) { 0 }
+        val context = repo.contextRevision
+        val refreshing = async { repo.token() }; testScheduler.runCurrent()
+        val switching = async { repo.clearFarm() }; testScheduler.runCurrent()
+        val rejecting = async {
+            try { repo.invalidateRejectedToken("fresh-1", context); false } catch (_: kotlinx.coroutines.CancellationException) { true }
+        }; testScheduler.runCurrent()
+        gateway.gate!!.complete(Unit); refreshing.await(); switching.await()
+        assertTrue(rejecting.await()); assertNotNull(repo.session.value); assertNull(repo.session.value?.farmId)
+    }
     @Test fun `restores existing session without refresh`() = runTest {
         val store = MemorySessionStore(validSession())
         val gateway = FakeAuthGateway()

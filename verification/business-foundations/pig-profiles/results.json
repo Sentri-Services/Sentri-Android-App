@@ -1,0 +1,129 @@
+{
+  "date": "2026-10-10",
+  "overallGoal": "in_progress",
+  "batch": "task 9c legacy full pig profiles; management previews and task enrichment incomplete",
+  "jvm": {
+    "tests": 130,
+    "skipped": 0,
+    "failures": 0,
+    "errors": 0,
+    "passed": 130
+  },
+  "android": {
+    "tests": 109,
+    "skipped": 12,
+    "failures": 0,
+    "errors": 0,
+    "passed": 97
+  },
+  "verifyPassed": true,
+  "graphQL": {
+    "operations": 46,
+    "consumedFields": 449,
+    "newQueries": [
+      "NativePigProfiles"
+    ],
+    "transport": "MockWebServer only",
+    "legacyDefinitionsCovered": 6,
+    "profileSelectedPaths": 157,
+    "missingLegacySelectedPaths": 0,
+    "unknownReadEnumRawValuesRetained": true,
+    "sealedReadEnumTypes": 11,
+    "optionalAggregateCount": true
+  },
+  "language": {
+    "resourceEntries": 262,
+    "enumMappings": 176,
+    "newOriginCodes": 2,
+    "newBreedCodes": 22,
+    "newSemenControlCodes": 4,
+    "canonicalBreedAcronymsPreserved": [
+      "YLL",
+      "YLP"
+    ]
+  },
+  "offline": {
+    "supportedCommandCount": 23,
+    "newSnapshotKinds": [
+      "pig_profile_page",
+      "pig_profile_detail"
+    ],
+    "snapshotSchema": 2,
+    "profilePayloadFormat": 1,
+    "independentOfBasicPigSnapshots": true,
+    "fullScopeAndFilterIsolationVerified": true,
+    "decimalScaleAndRawJsonPreserved": true,
+    "relationshipNullAndEmptyDistinguished": true,
+    "largeHealthHistoryCharacters": 2700013,
+    "largePayloadReadChunkCharacters": 65536,
+    "largeHistoryReopenVerified": true,
+    "sharedReadCapacity": 256,
+    "cacheClearPreservesQueue": true,
+    "newJvmTests": 5,
+    "newRegularAndroidTests": 6
+  },
+  "processRestore": {
+    "preparePassed": true,
+    "restorePassed": true,
+    "pids": [
+      31603,
+      31643
+    ],
+    "newPidAsserted": true,
+    "persistedSnapshots": 3,
+    "remoteReads": 0,
+    "cachedAbsenceRetained": true,
+    "decimalAndRawJsonExact": true,
+    "bilingualNamesPreserved": true,
+    "scopeIsolated": true
+  },
+  "uiFiles": [
+    {
+      "path": "app/src/main/java/com/sentri/nativeapp/MainActivity.kt",
+      "unchanged": true
+    },
+    {
+      "path": "app/src/main/java/com/sentri/nativeapp/devices/DeviceVerificationScreen.kt",
+      "unchanged": true
+    },
+    {
+      "path": "app/src/main/java/com/sentri/nativeapp/pigs/PigScreen.kt",
+      "unchanged": true
+    },
+    {
+      "path": "app/src/main/java/com/sentri/nativeapp/ui/ConnectionScreen.kt",
+      "unchanged": true
+    },
+    {
+      "path": "app/src/main/java/com/sentri/nativeapp/ui/ConnectionViewModel.kt",
+      "unchanged": true
+    },
+    {
+      "path": "app/src/main/java/com/sentri/nativeapp/ui/LoginWebView.kt",
+      "unchanged": true
+    },
+    {
+      "path": "app/src/main/java/com/sentri/nativeapp/update/ApkUpdateScreen.kt",
+      "unchanged": true
+    },
+    {
+      "path": "app/src/main/res/values/styles.xml",
+      "unchanged": true
+    }
+  ],
+  "releaseAndVersionConfigDiffEmpty": true,
+  "references": {
+    "Sentri": {
+      "head": "4c1a2ff49e8d938e1af053d844018cc140c63f38",
+      "workingTreeClean": true
+    },
+    "Sentri-Android": {
+      "head": "ee0f6c333fa99014ca067fc5b47c538d36285cff",
+      "workingTreeClean": true
+    }
+  },
+  "realBackendWritesExecuted": false,
+  "newLiveBackendReadsExecuted": false,
+  "pushOrReleaseExecuted": false,
+  "remaining": "Task 9 property/role/death local previews and integration; task 8 full profile enrichment, metadata consistency and read-reflection evidence; task 10-18 business foundations and final audit."
+}

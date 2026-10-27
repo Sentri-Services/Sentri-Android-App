@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.sentri.nativeapp.pigs.PigManagementContractTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2026-10-10T04:16:18.983Z" hostname="Mac" time="0.052">
+  <properties/>
+  <testcase name="backendRefusalRemainsARefusalAndNewOperationsDoNotRetryWrites" classname="com.sentri.nativeapp.pigs.PigManagementContractTest" time="0.022"/>
+  <testcase name="propertyWireKeepsNullEmptyZeroAndPreciseDecimalString" classname="com.sentri.nativeapp.pigs.PigManagementContractTest" time="0.012"/>
+  <testcase name="allBreederActionsKeepIdentityParentIdsSelectionOrderAndCapturedTime" classname="com.sentri.nativeapp.pigs.PigManagementContractTest" time="0.018"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

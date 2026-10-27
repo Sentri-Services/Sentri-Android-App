@@ -1,0 +1,42 @@
+[
+  {
+    "path": "app/src/main/java/com/sentri/nativeapp/AppContainer.kt",
+    "sha256": "2788e547568557610e00ecf8c18277f3c73998213dcd320a4d07a51a72981d8a"
+  },
+  {
+    "path": "app/src/main/java/com/sentri/nativeapp/production/ProductionProjection.kt",
+    "sha256": "70d30d9231d1a33fa2b90f2f522f49d7c69e28c595599e02a94e79ee3db60330"
+  },
+  {
+    "path": "app/src/main/java/com/sentri/nativeapp/production/PigManagementProjection.kt",
+    "sha256": "347999aaed166701821f2946ead57ec12a3c2ca67f2dfb666c965df3932ce3f4"
+  },
+  {
+    "path": "app/src/main/java/com/sentri/nativeapp/production/ProductionWorkspaceReads.kt",
+    "sha256": "99b747169c8c39eaafc4d44290abe3a6f743daa92fb082706ea1d387071df7b2"
+  },
+  {
+    "path": "app/src/main/java/com/sentri/nativeapp/production/ProductionStageModels.kt",
+    "sha256": "df959d0a42bd46874657e37de195f3474e394fe4f0ad883dfd45356543aaf800"
+  },
+  {
+    "path": "app/src/test/java/com/sentri/nativeapp/production/PigManagementProjectionTest.kt",
+    "sha256": "84a78596aa1c8813ef5e4b504f0b837ec9db359a0083b16285325efb050ab582"
+  },
+  {
+    "path": "app/src/test/java/com/sentri/nativeapp/production/ProductionProjectionTest.kt",
+    "sha256": "569116cda695b3f44ad4802454521a9643a48912d5f0147e6ac4a6e22eef97e2"
+  },
+  {
+    "path": "app/src/androidTest/java/com/sentri/nativeapp/StageFoundationTest.kt",
+    "sha256": "d10215ef55ca4a4934ffd1b680de75ff3e9f9ea4dc959a70f8fccc869808760f"
+  },
+  {
+    "path": "app/src/androidTest/java/com/sentri/nativeapp/ProfileWorkspaceTest.kt",
+    "sha256": "ad4843f156edd2356c73b7569747548098a42a932cbe5015701aed853d360b98"
+  },
+  {
+    "path": "app/src/androidTest/java/com/sentri/nativeapp/ProfileWorkspaceProcessRestoreTest.kt",
+    "sha256": "1b57e3ab57239b35457639c41fa910e8816a682692852e4f5e02314bbb7e98ca"
+  }
+]

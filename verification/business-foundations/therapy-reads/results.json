@@ -1,0 +1,41 @@
+{
+  "date": "2026-10-18",
+  "scope": "Task 10 therapy read foundation only; no UI, real backend calls, mutation dispatch, or release",
+  "reference": "../Sentri/mobile_webapp/src/services/prescription.ts and src/db/task/advice/cacheFilter.ts",
+  "graphql": {
+    "operations": ["NativeTherapyRows", "NativeTherapyMedications", "NativeTherapyMedicationCatalog", "NativeTherapyTreatments"],
+    "detailUsesRowsWithFarmAndId": true,
+    "contractOperations": 57,
+    "contractConsumedFields": 513,
+    "contractManifest": "tools/graphql-contract/contract.json",
+    "contractCheck": "passed against local schema snapshot"
+  },
+  "reads": {
+    "types": ["full therapy page", "daily active-or-executed prefetch page", "therapy detail", "medications", "medication catalogs", "treatments"],
+    "cacheKinds": ["therapy_page", "therapy_detail", "therapy_medications", "therapy_catalogs", "therapy_treatments"],
+    "cacheLimit": "shared 256 read snapshots per data scope",
+    "scope": "environment, OAuth user, backend user, farm; nested farm and foreign-key relationships validated",
+    "precision": "Decimal string and JSON numeric lexemes, original timestamp text, unknown read enum codes"
+  },
+  "verification": {
+    "verifyCommand": "SENTRI_GRADLE_DIRECT=1 ./scripts/verify.sh",
+    "verify": "passed: GraphQL contract, language contract, APK assembly, unit tests, Android lint",
+    "jvm": {"tests": 173, "failures": 0, "skipped": 0, "newTherapyReadTests": 5},
+    "androidRegular": {"tests": 140, "passed": 124, "skippedOptIn": 16, "failures": 0, "newTherapyCacheTests": 3},
+    "processRestore": {
+      "prepare": "passed, PID 5231",
+      "forceStop": "passed",
+      "restore": "passed, PID 5271",
+      "snapshotsRestored": 6,
+      "remoteReadsOnRestore": 0
+    },
+    "realBackendRead": "not run",
+    "realBackendWrite": "not run"
+  },
+  "remaining": [
+    "Task 10 per-operation local therapy preview and read-reflection evidence",
+    "Task 8 and 9 remaining work in the task table",
+    "Tasks 11–18 and final cross-business coverage audit",
+    "Real backend read verification when an authorized development session is available"
+  ]
+}

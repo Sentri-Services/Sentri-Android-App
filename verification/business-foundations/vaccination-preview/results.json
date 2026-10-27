@@ -1,0 +1,43 @@
+{
+  "date": "2026-10-19",
+  "scope": "Task 11 per-target multi-dose local preview and offline workspace foundation",
+  "reference": {
+    "backendVaccineModelSha256": "552e56a13b07066aac35159a86d95489bbaa02c4ffabeed9a0f733348d53193f",
+    "backendProjectionSha256": "bc7d1b7945fbd583d9dba94ac94fac6f1e2a9fbb174bf1ce9a01585d7f255297"
+  },
+  "implementation": {
+    "commands": ["ExecuteVaccinationTask", "FinishVaccinationTask"],
+    "execute": "deduplicates selected IDs as the server does, completes only the current dose, adds a local next-dose row when needed, and finishes the task only when all targets reach dose_count",
+    "finish": "marks the task completed without inventing target executions or changing completed dose counts",
+    "unconfirmedServerValues": "new dose scheduled_at, server event modified_at and operator remain unknown; local row identity uses command ID",
+    "isolation": "confirmed snapshot remains unchanged; cancelled commands are excluded; only QUEUED commands can change preview",
+    "statuses": "in-flight/uncertain, failed/conflicted, dependent, synced awaiting refresh and invalid context are distinct",
+    "readReflection": "reflectedCommandIds requires explicit caller evidence; automatic proof is not implemented"
+  },
+  "verification": {
+    "verifyCommand": "SENTRI_GRADLE_DIRECT=1 ./scripts/verify.sh",
+    "verify": "passed: GraphQL contract, language contract, APK assembly, JVM tests and Android lint",
+    "jvm": {"tests": 190, "failures": 0, "skipped": 0, "newVaccinationPreviewTests": 4},
+    "androidRegular": {"tests": 149, "passed": 132, "skippedOptIn": 17, "failures": 0},
+    "processRestore": {
+      "prepare": "passed, PID 15046",
+      "forceStop": "passed",
+      "restore": "passed, PID 15090",
+      "snapshotsRestored": 3,
+      "queuedCommandsRestored": 1,
+      "projectionRebuilt": "last dose completes task while confirmed snapshot remains unchanged",
+      "remoteReadsOnRestore": 0
+    },
+    "graphql": {"contractOperations": 61, "contractConsumedFields": 582},
+    "language": {"pairedEntries": 390, "canonicalEnumMappings": 241},
+    "realBackendRead": "not run",
+    "realBackendWrite": "not run"
+  },
+  "remaining": [
+    "Automatic evidence that a successful command is reflected in a later read",
+    "Complete vaccination exemption and settlement context",
+    "Real backend read/write verification; no mutation transport is registered",
+    "Tasks 8–10 remaining work, tasks 12–18 and final cross-business audit"
+  ],
+  "unchanged": ["No business UI", "No version or signing change", "No release"]
+}

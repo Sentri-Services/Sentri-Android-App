@@ -1,0 +1,7 @@
+{
+  "name": "sentri-graphql-contract-check",
+  "private": true,
+  "version": "1.0.0",
+  "dependencies": { "graphql": "16.7.1" },
+  "scripts": { "check": "node check.cjs", "test": "node test.cjs" }
+}

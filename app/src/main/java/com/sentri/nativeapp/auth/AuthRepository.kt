@@ -15,6 +15,8 @@ class AuthRepository(
     private val mutex = Mutex()
     private val mutableSession = MutableStateFlow(store.readSession())
     val session = mutableSession.asStateFlow()
+    @Volatile var contextRevision: Long = 0
+        private set
     val pendingLogin: LoginRequest? get() = store.readPendingLogin()
 
     suspend fun beginLogin(forcePrompt: Boolean = false): LoginRequest = mutex.withLock {
@@ -25,7 +27,7 @@ class AuthRepository(
         val request = store.readPendingLogin() ?: throw LoginRejected()
         try {
             val result = gateway.exchange(request, callbackUrl)
-            update(result.copy(farmId = null))
+            update(result.copy(farmId = null), newLogin = true)
         } finally {
             store.savePendingLogin(null)
         }
@@ -33,18 +35,21 @@ class AuthRepository(
 
     suspend fun cancelLogin(): Unit = mutex.withLock { store.savePendingLogin(null) }
 
-    suspend fun token(): String = mutex.withLock {
+    suspend fun token(expectedContextRevision: Long? = null): String = mutex.withLock {
+        checkContext(expectedContextRevision)
         val current = mutableSession.value ?: throw SessionExpired()
         if (current.expiresAtMillis > now() + 60_000) current.accessToken else refreshLocked(current).accessToken
     }
 
     /** A rejected token is refreshed at most once across concurrent callers. */
-    suspend fun refreshRejectedToken(rejectedToken: String): String = mutex.withLock {
+    suspend fun refreshRejectedToken(rejectedToken: String, expectedContextRevision: Long? = null): String = mutex.withLock {
+        checkContext(expectedContextRevision)
         val current = mutableSession.value ?: throw SessionExpired()
         if (current.accessToken != rejectedToken) current.accessToken else refreshLocked(current).accessToken
     }
 
-    suspend fun invalidateRejectedToken(rejectedToken: String): Unit = mutex.withLock {
+    suspend fun invalidateRejectedToken(rejectedToken: String, expectedContextRevision: Long? = null): Unit = mutex.withLock {
+        checkContext(expectedContextRevision)
         if (mutableSession.value?.accessToken == rejectedToken) {
             store.savePendingLogin(null)
             update(null)
@@ -88,7 +93,13 @@ class AuthRepository(
         // Network failures preserve the session; they are not an invalid grant.
     }
 
-    private fun update(value: Session?) {
+    private fun checkContext(expected: Long?) {
+        if (expected != null && expected != contextRevision) throw CancellationException("Authentication context changed")
+    }
+
+    private fun update(value: Session?, newLogin: Boolean = false) {
+        val previous = mutableSession.value
+        if (newLogin || previous?.oauthId != value?.oauthId || previous?.farmId != value?.farmId) contextRevision++
         store.saveSession(value)
         mutableSession.value = value
     }

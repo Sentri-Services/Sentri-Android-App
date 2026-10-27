@@ -1,0 +1,2 @@
+I/System.out( 3869): DEATH_PREVIEW_PREPARED pid=3869 snapshots=6 commands=2 crossBatchTasks=3 image=IN_FLIGHT
+I/System.out( 3940): DEATH_PREVIEW_RESTORED previousPid=3869 pid=3940 snapshots=6 commands=2 remoteReads=0 unknownResends=0 crossBatchMembership=true motherAlive=true imageReadyWithoutPigReadProof=true receiptWaitsForRead=true

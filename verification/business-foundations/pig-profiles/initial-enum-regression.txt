@@ -1,0 +1,50 @@
+> Task :app:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :app:prepareEnterpriseCertificate UP-TO-DATE
+> Task :app:preBuild UP-TO-DATE
+> Task :app:preDevDebugBuild UP-TO-DATE
+> Task :app:generateDevDebugBuildConfig UP-TO-DATE
+> Task :app:generateSentriApolloOptions UP-TO-DATE
+> Task :app:generateSentriApolloSources UP-TO-DATE
+> Task :app:checkDevDebugAarMetadata UP-TO-DATE
+> Task :app:generateDevDebugResValues UP-TO-DATE
+> Task :app:mapDevDebugSourceSetPaths
+> Task :app:generateDevDebugResources
+> Task :app:packageDevDebugResources
+> Task :app:createDevDebugCompatibleScreenManifests UP-TO-DATE
+> Task :app:extractDeepLinksDevDebug UP-TO-DATE
+> Task :app:processDevDebugMainManifest UP-TO-DATE
+> Task :app:processDevDebugManifest UP-TO-DATE
+> Task :app:processDevDebugManifestForPackage UP-TO-DATE
+> Task :app:javaPreCompileDevDebug UP-TO-DATE
+> Task :app:preDevDebugUnitTestBuild UP-TO-DATE
+> Task :app:javaPreCompileDevDebugUnitTest UP-TO-DATE
+> Task :app:parseDevDebugLocalResources
+> Task :app:mergeDevDebugResources
+> Task :app:processDevDebugResources
+> Task :app:compileDevDebugKotlin
+> Task :app:compileDevDebugJavaWithJavac UP-TO-DATE
+> Task :app:processDevDebugJavaRes UP-TO-DATE
+> Task :app:bundleDevDebugClassesToCompileJar
+> Task :app:bundleDevDebugClassesToRuntimeJar
+> Task :app:compileDevDebugUnitTestKotlin
+> Task :app:compileDevDebugUnitTestJavaWithJavac NO-SOURCE
+> Task :app:processDevDebugUnitTestJavaRes UP-TO-DATE
+
+> Task :app:testDevDebugUnitTest FAILED
+
+PigProfileRemoteTest > unknownReadCodesAreRetainedAndUnavailablePigRemainsAbsent FAILED
+    org.junit.ComparisonFailure at PigProfileRemoteTest.kt:82
+
+130 tests completed, 1 failed
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':app:testDevDebugUnitTest'.
+> There were failing tests. See the report at: file:///Users/zhangzhaoxu/code/yy/Sentri-Android-App/app/build/reports/tests/testDevDebugUnitTest/index.html
+
+* Try:
+> Run with --scan to get full insights.
+
+BUILD FAILED in 6s
+27 actionable tasks: 11 executed, 16 up-to-date

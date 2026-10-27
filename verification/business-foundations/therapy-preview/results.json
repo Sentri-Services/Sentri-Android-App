@@ -1,0 +1,45 @@
+{
+  "date": "2026-10-18",
+  "scope": "Task 10 therapy prescription context, paged workspace and six-command local preview foundation",
+  "reference": {
+    "backendHead": "4c1a2ff49e8d938e1af053d844018cc140c63f38",
+    "projectionFile": "../Sentri/backend/apps/biosafety_v1/src/biosafety_v1/adapters/hasura_matv/prescription.py",
+    "projectionSha256": "29dffb8ffdd834ac1e0f9bb3830fc784b5199a290836270df98d380d9c9151a6"
+  },
+  "graphql": {
+    "added": "NativeTherapyPrescriptionContext",
+    "contractOperations": 58,
+    "contractConsumedFields": 518,
+    "contractCheck": "passed against local schema snapshot"
+  },
+  "implementation": {
+    "context": "prescription status, complete target and therapy memberships; aggregate counts and farm/foreign-key validation",
+    "workspace": "all prescription therapy pages by stable ID, exact membership check, per-page cache provenance, durable queue projection",
+    "cache": "therapy_context format-1 snapshot within shared 256-entry read cache",
+    "preview": "queued complete, skip, add target, remove target, terminate therapy and terminate prescription; per-target next round; atomic local copies",
+    "nonAuthoritativeValues": "server-generated row ID, event time, operator and schedule time remain unknown"
+  },
+  "verification": {
+    "verifyCommand": "SENTRI_GRADLE_DIRECT=1 ./scripts/verify.sh",
+    "verify": "passed: GraphQL and language contracts, APK assembly, JVM tests and Android lint",
+    "jvm": {"tests": 179, "failures": 0, "skipped": 0},
+    "androidRegular": {"tests": 142, "passed": 126, "skippedOptIn": 16, "failures": 0},
+    "processRestore": {
+      "prepare": "passed, PID 6169",
+      "forceStop": "passed",
+      "restore": "passed, PID 6208",
+      "snapshotsRestored": 8,
+      "queuedCommandsRestored": 1,
+      "remoteReadsOnRestore": 0
+    },
+    "realBackendRead": "not run",
+    "realBackendWrite": "not run"
+  },
+  "remaining": [
+    "Automatic successful read-reflection evidence is not implemented; reflectedCommandIds requires caller evidence",
+    "A backend active task with zero materialized target rows cannot be detected by current read model",
+    "Real backend read verification when an authorized development session is available",
+    "Task 8 and 9 remaining work, tasks 11–18 and final cross-business audit"
+  ],
+  "unchanged": ["No business UI", "No mutation dispatch", "No version or signing change", "No release"]
+}

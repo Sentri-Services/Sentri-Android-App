@@ -1,0 +1,8 @@
+<resources>
+    <string name="sentri_field_optional">Optional</string>
+    <string name="sentri_field_disabled">Cannot edit right now</string>
+    <string name="sentri_stepper_minimum">Minimum %1$d</string>
+    <string name="sentri_stepper_maximum">Maximum %1$d</string>
+    <string name="sentri_stepper_unsaved">%1$s unsaved</string>
+    <string name="sentri_stepper_loading">Saving…</string>
+</resources>

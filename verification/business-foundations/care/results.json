@@ -1,0 +1,153 @@
+{
+  "date": "2026-10-09",
+  "overallGoal": "in_progress",
+  "batch": "farrowing, unified foster and piglet handling foundations",
+  "jvm": {
+    "tests": 84,
+    "skipped": 0,
+    "failures": 0,
+    "errors": 0,
+    "passed": 84
+  },
+  "android": {
+    "tests": 56,
+    "skipped": 5,
+    "failures": 0,
+    "errors": 0,
+    "passed": 51
+  },
+  "verifyPassed": true,
+  "device": "Android 16/API 36 emulator-5554",
+  "graphQL": {
+    "operations": 28,
+    "consumedFields": 243,
+    "contractScenariosPassed": 8,
+    "transport": "MockWebServer only",
+    "newQueries": [
+      "NativeFarrowingTask",
+      "NativePigletTask"
+    ],
+    "newMutations": [
+      "NativeSubmitFarrowingPiglet",
+      "NativeSubmitPigletHandlingItem",
+      "NativeSubmitPigletInfo",
+      "NativeSubmitPigletTotalWeight",
+      "NativeFosterPiglet",
+      "NativeFosterFarrowingPiglet",
+      "NativeFosterPigletHandling"
+    ],
+    "legacyStageMutations": "definitions and wire tests only; current reference offline handler uses unified FosterPiglet"
+  },
+  "language": {
+    "resourceEntries": 163,
+    "enumMappings": 77
+  },
+  "offline": {
+    "queueSchema": 2,
+    "payloadFormat": 2,
+    "legacyPayloadFormat": 1,
+    "supportedCommandCount": 13,
+    "newCommandOperations": [
+      "SubmitFarrowingPiglet",
+      "SubmitPigletHandlingItem",
+      "SubmitPigletInfo",
+      "SubmitPigletTotalWeight",
+      "FosterPiglet"
+    ],
+    "taskSnapshotTypes": [
+      "ESTRUS",
+      "MATING",
+      "RE_ESTRUS",
+      "PREGNANCY",
+      "FARROWING",
+      "PIGLET_PROCESSING"
+    ],
+    "decimalPersistence": "BigDecimal.toString string retains precision and scale; wire uses decimal plain string",
+    "fosterStages": [
+      "FARROWING",
+      "PIGLET_PROCESSING",
+      "LACTATION"
+    ],
+    "fosterGroups": [
+      "source pig",
+      "recipient pig"
+    ],
+    "unrelatedPigCanProceed": true,
+    "realMutationTransportRegistered": false
+  },
+  "processRestore": {
+    "preparePassed": true,
+    "restorePassed": true,
+    "newPidAsserted": true,
+    "persistedTaskSnapshots": [
+      "FARROWING",
+      "PIGLET_PROCESSING"
+    ],
+    "persistedCommandTypes": [
+      "FosterPiglet",
+      "SubmitFarrowingPiglet",
+      "SubmitPigletHandlingItem",
+      "SubmitPigletInfo",
+      "SubmitPigletTotalWeight"
+    ],
+    "decimalExact": true,
+    "unconfirmedAutomaticResends": 0,
+    "sourceAndRecipientBlocked": true,
+    "confirmedFosterUnblocksFarrowing": true
+  },
+  "uiFiles": [
+    {
+      "path": "app/src/main/java/com/sentri/nativeapp/MainActivity.kt",
+      "unchanged": true
+    },
+    {
+      "path": "app/src/main/java/com/sentri/nativeapp/devices/DeviceVerificationScreen.kt",
+      "unchanged": true
+    },
+    {
+      "path": "app/src/main/java/com/sentri/nativeapp/pigs/PigScreen.kt",
+      "unchanged": true
+    },
+    {
+      "path": "app/src/main/java/com/sentri/nativeapp/ui/ConnectionScreen.kt",
+      "unchanged": true
+    },
+    {
+      "path": "app/src/main/java/com/sentri/nativeapp/ui/ConnectionViewModel.kt",
+      "unchanged": true
+    },
+    {
+      "path": "app/src/main/java/com/sentri/nativeapp/ui/LoginWebView.kt",
+      "unchanged": true
+    },
+    {
+      "path": "app/src/main/java/com/sentri/nativeapp/update/ApkUpdateScreen.kt",
+      "unchanged": true
+    },
+    {
+      "path": "app/src/main/res/values/styles.xml",
+      "unchanged": true
+    }
+  ],
+  "releaseAndVersionConfigDiffEmpty": true,
+  "references": {
+    "Sentri-Android": {
+      "head": "ee0f6c333fa99014ca067fc5b47c538d36285cff",
+      "workingTreeClean": true
+    },
+    "Sentri": {
+      "head": "4c1a2ff49e8d938e1af053d844018cc140c63f38",
+      "workingTreeClean": true
+    }
+  },
+  "releaseAndVersionFiles": [
+    "versions.properties",
+    "deployment/contract.json",
+    "scripts/release.py",
+    "scripts/apk_release.py",
+    ".github/workflows/android.yml"
+  ],
+  "realBackendWritesExecuted": false,
+  "pushOrReleaseExecuted": false,
+  "remaining": "Later business modules; complete task and associated lists; local pending projections and cross-task adaptations; semen local reference mapping; final full-scope audit. Real replay still needs operation-specific backend dedupe/result confirmation."
+}

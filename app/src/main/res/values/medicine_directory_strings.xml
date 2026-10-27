@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="medicine_directory_title">药品</string>
+    <string name="medicine_directory_read_only">当前目录仅供查阅。分类、品牌和休药期尚未接入；下方制剂名称来自现有接口，不代表品牌。</string>
+    <string name="medicine_directory_refresh">刷新目录</string>
+    <string name="medicine_directory_loading">正在读取药品目录…</string>
+    <string name="medicine_directory_failed">药品目录读取失败，请重试。</string>
+    <string name="medicine_directory_formulations_failed">制剂信息读取失败，药品名称仍可查阅。</string>
+    <string name="medicine_directory_offline">目录来自本机离线快照。</string>
+    <string name="medicine_directory_search">搜索药品或制剂</string>
+    <string name="medicine_directory_count">%1$d 项</string>
+    <string name="medicine_directory_empty">当前厂区没有药品记录。</string>
+    <string name="medicine_directory_no_match">没有匹配的药品。</string>
+</resources>

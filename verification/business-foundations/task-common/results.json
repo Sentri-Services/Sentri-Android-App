@@ -1,0 +1,142 @@
+{
+  "date": "2026-10-09",
+  "overallGoal": "in_progress",
+  "batch": "common task commands and catalog foundations; task 8 local projections still pending",
+  "jvm": {
+    "tests": 99,
+    "passed": 99,
+    "skipped": 0,
+    "failures": 0,
+    "errors": 0
+  },
+  "android": {
+    "tests": 76,
+    "passed": 69,
+    "skipped": 7,
+    "failures": 0,
+    "errors": 0
+  },
+  "verifyPassed": true,
+  "device": "Android 16/API 36 emulator-5554",
+  "graphQL": {
+    "operations": 39,
+    "consumedFields": 345,
+    "contractScenariosPassed": 8,
+    "transport": "MockWebServer only",
+    "newQueries": [
+      "NativeProductionTaskCatalog"
+    ],
+    "metadataRead": "same catalog query with exact task id, offset 0 and limit 1",
+    "newMutations": [
+      "NativeMarkTaskPig",
+      "NativeCompleteProductionTask"
+    ],
+    "unbufferedDecimalAndJsonRegressionPassed": true,
+    "taskAggregateUserPermission": "reference farm_view_task.yaml user allow_aggregations: true"
+  },
+  "language": {
+    "resourceEntries": 209,
+    "enumMappings": 123
+  },
+  "offline": {
+    "queueSchema": 2,
+    "payloadFormat": 2,
+    "supportedCommandCount": 19,
+    "newCommandOperations": [
+      "MarkTaskPig",
+      "CompleteProductionTask"
+    ],
+    "taskSnapshotTypes": [
+      "ESTRUS",
+      "MATING",
+      "RE_ESTRUS",
+      "PREGNANCY",
+      "FARROWING",
+      "PIGLET_PROCESSING",
+      "POSTPARTUM",
+      "LACTATION",
+      "NURSERY",
+      "FATTENING"
+    ],
+    "catalogSnapshotPayloadFormat": 1,
+    "catalogCacheKinds": [
+      "production_catalog_page",
+      "production_catalog_detail"
+    ],
+    "lateCompletionDependenciesExtendedInClaimTransaction": true,
+    "duplicateAndCompletionCycleRejected": true,
+    "newSameTaskWritesRefusedWhenCompletionStartedUnknownOrSynced": true,
+    "rawJsonAndDecimalExact": true,
+    "realMutationTransportRegistered": false,
+    "existingPageCompletionRule": "online with no unresolved task commands; no UI entry or new offline completion policy added"
+  },
+  "processRestore": {
+    "preparePassed": true,
+    "restorePassed": true,
+    "newPidAsserted": true,
+    "persistedCommands": 2,
+    "persistedMetadata": 1,
+    "persistedCatalogPages": 1,
+    "persistedLateDependency": true,
+    "unconfirmedAutomaticResends": 0,
+    "completionBlockedUntilConfirmation": true,
+    "newWritesRefusedAfterCompletionStarted": true,
+    "decimalExact": true,
+    "rawJsonExact": true
+  },
+  "uiFiles": [
+    {
+      "path": "app/src/main/java/com/sentri/nativeapp/MainActivity.kt",
+      "unchanged": true
+    },
+    {
+      "path": "app/src/main/java/com/sentri/nativeapp/devices/DeviceVerificationScreen.kt",
+      "unchanged": true
+    },
+    {
+      "path": "app/src/main/java/com/sentri/nativeapp/pigs/PigScreen.kt",
+      "unchanged": true
+    },
+    {
+      "path": "app/src/main/java/com/sentri/nativeapp/ui/ConnectionScreen.kt",
+      "unchanged": true
+    },
+    {
+      "path": "app/src/main/java/com/sentri/nativeapp/ui/ConnectionViewModel.kt",
+      "unchanged": true
+    },
+    {
+      "path": "app/src/main/java/com/sentri/nativeapp/ui/LoginWebView.kt",
+      "unchanged": true
+    },
+    {
+      "path": "app/src/main/java/com/sentri/nativeapp/update/ApkUpdateScreen.kt",
+      "unchanged": true
+    },
+    {
+      "path": "app/src/main/res/values/styles.xml",
+      "unchanged": true
+    }
+  ],
+  "releaseAndVersionFiles": [
+    "versions.properties",
+    "deployment/contract.json",
+    "scripts/release.py",
+    "scripts/apk_release.py",
+    ".github/workflows/android.yml"
+  ],
+  "releaseAndVersionConfigDiffEmpty": true,
+  "references": {
+    "Sentri-Android": {
+      "head": "ee0f6c333fa99014ca067fc5b47c538d36285cff",
+      "workingTreeClean": true
+    },
+    "Sentri": {
+      "head": "4c1a2ff49e8d938e1af053d844018cc140c63f38",
+      "workingTreeClean": true
+    }
+  },
+  "realBackendWritesExecuted": false,
+  "pushOrReleaseExecuted": false,
+  "remaining": "Task 8 local pending projections, full catalog/detail assembly and production auxiliary queries; task 9-18 business adaptations and final audit. Real replay requires operation-specific backend dedupe/result confirmation."
+}

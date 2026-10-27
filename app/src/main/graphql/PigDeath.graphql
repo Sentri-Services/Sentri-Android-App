@@ -1,0 +1,6 @@
+mutation NativeUploadPigDeathImage($input: ProductionUploadPigDeathImageCommandStrawberryInput!) {
+  production { upload_pig_death_image(command_input: $input) { status errors { err_msg } file_key file_url } }
+}
+mutation NativeReportPigDeath($input: ProductionReportPigDeathCommandStrawberryInput!) {
+  production { report_pig_death(command_input: $input) { status errors { err_msg } } }
+}

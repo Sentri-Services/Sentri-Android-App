@@ -1,0 +1,17 @@
+query NativePregnancyTask($taskId: String!, $farmId: String!) {
+  tasks: farm_view_task(where: {id: {_eq: $taskId}, batch: {farm_id: {_eq: $farmId}}}, limit: 1) {
+    id batch_id status task_type
+    batch { farm_id }
+    pigs(where: {pig: {farm_id: {_eq: $farmId}}}, order_by: {pig_id: asc}) {
+      pig_id disabled
+      pig { id farm_id ear_tag ear_notch location_code location { unit_id unit_location pen_location } }
+      pregnancy_pig { task_id pig_id check_status check_at is_pregnant re_check_at mating_at mating_by submitted_at operator_id }
+    }
+  }
+}
+mutation NativeCheckPregnancyPig($input: ProductionCheckPregnancyPigCommandStrawberryInput!) {
+  production { check_pregnancy_pig(command_input: $input) { status errors { err_msg } } }
+}
+mutation NativeSubmitPregnancyStatus($input: ProductionSubmitPregnancyStatusCommandStrawberryInput!) {
+  production { submit_pregnancy_status(command_input: $input) { status errors { err_msg } } }
+}

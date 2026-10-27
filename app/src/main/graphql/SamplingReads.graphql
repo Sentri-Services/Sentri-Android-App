@@ -1,0 +1,38 @@
+query NativeSamplingTasks($farmId: String!, $filter: farm_view_sampling_task_bool_exp!,
+  $order: [farm_view_sampling_task_order_by!]!, $offset: Int!, $limit: Int!) {
+  rows: farm_view_sampling_task(where: {_and: [{farm_id: {_eq: $farmId}}, $filter]},
+    order_by: $order, offset: $offset, limit: $limit) {
+    id farm_id sampling_id sampling_test_id created_at created_by disabled used
+    is_sampled sampled_at sampled_by remark tested_at tested_by test_metric
+    negative_value positive_value test_value test_result test_report_ids video_id
+    targets(order_by: [{id: asc}]) {
+      id farm_id sampling_test_id target_id target_type
+      pig {
+        id farm_id ear_tag ear_notch breeder_code breed_type lifecycle_status
+        location_code origin sex
+        location {
+          farm_id zone_location unit_location section_location row_location pen_location
+          zone_id unit_id section_id row_id group_id id pen_number
+          zone { code name_cn name_en }
+          unit { code name_cn name_en }
+          section { code name_cn name_en }
+          row { code row_number }
+        }
+      }
+      user { id farm_id first_name last_name username display_name avatar_url }
+    }
+    targets_aggregate { aggregate { count } }
+    sampling_test {
+      id farm_id sampling_id sampling_code project container created_at
+      targets(order_by: [{id: asc}]) {
+        id farm_id sampling_test_id remark sample_type target_type target_ids
+      }
+      targets_aggregate { aggregate { count } }
+    }
+    reports(order_by: [{id: asc}]) {
+      id farm_id sampling_task_id report_id
+      report { id farm_id content_type created_at name operator_id }
+    }
+    reports_aggregate { aggregate { count } }
+  }
+}

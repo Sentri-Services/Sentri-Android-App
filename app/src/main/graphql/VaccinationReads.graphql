@@ -1,0 +1,30 @@
+query NativeVaccinationTasks($farmId: String!, $filter: farm_view_vaccination_task_bool_exp!,
+  $order: [farm_view_vaccination_task_order_by!]!, $offset: Int!, $limit: Int!) {
+  rows: farm_view_vaccination_task(where: {_and: [{farm_id: {_eq: $farmId}}, $filter]},
+    order_by: $order, offset: $offset, limit: $limit) {
+    id farm_id vaccine_id brand_id status scheduled_at modified_at created_at completed_at
+    executed_at executed_by operator_id route interval_value interval_unit dose_unit dose_count
+    dose completed_target_dose_count exempted_target_count settled_target_count target_count
+    task_type plan_id related_task_id effect_review is_deleted deleted_at
+    vaccine { id farm_id name_cn name_en status }
+    brand { id farm_id vaccine_id brand_name_cn brand_name_en dosage_form status }
+    targets(order_by: [{target_id: asc}, {dose_index: asc}]) {
+      farm_id task_id target_id vaccine_id brand_id dose_index status scheduled_at executed_at executed_by operator_id
+      vaccination_exemption {
+        farm_id pig_id exemption_hit rule_codes reasons evaluated_at effective_until modified_at operator_id
+      }
+      pig {
+        id farm_id ear_tag ear_notch birthday breed_type role lifecycle_status location_code current_batch_id
+        current_batch { id farm_id sn }
+        location {
+          farm_id pen_location row_location section_location unit_location zone_location pen_number
+          zone { code name_cn name_en }
+          section { code name_cn name_en }
+          unit { code name_cn name_en }
+          row { code }
+        }
+      }
+    }
+    targets_aggregate { aggregate { count } }
+  }
+}

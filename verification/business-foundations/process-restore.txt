@@ -1,0 +1,8 @@
+
+com.sentri.nativeapp.FoundationProcessRestoreTest:.
+
+Time: 0.039
+
+OK (1 test)
+
+

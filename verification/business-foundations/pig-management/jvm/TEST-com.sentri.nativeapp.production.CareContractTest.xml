@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.sentri.nativeapp.production.CareContractTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2026-10-10T02:35:58.036Z" hostname="Mac" time="0.104">
+  <properties/>
+  <testcase name="farrowing mutation retains partial state zero and null versus empty counts" classname="com.sentri.nativeapp.production.CareContractTest" time="0.013"/>
+  <testcase name="invalid care IDs weights and timestamp fail before network" classname="com.sentri.nativeapp.production.CareContractTest" time="0.002"/>
+  <testcase name="foreign nested owners unknown codes duplicate identities and negative quantities reject whole query" classname="com.sentri.nativeapp.production.CareContractTest" time="0.037"/>
+  <testcase name="unified foster derives stage at backend while retaining recipient selection and zero" classname="com.sentri.nativeapp.production.CareContractTest" time="0.022"/>
+  <testcase name="queries preserve nested piglet data numeric precision time and raw json" classname="com.sentri.nativeapp.production.CareContractTest" time="0.009"/>
+  <testcase name="piglet item and information inputs preserve selections identity and decimal wire strings" classname="com.sentri.nativeapp.production.CareContractTest" time="0.013"/>
+  <testcase name="weight mutation keeps exact decimal and business refusal" classname="com.sentri.nativeapp.production.CareContractTest" time="0.008"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

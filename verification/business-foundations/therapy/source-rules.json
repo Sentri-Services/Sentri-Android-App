@@ -1,0 +1,70 @@
+{
+  "referenceHead": "4c1a2ff49e8d938e1af053d844018cc140c63f38",
+  "sources": [
+    {
+      "path": "mobile_webapp/src/services/prescription.ts",
+      "sha256": "35a2c752bcb33e47abc34d15b517c9a2dc40444538dac4086962f1157accf649"
+    },
+    {
+      "path": "mobile_webapp/src/services/prescriptionTaskMutations.ts",
+      "sha256": "949f42e564fd0fc5ab7634f4109c039989edd3af7c349586381fe14a9c23d132"
+    },
+    {
+      "path": "mobile_webapp/src/lib/offline/adviceCommandAdapter.ts",
+      "sha256": "e16613c8b704d7e8c5c33f86ff4ea6d0e07d442c8cc22a2aefda912756f02177"
+    },
+    {
+      "path": "mobile_webapp/src/lib/offline/adviceCommandHandler.ts",
+      "sha256": "8e9708156f8f2bb5d74ed0622a462b2d42b6b5f63f6b2800aa40a8343fef1145"
+    },
+    {
+      "path": "mobile_webapp/src/lib/offline/adviceTargetCommandAdapter.ts",
+      "sha256": "ea221bc28ee01e5b5508e991a70bb4a2c5763c21823d96ca69de69bf743a74d5"
+    },
+    {
+      "path": "mobile_webapp/src/lib/offline/adviceTargetCommandHandler.ts",
+      "sha256": "85086fc89e24f13ec920b5c945baa3d04a3a60884179eeee7845e28806822fe5"
+    },
+    {
+      "path": "mobile_webapp/src/lib/offline/adviceTerminationCommandAdapter.ts",
+      "sha256": "28c8e2d110bdadc911cd306856c7fe10da7db59ce74ae49e8e302f900c1e4fe5"
+    },
+    {
+      "path": "mobile_webapp/src/lib/offline/adviceTerminationCommandHandler.ts",
+      "sha256": "47f179bd9394dae658da6e19b77adb529f7b000124db010428783cb9e9ba6c32"
+    },
+    {
+      "path": "mobile_webapp/src/db/task/advice/cacheFilter.ts",
+      "sha256": "eda643b81361bb0678cf505259356310d972eedab63f62ff58c379088f899cdf"
+    },
+    {
+      "path": "mobile_webapp/src/db/task/advice/offline.ts",
+      "sha256": "ca82749e92f2e4956d02e4634ad29e85e16dd982db62f11be62d5f3ebe13685f"
+    },
+    {
+      "path": "backend/apps/biosafety_v1/src/biosafety_v1/entrypoints/graphql/prescription.py",
+      "sha256": "e95fd047ad60056f41b66910bb0ac6691c71e01e9e8b1a7179dddd5fab4e00c6"
+    },
+    {
+      "path": "backend/apps/biosafety_v1/src/biosafety_v1/service_layer/handlers/commands/prescription.py",
+      "sha256": "ee5b2ebb0515451cc2a9babeed15da61ae2cdfe1365ac6795e780dd01f3a4a06"
+    },
+    {
+      "path": "backend/apps/biosafety_v1/src/biosafety_v1/domain/services/prescription.py",
+      "sha256": "24c049de7331fe162d636b11f3bb5f4d6ec8fe8b7fa7400b2909296a5f5613cb"
+    },
+    {
+      "path": "backend/apps/biosafety_v1/src/biosafety_v1/domain/models/prescription.py",
+      "sha256": "898f96a3d15db36dcb5f8fd68c7450d8e02dfe3c14b70046457cc94ecb90ea88"
+    }
+  ],
+  "rules": [
+    "Complete/skip modify scheduled therapy task and owning prescription aggregate; prescription/therapy context is local only for these wire operations.",
+    "Add/remove are prescription-wide and affect all in-progress therapy tasks, not only the currently viewed therapy.",
+    "Terminate therapy can also terminate prescription when all therapies are terminal; all prescription writes share ordering.",
+    "Legacy advice handler loops remote steps with one overall status. Native steps retain separate immutable input, attempts and bound receipts.",
+    "CreatePrescription is declared but has no active old app caller. Backend recordId is a random serial, not the generated prescription ID; no local reference mapping is inferred.",
+    "Complete and skip create next rounds per modified target on backend. Legacy frontend waits for all current dose rows; do not copy that simplified projection.",
+    "Cached list uses active prescription statuses OR task executed_at within the day window. Full list filters must remain distinct from home/cache selection."
+  ]
+}

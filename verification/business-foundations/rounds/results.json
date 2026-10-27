@@ -1,0 +1,127 @@
+{
+  "date": "2026-10-09",
+  "overallGoal": "in_progress",
+  "batch": "re-estrus and pregnancy rounds, four production task read snapshots",
+  "jvm": {
+    "tests": 77,
+    "skipped": 0,
+    "failures": 0,
+    "errors": 0,
+    "passed": 77
+  },
+  "android": {
+    "tests": 49,
+    "skipped": 4,
+    "failures": 0,
+    "errors": 0,
+    "passed": 45
+  },
+  "verifyPassed": true,
+  "device": "Android 16/API 36 emulator-5554",
+  "graphQL": {
+    "operations": 19,
+    "consumedFields": 172,
+    "contractScenariosPassed": 8,
+    "transport": "MockWebServer only"
+  },
+  "language": {
+    "resourceEntries": 141,
+    "enumMappings": 55
+  },
+  "processRestore": {
+    "preparePassed": true,
+    "restorePassed": true,
+    "newPidAsserted": true,
+    "persistedTaskSnapshots": [
+      "RE_ESTRUS",
+      "PREGNANCY"
+    ],
+    "persistedCommandTypes": [
+      "CheckReEstrusPig",
+      "SubmitReEstrusStatus",
+      "CheckPregnancyPig",
+      "SubmitPregnancyStatus"
+    ],
+    "unconfirmedAutomaticResends": 0
+  },
+  "offline": {
+    "queueSchema": 2,
+    "payloadFormat": 2,
+    "legacyPayloadFormat": 1,
+    "supportedCommandOperations": [
+      "CheckEstrus",
+      "SubmitEstrusStatus",
+      "MateWithBoar",
+      "MateWithSemen",
+      "CheckReEstrusPig",
+      "SubmitReEstrusStatus",
+      "CheckPregnancyPig",
+      "SubmitPregnancyStatus"
+    ],
+    "taskSnapshotTypes": [
+      "ESTRUS",
+      "MATING",
+      "RE_ESTRUS",
+      "PREGNANCY"
+    ],
+    "snapshotPayloadFormat": 1,
+    "unitRoundDependencies": "same scope + module + task + exact unit; submit awaits all unresolved prior commands, checks await prior submits",
+    "clockReversal": "explicit transitive dependencies win over group timestamps",
+    "taskSnapshotCapacity": 256,
+    "realMutationTransportRegistered": false
+  },
+  "sourceInventory": {
+    "query": 54,
+    "mutation": 100,
+    "subscription": 0,
+    "fragment": 5
+  },
+  "uiFiles": [
+    {
+      "path": "app/src/main/java/com/sentri/nativeapp/MainActivity.kt",
+      "unchanged": true
+    },
+    {
+      "path": "app/src/main/java/com/sentri/nativeapp/devices/DeviceVerificationScreen.kt",
+      "unchanged": true
+    },
+    {
+      "path": "app/src/main/java/com/sentri/nativeapp/pigs/PigScreen.kt",
+      "unchanged": true
+    },
+    {
+      "path": "app/src/main/java/com/sentri/nativeapp/ui/ConnectionScreen.kt",
+      "unchanged": true
+    },
+    {
+      "path": "app/src/main/java/com/sentri/nativeapp/ui/ConnectionViewModel.kt",
+      "unchanged": true
+    },
+    {
+      "path": "app/src/main/java/com/sentri/nativeapp/ui/LoginWebView.kt",
+      "unchanged": true
+    },
+    {
+      "path": "app/src/main/java/com/sentri/nativeapp/update/ApkUpdateScreen.kt",
+      "unchanged": true
+    },
+    {
+      "path": "app/src/main/res/values/styles.xml",
+      "unchanged": true
+    }
+  ],
+  "releaseAndVersionConfigDiffEmpty": true,
+  "references": {
+    "Sentri-Android": {
+      "head": "ee0f6c333fa99014ca067fc5b47c538d36285cff",
+      "workingTreeClean": true
+    },
+    "Sentri": {
+      "head": "4c1a2ff49e8d938e1af053d844018cc140c63f38",
+      "workingTreeClean": true
+    }
+  },
+  "realBackendWritesExecuted": false,
+  "pushOrReleaseExecuted": false,
+  "remaining": "Remaining business modules, complete task/associated lists, pending local projections, semen reference mapping and final full-scope coverage audit."
+}

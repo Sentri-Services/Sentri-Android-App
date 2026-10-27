@@ -1,0 +1,232 @@
+[
+  {
+    "name": "com.sentri.nativeapp.auth.AuthRepositoryTest",
+    "classes": [
+      "com.sentri.nativeapp.auth.AuthRepositoryTest"
+    ],
+    "tests": 13,
+    "skipped": 0,
+    "failures": 0,
+    "errors": 0
+  },
+  {
+    "name": "com.sentri.nativeapp.auth.CallbackPolicyTest",
+    "classes": [
+      "com.sentri.nativeapp.auth.CallbackPolicyTest"
+    ],
+    "tests": 2,
+    "skipped": 0,
+    "failures": 0,
+    "errors": 0
+  },
+  {
+    "name": "com.sentri.nativeapp.devices.DeviceReadTest",
+    "classes": [
+      "com.sentri.nativeapp.devices.DeviceReadTest"
+    ],
+    "tests": 4,
+    "skipped": 0,
+    "failures": 0,
+    "errors": 0
+  },
+  {
+    "name": "com.sentri.nativeapp.i18n.AppLanguageTest",
+    "classes": [
+      "com.sentri.nativeapp.i18n.AppLanguageTest"
+    ],
+    "tests": 3,
+    "skipped": 0,
+    "failures": 0,
+    "errors": 0
+  },
+  {
+    "name": "com.sentri.nativeapp.network.AuthErrorPolicyTest",
+    "classes": [
+      "com.sentri.nativeapp.network.AuthErrorPolicyTest"
+    ],
+    "tests": 2,
+    "skipped": 0,
+    "failures": 0,
+    "errors": 0
+  },
+  {
+    "name": "com.sentri.nativeapp.network.GraphqlFarmRepositoryTest",
+    "classes": [
+      "com.sentri.nativeapp.network.GraphqlFarmRepositoryTest"
+    ],
+    "tests": 7,
+    "skipped": 0,
+    "failures": 0,
+    "errors": 0
+  },
+  {
+    "name": "com.sentri.nativeapp.offline.CommandPolicyTest",
+    "classes": [
+      "com.sentri.nativeapp.offline.CommandPolicyTest"
+    ],
+    "tests": 5,
+    "skipped": 0,
+    "failures": 0,
+    "errors": 0
+  },
+  {
+    "name": "com.sentri.nativeapp.pigs.PigContractTest",
+    "classes": [
+      "com.sentri.nativeapp.pigs.PigContractTest"
+    ],
+    "tests": 6,
+    "skipped": 0,
+    "failures": 0,
+    "errors": 0
+  },
+  {
+    "name": "com.sentri.nativeapp.pigs.PigDeathContractTest",
+    "classes": [
+      "com.sentri.nativeapp.pigs.PigDeathContractTest"
+    ],
+    "tests": 5,
+    "skipped": 0,
+    "failures": 0,
+    "errors": 0
+  },
+  {
+    "name": "com.sentri.nativeapp.pigs.PigManagementContractTest",
+    "classes": [
+      "com.sentri.nativeapp.pigs.PigManagementContractTest"
+    ],
+    "tests": 3,
+    "skipped": 0,
+    "failures": 0,
+    "errors": 0
+  },
+  {
+    "name": "com.sentri.nativeapp.pigs.PigRemoteTest",
+    "classes": [
+      "com.sentri.nativeapp.pigs.PigRemoteTest"
+    ],
+    "tests": 4,
+    "skipped": 0,
+    "failures": 0,
+    "errors": 0
+  },
+  {
+    "name": "com.sentri.nativeapp.pigs.PigViewModelTest",
+    "classes": [
+      "com.sentri.nativeapp.pigs.PigViewModelTest"
+    ],
+    "tests": 4,
+    "skipped": 0,
+    "failures": 0,
+    "errors": 0
+  },
+  {
+    "name": "com.sentri.nativeapp.production.CareContractTest",
+    "classes": [
+      "com.sentri.nativeapp.production.CareContractTest"
+    ],
+    "tests": 7,
+    "skipped": 0,
+    "failures": 0,
+    "errors": 0
+  },
+  {
+    "name": "com.sentri.nativeapp.production.EstrusContractTest",
+    "classes": [
+      "com.sentri.nativeapp.production.EstrusContractTest"
+    ],
+    "tests": 5,
+    "skipped": 0,
+    "failures": 0,
+    "errors": 0
+  },
+  {
+    "name": "com.sentri.nativeapp.production.MatingContractTest",
+    "classes": [
+      "com.sentri.nativeapp.production.MatingContractTest"
+    ],
+    "tests": 4,
+    "skipped": 0,
+    "failures": 0,
+    "errors": 0
+  },
+  {
+    "name": "com.sentri.nativeapp.production.ProductionAuxiliaryContractTest",
+    "classes": [
+      "com.sentri.nativeapp.production.ProductionAuxiliaryContractTest"
+    ],
+    "tests": 5,
+    "skipped": 0,
+    "failures": 0,
+    "errors": 0
+  },
+  {
+    "name": "com.sentri.nativeapp.production.ProductionProjectionTest",
+    "classes": [
+      "com.sentri.nativeapp.production.ProductionProjectionTest"
+    ],
+    "tests": 13,
+    "skipped": 0,
+    "failures": 0,
+    "errors": 0
+  },
+  {
+    "name": "com.sentri.nativeapp.production.StageContractTest",
+    "classes": [
+      "com.sentri.nativeapp.production.StageContractTest"
+    ],
+    "tests": 7,
+    "skipped": 0,
+    "failures": 0,
+    "errors": 0
+  },
+  {
+    "name": "com.sentri.nativeapp.production.TaskCommonContractTest",
+    "classes": [
+      "com.sentri.nativeapp.production.TaskCommonContractTest"
+    ],
+    "tests": 7,
+    "skipped": 0,
+    "failures": 0,
+    "errors": 0
+  },
+  {
+    "name": "com.sentri.nativeapp.production.UnitRoundContractTest",
+    "classes": [
+      "com.sentri.nativeapp.production.UnitRoundContractTest"
+    ],
+    "tests": 5,
+    "skipped": 0,
+    "failures": 0,
+    "errors": 0
+  },
+  {
+    "name": "com.sentri.nativeapp.ui.ConnectionViewModelTest",
+    "classes": [
+      "com.sentri.nativeapp.ui.ConnectionViewModelTest"
+    ],
+    "tests": 5,
+    "skipped": 0,
+    "failures": 0,
+    "errors": 0
+  },
+  {
+    "name": "com.sentri.nativeapp.update.ApkUpdateViewModelTest",
+    "classes": [
+      "com.sentri.nativeapp.update.ApkUpdateViewModelTest"
+    ],
+    "tests": 4,
+    "skipped": 0,
+    "failures": 0,
+    "errors": 0
+  },
+  {
+    "name": "com.sentri.nativeapp.update.UpdatePolicyTest",
+    "classes": [
+      "com.sentri.nativeapp.update.UpdatePolicyTest"
+    ],
+    "tests": 5,
+    "skipped": 0,
+    "failures": 0,
+    "errors": 0
+  }
+]

@@ -1,0 +1,2 @@
+I/System.out(31603): PIG_PROFILE_PREPARED pid=31603 snapshots=3
+I/System.out(31643): PIG_PROFILE_RESTORED pid=31643 newProcess=true snapshots=3 remoteReads=0 decimalExact=true rawJsonExact=true bilingualNames=true missingDetail=true scopeIsolated=true

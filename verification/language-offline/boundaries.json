@@ -1,0 +1,56 @@
+{
+  "goalCreatedAt": 1791528758,
+  "uiSourceFiles": [
+    {
+      "path": "app/src/main/java/com/sentri/nativeapp/MainActivity.kt",
+      "modifiedAt": 1791522806.1574342,
+      "sha256": "5bc4e5f612174ee4c1d3fbdb5bbc59717f7be5687b28ced04891a50e2e13569d",
+      "predatesGoal": true
+    },
+    {
+      "path": "app/src/main/java/com/sentri/nativeapp/devices/DeviceVerificationScreen.kt",
+      "modifiedAt": 1791521129.5252225,
+      "sha256": "64774892d7c964ebd84d3fa6d02ee68637cd182237a2cae91061fe0351558b3d",
+      "predatesGoal": true
+    },
+    {
+      "path": "app/src/main/java/com/sentri/nativeapp/pigs/PigScreen.kt",
+      "modifiedAt": 1791519016.9105954,
+      "sha256": "789215857019b9142e45c692097ef5b5a3868876109b732499be5fa9aa6a0daa",
+      "predatesGoal": true
+    },
+    {
+      "path": "app/src/main/java/com/sentri/nativeapp/ui/ConnectionScreen.kt",
+      "modifiedAt": 1791521660.810784,
+      "sha256": "73b3f710756e6616602ce2999289a9c9d29ef256006fc31ff135e4aac2510cb8",
+      "predatesGoal": true
+    },
+    {
+      "path": "app/src/main/java/com/sentri/nativeapp/ui/ConnectionViewModel.kt",
+      "modifiedAt": 1791521660.811219,
+      "sha256": "a50474dd955762d3482409f56a08e9b9fe74a50265cc576ccee523207ff61856",
+      "predatesGoal": true
+    },
+    {
+      "path": "app/src/main/java/com/sentri/nativeapp/ui/LoginWebView.kt",
+      "modifiedAt": 1791451203.056501,
+      "sha256": "4ad7f1d32963299030d90d5939baeccbfd15eb565ca07a42c0a644ca17f9fd14",
+      "predatesGoal": true
+    },
+    {
+      "path": "app/src/main/java/com/sentri/nativeapp/update/ApkUpdateScreen.kt",
+      "modifiedAt": 1791456460.7312906,
+      "sha256": "9410f96cdbf8b5740e77f4af6f04765b6333ad1b2690536ae2f0f2a6f93fe872",
+      "predatesGoal": true
+    },
+    {
+      "path": "app/src/main/res/values/styles.xml",
+      "modifiedAt": 1791450864.2866287,
+      "sha256": "1a28d6a7a311c519f88b4ed87d564c792fd075048f43d5b7951f05148a3c6843",
+      "predatesGoal": true
+    }
+  ],
+  "uiSourceModificationSinceGoal": false,
+  "releaseWorkflowAndVersionDiffEmpty": true,
+  "verificationScriptExtendedOnlyForLanguageAndGraphqlChecks": true
+}

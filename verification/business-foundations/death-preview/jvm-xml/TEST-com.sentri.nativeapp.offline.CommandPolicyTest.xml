@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.sentri.nativeapp.offline.CommandPolicyTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2026-10-10T04:16:18.906Z" hostname="Mac" time="0.002">
+  <properties/>
+  <testcase name="explicit dependencies wait for completion cancellation and correct scope" classname="com.sentri.nativeapp.offline.CommandPolicyTest" time="0.001"/>
+  <testcase name="auth context network and delay gate scheduling" classname="com.sentri.nativeapp.offline.CommandPolicyTest" time="0.001"/>
+  <testcase name="process death or timeout requires reconciliation instead of replay" classname="com.sentri.nativeapp.offline.CommandPolicyTest" time="0.0"/>
+  <testcase name="same timestamp preserves check submit and mating order" classname="com.sentri.nativeapp.offline.CommandPolicyTest" time="0.0"/>
+  <testcase name="shared entities serialize and failed predecessor blocks without affecting another scope" classname="com.sentri.nativeapp.offline.CommandPolicyTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,47 @@
+{
+  "date": "2026-10-19",
+  "scope": "Task 11 vaccination list/detail and per-dose read snapshots; no UI, real backend calls, mutation dispatch or release",
+  "reference": {
+    "webServicesVaccineSha256": "bfe2c65f6c37780dc50106eb6c7eb771479d2782db614a3a38e1511fbef0dbbc",
+    "backendVaccineModelSha256": "552e56a13b07066aac35159a86d95489bbaa02c4ffabeed9a0f733348d53193f",
+    "backendProjectionSha256": "bc7d1b7945fbd583d9dba94ac94fac6f1e2a9fbb174bf1ce9a01585d7f255297"
+  },
+  "graphql": {
+    "added": "NativeVaccinationTasks",
+    "detailUsesRowsWithFarmAndId": true,
+    "contractOperations": 61,
+    "contractConsumedFields": 582,
+    "contractCheck": "passed against local schema snapshot",
+    "precisionFinding": "Apollo fragment path rounded 123456789.12345678900 to 123456789.12345679 in MockWebServer test; switched to inline row selection reused by page/detail"
+  },
+  "reads": {
+    "types": ["full task page", "active or completed in a specified day window", "task detail"],
+    "cacheKinds": ["vaccination_page", "vaccination_detail"],
+    "cacheLimit": "shared 256 read snapshots per data scope",
+    "validation": "farm and task/target/vaccine/brand/pig relationships, complete targets aggregate count, unique target+dose pairs, contiguous dose indices, exact page filter",
+    "precision": "BigDecimal scale, JSON numeric lexemes, original timestamp text and unknown enum raw values"
+  },
+  "verification": {
+    "verifyCommand": "SENTRI_GRADLE_DIRECT=1 ./scripts/verify.sh",
+    "verify": "passed: GraphQL contract, language contract, APK assembly, JVM tests and Android lint",
+    "jvm": {"tests": 186, "failures": 0, "skipped": 0, "newVaccinationReadTests": 3},
+    "androidRegular": {"tests": 149, "passed": 132, "skippedOptIn": 17, "failures": 0, "newVaccinationCacheTests": 2},
+    "processRestore": {
+      "prepare": "passed, PID 14536",
+      "forceStop": "passed",
+      "restore": "passed, PID 14581",
+      "snapshotsRestored": 3,
+      "queuedCommandsRestored": 1,
+      "remoteReadsOnRestore": 0
+    },
+    "language": {"pairedEntries": 390, "canonicalEnumMappings": 233},
+    "realBackendRead": "not run",
+    "realBackendWrite": "not run"
+  },
+  "remaining": [
+    "Task 11 multi-dose local preview and successful read-reflection evidence",
+    "Complete exemption context for preview and task settlement",
+    "Real backend read verification when an authorized development session is available",
+    "Tasks 8–10 remaining work, tasks 12–18 and final cross-business audit"
+  ]
+}

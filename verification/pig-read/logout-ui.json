@@ -1,0 +1,12 @@
+{
+  "logoutTapped": true,
+  "tokenRevocationSucceeded": true,
+  "localSessionCleared": true,
+  "freshProcess": true,
+  "loginEntryVisible": true,
+  "businessEntryHidden": true,
+  "deviceEntryHidden": true,
+  "logoutEntryHidden": true,
+  "sessionPreferenceAbsent": true,
+  "pendingPreferenceAbsent": true
+}

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="wb_production">Production</string><string name="wb_health">Health</string><string name="wb_other">Other</string>
+    <string name="wb_schedule_link">Schedule ›</string><string name="wb_closed_today">Closed today</string><string name="wb_closed_count">%1$d closed today</string>
+    <string name="wb_nothing_open">Nothing open</string><string name="wb_loading">Loading work</string><string name="wb_loading_detail">Please wait</string>
+    <string name="wb_no_permission">No access to this section</string><string name="wb_no_permission_detail">Ask an administrator to check your access.</string>
+    <string name="wb_read_error">Could not read work</string><string name="wb_read_error_detail">Pull to refresh and try again.</string>
+    <string name="wb_to_treat">To treat</string><string name="wb_monitoring">Monitoring</string><string name="wb_nothing_marked">Nothing marked</string>
+    <string name="wb_waiting_yesterday">%1$d waiting since yesterday</string><string name="wb_units_summary">Units %1$s</string>
+    <string name="wb_ready_to_close">Ready to close</string><string name="wb_count_tomorrow">%1$d tomorrow</string><string name="wb_none_now">None now</string>
+    <string name="wb_status_confirm">Status to confirm</string><string name="wb_overdue_count">%1$d overdue</string><string name="wb_count_now">%1$d now</string>
+    <string name="wb_count_watch">%1$d to watch</string><string name="wb_count_due">%1$d due now</string>
+    <string name="wb_count_farrowing">%1$d farrowing</string><string name="wb_count_litters">%1$d litters due</string>
+    <string name="wb_day_of">Day %1$d of %2$d</string><string name="wb_day_overdue">%1$d day past plan</string>
+    <string name="wb_pens">pens</string><string name="wb_pigs">pigs</string><string name="wb_withdrawal_block">%1$d in withdrawal</string>
+    <string name="wb_pen">Pen</string><string name="wb_last_checked">Last checked</string><string name="wb_checked_yesterday">Yesterday</string>
+    <string name="wb_no_flags">No flagged items</string><string name="wb_attention_unknown">Health and feed summary unavailable</string>
+    <string name="wb_feed">Feed</string><string name="wb_maintenance">Maintenance</string><string name="wb_environment">Environment &amp; devices</string>
+    <string name="wb_environment_values">22.4 °C · 64% · 8 ppm NH₃</string><string name="wb_one_device">1 device</string>
+    <string name="wb_no_tasks_progress">No tasks in progress</string><string name="wb_inspect_anyway">You can still inspect this unit and record what you find.</string>
+    <string name="wb_sows_farrowing">sows farrowing</string><string name="wb_due_unit">due now</string><string name="wb_local_count">↑ %1$d saved records</string>
+    <string name="wb_week_section">Week %1$d · %2$s</string><string name="wb_how_to_read">How to read the board</string><string name="wb_all">All</string>
+    <string name="wb_nothing_planned">Nothing planned this week</string><string name="wb_previous_week">‹ Week %1$d</string><string name="wb_next_week">Week %1$d ›</string>
+    <string name="wb_tap_row">Tap a row to see its week in numbers</string><string name="wb_key_done">Done</string><string name="wb_key_today">Due today</string>
+    <string name="wb_key_planned">Planned</string><string name="wb_key_estimate">Estimate</string><string name="wb_key_waiting">Waiting on today</string>
+    <string name="wb_key_past">Past its plan</string><string name="wb_key_none">Nothing due</string>
+    <string name="wb_key_continues">Continues next week</string>
+    <string name="wb_row_done">%1$s done</string><string name="wb_row_due">%1$s due today</string><string name="wb_row_planned">%1$s planned</string>
+    <string name="wb_row_estimated">~%1$s expected</string><string name="wb_row_past">%1$s due · past its plan</string>
+    <string name="wb_heat_check">Heat check</string><string name="wb_return_heat">Return heat</string><string name="wb_vaccination">Vaccination</string>
+    <string name="wb_treatment">Treatment</string><string name="wb_pig_transfer">Pig transfer</string><string name="wb_outbound">Outbound</string><string name="wb_sampling">Sampling</string>
+    <string name="wb_batch_n">Batch %1$s</string><string name="wb_plan_n">Plan %1$s</string><string name="wb_order_n">Order %1$s</string>
+    <string name="wb_section_meta">%1$d units · %2$d pigs · %3$d tasks</string>
+    <string name="wb_find_pig">Find a pig or pen</string><string name="wb_records">Records</string><string name="wb_sections_units">Sections &amp; units</string>
+    <string name="wb_records_preview">Records preview</string><string name="wb_task_preview">Task preview</string>
+    <string name="wb_no_new_records">No new records yet</string><string name="wb_records_empty_detail">Answers to overnight findings will appear here.</string>
+    <string name="wb_record_clarification">Movement clarification received</string><string name="wb_record_context">Unit 7 · Pen A2 · Sample record</string>
+    <string name="wb_records_mock_note">This list uses preview data only.</string>
+    <string name="wb_task_preview_detail">This task page is not connected. The task stays open between scheduled work.</string>
+    <string name="wb_task_complete">Task complete</string><string name="wb_task_ended_early">Task ended early</string>
+    <string name="wb_completed_at">Completed · Today %1$s</string><string name="wb_ended_early">Ended early · Today</string>
+    <string name="wb_hold_to_end_mock">Hold to simulate ending early</string><string name="wb_sync_owned">Saved work belongs to Data sync. Home only shows its entrance; this preview uploads nothing.</string>
+    <string name="wb_saved_work_waiting_n">%1$d records saved on this phone, uploads when connected</string>
+    <string name="wb_saved_work_uploading_n">Automatically uploading %1$d saved records</string>
+    <string name="wb_saved_work_attention_n">%1$d saved records need attention, review records</string>
+    <string name="wb_saved_work_fix_short">Fix</string>
+    <string name="wb_mock_end_note">Only changes this local preview. No task is submitted.</string>
+    <string name="wb_inspection_owned">Inspection belongs to a separate feature. This is only the Home entrance.</string>
+    <string name="wb_ob77_title">Outbound · pickup 14:00</string><string name="wb_ob78_title">Outbound · pickup 16:30</string>
+    <string name="wb_tr241_title">Move to Farrowing, Unit 6</string><string name="wb_tr242_title">Move to Unit 9</string>
+    <string name="wb_s11_title">PRRS blood samples</string><string name="wb_s12_title">Oral fluid samples</string><string name="wb_tr250_title">Move to Nursery, Unit 12</string>
+    <string name="wb_where_7_8">Units 7, 8</string><string name="wb_where_7_9">Units 7, 9</string><string name="wb_where_8">Unit 8</string>
+    <string name="wb_from_7_8">From Units 7, 8</string><string name="wb_from_6">Weaned pigs from Unit 6</string><string name="wb_from_8_moved">From Unit 8 · 12 of 20 moved</string>
+    <string name="wb_hospital">Hospital</string><string name="wb_in_place">In place</string>
+    <string name="wb_lameness">Lameness</string><string name="wb_fever">Fever</string><string name="wb_shoulder_sore">Shoulder sore</string>
+    <string name="wb_coughing">Coughing</string><string name="wb_off_feed">Off feed</string><string name="wb_thin">Thin</string><string name="wb_vulva_discharge">Vulva discharge</string>
+</resources>

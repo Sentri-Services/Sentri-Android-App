@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="390" height="232" viewBox="0 0 390 232" role="img" aria-label="返情单元：预计返情日已到且有迹象记录">
+<title>返情单元：预计返情日已到且有迹象记录</title><style>text{font-family:'PingFang SC','Noto Sans CJK SC','Microsoft YaHei',sans-serif}</style><rect width="390" height="232" fill="#f7f8f3"/>
+<rect x="18.5" y="16.5" width="353" height="198" rx="18" fill="#fff" stroke="#dbe2d2"/>
+<rect x="36" y="34" width="36" height="36" rx="10" fill="#fff1e8"/>
+<g transform="translate(45 42) scale(1.1)" fill="none" stroke="#c7733b" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+<path d="M7 14s-5.5-3.4-5.5-7.4C1.5 4 3 2.7 4.8 2.7c1.1 0 1.8.5 2.2 1.1.4-.6 1.2-1.1 2.2-1.1 1.8 0 3.3 1.3 3.3 3.9"/>
+<path d="M10 8a4 4 0 0 1 5 1.8M15 8v1.8h-1.8M14.5 12a4 4 0 0 1-5 1.4M9.5 15v-1.6h1.7"/>
+</g><text x="83" y="52" fill="#26372d" font-size="15" font-weight="500">返情检查</text>
+<text x="83" y="69" fill="#768270" font-size="10.5">第 25 批 · 单元 6 · 第 3/7 天</text><path d="m346 46 5 5-5 5" fill="none" stroke="#758470" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="37" y="116" fill="#64725f" font-size="11">该单元</text>
+<text x="36" y="164" fill="#26372d" font-size="42" font-weight="400">8</text>
+<text x="66" y="161" fill="#26372d" font-size="14">头已到预计返情日</text>
+<text x="37" y="193" fill="#a65d31" font-size="11">有返情迹象记录 2 头</text></svg>

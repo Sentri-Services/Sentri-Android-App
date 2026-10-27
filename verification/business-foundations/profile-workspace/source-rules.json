@@ -1,0 +1,33 @@
+{
+  "referenceHead": "4c1a2ff49e8d938e1af053d844018cc140c63f38",
+  "sources": [
+    {
+      "path": "backend/apps/production_v2/src/production_v2/domain/models/pig.py",
+      "sha256": "e94c5983a9957c8960832eba845df862c69e79e3dc4f240ffa1db78fae16cec7"
+    },
+    {
+      "path": "backend/apps/production_v2/src/production_v2/domain/services/pig_lifecycle.py",
+      "sha256": "f87b216701f21b287c34ba6fdb53c33a9ff3feb4a071cb3db1e295922fbb0f77"
+    },
+    {
+      "path": "backend/apps/production_v2/src/production_v2/adapters/repository.py",
+      "sha256": "192e1f07bdc857413641a7bda0de0325931e4c3295a5f12d7b00caa4f609e347"
+    },
+    {
+      "path": "backend/apps/production_v2/src/production_v2/service_layer/handlers/commands/pig.py",
+      "sha256": "f3b604878abe3d14ead916b570e3ab944670cb6460e36d4ae50b5390766be189"
+    },
+    {
+      "path": "backend/apps/production_v2/src/production_v2/service_layer/handlers/commands/utils/pig_task_membership.py",
+      "sha256": "dad9f6ecf43b6e1773cdc7d564f3651eb45a3d68482523a812775a919df64c9f"
+    }
+  ],
+  "rules": [
+    "Properties require an active pig; nullable inputs mean no change and generic lifecycle writes do not invoke death task synchronization.",
+    "MARK_AS_BREEDER requires PIGLET/FATTENING, existing or provided identity, and sex. Provided non-null identity is applied only when some provided identity is truthy.",
+    "UPGRADE and both CANCEL actions require a breeder role; supplied identity, sex and parents are ignored by these actions.",
+    "Role service uses last input by pig id but iterates every loaded occurrence. Repository identity map returns the same aggregate for repeated ids, causing the second transition to fail.",
+    "Grower breeder flags synchronize only for PLANNED/SCHEDULED/RUNNING task aggregates.",
+    "Missing markedAt uses server time and is not fabricated in preview."
+  ]
+}

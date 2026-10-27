@@ -1,0 +1,21 @@
+mutation NativeCompleteTherapyTarget($input: BiosafetyCompleteTherapyTaskInput!) {
+  biosafety { complete_therapy_target(command_input: $input) { status recordId errors { err_msg } } }
+}
+mutation NativeSkipTherapyTask($input: BiosafetySkipTherapyTaskInput!) {
+  biosafety { skip_therapy_task(command_input: $input) { status recordId errors { err_msg } } }
+}
+mutation NativeAddPrescriptionTarget($input: BiosafetyAddPrescriptionTargetInput!) {
+  biosafety { add_prescription_target(command_input: $input) { status recordId errors { err_msg } } }
+}
+mutation NativeRemovePrescriptionTarget($input: BiosafetyRemovePrescriptionTargetInput!) {
+  biosafety { remove_prescription_target(command_input: $input) { status recordId errors { err_msg } } }
+}
+mutation NativeTerminateTherapy($input: BiosafetyTerminateTherapyInput!) {
+  biosafety { terminate_therapy(command_input: $input) { status recordId errors { err_msg } } }
+}
+mutation NativeTerminatePrescription($input: BiosafetyTerminatePrescriptionInput!) {
+  biosafety { terminate_prescription(command_input: $input) { status recordId errors { err_msg } } }
+}
+mutation NativeCreatePrescription($input: BiosafetyCreatePrescriptionInput!) {
+  biosafety { create_prescription(command_input: $input) { status recordId errors { err_msg } } }
+}

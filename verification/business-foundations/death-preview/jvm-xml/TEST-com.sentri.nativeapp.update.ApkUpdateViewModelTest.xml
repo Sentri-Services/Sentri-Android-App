@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.sentri.nativeapp.update.ApkUpdateViewModelTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2026-10-10T04:16:19.830Z" hostname="Mac" time="0.005">
+  <properties/>
+  <testcase name="repeated checks share one active download" classname="com.sentri.nativeapp.update.ApkUpdateViewModelTest" time="0.003"/>
+  <testcase name="failed check permits current app and retry" classname="com.sentri.nativeapp.update.ApkUpdateViewModelTest" time="0.001"/>
+  <testcase name="local debug does not access update channel" classname="com.sentri.nativeapp.update.ApkUpdateViewModelTest" time="0.001"/>
+  <testcase name="force update cannot be skipped while optional update can" classname="com.sentri.nativeapp.update.ApkUpdateViewModelTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

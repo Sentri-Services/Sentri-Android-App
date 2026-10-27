@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="390" height="344" viewBox="0 0 390 344" role="img" aria-label="返情总览：返情 2 头，另 18 头尚无返情记录，有每日检查统计">
+<title>返情总览：返情 2 头，另 18 头尚无返情记录，有每日检查统计</title><style>text{font-family:'PingFang SC','Noto Sans CJK SC','Microsoft YaHei',sans-serif}</style><rect width="390" height="344" fill="#f7f8f3"/>
+<rect x="18.5" y="16.5" width="353" height="310" rx="18" fill="#fff" stroke="#dbe2d2"/>
+<rect x="36" y="34" width="36" height="36" rx="10" fill="#fff1e8"/>
+<g transform="translate(45 42) scale(1.1)" fill="none" stroke="#c7733b" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+<path d="M7 14s-5.5-3.4-5.5-7.4C1.5 4 3 2.7 4.8 2.7c1.1 0 1.8.5 2.2 1.1.4-.6 1.2-1.1 2.2-1.1 1.8 0 3.3 1.3 3.3 3.9"/>
+<path d="M10 8a4 4 0 0 1 5 1.8M15 8v1.8h-1.8M14.5 12a4 4 0 0 1-5 1.4M9.5 15v-1.6h1.7"/>
+</g><text x="83" y="52" fill="#26372d" font-size="15" font-weight="500">返情检查</text>
+<text x="83" y="69" fill="#768270" font-size="10.5">第 25 批 · 第 3/7 天</text>
+<text x="37" y="115" fill="#64725f" font-size="11">已记录返情</text>
+<text x="36" y="165" fill="#a65d31" font-size="42" font-weight="400">2</text>
+<text x="66" y="162" fill="#697963" font-size="14">头</text>
+<text x="37" y="188" fill="#697963" font-size="11">另有 18 头尚无返情记录 · 有配种时间 20 头</text>
+<text x="37" y="229" fill="#64725f" font-size="11">近 5 个统计日检查快照</text><g><title>10月10日：检查时间落在当日 20/20 头</title><circle cx="240" cy="225" r="8" fill="#e4e9e1"/><circle cx="240" cy="225" r="8" fill="#66835b"/></g><g><title>10月11日：检查时间落在当日 18/20 头</title><circle cx="266" cy="225" r="8" fill="#e4e9e1"/><path d="M 266 225 L 266 217 A 8 8 0 1 1 261.298 218.528 Z" fill="#66835b"/></g><g><title>10月12日：检查时间落在当日 12/20 头</title><circle cx="292" cy="225" r="8" fill="#e4e9e1"/><path d="M 292 225 L 292 217 A 8 8 0 1 1 287.298 231.472 Z" fill="#66835b"/></g><g><title>10月13日：检查时间落在当日 20/20 头</title><circle cx="318" cy="225" r="8" fill="#e4e9e1"/><circle cx="318" cy="225" r="8" fill="#66835b"/></g><g><title>10月14日：检查时间落在当日 6/20 头</title><circle cx="344" cy="225" r="8" fill="#e4e9e1"/><path d="M 344 225 L 344 217 A 8 8 0 0 1 351.608 227.472 Z" fill="#66835b"/></g><text x="37" y="252" fill="#697963" font-size="10.5">最近统计：10 月 14 日 · 6/20 头</text><path d="M19 274.5h352" stroke="#e8eddf"/>
+<path d="M19 275h352v33a18 18 0 0 1-18 18H37a18 18 0 0 1-18-18z" fill="#f7f8f3"/>
+<g transform="translate(35 292)" fill="none" stroke="#77866c" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><path d="M7 13s5-4.5 5-8A5 5 0 0 0 2 5c0 3.5 5 8 5 8z"/><circle cx="7" cy="5" r="1.5"/></g>
+<text x="55" y="304" fill="#697963" font-size="10.5">涉及 2 个单元</text>
+<text x="286" y="304" fill="#26372d" font-size="10.5">查看任务</text>
+<path d="m348 297 4 4-4 4" fill="none" stroke="#748171" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>

@@ -1,0 +1,1125 @@
+{
+  "referenceCommit": "4c1a2ff49e8d938e1af053d844018cc140c63f38",
+  "method": "Named GraphQL declaration tokens in non-generated service TypeScript sources; inventory only, not a schema/implementation proof. Imported fragments and composite offline commands still require module source review.",
+  "counts": {
+    "query": 54,
+    "mutation": 100,
+    "subscription": 0,
+    "fragment": 5
+  },
+  "declarations": [
+    {
+      "kind": "query",
+      "name": "GetProductionBatchList",
+      "source": "mobile_webapp/src/services/batch.ts",
+      "line": 4,
+      "sourceSHA256": "0a1d702facd828a2848463926ce2753124d2532b3edca39933b5c319abefb4cf"
+    },
+    {
+      "kind": "query",
+      "name": "GetProductionBatchDetail",
+      "source": "mobile_webapp/src/services/batch.ts",
+      "line": 24,
+      "sourceSHA256": "0a1d702facd828a2848463926ce2753124d2532b3edca39933b5c319abefb4cf"
+    },
+    {
+      "kind": "mutation",
+      "name": "JoinBatch",
+      "source": "mobile_webapp/src/services/batch.ts",
+      "line": 44,
+      "sourceSHA256": "0a1d702facd828a2848463926ce2753124d2532b3edca39933b5c319abefb4cf"
+    },
+    {
+      "kind": "query",
+      "name": "GetCameraList",
+      "source": "mobile_webapp/src/services/camera.ts",
+      "line": 4,
+      "sourceSHA256": "acdddf4b5e08615b12a046418fc0c1b2896cf14f629591195b1c29a80c89c41f"
+    },
+    {
+      "kind": "query",
+      "name": "Videofarm_physical_device",
+      "source": "mobile_webapp/src/services/disinfection.ts",
+      "line": 4,
+      "sourceSHA256": "3bef808bbe32671f79a17b65f61191ec3e090b89e1b2efbb4ec32006b5f4dc13"
+    },
+    {
+      "kind": "mutation",
+      "name": "PullUnlockCode",
+      "source": "mobile_webapp/src/services/disinfection.ts",
+      "line": 37,
+      "sourceSHA256": "3bef808bbe32671f79a17b65f61191ec3e090b89e1b2efbb4ec32006b5f4dc13"
+    },
+    {
+      "kind": "query",
+      "name": "Videofarm_disinfection_application",
+      "source": "mobile_webapp/src/services/disinfection.ts",
+      "line": 56,
+      "sourceSHA256": "3bef808bbe32671f79a17b65f61191ec3e090b89e1b2efbb4ec32006b5f4dc13"
+    },
+    {
+      "kind": "mutation",
+      "name": "StartDisinfection",
+      "source": "mobile_webapp/src/services/disinfection.ts",
+      "line": 104,
+      "sourceSHA256": "3bef808bbe32671f79a17b65f61191ec3e090b89e1b2efbb4ec32006b5f4dc13"
+    },
+    {
+      "kind": "mutation",
+      "name": "CreateLogicalDevice",
+      "source": "mobile_webapp/src/services/disinfection.ts",
+      "line": 116,
+      "sourceSHA256": "3bef808bbe32671f79a17b65f61191ec3e090b89e1b2efbb4ec32006b5f4dc13"
+    },
+    {
+      "kind": "mutation",
+      "name": "InterruptDisinfection",
+      "source": "mobile_webapp/src/services/disinfection.ts",
+      "line": 128,
+      "sourceSHA256": "3bef808bbe32671f79a17b65f61191ec3e090b89e1b2efbb4ec32006b5f4dc13"
+    },
+    {
+      "kind": "mutation",
+      "name": "PullUnlockCodePhysicalExamination",
+      "source": "mobile_webapp/src/services/disinfection.ts",
+      "line": 140,
+      "sourceSHA256": "3bef808bbe32671f79a17b65f61191ec3e090b89e1b2efbb4ec32006b5f4dc13"
+    },
+    {
+      "kind": "mutation",
+      "name": "UpdateLogicalDevice",
+      "source": "mobile_webapp/src/services/disinfection.ts",
+      "line": 161,
+      "sourceSHA256": "3bef808bbe32671f79a17b65f61191ec3e090b89e1b2efbb4ec32006b5f4dc13"
+    },
+    {
+      "kind": "mutation",
+      "name": "RetrieveDisinfectedItems",
+      "source": "mobile_webapp/src/services/disinfection.ts",
+      "line": 173,
+      "sourceSHA256": "3bef808bbe32671f79a17b65f61191ec3e090b89e1b2efbb4ec32006b5f4dc13"
+    },
+    {
+      "kind": "mutation",
+      "name": "FosterPiglet",
+      "source": "mobile_webapp/src/services/foster.ts",
+      "line": 4,
+      "sourceSHA256": "dd670b95ff1e27324a531dd2046e63b35f31ae46beb3add7c25740d328ece6fd"
+    },
+    {
+      "kind": "query",
+      "name": "GetUnitInspection",
+      "source": "mobile_webapp/src/services/inspection.ts",
+      "line": 4,
+      "sourceSHA256": "a09affc453e3d028a453da0b7f6694b0ba2fc40fc7cfaed800e65aaea1a36d7f"
+    },
+    {
+      "kind": "query",
+      "name": "GetMatvUnitRemark",
+      "source": "mobile_webapp/src/services/inspection.ts",
+      "line": 15,
+      "sourceSHA256": "a09affc453e3d028a453da0b7f6694b0ba2fc40fc7cfaed800e65aaea1a36d7f"
+    },
+    {
+      "kind": "mutation",
+      "name": "ReportDeviceInspection",
+      "source": "mobile_webapp/src/services/inspection.ts",
+      "line": 27,
+      "sourceSHA256": "a09affc453e3d028a453da0b7f6694b0ba2fc40fc7cfaed800e65aaea1a36d7f"
+    },
+    {
+      "kind": "mutation",
+      "name": "ResolveDeviceInspection",
+      "source": "mobile_webapp/src/services/inspection.ts",
+      "line": 38,
+      "sourceSHA256": "a09affc453e3d028a453da0b7f6694b0ba2fc40fc7cfaed800e65aaea1a36d7f"
+    },
+    {
+      "kind": "mutation",
+      "name": "SubmitUnitInspection",
+      "source": "mobile_webapp/src/services/inspection.ts",
+      "line": 48,
+      "sourceSHA256": "a09affc453e3d028a453da0b7f6694b0ba2fc40fc7cfaed800e65aaea1a36d7f"
+    },
+    {
+      "kind": "mutation",
+      "name": "RecordAbortionBatch",
+      "source": "mobile_webapp/src/services/inspection.ts",
+      "line": 58,
+      "sourceSHA256": "a09affc453e3d028a453da0b7f6694b0ba2fc40fc7cfaed800e65aaea1a36d7f"
+    },
+    {
+      "kind": "mutation",
+      "name": "RecordEstrusBatch",
+      "source": "mobile_webapp/src/services/inspection.ts",
+      "line": 68,
+      "sourceSHA256": "a09affc453e3d028a453da0b7f6694b0ba2fc40fc7cfaed800e65aaea1a36d7f"
+    },
+    {
+      "kind": "mutation",
+      "name": "RecordFarrowingBatch",
+      "source": "mobile_webapp/src/services/inspection.ts",
+      "line": 78,
+      "sourceSHA256": "a09affc453e3d028a453da0b7f6694b0ba2fc40fc7cfaed800e65aaea1a36d7f"
+    },
+    {
+      "kind": "mutation",
+      "name": "RecordPregnancyBatch",
+      "source": "mobile_webapp/src/services/inspection.ts",
+      "line": 88,
+      "sourceSHA256": "a09affc453e3d028a453da0b7f6694b0ba2fc40fc7cfaed800e65aaea1a36d7f"
+    },
+    {
+      "kind": "mutation",
+      "name": "RecordPregnancyBatch",
+      "source": "mobile_webapp/src/services/inspection.ts",
+      "line": 98,
+      "sourceSHA256": "a09affc453e3d028a453da0b7f6694b0ba2fc40fc7cfaed800e65aaea1a36d7f"
+    },
+    {
+      "kind": "mutation",
+      "name": "RecordWeaningBatch",
+      "source": "mobile_webapp/src/services/inspection.ts",
+      "line": 108,
+      "sourceSHA256": "a09affc453e3d028a453da0b7f6694b0ba2fc40fc7cfaed800e65aaea1a36d7f"
+    },
+    {
+      "kind": "mutation",
+      "name": "SubmitUnitRemark",
+      "source": "mobile_webapp/src/services/inspection.ts",
+      "line": 118,
+      "sourceSHA256": "a09affc453e3d028a453da0b7f6694b0ba2fc40fc7cfaed800e65aaea1a36d7f"
+    },
+    {
+      "kind": "mutation",
+      "name": "RecordPigWeights",
+      "source": "mobile_webapp/src/services/inspection.ts",
+      "line": 128,
+      "sourceSHA256": "a09affc453e3d028a453da0b7f6694b0ba2fc40fc7cfaed800e65aaea1a36d7f"
+    },
+    {
+      "kind": "mutation",
+      "name": "RecordPigBackfat",
+      "source": "mobile_webapp/src/services/inspection.ts",
+      "line": 138,
+      "sourceSHA256": "a09affc453e3d028a453da0b7f6694b0ba2fc40fc7cfaed800e65aaea1a36d7f"
+    },
+    {
+      "kind": "mutation",
+      "name": "RecordPigTemperature",
+      "source": "mobile_webapp/src/services/inspection.ts",
+      "line": 148,
+      "sourceSHA256": "a09affc453e3d028a453da0b7f6694b0ba2fc40fc7cfaed800e65aaea1a36d7f"
+    },
+    {
+      "kind": "query",
+      "name": "GetSimpleFarmUnitPenList",
+      "source": "mobile_webapp/src/services/location.ts",
+      "line": 4,
+      "sourceSHA256": "f0869d6fdef8543014237e803bd0a64ebd52ac72966c9fa9d3c5de4f88b92730"
+    },
+    {
+      "kind": "query",
+      "name": "GetFarmUnitPenList",
+      "source": "mobile_webapp/src/services/location.ts",
+      "line": 16,
+      "sourceSHA256": "f0869d6fdef8543014237e803bd0a64ebd52ac72966c9fa9d3c5de4f88b92730"
+    },
+    {
+      "kind": "query",
+      "name": "GetFarmUnitPenDetail",
+      "source": "mobile_webapp/src/services/location.ts",
+      "line": 52,
+      "sourceSHA256": "f0869d6fdef8543014237e803bd0a64ebd52ac72966c9fa9d3c5de4f88b92730"
+    },
+    {
+      "kind": "query",
+      "name": "GetFarmUnitList",
+      "source": "mobile_webapp/src/services/location.ts",
+      "line": 88,
+      "sourceSHA256": "f0869d6fdef8543014237e803bd0a64ebd52ac72966c9fa9d3c5de4f88b92730"
+    },
+    {
+      "kind": "query",
+      "name": "GetSectionList",
+      "source": "mobile_webapp/src/services/location.ts",
+      "line": 107,
+      "sourceSHA256": "f0869d6fdef8543014237e803bd0a64ebd52ac72966c9fa9d3c5de4f88b92730"
+    },
+    {
+      "kind": "query",
+      "name": "GetZoneList",
+      "source": "mobile_webapp/src/services/location.ts",
+      "line": 121,
+      "sourceSHA256": "f0869d6fdef8543014237e803bd0a64ebd52ac72966c9fa9d3c5de4f88b92730"
+    },
+    {
+      "kind": "fragment",
+      "name": "ProductionOutboundPigFields",
+      "source": "mobile_webapp/src/services/outbound.ts",
+      "line": 4,
+      "sourceSHA256": "ba56f8dd76529a8f4bbe17cc06b3ddde0cc98841b5985d57a7fb741a62506146"
+    },
+    {
+      "kind": "query",
+      "name": "ProductionOutboundTaskView",
+      "source": "mobile_webapp/src/services/outbound.ts",
+      "line": 63,
+      "sourceSHA256": "ba56f8dd76529a8f4bbe17cc06b3ddde0cc98841b5985d57a7fb741a62506146"
+    },
+    {
+      "kind": "query",
+      "name": "ProductionOutboundTaskViewDetail",
+      "source": "mobile_webapp/src/services/outbound.ts",
+      "line": 112,
+      "sourceSHA256": "ba56f8dd76529a8f4bbe17cc06b3ddde0cc98841b5985d57a7fb741a62506146"
+    },
+    {
+      "kind": "query",
+      "name": "ProductionLoadingTicketView",
+      "source": "mobile_webapp/src/services/outbound.ts",
+      "line": 156,
+      "sourceSHA256": "ba56f8dd76529a8f4bbe17cc06b3ddde0cc98841b5985d57a7fb741a62506146"
+    },
+    {
+      "kind": "mutation",
+      "name": "LogOutboundPig",
+      "source": "mobile_webapp/src/services/outbound.ts",
+      "line": 183,
+      "sourceSHA256": "ba56f8dd76529a8f4bbe17cc06b3ddde0cc98841b5985d57a7fb741a62506146"
+    },
+    {
+      "kind": "mutation",
+      "name": "LogOutboundNonIdentityPigs",
+      "source": "mobile_webapp/src/services/outbound.ts",
+      "line": 194,
+      "sourceSHA256": "ba56f8dd76529a8f4bbe17cc06b3ddde0cc98841b5985d57a7fb741a62506146"
+    },
+    {
+      "kind": "mutation",
+      "name": "UndoOutboundNonIdentityPigs",
+      "source": "mobile_webapp/src/services/outbound.ts",
+      "line": 215,
+      "sourceSHA256": "ba56f8dd76529a8f4bbe17cc06b3ddde0cc98841b5985d57a7fb741a62506146"
+    },
+    {
+      "kind": "mutation",
+      "name": "UndoOutboundPigLogs",
+      "source": "mobile_webapp/src/services/outbound.ts",
+      "line": 237,
+      "sourceSHA256": "ba56f8dd76529a8f4bbe17cc06b3ddde0cc98841b5985d57a7fb741a62506146"
+    },
+    {
+      "kind": "mutation",
+      "name": "CreateOutboundTask",
+      "source": "mobile_webapp/src/services/outbound.ts",
+      "line": 248,
+      "sourceSHA256": "ba56f8dd76529a8f4bbe17cc06b3ddde0cc98841b5985d57a7fb741a62506146"
+    },
+    {
+      "kind": "mutation",
+      "name": "CompleteOutboundTask",
+      "source": "mobile_webapp/src/services/outbound.ts",
+      "line": 259,
+      "sourceSHA256": "ba56f8dd76529a8f4bbe17cc06b3ddde0cc98841b5985d57a7fb741a62506146"
+    },
+    {
+      "kind": "mutation",
+      "name": "BatchCreateLoadingTickets",
+      "source": "mobile_webapp/src/services/outbound.ts",
+      "line": 270,
+      "sourceSHA256": "ba56f8dd76529a8f4bbe17cc06b3ddde0cc98841b5985d57a7fb741a62506146"
+    },
+    {
+      "kind": "query",
+      "name": "GetProductionPigViewDetail",
+      "source": "mobile_webapp/src/services/pig/fullDetailQueries.ts",
+      "line": 4,
+      "sourceSHA256": "68aa77e04b034deaa4e1ff72f1eeb472341101c31d21c4cade633e60d6ac1443"
+    },
+    {
+      "kind": "query",
+      "name": "GetPigTasks",
+      "source": "mobile_webapp/src/services/pig/fullDetailQueries.ts",
+      "line": 149,
+      "sourceSHA256": "68aa77e04b034deaa4e1ff72f1eeb472341101c31d21c4cade633e60d6ac1443"
+    },
+    {
+      "kind": "query",
+      "name": "GetProductionPigView",
+      "source": "mobile_webapp/src/services/pig/fullListQueries.ts",
+      "line": 4,
+      "sourceSHA256": "5dc4f99dd43130224b113e15659f0468922b3a32c5fec8ebd01c599b4fd5c10d"
+    },
+    {
+      "kind": "mutation",
+      "name": "ReportPigDeath",
+      "source": "mobile_webapp/src/services/pig/mutations.ts",
+      "line": 4,
+      "sourceSHA256": "3c45557ce2b8fe7b21706803084d8faf2fd7a409abec07e235577c122e3f5d0b"
+    },
+    {
+      "kind": "mutation",
+      "name": "AddPigDisease",
+      "source": "mobile_webapp/src/services/pig/mutations.ts",
+      "line": 14,
+      "sourceSHA256": "3c45557ce2b8fe7b21706803084d8faf2fd7a409abec07e235577c122e3f5d0b"
+    },
+    {
+      "kind": "mutation",
+      "name": "AddPigSymptom",
+      "source": "mobile_webapp/src/services/pig/mutations.ts",
+      "line": 24,
+      "sourceSHA256": "3c45557ce2b8fe7b21706803084d8faf2fd7a409abec07e235577c122e3f5d0b"
+    },
+    {
+      "kind": "mutation",
+      "name": "RemovePigDisease",
+      "source": "mobile_webapp/src/services/pig/mutations.ts",
+      "line": 34,
+      "sourceSHA256": "3c45557ce2b8fe7b21706803084d8faf2fd7a409abec07e235577c122e3f5d0b"
+    },
+    {
+      "kind": "mutation",
+      "name": "RemovePigSymptom",
+      "source": "mobile_webapp/src/services/pig/mutations.ts",
+      "line": 44,
+      "sourceSHA256": "3c45557ce2b8fe7b21706803084d8faf2fd7a409abec07e235577c122e3f5d0b"
+    },
+    {
+      "kind": "mutation",
+      "name": "SetPigTriageLevel",
+      "source": "mobile_webapp/src/services/pig/mutations.ts",
+      "line": 54,
+      "sourceSHA256": "3c45557ce2b8fe7b21706803084d8faf2fd7a409abec07e235577c122e3f5d0b"
+    },
+    {
+      "kind": "mutation",
+      "name": "SetPigBodyTemperature",
+      "source": "mobile_webapp/src/services/pig/mutations.ts",
+      "line": 64,
+      "sourceSHA256": "3c45557ce2b8fe7b21706803084d8faf2fd7a409abec07e235577c122e3f5d0b"
+    },
+    {
+      "kind": "mutation",
+      "name": "AddCustomerEventLog",
+      "source": "mobile_webapp/src/services/pig/mutations.ts",
+      "line": 74,
+      "sourceSHA256": "3c45557ce2b8fe7b21706803084d8faf2fd7a409abec07e235577c122e3f5d0b"
+    },
+    {
+      "kind": "mutation",
+      "name": "UpdatePigProperty",
+      "source": "mobile_webapp/src/services/pig/mutations.ts",
+      "line": 84,
+      "sourceSHA256": "3c45557ce2b8fe7b21706803084d8faf2fd7a409abec07e235577c122e3f5d0b"
+    },
+    {
+      "kind": "mutation",
+      "name": "UpdateBreederRole",
+      "source": "mobile_webapp/src/services/pig/mutations.ts",
+      "line": 94,
+      "sourceSHA256": "3c45557ce2b8fe7b21706803084d8faf2fd7a409abec07e235577c122e3f5d0b"
+    },
+    {
+      "kind": "mutation",
+      "name": "ReconcileLocationInventory",
+      "source": "mobile_webapp/src/services/pig/mutations.ts",
+      "line": 104,
+      "sourceSHA256": "3c45557ce2b8fe7b21706803084d8faf2fd7a409abec07e235577c122e3f5d0b"
+    },
+    {
+      "kind": "query",
+      "name": "GetDiseaseList",
+      "source": "mobile_webapp/src/services/pig/referenceQueries.ts",
+      "line": 4,
+      "sourceSHA256": "e9605b837eeb049b4d82cbfe9dd1694234a315d507981ef2aa14fdfe816af3bb"
+    },
+    {
+      "kind": "query",
+      "name": "GetSymptomList",
+      "source": "mobile_webapp/src/services/pig/referenceQueries.ts",
+      "line": 18,
+      "sourceSHA256": "e9605b837eeb049b4d82cbfe9dd1694234a315d507981ef2aa14fdfe816af3bb"
+    },
+    {
+      "kind": "query",
+      "name": "GetEventLogs",
+      "source": "mobile_webapp/src/services/pig/referenceQueries.ts",
+      "line": 30,
+      "sourceSHA256": "e9605b837eeb049b4d82cbfe9dd1694234a315d507981ef2aa14fdfe816af3bb"
+    },
+    {
+      "kind": "query",
+      "name": "GetDeviceInspection",
+      "source": "mobile_webapp/src/services/pig/referenceQueries.ts",
+      "line": 61,
+      "sourceSHA256": "e9605b837eeb049b4d82cbfe9dd1694234a315d507981ef2aa14fdfe816af3bb"
+    },
+    {
+      "kind": "query",
+      "name": "GetProductionPigCount",
+      "source": "mobile_webapp/src/services/pig/singleQueries.ts",
+      "line": 4,
+      "sourceSHA256": "6941e67dc0c370a360d6bf627a8a34efd47420e86dd6d1e84840ddc72e1fdb73"
+    },
+    {
+      "kind": "query",
+      "name": "GetProductionPigSingleView",
+      "source": "mobile_webapp/src/services/pig/singleQueries.ts",
+      "line": 11,
+      "sourceSHA256": "6941e67dc0c370a360d6bf627a8a34efd47420e86dd6d1e84840ddc72e1fdb73"
+    },
+    {
+      "kind": "query",
+      "name": "GetTherapyList",
+      "source": "mobile_webapp/src/services/prescription.ts",
+      "line": 4,
+      "sourceSHA256": "35a2c752bcb33e47abc34d15b517c9a2dc40444538dac4086962f1157accf649"
+    },
+    {
+      "kind": "query",
+      "name": "GetTherapyDetail",
+      "source": "mobile_webapp/src/services/prescription.ts",
+      "line": 105,
+      "sourceSHA256": "35a2c752bcb33e47abc34d15b517c9a2dc40444538dac4086962f1157accf649"
+    },
+    {
+      "kind": "mutation",
+      "name": "CreatePrescription",
+      "source": "mobile_webapp/src/services/prescription.ts",
+      "line": 206,
+      "sourceSHA256": "35a2c752bcb33e47abc34d15b517c9a2dc40444538dac4086962f1157accf649"
+    },
+    {
+      "kind": "query",
+      "name": "GetMedicationList",
+      "source": "mobile_webapp/src/services/prescription.ts",
+      "line": 217,
+      "sourceSHA256": "35a2c752bcb33e47abc34d15b517c9a2dc40444538dac4086962f1157accf649"
+    },
+    {
+      "kind": "query",
+      "name": "GetMedicationCatalog",
+      "source": "mobile_webapp/src/services/prescription.ts",
+      "line": 225,
+      "sourceSHA256": "35a2c752bcb33e47abc34d15b517c9a2dc40444538dac4086962f1157accf649"
+    },
+    {
+      "kind": "query",
+      "name": "GetTreatmentList",
+      "source": "mobile_webapp/src/services/prescription.ts",
+      "line": 236,
+      "sourceSHA256": "35a2c752bcb33e47abc34d15b517c9a2dc40444538dac4086962f1157accf649"
+    },
+    {
+      "kind": "mutation",
+      "name": "CompleteTherapyTarget",
+      "source": "mobile_webapp/src/services/prescriptionTaskMutations.ts",
+      "line": 4,
+      "sourceSHA256": "949f42e564fd0fc5ab7634f4109c039989edd3af7c349586381fe14a9c23d132"
+    },
+    {
+      "kind": "mutation",
+      "name": "SkipTherapyTask",
+      "source": "mobile_webapp/src/services/prescriptionTaskMutations.ts",
+      "line": 14,
+      "sourceSHA256": "949f42e564fd0fc5ab7634f4109c039989edd3af7c349586381fe14a9c23d132"
+    },
+    {
+      "kind": "mutation",
+      "name": "TerminateTherapy",
+      "source": "mobile_webapp/src/services/prescriptionTaskMutations.ts",
+      "line": 24,
+      "sourceSHA256": "949f42e564fd0fc5ab7634f4109c039989edd3af7c349586381fe14a9c23d132"
+    },
+    {
+      "kind": "mutation",
+      "name": "TerminatePrescription",
+      "source": "mobile_webapp/src/services/prescriptionTaskMutations.ts",
+      "line": 34,
+      "sourceSHA256": "949f42e564fd0fc5ab7634f4109c039989edd3af7c349586381fe14a9c23d132"
+    },
+    {
+      "kind": "mutation",
+      "name": "RemovePrescriptionTarget",
+      "source": "mobile_webapp/src/services/prescriptionTaskMutations.ts",
+      "line": 44,
+      "sourceSHA256": "949f42e564fd0fc5ab7634f4109c039989edd3af7c349586381fe14a9c23d132"
+    },
+    {
+      "kind": "mutation",
+      "name": "AddPrescriptionTarget",
+      "source": "mobile_webapp/src/services/prescriptionTaskMutations.ts",
+      "line": 54,
+      "sourceSHA256": "949f42e564fd0fc5ab7634f4109c039989edd3af7c349586381fe14a9c23d132"
+    },
+    {
+      "kind": "mutation",
+      "name": "UploadPigDeathImage",
+      "source": "mobile_webapp/src/services/resources.ts",
+      "line": 4,
+      "sourceSHA256": "7897274fc2826e6b20d062b6ad7bc37379be3b939842ad05607fb6d6c99c6a26"
+    },
+    {
+      "kind": "mutation",
+      "name": "UploadHealthyImage",
+      "source": "mobile_webapp/src/services/resources.ts",
+      "line": 16,
+      "sourceSHA256": "7897274fc2826e6b20d062b6ad7bc37379be3b939842ad05607fb6d6c99c6a26"
+    },
+    {
+      "kind": "query",
+      "name": "TestReport",
+      "source": "mobile_webapp/src/services/resources.ts",
+      "line": 28,
+      "sourceSHA256": "7897274fc2826e6b20d062b6ad7bc37379be3b939842ad05607fb6d6c99c6a26"
+    },
+    {
+      "kind": "query",
+      "name": "ProductionSemenFarmSettingsView",
+      "source": "mobile_webapp/src/services/semen.ts",
+      "line": 4,
+      "sourceSHA256": "58178e8e9cd78ae8c0193b8733d3011954ba1cef45f6b6098b488f6232693038"
+    },
+    {
+      "kind": "query",
+      "name": "ProductionSemenBatchView",
+      "source": "mobile_webapp/src/services/semen.ts",
+      "line": 13,
+      "sourceSHA256": "58178e8e9cd78ae8c0193b8733d3011954ba1cef45f6b6098b488f6232693038"
+    },
+    {
+      "kind": "query",
+      "name": "ProductionSemenSettingsLineOptions",
+      "source": "mobile_webapp/src/services/semen.ts",
+      "line": 91,
+      "sourceSHA256": "58178e8e9cd78ae8c0193b8733d3011954ba1cef45f6b6098b488f6232693038"
+    },
+    {
+      "kind": "query",
+      "name": "ProductionSemenSettingsBoarUnitOptions",
+      "source": "mobile_webapp/src/services/semen.ts",
+      "line": 99,
+      "sourceSHA256": "58178e8e9cd78ae8c0193b8733d3011954ba1cef45f6b6098b488f6232693038"
+    },
+    {
+      "kind": "query",
+      "name": "ProductionSemenOutboundRecordView",
+      "source": "mobile_webapp/src/services/semen.ts",
+      "line": 125,
+      "sourceSHA256": "58178e8e9cd78ae8c0193b8733d3011954ba1cef45f6b6098b488f6232693038"
+    },
+    {
+      "kind": "mutation",
+      "name": "AddSemenCollection",
+      "source": "mobile_webapp/src/services/semen.ts",
+      "line": 166,
+      "sourceSHA256": "58178e8e9cd78ae8c0193b8733d3011954ba1cef45f6b6098b488f6232693038"
+    },
+    {
+      "kind": "mutation",
+      "name": "CreateSemenFarmSettings",
+      "source": "mobile_webapp/src/services/semen.ts",
+      "line": 179,
+      "sourceSHA256": "58178e8e9cd78ae8c0193b8733d3011954ba1cef45f6b6098b488f6232693038"
+    },
+    {
+      "kind": "mutation",
+      "name": "UpdateSemenFarmSettings",
+      "source": "mobile_webapp/src/services/semen.ts",
+      "line": 190,
+      "sourceSHA256": "58178e8e9cd78ae8c0193b8733d3011954ba1cef45f6b6098b488f6232693038"
+    },
+    {
+      "kind": "mutation",
+      "name": "MarkBoarOffProduction",
+      "source": "mobile_webapp/src/services/semen.ts",
+      "line": 201,
+      "sourceSHA256": "58178e8e9cd78ae8c0193b8733d3011954ba1cef45f6b6098b488f6232693038"
+    },
+    {
+      "kind": "mutation",
+      "name": "MarkBoarToCollect",
+      "source": "mobile_webapp/src/services/semen.ts",
+      "line": 212,
+      "sourceSHA256": "58178e8e9cd78ae8c0193b8733d3011954ba1cef45f6b6098b488f6232693038"
+    },
+    {
+      "kind": "mutation",
+      "name": "UnmarkBoarToCollect",
+      "source": "mobile_webapp/src/services/semen.ts",
+      "line": 223,
+      "sourceSHA256": "58178e8e9cd78ae8c0193b8733d3011954ba1cef45f6b6098b488f6232693038"
+    },
+    {
+      "kind": "mutation",
+      "name": "PassSemenBatchLabEvaluation",
+      "source": "mobile_webapp/src/services/semen.ts",
+      "line": 234,
+      "sourceSHA256": "58178e8e9cd78ae8c0193b8733d3011954ba1cef45f6b6098b488f6232693038"
+    },
+    {
+      "kind": "mutation",
+      "name": "RejectSemenBatch",
+      "source": "mobile_webapp/src/services/semen.ts",
+      "line": 245,
+      "sourceSHA256": "58178e8e9cd78ae8c0193b8733d3011954ba1cef45f6b6098b488f6232693038"
+    },
+    {
+      "kind": "mutation",
+      "name": "ApplySemenBatchDilution",
+      "source": "mobile_webapp/src/services/semen.ts",
+      "line": 256,
+      "sourceSHA256": "58178e8e9cd78ae8c0193b8733d3011954ba1cef45f6b6098b488f6232693038"
+    },
+    {
+      "kind": "mutation",
+      "name": "PickSemenInventory",
+      "source": "mobile_webapp/src/services/semen.ts",
+      "line": 267,
+      "sourceSHA256": "58178e8e9cd78ae8c0193b8733d3011954ba1cef45f6b6098b488f6232693038"
+    },
+    {
+      "kind": "mutation",
+      "name": "MoveSemenInventory",
+      "source": "mobile_webapp/src/services/semen.ts",
+      "line": 278,
+      "sourceSHA256": "58178e8e9cd78ae8c0193b8733d3011954ba1cef45f6b6098b488f6232693038"
+    },
+    {
+      "kind": "query",
+      "name": "Common_audit_logs",
+      "source": "mobile_webapp/src/services/semenAudit.ts",
+      "line": 5,
+      "sourceSHA256": "85589e129e523d8f87aa2c843ffeddb731f2338f0e3513e09318639071ff9484"
+    },
+    {
+      "kind": "query",
+      "name": "ProductionSemenBatchHistorySummaryView",
+      "source": "mobile_webapp/src/services/semenHistory.ts",
+      "line": 4,
+      "sourceSHA256": "e20e71387503dba964a6aa4a040ab3619dc9598e1d1a5eefe698a93746eaf56b"
+    },
+    {
+      "kind": "query",
+      "name": "ProductionSemenInventoryView",
+      "source": "mobile_webapp/src/services/semenStorageInventory.ts",
+      "line": 4,
+      "sourceSHA256": "5ba489e5f6bf7e4c3142aa513b47d5852c13613528da9af8d8d993c91a802587"
+    },
+    {
+      "kind": "query",
+      "name": "ProductionSemenStorageLocationView",
+      "source": "mobile_webapp/src/services/semenStorageInventory.ts",
+      "line": 96,
+      "sourceSHA256": "5ba489e5f6bf7e4c3142aa513b47d5852c13613528da9af8d8d993c91a802587"
+    },
+    {
+      "kind": "mutation",
+      "name": "AddSemenStorageLocation",
+      "source": "mobile_webapp/src/services/semenStorageInventory.ts",
+      "line": 107,
+      "sourceSHA256": "5ba489e5f6bf7e4c3142aa513b47d5852c13613528da9af8d8d993c91a802587"
+    },
+    {
+      "kind": "mutation",
+      "name": "DeleteSemenStorageLocation",
+      "source": "mobile_webapp/src/services/semenStorageInventory.ts",
+      "line": 120,
+      "sourceSHA256": "5ba489e5f6bf7e4c3142aa513b47d5852c13613528da9af8d8d993c91a802587"
+    },
+    {
+      "kind": "mutation",
+      "name": "DiscardSemenInventory",
+      "source": "mobile_webapp/src/services/semenStorageInventory.ts",
+      "line": 131,
+      "sourceSHA256": "5ba489e5f6bf7e4c3142aa513b47d5852c13613528da9af8d8d993c91a802587"
+    },
+    {
+      "kind": "mutation",
+      "name": "CompleteSemenBatchLabeling",
+      "source": "mobile_webapp/src/services/semenStorageInventory.ts",
+      "line": 142,
+      "sourceSHA256": "5ba489e5f6bf7e4c3142aa513b47d5852c13613528da9af8d8d993c91a802587"
+    },
+    {
+      "kind": "mutation",
+      "name": "CreateManualSemenInventory",
+      "source": "mobile_webapp/src/services/semenStorageInventory.ts",
+      "line": 153,
+      "sourceSHA256": "5ba489e5f6bf7e4c3142aa513b47d5852c13613528da9af8d8d993c91a802587"
+    },
+    {
+      "kind": "mutation",
+      "name": "AdjustSemenInventoryQuantity",
+      "source": "mobile_webapp/src/services/semenStorageInventory.ts",
+      "line": 164,
+      "sourceSHA256": "5ba489e5f6bf7e4c3142aa513b47d5852c13613528da9af8d8d993c91a802587"
+    },
+    {
+      "kind": "mutation",
+      "name": "MoveSemenInventory",
+      "source": "mobile_webapp/src/services/semenStorageInventory.ts",
+      "line": 175,
+      "sourceSHA256": "5ba489e5f6bf7e4c3142aa513b47d5852c13613528da9af8d8d993c91a802587"
+    },
+    {
+      "kind": "mutation",
+      "name": "SubmitFarrowingPiglet",
+      "source": "mobile_webapp/src/services/task/productionCareMutations.ts",
+      "line": 4,
+      "sourceSHA256": "77363e70cf67ea74142a056f0bca3320f72835cf575c36d612813c265360087b"
+    },
+    {
+      "kind": "mutation",
+      "name": "SubmitPigletHandlingItem",
+      "source": "mobile_webapp/src/services/task/productionCareMutations.ts",
+      "line": 15,
+      "sourceSHA256": "77363e70cf67ea74142a056f0bca3320f72835cf575c36d612813c265360087b"
+    },
+    {
+      "kind": "mutation",
+      "name": "SubmitPigletInfo",
+      "source": "mobile_webapp/src/services/task/productionCareMutations.ts",
+      "line": 26,
+      "sourceSHA256": "77363e70cf67ea74142a056f0bca3320f72835cf575c36d612813c265360087b"
+    },
+    {
+      "kind": "mutation",
+      "name": "SubmitPigletTotalWeight",
+      "source": "mobile_webapp/src/services/task/productionCareMutations.ts",
+      "line": 37,
+      "sourceSHA256": "77363e70cf67ea74142a056f0bca3320f72835cf575c36d612813c265360087b"
+    },
+    {
+      "kind": "mutation",
+      "name": "FosterFarrowingPiglet",
+      "source": "mobile_webapp/src/services/task/productionCareMutations.ts",
+      "line": 48,
+      "sourceSHA256": "77363e70cf67ea74142a056f0bca3320f72835cf575c36d612813c265360087b"
+    },
+    {
+      "kind": "mutation",
+      "name": "FosterPigletHandling",
+      "source": "mobile_webapp/src/services/task/productionCareMutations.ts",
+      "line": 59,
+      "sourceSHA256": "77363e70cf67ea74142a056f0bca3320f72835cf575c36d612813c265360087b"
+    },
+    {
+      "kind": "mutation",
+      "name": "SubmitPostpartumPigStatus",
+      "source": "mobile_webapp/src/services/task/productionCareMutations.ts",
+      "line": 70,
+      "sourceSHA256": "77363e70cf67ea74142a056f0bca3320f72835cf575c36d612813c265360087b"
+    },
+    {
+      "kind": "mutation",
+      "name": "SubmitLactationPigStatus",
+      "source": "mobile_webapp/src/services/task/productionCareMutations.ts",
+      "line": 80,
+      "sourceSHA256": "77363e70cf67ea74142a056f0bca3320f72835cf575c36d612813c265360087b"
+    },
+    {
+      "kind": "mutation",
+      "name": "CheckFatteningPigStatus",
+      "source": "mobile_webapp/src/services/task/productionCareMutations.ts",
+      "line": 91,
+      "sourceSHA256": "77363e70cf67ea74142a056f0bca3320f72835cf575c36d612813c265360087b"
+    },
+    {
+      "kind": "mutation",
+      "name": "CheckNurseryPigStatus",
+      "source": "mobile_webapp/src/services/task/productionCareMutations.ts",
+      "line": 102,
+      "sourceSHA256": "77363e70cf67ea74142a056f0bca3320f72835cf575c36d612813c265360087b"
+    },
+    {
+      "kind": "mutation",
+      "name": "MarkTaskPig",
+      "source": "mobile_webapp/src/services/task/productionMutations.ts",
+      "line": 4,
+      "sourceSHA256": "d956d1d7427f7fb245fc8598b169e177ac1ad6e9b97a773acb3869d9cacb53cf"
+    },
+    {
+      "kind": "mutation",
+      "name": "CheckEstrus",
+      "source": "mobile_webapp/src/services/task/productionMutations.ts",
+      "line": 15,
+      "sourceSHA256": "d956d1d7427f7fb245fc8598b169e177ac1ad6e9b97a773acb3869d9cacb53cf"
+    },
+    {
+      "kind": "mutation",
+      "name": "SubmitEstrusStatus",
+      "source": "mobile_webapp/src/services/task/productionMutations.ts",
+      "line": 26,
+      "sourceSHA256": "d956d1d7427f7fb245fc8598b169e177ac1ad6e9b97a773acb3869d9cacb53cf"
+    },
+    {
+      "kind": "mutation",
+      "name": "MateWithBoar",
+      "source": "mobile_webapp/src/services/task/productionMutations.ts",
+      "line": 37,
+      "sourceSHA256": "d956d1d7427f7fb245fc8598b169e177ac1ad6e9b97a773acb3869d9cacb53cf"
+    },
+    {
+      "kind": "mutation",
+      "name": "MateWithSemen",
+      "source": "mobile_webapp/src/services/task/productionMutations.ts",
+      "line": 48,
+      "sourceSHA256": "d956d1d7427f7fb245fc8598b169e177ac1ad6e9b97a773acb3869d9cacb53cf"
+    },
+    {
+      "kind": "mutation",
+      "name": "CompleteProductionTask",
+      "source": "mobile_webapp/src/services/task/productionMutations.ts",
+      "line": 59,
+      "sourceSHA256": "d956d1d7427f7fb245fc8598b169e177ac1ad6e9b97a773acb3869d9cacb53cf"
+    },
+    {
+      "kind": "mutation",
+      "name": "CheckReEstrusPig",
+      "source": "mobile_webapp/src/services/task/productionMutations.ts",
+      "line": 70,
+      "sourceSHA256": "d956d1d7427f7fb245fc8598b169e177ac1ad6e9b97a773acb3869d9cacb53cf"
+    },
+    {
+      "kind": "mutation",
+      "name": "SubmitReEstrusStatus",
+      "source": "mobile_webapp/src/services/task/productionMutations.ts",
+      "line": 81,
+      "sourceSHA256": "d956d1d7427f7fb245fc8598b169e177ac1ad6e9b97a773acb3869d9cacb53cf"
+    },
+    {
+      "kind": "mutation",
+      "name": "CheckPregnancyPig",
+      "source": "mobile_webapp/src/services/task/productionMutations.ts",
+      "line": 92,
+      "sourceSHA256": "d956d1d7427f7fb245fc8598b169e177ac1ad6e9b97a773acb3869d9cacb53cf"
+    },
+    {
+      "kind": "mutation",
+      "name": "SubmitPregnancyStatus",
+      "source": "mobile_webapp/src/services/task/productionMutations.ts",
+      "line": 103,
+      "sourceSHA256": "d956d1d7427f7fb245fc8598b169e177ac1ad6e9b97a773acb3869d9cacb53cf"
+    },
+    {
+      "kind": "fragment",
+      "name": "ProductionTaskPigFields1",
+      "source": "mobile_webapp/src/services/task/productionPigFields1.ts",
+      "line": 4,
+      "sourceSHA256": "7df681cace6228503042388e1c8d5013e43781b81949090f3efafcfe83383182"
+    },
+    {
+      "kind": "fragment",
+      "name": "ProductionTaskPigFields2",
+      "source": "mobile_webapp/src/services/task/productionPigFields2.ts",
+      "line": 4,
+      "sourceSHA256": "1c59faa967a218b843eedda62ea2e8ce37495c7884edf5dc8fc1af2208732b0f"
+    },
+    {
+      "kind": "fragment",
+      "name": "ProductionTaskPigFields3",
+      "source": "mobile_webapp/src/services/task/productionPigFields3.ts",
+      "line": 4,
+      "sourceSHA256": "c54cb53849b4aea7f4cd184a82344345ce5f99324cd4e26059a39a9501663236"
+    },
+    {
+      "kind": "fragment",
+      "name": "ProductionTaskFields",
+      "source": "mobile_webapp/src/services/task/productionQueries.ts",
+      "line": 4,
+      "sourceSHA256": "38229cd35a7764255724cda68472fdd9ae0cb1339de65ec1e0c96ac8dc96642e"
+    },
+    {
+      "kind": "query",
+      "name": "GetProductionTaskList",
+      "source": "mobile_webapp/src/services/task/productionQueries.ts",
+      "line": 67,
+      "sourceSHA256": "38229cd35a7764255724cda68472fdd9ae0cb1339de65ec1e0c96ac8dc96642e"
+    },
+    {
+      "kind": "query",
+      "name": "GetProductionTaskDetail",
+      "source": "mobile_webapp/src/services/task/productionQueries.ts",
+      "line": 78,
+      "sourceSHA256": "38229cd35a7764255724cda68472fdd9ae0cb1339de65ec1e0c96ac8dc96642e"
+    },
+    {
+      "kind": "query",
+      "name": "GetProductionTaskReEstrusPigView",
+      "source": "mobile_webapp/src/services/task/reEstrusQuery.ts",
+      "line": 4,
+      "sourceSHA256": "792f9b801c7e650c5afb2ae588e0f4bbcbe890c7b093826fcad6f8ca3ddda8ce"
+    },
+    {
+      "kind": "mutation",
+      "name": "SubmitSampled",
+      "source": "mobile_webapp/src/services/task/samplingMutations.ts",
+      "line": 4,
+      "sourceSHA256": "6f8b0b220d52975f38a6ddf7a8a0c864f16fad49c33ba580989fc52dd5bba050"
+    },
+    {
+      "kind": "mutation",
+      "name": "CreateEntrySampling",
+      "source": "mobile_webapp/src/services/task/samplingMutations.ts",
+      "line": 15,
+      "sourceSHA256": "6f8b0b220d52975f38a6ddf7a8a0c864f16fad49c33ba580989fc52dd5bba050"
+    },
+    {
+      "kind": "query",
+      "name": "GetSamplingTaskList",
+      "source": "mobile_webapp/src/services/task/samplingQueries.ts",
+      "line": 4,
+      "sourceSHA256": "d8d6a74dc8137d97c14269055ce042a256bf817047a262ef494471ad25c84c81"
+    },
+    {
+      "kind": "query",
+      "name": "GetSamplingTaskDetail",
+      "source": "mobile_webapp/src/services/task/samplingQueries.ts",
+      "line": 108,
+      "sourceSHA256": "d8d6a74dc8137d97c14269055ce042a256bf817047a262ef494471ad25c84c81"
+    },
+    {
+      "kind": "query",
+      "name": "GetProductionTransferTaskView",
+      "source": "mobile_webapp/src/services/transfer.ts",
+      "line": 4,
+      "sourceSHA256": "c9fac16f6ce17e7e31c6337f6575dbe4c88bb68b9e6d650fa5c5ad11c301acbb"
+    },
+    {
+      "kind": "query",
+      "name": "GetProductionTransferTaskViewDetail",
+      "source": "mobile_webapp/src/services/transfer.ts",
+      "line": 134,
+      "sourceSHA256": "c9fac16f6ce17e7e31c6337f6575dbe4c88bb68b9e6d650fa5c5ad11c301acbb"
+    },
+    {
+      "kind": "mutation",
+      "name": "PigTransferIn",
+      "source": "mobile_webapp/src/services/transfer.ts",
+      "line": 264,
+      "sourceSHA256": "c9fac16f6ce17e7e31c6337f6575dbe4c88bb68b9e6d650fa5c5ad11c301acbb"
+    },
+    {
+      "kind": "mutation",
+      "name": "PigTransferOut",
+      "source": "mobile_webapp/src/services/transfer.ts",
+      "line": 274,
+      "sourceSHA256": "c9fac16f6ce17e7e31c6337f6575dbe4c88bb68b9e6d650fa5c5ad11c301acbb"
+    },
+    {
+      "kind": "mutation",
+      "name": "AddTransferTaskItems",
+      "source": "mobile_webapp/src/services/transfer.ts",
+      "line": 284,
+      "sourceSHA256": "c9fac16f6ce17e7e31c6337f6575dbe4c88bb68b9e6d650fa5c5ad11c301acbb"
+    },
+    {
+      "kind": "mutation",
+      "name": "RemoveTransferTaskItems",
+      "source": "mobile_webapp/src/services/transfer.ts",
+      "line": 294,
+      "sourceSHA256": "c9fac16f6ce17e7e31c6337f6575dbe4c88bb68b9e6d650fa5c5ad11c301acbb"
+    },
+    {
+      "kind": "mutation",
+      "name": "TransferPig",
+      "source": "mobile_webapp/src/services/transfer.ts",
+      "line": 304,
+      "sourceSHA256": "c9fac16f6ce17e7e31c6337f6575dbe4c88bb68b9e6d650fa5c5ad11c301acbb"
+    },
+    {
+      "kind": "mutation",
+      "name": "AddTransferInUnit",
+      "source": "mobile_webapp/src/services/transfer.ts",
+      "line": 314,
+      "sourceSHA256": "c9fac16f6ce17e7e31c6337f6575dbe4c88bb68b9e6d650fa5c5ad11c301acbb"
+    },
+    {
+      "kind": "mutation",
+      "name": "ResetTransferTaskItems",
+      "source": "mobile_webapp/src/services/transfer.ts",
+      "line": 324,
+      "sourceSHA256": "c9fac16f6ce17e7e31c6337f6575dbe4c88bb68b9e6d650fa5c5ad11c301acbb"
+    },
+    {
+      "kind": "mutation",
+      "name": "CompleteTransferTask",
+      "source": "mobile_webapp/src/services/transfer.ts",
+      "line": 334,
+      "sourceSHA256": "c9fac16f6ce17e7e31c6337f6575dbe4c88bb68b9e6d650fa5c5ad11c301acbb"
+    },
+    {
+      "kind": "query",
+      "name": "GetFarmInfo",
+      "source": "mobile_webapp/src/services/user.ts",
+      "line": 4,
+      "sourceSHA256": "a83a20ea8060a8e8588488509972384fd4086ee88d3ff4a4843e5b3bbba1fa73"
+    },
+    {
+      "kind": "query",
+      "name": "GetMe",
+      "source": "mobile_webapp/src/services/user.ts",
+      "line": 17,
+      "sourceSHA256": "a83a20ea8060a8e8588488509972384fd4086ee88d3ff4a4843e5b3bbba1fa73"
+    },
+    {
+      "kind": "query",
+      "name": "GetFarmSelectionList",
+      "source": "mobile_webapp/src/services/user.ts",
+      "line": 42,
+      "sourceSHA256": "a83a20ea8060a8e8588488509972384fd4086ee88d3ff4a4843e5b3bbba1fa73"
+    },
+    {
+      "kind": "query",
+      "name": "GetAllUserList",
+      "source": "mobile_webapp/src/services/user.ts",
+      "line": 60,
+      "sourceSHA256": "a83a20ea8060a8e8588488509972384fd4086ee88d3ff4a4843e5b3bbba1fa73"
+    },
+    {
+      "kind": "query",
+      "name": "GetFaceInfo",
+      "source": "mobile_webapp/src/services/user.ts",
+      "line": 85,
+      "sourceSHA256": "a83a20ea8060a8e8588488509972384fd4086ee88d3ff4a4843e5b3bbba1fa73"
+    },
+    {
+      "kind": "mutation",
+      "name": "ChooseFarm",
+      "source": "mobile_webapp/src/services/user.ts",
+      "line": 98,
+      "sourceSHA256": "a83a20ea8060a8e8588488509972384fd4086ee88d3ff4a4843e5b3bbba1fa73"
+    },
+    {
+      "kind": "query",
+      "name": "GetVaccinationTaskList",
+      "source": "mobile_webapp/src/services/vaccine.ts",
+      "line": 4,
+      "sourceSHA256": "bfe2c65f6c37780dc50106eb6c7eb771479d2782db614a3a38e1511fbef0dbbc"
+    },
+    {
+      "kind": "query",
+      "name": "GetVaccinationTaskDetail",
+      "source": "mobile_webapp/src/services/vaccine.ts",
+      "line": 86,
+      "sourceSHA256": "bfe2c65f6c37780dc50106eb6c7eb771479d2782db614a3a38e1511fbef0dbbc"
+    },
+    {
+      "kind": "mutation",
+      "name": "ExecuteVaccinationTask",
+      "source": "mobile_webapp/src/services/vaccine.ts",
+      "line": 165,
+      "sourceSHA256": "bfe2c65f6c37780dc50106eb6c7eb771479d2782db614a3a38e1511fbef0dbbc"
+    },
+    {
+      "kind": "mutation",
+      "name": "FinishVaccinationTask",
+      "source": "mobile_webapp/src/services/vaccine.ts",
+      "line": 175,
+      "sourceSHA256": "bfe2c65f6c37780dc50106eb6c7eb771479d2782db614a3a38e1511fbef0dbbc"
+    }
+  ]
+}

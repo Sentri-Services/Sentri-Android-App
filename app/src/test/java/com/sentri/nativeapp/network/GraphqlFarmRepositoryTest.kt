@@ -22,6 +22,8 @@ class GraphqlFarmRepositoryTest {
     private fun enqueue(body: String, status: Int = 200) = server.enqueue(MockResponse().setResponseCode(status)
         .addHeader("Content-Type", "application/json").setBody(body))
     private val farms = """{"data":{"biosafety":{"farm_selection_list":{"status":"SUCCESS","records":[{"oauth_id":"test-user","user_id":"u","farm_id":"farm","is_choosed":true,"is_default":false}],"errors":[]}}}}"""
+    private val me = """{"data":{"biosafety":{"me":{"status":"SUCCESS","record":{"user_id":"u","username":"test","display_name":"Tester","role":"user","access_modules":[]},"errors":[]}}}}"""
+    private val farmInfo = """{"data":{"biosafety":{"farm_info":{"id":"farm","name":"Farm","domain":"","is_initialized":true}}}}"""
     private val expired = """{"errors":[{"message":"JWTExpired","extensions":{"code":"invalid-jwt"}}]}"""
 
     @After fun close() { client.close(); server.shutdown() }
@@ -82,5 +84,25 @@ class GraphqlFarmRepositoryTest {
         assertNotNull(auth.session.value)
         assertEquals(0, gateway.refreshCalls)
         assertEquals(1, server.requestCount)
+    }
+
+    @Test fun `account reads an authoritative farm timezone without changing farm identity`() = runTest {
+        enqueue(me); enqueue(farmInfo)
+        enqueue("""{"data":{"biosafety":{"farm_info":{"id":"farm","timezone":"Asia/Shanghai"}}}}""")
+        val account = repository.account()
+        assertEquals("farm", account.farm.id)
+        assertEquals("Asia/Shanghai", account.farm.timezone)
+        assertTrue(server.takeRequest().body.readUtf8().contains("GetMe"))
+        assertTrue(server.takeRequest().body.readUtf8().contains("GetFarmInfo"))
+        assertTrue(server.takeRequest().body.readUtf8().contains("GetFarmTimezone"))
+    }
+
+    @Test fun `older farm schema does not prevent account access or supply a guessed timezone`() = runTest {
+        enqueue(me); enqueue(farmInfo)
+        enqueue("""{"errors":[{"message":"Cannot query field 'timezone' on type 'FarmInfo'"}]}""")
+        val account = repository.account()
+        assertEquals("farm", account.farm.id)
+        assertNull(account.farm.timezone)
+        assertNotNull(auth.session.value)
     }
 }

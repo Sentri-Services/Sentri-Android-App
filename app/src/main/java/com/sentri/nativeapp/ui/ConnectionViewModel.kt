@@ -35,6 +35,15 @@ class ConnectionViewModel(private val auth: AuthRepository, private val farms: F
     private var forcePrompt = false
 
     init {
+        viewModelScope.launch {
+            auth.session.collect { session ->
+                val account = state.value.account
+                if (account != null && (session == null || session.farmId != account.farm.id)) {
+                    mutableState.value = ConnectionUiState(page = if (session == null) Page.LOGIN else Page.FARMS,
+                        failure = if (session == null) UiFailure(Failure.AUTHENTICATION) else null)
+                }
+            }
+        }
         auth.pendingLogin?.let { mutableState.value = ConnectionUiState(webUrl = it.url) }
             ?: refresh()
     }
@@ -92,6 +101,7 @@ class ConnectionViewModel(private val auth: AuthRepository, private val farms: F
 
     private suspend fun loadContext(autoSelect: Boolean = true) {
         val session = auth.session.value
+        val revision = auth.contextRevision
         if (session == null) {
             mutableState.value = ConnectionUiState(busy = true)
             return
@@ -99,6 +109,7 @@ class ConnectionViewModel(private val auth: AuthRepository, private val farms: F
         if (session.farmId != null) {
             mutableState.value = mutableState.value.copy(page = Page.ACCOUNT, farms = emptyList())
             val account = farms.account()
+            if (revision != auth.contextRevision) throw com.sentri.nativeapp.network.RequestContextChanged()
             // Never display an account whose backend farm differs from the persisted selection.
             if (account.farm.id != session.farmId) {
                 auth.clearFarm()
@@ -106,10 +117,11 @@ class ConnectionViewModel(private val auth: AuthRepository, private val farms: F
                 throw ApiFailure.Protocol()
             }
             mutableState.value = mutableState.value.copy(account = account)
-            DiagnosticLog.event("native_account_query_succeeded")
+            DiagnosticLog.event(if (account.cachedAtMillis == null) "native_account_query_succeeded" else "native_account_cache_restored")
         } else {
             mutableState.value = mutableState.value.copy(page = Page.FARMS, account = null)
             val choices = farms.choices(session.oauthId)
+            if (revision != auth.contextRevision) throw com.sentri.nativeapp.network.RequestContextChanged()
             mutableState.value = mutableState.value.copy(farms = choices)
             if (autoSelect && choices.size == 1) {
                 val only = choices.single()

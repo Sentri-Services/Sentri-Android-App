@@ -1,0 +1,10 @@
+[
+  {
+    "name": "com.sentri.nativeapp.CareFoundationTest",
+    "tests": 63,
+    "skipped": 6,
+    "failures": 0,
+    "errors": 0,
+    "passed": 57
+  }
+]

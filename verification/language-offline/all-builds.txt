@@ -1,0 +1,147 @@
+> Task :app:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :app:prepareEnterpriseCertificate UP-TO-DATE
+> Task :app:preBuild UP-TO-DATE
+> Task :app:preDevDebugBuild UP-TO-DATE
+> Task :app:generateDevDebugBuildConfig UP-TO-DATE
+> Task :app:generateSentriApolloOptions UP-TO-DATE
+> Task :app:generateSentriApolloSources UP-TO-DATE
+> Task :app:checkDevDebugAarMetadata UP-TO-DATE
+> Task :app:generateDevDebugResValues UP-TO-DATE
+> Task :app:mapDevDebugSourceSetPaths UP-TO-DATE
+> Task :app:generateDevDebugResources UP-TO-DATE
+> Task :app:mergeDevDebugResources UP-TO-DATE
+> Task :app:packageDevDebugResources UP-TO-DATE
+> Task :app:parseDevDebugLocalResources UP-TO-DATE
+> Task :app:createDevDebugCompatibleScreenManifests UP-TO-DATE
+> Task :app:extractDeepLinksDevDebug UP-TO-DATE
+> Task :app:processDevDebugMainManifest UP-TO-DATE
+> Task :app:processDevDebugManifest UP-TO-DATE
+> Task :app:processDevDebugManifestForPackage UP-TO-DATE
+> Task :app:processDevDebugResources UP-TO-DATE
+> Task :app:compileDevDebugKotlin UP-TO-DATE
+> Task :app:javaPreCompileDevDebug UP-TO-DATE
+> Task :app:compileDevDebugJavaWithJavac UP-TO-DATE
+> Task :app:bundleDevDebugClassesToCompileJar UP-TO-DATE
+> Task :app:preDevDebugAndroidTestBuild SKIPPED
+> Task :app:processDevDebugAndroidTestManifest UP-TO-DATE
+> Task :app:generateDevDebugAndroidTestBuildConfig UP-TO-DATE
+> Task :app:checkDevDebugAndroidTestAarMetadata UP-TO-DATE
+> Task :app:generateDevDebugAndroidTestResValues UP-TO-DATE
+> Task :app:mapDevDebugAndroidTestSourceSetPaths UP-TO-DATE
+> Task :app:generateDevDebugAndroidTestResources UP-TO-DATE
+> Task :app:mergeDevDebugAndroidTestResources UP-TO-DATE
+> Task :app:processDevDebugAndroidTestResources UP-TO-DATE
+> Task :app:javaPreCompileDevDebugAndroidTest UP-TO-DATE
+> Task :app:mergeDevDebugAndroidTestShaders UP-TO-DATE
+> Task :app:compileDevDebugAndroidTestShaders NO-SOURCE
+> Task :app:generateDevDebugAndroidTestAssets UP-TO-DATE
+> Task :app:mergeDevDebugAndroidTestAssets UP-TO-DATE
+> Task :app:compressDevDebugAndroidTestAssets UP-TO-DATE
+> Task :app:desugarDevDebugAndroidTestFileDependencies UP-TO-DATE
+> Task :app:checkDevDebugAndroidTestDuplicateClasses UP-TO-DATE
+> Task :app:mergeExtDexDevDebugAndroidTest UP-TO-DATE
+> Task :app:mergeLibDexDevDebugAndroidTest UP-TO-DATE
+> Task :app:mergeDevDebugAndroidTestJniLibFolders UP-TO-DATE
+> Task :app:mergeDevDebugJniLibFolders UP-TO-DATE
+> Task :app:mergeDevDebugNativeLibs UP-TO-DATE
+> Task :app:mergeDevDebugAndroidTestNativeLibs NO-SOURCE
+> Task :app:stripDevDebugAndroidTestDebugSymbols NO-SOURCE
+> Task :app:validateSigningDevDebugAndroidTest UP-TO-DATE
+> Task :app:writeDevDebugAndroidTestSigningConfigVersions UP-TO-DATE
+> Task :app:preDemoDebugBuild UP-TO-DATE
+> Task :app:mergeDemoDebugNativeDebugMetadata NO-SOURCE
+> Task :app:generateDemoDebugBuildConfig UP-TO-DATE
+> Task :app:checkDemoDebugAarMetadata UP-TO-DATE
+> Task :app:generateDemoDebugResValues UP-TO-DATE
+> Task :app:mapDemoDebugSourceSetPaths
+> Task :app:generateDemoDebugResources
+> Task :app:packageDemoDebugResources
+> Task :app:createDemoDebugCompatibleScreenManifests UP-TO-DATE
+> Task :app:extractDeepLinksDemoDebug UP-TO-DATE
+> Task :app:processDemoDebugMainManifest UP-TO-DATE
+> Task :app:processDemoDebugManifest UP-TO-DATE
+> Task :app:processDemoDebugManifestForPackage UP-TO-DATE
+> Task :app:javaPreCompileDemoDebug UP-TO-DATE
+> Task :app:parseDemoDebugLocalResources
+> Task :app:mergeDemoDebugShaders UP-TO-DATE
+> Task :app:compileDemoDebugShaders NO-SOURCE
+> Task :app:generateDemoDebugAssets UP-TO-DATE
+> Task :app:mergeDemoDebugAssets UP-TO-DATE
+> Task :app:compressDemoDebugAssets UP-TO-DATE
+> Task :app:desugarDemoDebugFileDependencies UP-TO-DATE
+> Task :app:checkDemoDebugDuplicateClasses UP-TO-DATE
+> Task :app:mergeExtDexDemoDebug UP-TO-DATE
+> Task :app:mergeLibDexDemoDebug UP-TO-DATE
+> Task :app:mergeDemoDebugJniLibFolders UP-TO-DATE
+> Task :app:mergeDemoDebugNativeLibs UP-TO-DATE
+> Task :app:stripDemoDebugDebugSymbols UP-TO-DATE
+> Task :app:validateSigningDemoDebug UP-TO-DATE
+> Task :app:writeDemoDebugAppMetadata UP-TO-DATE
+> Task :app:writeDemoDebugSigningConfigVersions UP-TO-DATE
+> Task :app:preProdDebugBuild UP-TO-DATE
+> Task :app:mergeProdDebugNativeDebugMetadata NO-SOURCE
+> Task :app:generateProdDebugBuildConfig UP-TO-DATE
+> Task :app:checkProdDebugAarMetadata UP-TO-DATE
+> Task :app:generateProdDebugResValues UP-TO-DATE
+> Task :app:mapProdDebugSourceSetPaths
+> Task :app:generateProdDebugResources
+> Task :app:mergeDemoDebugResources
+> Task :app:packageProdDebugResources
+> Task :app:createProdDebugCompatibleScreenManifests UP-TO-DATE
+> Task :app:extractDeepLinksProdDebug UP-TO-DATE
+> Task :app:processProdDebugMainManifest UP-TO-DATE
+> Task :app:processProdDebugManifest UP-TO-DATE
+> Task :app:processProdDebugManifestForPackage UP-TO-DATE
+> Task :app:parseProdDebugLocalResources
+> Task :app:javaPreCompileProdDebug UP-TO-DATE
+> Task :app:mergeProdDebugShaders UP-TO-DATE
+> Task :app:compileProdDebugShaders NO-SOURCE
+> Task :app:generateProdDebugAssets UP-TO-DATE
+> Task :app:mergeProdDebugAssets UP-TO-DATE
+> Task :app:compressProdDebugAssets UP-TO-DATE
+> Task :app:mergeProdDebugResources
+> Task :app:checkProdDebugDuplicateClasses UP-TO-DATE
+> Task :app:desugarProdDebugFileDependencies UP-TO-DATE
+> Task :app:mergeExtDexProdDebug UP-TO-DATE
+> Task :app:mergeLibDexProdDebug UP-TO-DATE
+> Task :app:mergeProdDebugJniLibFolders UP-TO-DATE
+> Task :app:mergeProdDebugNativeLibs UP-TO-DATE
+> Task :app:stripProdDebugDebugSymbols UP-TO-DATE
+> Task :app:validateSigningProdDebug UP-TO-DATE
+> Task :app:writeProdDebugAppMetadata UP-TO-DATE
+> Task :app:writeProdDebugSigningConfigVersions UP-TO-DATE
+> Task :app:compileDevDebugAndroidTestKotlin
+> Task :app:compileDevDebugAndroidTestJavaWithJavac UP-TO-DATE
+> Task :app:dexBuilderDevDebugAndroidTest UP-TO-DATE
+> Task :app:mergeDevDebugAndroidTestGlobalSynthetics UP-TO-DATE
+> Task :app:processDevDebugAndroidTestJavaRes UP-TO-DATE
+> Task :app:mergeDevDebugAndroidTestJavaResource UP-TO-DATE
+> Task :app:mergeProjectDexDevDebugAndroidTest UP-TO-DATE
+> Task :app:packageDevDebugAndroidTest UP-TO-DATE
+> Task :app:createDevDebugAndroidTestApkListingFileRedirect UP-TO-DATE
+> Task :app:assembleDevDebugAndroidTest UP-TO-DATE
+> Task :app:processProdDebugResources
+> Task :app:processDemoDebugResources
+> Task :app:compileDemoDebugKotlin
+> Task :app:compileProdDebugKotlin
+> Task :app:compileDemoDebugJavaWithJavac UP-TO-DATE
+> Task :app:dexBuilderDemoDebug
+> Task :app:mergeDemoDebugGlobalSynthetics UP-TO-DATE
+> Task :app:processDemoDebugJavaRes UP-TO-DATE
+> Task :app:mergeDemoDebugJavaResource UP-TO-DATE
+> Task :app:compileProdDebugJavaWithJavac UP-TO-DATE
+> Task :app:dexBuilderProdDebug
+> Task :app:mergeProdDebugGlobalSynthetics UP-TO-DATE
+> Task :app:processProdDebugJavaRes UP-TO-DATE
+> Task :app:mergeProdDebugJavaResource UP-TO-DATE
+> Task :app:mergeProjectDexDemoDebug
+> Task :app:packageDemoDebug
+> Task :app:createDemoDebugApkListingFileRedirect UP-TO-DATE
+> Task :app:assembleDemoDebug
+> Task :app:mergeProjectDexProdDebug
+> Task :app:packageProdDebug
+> Task :app:createProdDebugApkListingFileRedirect UP-TO-DATE
+> Task :app:assembleProdDebug
+
+BUILD SUCCESSFUL in 4s
+125 actionable tasks: 21 executed, 104 up-to-date

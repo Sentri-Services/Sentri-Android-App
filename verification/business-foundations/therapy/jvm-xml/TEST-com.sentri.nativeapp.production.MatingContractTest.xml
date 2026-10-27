@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.sentri.nativeapp.production.MatingContractTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2026-10-10T04:35:07.627Z" hostname="Mac" time="0.028">
+  <properties/>
+  <testcase name="cross farm material and foreign task or pig records are rejected" classname="com.sentri.nativeapp.production.MatingContractTest" time="0.016"/>
+  <testcase name="invalid identity and local batch placeholders cannot become server semen IDs" classname="com.sentri.nativeapp.production.MatingContractTest" time="0.001"/>
+  <testcase name="both mutation contracts use correct IDs and explicitly disable automatic estrus" classname="com.sentri.nativeapp.production.MatingContractTest" time="0.006"/>
+  <testcase name="read keeps material history precision and farm scope" classname="com.sentri.nativeapp.production.MatingContractTest" time="0.005"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

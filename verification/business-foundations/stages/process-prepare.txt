@@ -1,0 +1,8 @@
+
+com.sentri.nativeapp.StageProcessRestoreTest:.
+
+Time: 0.48
+
+OK (1 test)
+
+

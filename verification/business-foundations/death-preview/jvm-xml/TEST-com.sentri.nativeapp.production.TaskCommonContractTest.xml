@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.sentri.nativeapp.production.TaskCommonContractTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2026-10-10T04:16:19.658Z" hostname="Mac" time="0.114">
+  <properties/>
+  <testcase name="absence and context changes are separate from a valid metadata snapshot" classname="com.sentri.nativeapp.production.TaskCommonContractTest" time="0.019"/>
+  <testcase name="catalog refuses foreign relationships duplicate rows wrong filters and totals" classname="com.sentri.nativeapp.production.TaskCommonContractTest" time="0.037"/>
+  <testcase name="common mutations preserve batch kind null remark empty remark and exact time" classname="com.sentri.nativeapp.production.TaskCommonContractTest" time="0.016"/>
+  <testcase name="pig membership filter is scoped ordered exact and distinguishes null from an empty set" classname="com.sentri.nativeapp.production.TaskCommonContractTest" time="0.013"/>
+  <testcase name="completed window respects offsets submillisecond precision and every other filter" classname="com.sentri.nativeapp.production.TaskCommonContractTest" time="0.008"/>
+  <testcase name="metadata includes plans siblings pig references materials raw json and exact decimal" classname="com.sentri.nativeapp.production.TaskCommonContractTest" time="0.006"/>
+  <testcase name="home catalog applies farm filters half open completed window and stable order" classname="com.sentri.nativeapp.production.TaskCommonContractTest" time="0.011"/>
+  <testcase name="invalid identities pagination and dates cannot become common requests" classname="com.sentri.nativeapp.production.TaskCommonContractTest" time="0.003"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

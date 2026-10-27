@@ -1,0 +1,3 @@
+I/System.out( 4523): THERAPY_PREPARED pid=4523 commands=3 successfulSteps=1 inFlightSteps=1
+I/System.out( 4960): THERAPY_PREPARED pid=4960 commands=3 successfulSteps=1 inFlightSteps=1
+I/System.out( 4996): THERAPY_RESTORED previousPid=4960 pid=4996 commands=3 successfulStepsNotReplayed=true unknownResends=0 afterConfirmationCalls=TerminatePrescription receiptsBound=true

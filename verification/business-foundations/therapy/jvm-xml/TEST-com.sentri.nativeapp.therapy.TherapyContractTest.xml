@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.sentri.nativeapp.therapy.TherapyContractTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2026-10-10T04:35:07.868Z" hostname="Mac" time="0.038">
+  <properties/>
+  <testcase name="receiptStrictlyBindsOperationAndRecordAndRejectsCoercionDuplicatesAndTrailingData" classname="com.sentri.nativeapp.therapy.TherapyContractTest" time="0.002"/>
+  <testcase name="declaredCreateInputKeepsDecimalPrecisionAndDoesNotTreatReturnedSerialAsPrescriptionId" classname="com.sentri.nativeapp.therapy.TherapyContractTest" time="0.005"/>
+  <testcase name="sharedPrescriptionDependenciesCoverOtherTherapiesAndHonorInsertionOrderWhenClockMovesBack" classname="com.sentri.nativeapp.therapy.TherapyContractTest" time="0.001"/>
+  <testcase name="completeAndSkipSendOnlyScheduledTaskTargetsAndCapturedTimeOrReason" classname="com.sentri.nativeapp.therapy.TherapyContractTest" time="0.007"/>
+  <testcase name="explicitTransportChecksContextBeforeSendingOneRemoteStep" classname="com.sentri.nativeapp.therapy.TherapyContractTest" time="0.002"/>
+  <testcase name="addAndRemovePreserveAllTargetFieldsAndDuplicateOrderingWithoutInventedTherapyFilter" classname="com.sentri.nativeapp.therapy.TherapyContractTest" time="0.006"/>
+  <testcase name="terminationKeepsPrescriptionAndTherapyIdentitySeparateAndNullVersusEmptyReason" classname="com.sentri.nativeapp.therapy.TherapyContractTest" time="0.007"/>
+  <testcase name="refusalsMismatchedReceiptsAndAuthenticationFailureNeverBecomeConfirmedOrReplay" classname="com.sentri.nativeapp.therapy.TherapyContractTest" time="0.007"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

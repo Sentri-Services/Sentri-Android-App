@@ -1,0 +1,4 @@
+10-09 15:10:04.167 17629 17670 I System.out: FOUNDATION_PROCESS_PREPARED language=en command=IN_FLIGHT
+10-09 15:10:52.310 17711 17725 I System.out: FOUNDATION_PROCESS_RESTORED newProcess=true language=en uncertain=true automaticResends=0 confirmed=true
+10-09 15:16:35.326 17970 17985 I System.out: FOUNDATION_PROCESS_PREPARED language=en command=IN_FLIGHT
+10-09 15:17:27.101 18007 18021 I System.out: FOUNDATION_PROCESS_RESTORED newProcess=true language=en uncertain=true automaticResends=0 confirmed=true

@@ -1,0 +1,99 @@
+{
+  "date": "2026-10-09",
+  "overallGoal": "in_progress",
+  "scope": "CheckEstrus, SubmitEstrusStatus, MateWithBoar, MateWithSemen contract/model/persisted command foundation",
+  "verify": "passed",
+  "jvm": {
+    "tests": 72,
+    "skipped": 0,
+    "failures": 0,
+    "errors": 0,
+    "passed": 72
+  },
+  "android": {
+    "tests": 38,
+    "skipped": 3,
+    "failures": 0,
+    "errors": 0,
+    "passed": 35
+  },
+  "device": "Android 16 / API 36 emulator-5554",
+  "graphQL": {
+    "operations": 13,
+    "consumedFields": 145,
+    "contractScenariosPassed": 8,
+    "transport": "MockWebServer only"
+  },
+  "language": {
+    "resourceEntries": 131,
+    "enumMappings": 45
+  },
+  "processRestore": {
+    "preparePassed": true,
+    "restorePassed": true,
+    "mixedTypedPayloads": true,
+    "unconfirmedAutomaticResends": 0,
+    "setupFailure": "Initial instrument command failed because Gradle had uninstalled the test package; APKs reinstalled and both stages passed. Original setup failure retained."
+  },
+  "queue": {
+    "schema": 2,
+    "newPayloadFormat": 2,
+    "legacyPayloadFormat": 1,
+    "supportedOperations": [
+      "CheckEstrus",
+      "SubmitEstrusStatus",
+      "MateWithBoar",
+      "MateWithSemen"
+    ],
+    "realTransportRegistered": false
+  },
+  "uiFiles": [
+    {
+      "path": "app/src/main/java/com/sentri/nativeapp/MainActivity.kt",
+      "unchanged": true
+    },
+    {
+      "path": "app/src/main/java/com/sentri/nativeapp/devices/DeviceVerificationScreen.kt",
+      "unchanged": true
+    },
+    {
+      "path": "app/src/main/java/com/sentri/nativeapp/pigs/PigScreen.kt",
+      "unchanged": true
+    },
+    {
+      "path": "app/src/main/java/com/sentri/nativeapp/ui/ConnectionScreen.kt",
+      "unchanged": true
+    },
+    {
+      "path": "app/src/main/java/com/sentri/nativeapp/ui/ConnectionViewModel.kt",
+      "unchanged": true
+    },
+    {
+      "path": "app/src/main/java/com/sentri/nativeapp/ui/LoginWebView.kt",
+      "unchanged": true
+    },
+    {
+      "path": "app/src/main/java/com/sentri/nativeapp/update/ApkUpdateScreen.kt",
+      "unchanged": true
+    },
+    {
+      "path": "app/src/main/res/values/styles.xml",
+      "unchanged": true
+    }
+  ],
+  "releaseCommandsWorkflowDiffEmpty": true,
+  "references": {
+    "Sentri-Android": {
+      "head": "ee0f6c333fa99014ca067fc5b47c538d36285cff",
+      "workingTreeClean": true
+    },
+    "Sentri": {
+      "head": "4c1a2ff49e8d938e1af053d844018cc140c63f38",
+      "workingTreeClean": true
+    }
+  },
+  "realBackendWritesExecuted": false,
+  "pushOrReleaseExecuted": false,
+  "remaining": "Other business modules, task read snapshots/full associated lists, semen reference mapping, real write protocol verification and overall coverage audit.",
+  "releaseAndVersionConfigDiffEmpty": true
+}

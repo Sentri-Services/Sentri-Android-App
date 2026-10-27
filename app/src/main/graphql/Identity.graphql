@@ -12,6 +12,11 @@ query GetFarmInfo {
     farm_info { id name domain is_initialized }
   }
 }
+query GetFarmTimezone {
+  biosafety {
+    farm_info { id timezone }
+  }
+}
 query GetFarmSelectionList($oauthId: String!) {
   biosafety {
     farm_selection_list(oauth_id: $oauthId) {

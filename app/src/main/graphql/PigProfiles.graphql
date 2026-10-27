@@ -1,0 +1,47 @@
+# Inline selections preserve custom scalar number lexemes through Apollo response parsing.
+query NativePigProfiles($where: farm_view_pig_bool_exp!, $offset: Int!, $limit: Int!, $orderBy: [farm_view_pig_order_by!]!, $includeCount: Boolean!) {
+  pigs: farm_view_pig(where: $where, offset: $offset, limit: $limit, order_by: $orderBy) {
+    id farm_id ear_tag ear_notch ear_tag_ex role sex lifecycle_status origin
+    location_code birthday entry_date remark weight sow_parity breed_type breeder_code teat_count
+    first_estrus_date last_estrus_date last_farrowing_at last_lactation_at last_mating_at last_production_status
+    current_batch_id death_image_urls
+    current_breeder_status { production_status status_updated_at }
+    current_batch { id farm_id sn status line { name } tasks { id status task_type } }
+    semen_control {
+      boar_id farm_id collection_status cooldown_until last_collected_at manually_marked_to_collect
+      marked_to_collect_since modified_at off_production off_production_since
+    }
+    location {
+      zone_id unit_id zone_location unit_location section_location row_location pen_location pen_number
+      zone { code name_cn name_en } unit { code name_cn name_en } section { code name_cn name_en }
+      row { code row_number }
+    }
+    healthy {
+      id farm_id triage_level triage_changed_at modified_at body_temperature_celsius body_temperature_operator_id body_temperature_measured_at
+      triage_operator { id display_name avatar_url }
+      body_temperature_operator { id display_name avatar_url }
+      prescriptions_aggregate { aggregate { count } }
+      prescriptions {
+        prescription_id
+        prescription { therapies {
+          treatment { id name_cn name_en detail_cn detail_en }
+          medication { id name_cn name_en }
+          medication_catalog { id name_cn name_en }
+        } }
+      }
+      diseases {
+        disease_id created_at operator { id display_name avatar_url }
+        disease { id name_cn name_en abbr_cn abbr_en category_cn category_en description_cn description_en }
+      }
+      symptoms {
+        target_id symptom_id created_at operator { id display_name avatar_url }
+        symptom { id name_cn name_en part_cn part_en description_cn description_en }
+      }
+      healthy_records {
+        id created_at healthy_event triage_level remark symptoms diseases operator_id
+        operator { id display_name avatar_url }
+      }
+    }
+  }
+  count: farm_view_pig_aggregate(where: $where) @include(if: $includeCount) { aggregate { count } }
+}

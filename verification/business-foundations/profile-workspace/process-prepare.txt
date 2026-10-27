@@ -1,0 +1,8 @@
+
+com.sentri.nativeapp.ProfileWorkspaceProcessRestoreTest:.
+
+Time: 0.119
+
+OK (1 test)
+
+

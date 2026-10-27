@@ -1,0 +1,111 @@
+> Task :app:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :app:prepareEnterpriseCertificate UP-TO-DATE
+> Task :app:preBuild UP-TO-DATE
+> Task :app:preDevDebugBuild UP-TO-DATE
+> Task :app:generateDevDebugBuildConfig UP-TO-DATE
+> Task :app:generateSentriApolloOptions UP-TO-DATE
+> Task :app:generateSentriApolloSources UP-TO-DATE
+> Task :app:checkDevDebugAarMetadata UP-TO-DATE
+> Task :app:generateDevDebugResValues UP-TO-DATE
+> Task :app:mapDevDebugSourceSetPaths UP-TO-DATE
+> Task :app:generateDevDebugResources UP-TO-DATE
+> Task :app:mergeDevDebugResources UP-TO-DATE
+> Task :app:packageDevDebugResources UP-TO-DATE
+> Task :app:parseDevDebugLocalResources UP-TO-DATE
+> Task :app:createDevDebugCompatibleScreenManifests UP-TO-DATE
+> Task :app:extractDeepLinksDevDebug UP-TO-DATE
+> Task :app:processDevDebugMainManifest UP-TO-DATE
+> Task :app:processDevDebugManifest UP-TO-DATE
+> Task :app:processDevDebugManifestForPackage UP-TO-DATE
+> Task :app:processDevDebugResources UP-TO-DATE
+> Task :app:compileDevDebugKotlin UP-TO-DATE
+> Task :app:javaPreCompileDevDebug UP-TO-DATE
+> Task :app:compileDevDebugJavaWithJavac UP-TO-DATE
+> Task :app:bundleDevDebugClassesToCompileJar UP-TO-DATE
+> Task :app:preDevDebugAndroidTestBuild SKIPPED
+> Task :app:processDevDebugAndroidTestManifest UP-TO-DATE
+> Task :app:generateDevDebugAndroidTestBuildConfig UP-TO-DATE
+> Task :app:checkDevDebugAndroidTestAarMetadata UP-TO-DATE
+> Task :app:generateDevDebugAndroidTestResValues UP-TO-DATE
+> Task :app:mapDevDebugAndroidTestSourceSetPaths UP-TO-DATE
+> Task :app:generateDevDebugAndroidTestResources UP-TO-DATE
+> Task :app:mergeDevDebugAndroidTestResources UP-TO-DATE
+> Task :app:processDevDebugAndroidTestResources UP-TO-DATE
+> Task :app:javaPreCompileDevDebugAndroidTest UP-TO-DATE
+> Task :app:mergeDevDebugShaders UP-TO-DATE
+> Task :app:compileDevDebugShaders NO-SOURCE
+> Task :app:generateDevDebugAssets UP-TO-DATE
+> Task :app:mergeDevDebugAssets UP-TO-DATE
+> Task :app:compressDevDebugAssets UP-TO-DATE
+> Task :app:desugarDevDebugFileDependencies UP-TO-DATE
+> Task :app:dexBuilderDevDebug UP-TO-DATE
+> Task :app:mergeDevDebugGlobalSynthetics UP-TO-DATE
+> Task :app:processDevDebugJavaRes UP-TO-DATE
+> Task :app:mergeDevDebugJavaResource UP-TO-DATE
+> Task :app:checkDevDebugDuplicateClasses UP-TO-DATE
+> Task :app:mergeExtDexDevDebug UP-TO-DATE
+> Task :app:mergeLibDexDevDebug UP-TO-DATE
+> Task :app:mergeProjectDexDevDebug UP-TO-DATE
+> Task :app:mergeDevDebugJniLibFolders UP-TO-DATE
+> Task :app:mergeDevDebugNativeLibs UP-TO-DATE
+> Task :app:stripDevDebugDebugSymbols UP-TO-DATE
+> Task :app:validateSigningDevDebug UP-TO-DATE
+> Task :app:writeDevDebugAppMetadata UP-TO-DATE
+> Task :app:writeDevDebugSigningConfigVersions UP-TO-DATE
+> Task :app:packageDevDebug UP-TO-DATE
+> Task :app:createDevDebugApkListingFileRedirect UP-TO-DATE
+> Task :app:mergeDevDebugAndroidTestShaders UP-TO-DATE
+> Task :app:compileDevDebugAndroidTestShaders NO-SOURCE
+> Task :app:generateDevDebugAndroidTestAssets UP-TO-DATE
+> Task :app:mergeDevDebugAndroidTestAssets UP-TO-DATE
+> Task :app:compressDevDebugAndroidTestAssets UP-TO-DATE
+> Task :app:desugarDevDebugAndroidTestFileDependencies UP-TO-DATE
+> Task :app:checkDevDebugAndroidTestDuplicateClasses UP-TO-DATE
+> Task :app:mergeExtDexDevDebugAndroidTest UP-TO-DATE
+> Task :app:mergeLibDexDevDebugAndroidTest UP-TO-DATE
+> Task :app:mergeDevDebugAndroidTestJniLibFolders UP-TO-DATE
+> Task :app:mergeDevDebugAndroidTestNativeLibs NO-SOURCE
+> Task :app:stripDevDebugAndroidTestDebugSymbols NO-SOURCE
+> Task :app:validateSigningDevDebugAndroidTest UP-TO-DATE
+> Task :app:writeDevDebugAndroidTestSigningConfigVersions UP-TO-DATE
+> Task :app:compileDevDebugAndroidTestKotlin
+> Task :app:compileDevDebugAndroidTestJavaWithJavac UP-TO-DATE
+> Task :app:dexBuilderDevDebugAndroidTest
+> Task :app:mergeDevDebugAndroidTestGlobalSynthetics UP-TO-DATE
+> Task :app:processDevDebugAndroidTestJavaRes UP-TO-DATE
+> Task :app:mergeDevDebugAndroidTestJavaResource UP-TO-DATE
+> Task :app:mergeProjectDexDevDebugAndroidTest
+> Task :app:packageDevDebugAndroidTest
+> Task :app:createDevDebugAndroidTestApkListingFileRedirect UP-TO-DATE
+
+> Task :app:connectedDevDebugAndroidTest
+Starting 109 tests on Sentri_Dev_API_36(AVD) - 16
+
+com.sentri.nativeapp.AuxiliaryProcessRestoreTest > auxiliaryPagesAndAbsentDetailSurviveProcessStop[Sentri_Dev_API_36(AVD) - 16] [33mSKIPPED [0m
+
+com.sentri.nativeapp.CareProcessRestoreTest > fosterAndCarePayloadsAndSnapshotsSurviveProcessStop[Sentri_Dev_API_36(AVD) - 16] [33mSKIPPED [0m
+
+com.sentri.nativeapp.FoundationProcessRestoreTest > languageAndUnacknowledgedCommandSurviveProcessStop[Sentri_Dev_API_36(AVD) - 16] [33mSKIPPED [0m
+
+com.sentri.nativeapp.LivePigReadTest > developmentReadSearchPagingAndPersistentSnapshots[Sentri_Dev_API_36(AVD) - 16] [33mSKIPPED [0m
+
+com.sentri.nativeapp.LivePigReadTest > disconnectedProcessRestoresAccountBrowseAndData[Sentri_Dev_API_36(AVD) - 16] [33mSKIPPED [0m
+
+com.sentri.nativeapp.PigDeathProcessRestoreTest > partialUploadsSurviveProcessStopAndReportRetryReusesReceipts[Sentri_Dev_API_36(AVD) - 16] [33mSKIPPED [0m
+
+com.sentri.nativeapp.PigManagementProcessRestoreTest > propertyAndMultiPigRoleSurviveProcessStopWithoutUnknownResend[Sentri_Dev_API_36(AVD) - 16] [33mSKIPPED [0m
+
+com.sentri.nativeapp.PigProfileProcessRestoreTest > fullProfilesAndMissingDetailSurviveProcessStopWithoutRemoteReads[Sentri_Dev_API_36(AVD) - 16] [33mSKIPPED [0m
+
+com.sentri.nativeapp.ProductionProcessRestoreTest > unitRoundsAndReadSnapshotsSurviveProcessStop[Sentri_Dev_API_36(AVD) - 16] [33mSKIPPED [0m
+
+com.sentri.nativeapp.ProjectionProcessRestoreTest > serverSnapshotsAndQueueRebuildPreviewAfterProcessStop[Sentri_Dev_API_36(AVD) - 16] [33mSKIPPED [0m
+
+com.sentri.nativeapp.StageProcessRestoreTest > sowAndLocationCommandsAndFourSnapshotsSurviveProcessStop[Sentri_Dev_API_36(AVD) - 16] [33mSKIPPED [0m
+
+com.sentri.nativeapp.TaskCommonProcessRestoreTest > lateCompletionDependenciesAndCatalogSurviveProcessStop[Sentri_Dev_API_36(AVD) - 16] [33mSKIPPED [0m
+
+Finished 121 tests on Sentri_Dev_API_36(AVD) - 16
+
+BUILD SUCCESSFUL in 19s
+70 actionable tasks: 5 executed, 65 up-to-date

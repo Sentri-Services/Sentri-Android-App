@@ -1,0 +1,14 @@
+mutation NativeReconcileLocationInventory($input: ProductionReconcileLocationInventoryCommandStrawberryInput!) {
+  production {
+    reconcile_location_inventory(command_input: $input) {
+      status location_code errors { err_msg }
+    }
+  }
+}
+
+query NativeLocationInventory($where: farm_view_pig_bool_exp) {
+  farm_view_pig(where: $where) {
+    id farm_id location_code lifecycle_status ear_tag ear_notch current_batch_id
+    location { unit_id }
+  }
+}

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.sentri.nativeapp.production.PigManagementProjectionTest" tests="11" skipped="0" failures="0" errors="0" timestamp="2026-10-10T04:35:07.665Z" hostname="Mac" time="0.006">
+  <properties/>
+  <testcase name="role identity updates common metadata but completed growing aggregate keeps its breeder flag" classname="com.sentri.nativeapp.production.PigManagementProjectionTest" time="0.001"/>
+  <testcase name="property null is no change while zero empty and exact decimals propagate to growing fields" classname="com.sentri.nativeapp.production.PigManagementProjectionTest" time="0.0"/>
+  <testcase name="unknown result blocks same pig production while successful role requires read reflection" classname="com.sentri.nativeapp.production.PigManagementProjectionTest" time="0.001"/>
+  <testcase name="both cancel actions require breeder and inactive pigs cannot be revived by properties" classname="com.sentri.nativeapp.production.PigManagementProjectionTest" time="0.001"/>
+  <testcase name="changed identities propagate to all ten task pig relationships and leave unrelated pigs unchanged" classname="com.sentri.nativeapp.production.PigManagementProjectionTest" time="0.0"/>
+  <testcase name="duplicate role targets preserve backend last input and repeated aggregate rejection atomically" classname="com.sentri.nativeapp.production.PigManagementProjectionTest" time="0.0"/>
+  <testcase name="missing identity sex profile or grower result does not partially change a batch" classname="com.sentri.nativeapp.production.PigManagementProjectionTest" time="0.0"/>
+  <testcase name="unknown growing identity update and role changes block each other across task location groups" classname="com.sentri.nativeapp.production.PigManagementProjectionTest" time="0.002"/>
+  <testcase name="scope validation and deterministic recomputation retain confirmed original profiles" classname="com.sentri.nativeapp.production.PigManagementProjectionTest" time="0.001"/>
+  <testcase name="mark role uses updated sex and identity and upgrade ignores supplied sex and parents" classname="com.sentri.nativeapp.production.PigManagementProjectionTest" time="0.0"/>
+  <testcase name="explicit writes update stale task fields even when equal to the separately read profile" classname="com.sentri.nativeapp.production.PigManagementProjectionTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,19 @@
+mutation NativeReportDeviceInspection($input: BiosafetyReportDeviceInspectionInput!) {
+  biosafety { report_device_inspection(command_input: $input) {
+    status recordId errors { err_msg }
+  } }
+}
+
+mutation NativeResolveDeviceInspection($input: BiosafetyResolveDeviceInspectionInput!) {
+  biosafety { resolve_device_inspection(command_input: $input) {
+    status recordId errors { err_msg }
+  } }
+}
+
+query NativeDeviceInspections($where: farm_view_device_inspection_bool_exp, $offset: Int!, $limit: Int!) {
+  farm_view_device_inspection(where: $where, order_by: {id: asc}, offset: $offset, limit: $limit) {
+    id farm_id pen_code device_type device_name device_status remark
+    reported_at reporter_id resolved_at resolver_id
+  }
+  count: farm_view_device_inspection_aggregate(where: $where) { aggregate { count } }
+}

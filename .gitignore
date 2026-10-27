@@ -4,6 +4,7 @@
 local.properties
 sentri.local.properties
 sentri.signing.properties
+sentri.local.signing.properties
 release-upload/
 ENTERPRISE.CER
 .idea/
@@ -15,3 +16,5 @@ verification/private/
 *.log
 __pycache__/
 *.pyc
+
+tools/graphql-contract/node_modules/

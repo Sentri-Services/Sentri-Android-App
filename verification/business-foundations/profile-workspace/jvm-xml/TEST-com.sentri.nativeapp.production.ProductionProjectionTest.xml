@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.sentri.nativeapp.production.ProductionProjectionTest" tests="13" skipped="0" failures="0" errors="0" timestamp="2026-10-10T03:52:40.433Z" hostname="Mac" time="0.014">
+  <properties/>
+  <testcase name="successful receipts require read reconciliation before adding more stock" classname="com.sentri.nativeapp.production.ProductionProjectionTest" time="0.006"/>
+  <testcase name="mating attempts use local operation identities without fabricating server execution records" classname="com.sentri.nativeapp.production.ProductionProjectionTest" time="0.001"/>
+  <testcase name="estrus preview gates next mating membership on actual or auto estrus and remains batch scoped" classname="com.sentri.nativeapp.production.ProductionProjectionTest" time="0.0"/>
+  <testcase name="unknown rejected dependencies and cycles retain intents without changing server values" classname="com.sentri.nativeapp.production.ProductionProjectionTest" time="0.001"/>
+  <testcase name="mark and completion retain existing status and cannot borrow a different batch" classname="com.sentri.nativeapp.production.ProductionProjectionTest" time="0.0"/>
+  <testcase name="scope isolation restart style recomputation and integer overflow keep snapshots unchanged" classname="com.sentri.nativeapp.production.ProductionProjectionTest" time="0.001"/>
+  <testcase name="foster transfers both mothers and cross task counts atomically with exact identity weight" classname="com.sentri.nativeapp.production.ProductionProjectionTest" time="0.0"/>
+  <testcase name="lactation foster preserves breeder and missing identity selectors do not partially transfer" classname="com.sentri.nativeapp.production.ProductionProjectionTest" time="0.001"/>
+  <testcase name="growing aggregate remains atomic and nursery does not fabricate fattening locations" classname="com.sentri.nativeapp.production.ProductionProjectionTest" time="0.0"/>
+  <testcase name="postpartum preserves all prolapse input and lactation absent assessment keeps old check" classname="com.sentri.nativeapp.production.ProductionProjectionTest" time="0.002"/>
+  <testcase name="re estrus and pregnancy submissions apply typed results and cross task disable in dependency order" classname="com.sentri.nativeapp.production.ProductionProjectionTest" time="0.001"/>
+  <testcase name="farrowing cumulative snapshots only grow stock and retain server records separately" classname="com.sentri.nativeapp.production.ProductionProjectionTest" time="0.0"/>
+  <testcase name="piglet information replaces identities preserves decimal and handles null differently from weight" classname="com.sentri.nativeapp.production.ProductionProjectionTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

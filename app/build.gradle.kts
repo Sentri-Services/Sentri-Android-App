@@ -16,6 +16,19 @@ val appVersions = Properties().apply { rootProject.file("versions.properties").i
 val signingProperties = Properties().apply {
     rootProject.file("sentri.signing.properties").takeIf { it.exists() }?.inputStream()?.use(::load)
 }
+val localSigningProperties = Properties().apply {
+    rootProject.file("sentri.local.signing.properties").takeIf { it.exists() }?.inputStream()?.use(::load)
+}
+val localKeyStorePath = localSigningProperties.getProperty("storeFile")
+val localStoreSecret = localSigningProperties.getProperty("storePassword")
+val localKeySecret = localSigningProperties.getProperty("keyPassword")
+val localKeyName = localSigningProperties.getProperty("keyAlias")
+val hasLocalSigning = listOf(localKeyStorePath, localStoreSecret, localKeySecret, localKeyName)
+    .all { !it.isNullOrBlank() }
+if (localSigningProperties.isNotEmpty()) {
+    check(hasLocalSigning) { "sentri.local.signing.properties must define storeFile, storePassword, keyPassword and keyAlias" }
+    check(rootProject.file(localKeyStorePath!!).isFile) { "Local Android signing keystore is missing" }
+}
 fun signingValue(key: String, variable: String) = providers.environmentVariable(variable).orNull
     ?: signingProperties.getProperty(key)
 val publishDebug = providers.gradleProperty("enableApkUpdate").orElse("false").get().toBooleanStrict()
@@ -80,6 +93,12 @@ android {
             keyAlias = keyName
             keyPassword = keySecret
         }
+        if (hasLocalSigning) create("localDevice") {
+            storeFile = rootProject.file(localKeyStorePath!!)
+            storePassword = localStoreSecret
+            keyAlias = localKeyName
+            keyPassword = localKeySecret
+        }
     }
     sourceSets.getByName("main").resources.srcDir(certificateResources)
     productFlavors {
@@ -106,7 +125,8 @@ android {
             // Published Debug is the existing OSS channel; local Debug remains isolated.
             if (!publishDebug) applicationIdSuffix = ".local"
             buildConfigField("boolean", "ENABLE_APK_UPDATE", publishDebug.toString())
-            if (hasSigning && publishDebug) signingConfig = signingConfigs.getByName("legacy")
+            if (publishDebug && hasSigning) signingConfig = signingConfigs.getByName("legacy")
+            else if (!publishDebug && hasLocalSigning) signingConfig = signingConfigs.getByName("localDevice")
         }
         release {
             isMinifyEnabled = true
@@ -128,6 +148,25 @@ apollo {
     service("sentri") {
         packageName.set("com.sentri.nativeapp.graphql")
         mapScalarToKotlinString("BiosafetyUserId")
+        mapScalarToKotlinString("BiosafetyPigId")
+        mapScalarToKotlinString("BiosafetyPrescriptionId")
+        mapScalar("BiosafetyDatetime", "kotlin.String", "com.sentri.nativeapp.network.TimestampAdapter")
+        mapScalar("BiosafetyFloatString", "java.math.BigDecimal", "com.sentri.nativeapp.network.DecimalStringAdapter")
+        mapScalarToKotlinString("ProductionPigId")
+        mapScalarToKotlinString("ProductionBatchId")
+        mapScalar("ProductionDatetime", "kotlin.String", "com.sentri.nativeapp.network.TimestampAdapter")
+        mapScalar("timestamptz", "kotlin.String", "com.sentri.nativeapp.network.TimestampAdapter")
+        mapScalar("float8", "java.math.BigDecimal", "com.sentri.nativeapp.network.DecimalAdapter")
+        mapScalar("ProductionFloatString", "java.math.BigDecimal", "com.sentri.nativeapp.network.DecimalStringAdapter")
+        mapScalar("jsonb", "com.sentri.nativeapp.network.JsonValue", "com.sentri.nativeapp.network.JsonValueAdapter")
+        // Preserve unknown server codes in full pig reads rather than collapsing them to UNKNOWN__.
+        sealedClassesForEnumsMatching.set(listOf(
+            "farm_enum_pig_breed_type_enum", "farm_enum_pig_lifecycle_status_enum", "farm_enum_pig_origin_enum",
+            "farm_enum_pig_role_enum", "farm_enum_pig_sex_enum", "farm_enum_triage_level_enum",
+            "farm_enum_boar_semen_collection_status_enum", "farm_enum_batch_production_status_enum",
+            "farm_enum_batch_status_enum", "farm_enum_batch_task_type_enum", "farm_enum_task_status_enum",
+            "farm_enum_prescription_status_enum", "farm_enum_therapy_task_status_enum",
+        ))
         generateOptionalOperationVariables.set(false)
         introspection {
             endpointUrl.set(config("dev.graphqlUrl", "https://dev.sentri.cn/hasura/v1/graphql"))
@@ -138,6 +177,8 @@ apollo {
     }
 }
 dependencies {
+    // The same USB HID reader SDK as the read-only legacy Android host.
+    implementation(files("libs/reader.jar"))
     implementation(platform(libs.compose.bom))
     implementation(libs.compose.material3)
     implementation(libs.compose.ui)
@@ -149,6 +190,7 @@ dependencies {
     implementation(libs.apollo.runtime)
     implementation(libs.okhttp)
     implementation(libs.core.ktx)
+    implementation(libs.work.runtime.ktx)
     implementation(libs.appauth)
     debugImplementation(libs.compose.ui.tooling)
     debugImplementation(libs.compose.ui.test.manifest)

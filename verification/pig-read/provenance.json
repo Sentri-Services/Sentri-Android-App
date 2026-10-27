@@ -1,0 +1,36 @@
+{
+  "date": "2026-10-09",
+  "references": [
+    {
+      "repository": "Sentri-Android",
+      "head": "ee0f6c333fa99014ca067fc5b47c538d36285cff",
+      "worktreeClean": true
+    },
+    {
+      "repository": "Sentri",
+      "head": "4c1a2ff49e8d938e1af053d844018cc140c63f38",
+      "worktreeClean": true
+    }
+  ],
+  "releaseConfigurationDiffEmpty": true,
+  "knownSensitiveLiteralMatches": 0,
+  "sensitiveScanScope": "tracked and nonignored untracked UTF-8 text; real legacy login and signing passwords checked in memory only",
+  "scannerTestInjectionAbsentFromMainKotlin": true,
+  "readerSdkMatchesLegacyBinary": true,
+  "readerSdkSha256": "377b8ec0cb853139ab5cc3b5f5de33967ed47ad7447dd3fe84ee51853557bb9e",
+  "configuredSecretNames": [
+    "SENTRI_ENTERPRISE_CERTIFICATE_BASE64",
+    "SENTRI_KEYSTORE_BASE64",
+    "SENTRI_KEY_PASSWORD",
+    "SENTRI_STORE_PASSWORD"
+  ],
+  "missingOssSecretNames": [
+    "ALIYUN_ACCESS_KEY_ID",
+    "ALIYUN_ACCESS_KEY_SECRET",
+    "ALIYUN_OSS_BUCKET",
+    "ALIYUN_OSS_ENDPOINT"
+  ],
+  "pushedDuringPhase": false,
+  "releaseTriggeredDuringPhase": false,
+  "versionsIncrementedDuringPhase": false
+}

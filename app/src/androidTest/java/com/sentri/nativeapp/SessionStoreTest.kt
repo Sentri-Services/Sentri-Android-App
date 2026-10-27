@@ -8,25 +8,31 @@ import org.junit.Assert.*
 import org.junit.Test
 
 class SessionStoreTest {
+    private val namespace = "test-session-${java.util.UUID.randomUUID()}"
+    @org.junit.After fun clean() {
+        val context = InstrumentationRegistry.getInstrumentation().targetContext
+        context.getSharedPreferences(namespace, 0).edit().clear().commit()
+        java.security.KeyStore.getInstance("AndroidKeyStore").apply { load(null); deleteEntry(namespace) }
+    }
     @Test fun corruptedCiphertextClearsUnreadableSession() {
         val context = InstrumentationRegistry.getInstrumentation().targetContext
-        val preferences = context.getSharedPreferences("sentri_session", 0)
+        val preferences = context.getSharedPreferences(namespace, 0)
         preferences.edit().putString("session", "invalid ciphertext").commit()
-        assertNull(EncryptedSessionStore(context).readSession())
+        assertNull(EncryptedSessionStore(context, namespace, namespace).readSession())
         assertTrue(preferences.all.isEmpty())
     }
 
     @Test fun encryptedSessionSurvivesStoreRecreationAndIsClearedOnLogout() {
         val context = InstrumentationRegistry.getInstrumentation().targetContext
-        val store = EncryptedSessionStore(context)
+        val store = EncryptedSessionStore(context, namespace, namespace)
         val session = Session("test-state", "test-secret-access", 99999999, "test-user", "test-farm")
         try {
             store.saveSession(session)
             store.savePendingLogin(LoginRequest("test-pkce", "https://auth.test/login"))
-            val reopened = EncryptedSessionStore(context)
+            val reopened = EncryptedSessionStore(context, namespace, namespace)
             assertEquals(session, reopened.readSession())
             assertEquals("test-pkce", reopened.readPendingLogin()?.serialized)
-            val prefs = context.getSharedPreferences("sentri_session", 0)
+            val prefs = context.getSharedPreferences(namespace, 0)
             assertFalse(prefs.getString("session", "")!!.contains("test-secret-access"))
             assertFalse(prefs.getString("pending", "")!!.contains("test-pkce"))
             reopened.saveSession(null); reopened.savePendingLogin(null)

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.sentri.nativeapp.production.PigDeathProjectionTest" tests="14" skipped="0" failures="0" errors="0" timestamp="2026-10-10T04:35:07.657Z" hostname="Mac" time="0.006">
+  <properties/>
+  <testcase name="sow preflight runs before any row and absent export status cannot be guessed" classname="com.sentri.nativeapp.production.PigDeathProjectionTest" time="0.002"/>
+  <testcase name="actual death disables all ten task types with planned membership and explicit location without inventing timestamps" classname="com.sentri.nativeapp.production.PigDeathProjectionTest" time="0.001"/>
+  <testcase name="anonymous maternal reports adjust every concurrent litter and remove only first matching identity" classname="com.sentri.nativeapp.production.PigDeathProjectionTest" time="0.001"/>
+  <testcase name="confirmed absence skips a real pig but unloaded context cannot masquerade as absence" classname="com.sentri.nativeapp.production.PigDeathProjectionTest" time="0.0"/>
+  <testcase name="death preview remains scoped deterministic and never invents server identity for standalone anonymous rows" classname="com.sentri.nativeapp.production.PigDeathProjectionTest" time="0.0"/>
+  <testcase name="multiple actual task matches are ambiguous but all maternal task copies are adjusted" classname="com.sentri.nativeapp.production.PigDeathProjectionTest" time="0.0"/>
+  <testcase name="foreign attachment missing dependency and malformed confirmed receipt cannot become business preview" classname="com.sentri.nativeapp.production.PigDeathProjectionTest" time="0.001"/>
+  <testcase name="invalid later target or already disabled stage rolls back all private changes" classname="com.sentri.nativeapp.production.PigDeathProjectionTest" time="0.0"/>
+  <testcase name="confirmed image receipt is ready without pig read reflection and keeps image order in local intent" classname="com.sentri.nativeapp.production.PigDeathProjectionTest" time="0.0"/>
+  <testcase name="unknown actual pig death also blocks later operations on its mothers litter" classname="com.sentri.nativeapp.production.PigDeathProjectionTest" time="0.0"/>
+  <testcase name="already dead and repeated real pig reports do not duplicate effects or replace earlier images" classname="com.sentri.nativeapp.production.PigDeathProjectionTest" time="0.0"/>
+  <testcase name="queued image can preview unresolved intent while unknown failed or cancelled image blocks death" classname="com.sentri.nativeapp.production.PigDeathProjectionTest" time="0.001"/>
+  <testcase name="mother reference is a modified litter target and actual pig identity fallback leaves mother alive" classname="com.sentri.nativeapp.production.PigDeathProjectionTest" time="0.0"/>
+  <testcase name="disabled mother litter is unchanged and needs no mortality counter preview" classname="com.sentri.nativeapp.production.PigDeathProjectionTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

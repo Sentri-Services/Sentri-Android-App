@@ -1,0 +1,24 @@
+query NativeProductionTaskCatalog($farmId: String!, $filter: farm_view_task_bool_exp!, $order: [farm_view_task_order_by!]!, $offset: Int!, $limit: Int!) {
+  tasks: farm_view_task(where: {_and: [{batch: {farm_id: {_eq: $farmId}}}, $filter]}, order_by: $order, offset: $offset, limit: $limit) {
+
+  id batch_id task_type status operator_id actual_start_time actual_end_time created_at modified_at
+  operator { id display_name avatar_url }
+  batch {
+    id farm_id sn profile_config
+    line { id farm_id name max_breeding_sows_per_batch }
+    tasks(order_by: {id: asc}) { id batch_id task_type status }
+  }
+  batch_task { task_id batch_id task_type planned_start_time planned_duration_days }
+  pigs(where: {pig: {farm_id: {_eq: $farmId}}}, order_by: {pig_id: asc}) {
+    task_id batch_id pig_id disabled mark
+    pig { id farm_id ear_tag ear_notch location_code }
+  }
+  mating_materials(order_by: {id: asc}) {
+    task_id id boar_id semen_id semen_breeder_type semen_collect_at semen_count
+    boar { id farm_id ear_tag ear_notch }
+  }
+  re_estrus_statistics(order_by: {statistics_date: asc}) { task_id statistics_date statistics }
+  nursery_locations(order_by: {location_code: asc}) { task_id location_code check_at created_at operator_id total_count total_weight }
+  }
+  count: farm_view_task_aggregate(where: {_and: [{batch: {farm_id: {_eq: $farmId}}}, $filter]}) { aggregate { count } }
+}

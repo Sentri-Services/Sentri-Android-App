@@ -1,0 +1,22 @@
+mutation NativeAddPigDisease($input: BiosafetyAddPigDiseaseInput!) {
+  biosafety { add_pig_disease(command_input: $input) { status recordId errors { err_msg } } }
+}
+mutation NativeAddPigSymptom($input: BiosafetyAddPigSymptomInput!) {
+  biosafety { add_pig_symptom(command_input: $input) { status recordId errors { err_msg } } }
+}
+mutation NativeRemovePigDisease($input: BiosafetyRemovePigDiseaseInput!) {
+  biosafety { remove_pig_disease(command_input: $input) { status recordId errors { err_msg } } }
+}
+mutation NativeRemovePigSymptom($input: BiosafetyRemovePigSymptomInput!) {
+  biosafety { remove_pig_symptom(command_input: $input) { status recordId errors { err_msg } } }
+}
+mutation NativeSetPigTriageLevel($input: BiosafetySetPigTriageLevelInput!) {
+  biosafety { set_pig_triage_level(command_input: $input) { status recordId errors { err_msg } } }
+}
+mutation NativeSetPigBodyTemperature($input: BiosafetySetPigBodyTemperatureInput!) {
+  biosafety { set_pig_body_temperature(command_input: $input) { status recordId errors { err_msg } } }
+}
+query NativeHealthReferenceCatalog {
+  farm_view_disease { id name_cn name_en abbr_cn abbr_en category_cn category_en description_cn description_en }
+  farm_view_symptom { id name_cn name_en part_cn part_en description_cn description_en }
+}

@@ -1,0 +1,44 @@
+{
+  "date": "2026-10-19",
+  "scope": "Task 11 vaccination exemption relationship read, scoped persistence, and bilingual rule mapping",
+  "reference": {
+    "backendVaccineModelSha256": "552e56a13b07066aac35159a86d95489bbaa02c4ffabeed9a0f733348d53193f",
+    "backendProjectionSha256": "bc7d1b7945fbd583d9dba94ac94fac6f1e2a9fbb174bf1ce9a01585d7f255297",
+    "backendExemptionEvaluatorSha256": "d448d3b266fb43535a2d40c7e1aa3c4b14e2ff137b8c5b8b4b2e8d47c6d0406a"
+  },
+  "implementation": {
+    "query": "Adds target.vaccination_exemption to the existing inline task query; no fragment or separate unscoped request",
+    "fields": ["farm_id", "pig_id", "exemption_hit", "rule_codes", "reasons", "evaluated_at", "effective_until", "modified_at", "operator_id"],
+    "validation": "Reject foreign farm/pig records and conflicting exemption snapshots across doses of one target",
+    "legacyCache": "A pre-extension format-1 snapshot decodes with exemptionQueried=false; nullable new relationship is distinguishable from an unqueried old snapshot",
+    "language": "12 backend exemption rule codes have paired Chinese and English strings",
+    "settlement": "No local confirmed-count rewrite: exemption validity and task settlement are independently updated by the backend"
+  },
+  "verification": {
+    "verifyCommand": "SENTRI_GRADLE_DIRECT=1 ./scripts/verify.sh",
+    "verify": "passed: GraphQL and language contracts, JVM tests, APK assembly, Android lint",
+    "jvm": {"tests": 191, "failures": 0, "skipped": 0},
+    "androidRegular": {"tests": 150, "passed": 133, "skippedOptIn": 17, "failures": 0},
+    "processRestore": {
+      "method": "adb install both APKs; am instrument prepare; am force-stop target package; am instrument restore",
+      "prepare": "passed, PID 17080",
+      "restore": "passed, PID 17120",
+      "snapshotsRestored": 3,
+      "queuedCommandsRestored": 1,
+      "exemptionRestored": "false-hit record with rule/reason JSON and timestamps on both doses",
+      "remoteReadsOnRestore": 0
+    },
+    "initialGradleSplitAttempt": "Two separate connectedAndroidTest invocations uninstalled test/target packages between phases; restore had no saved PID. Replaced by manual continuous instrumentation, which passed.",
+    "graphql": {"contractOperations": 61, "contractConsumedFields": 592},
+    "language": {"pairedEntries": 402, "canonicalEnumMappings": 253},
+    "realBackendRead": "not run",
+    "realBackendWrite": "not run"
+  },
+  "remaining": [
+    "Automatic evidence that a successful command appears in a later trusted read",
+    "Exemption freshness and backend settlement side effects",
+    "Real backend read/write verification; no mutation transport is registered",
+    "Tasks 8–10 remaining work, tasks 12–18 and final cross-business audit"
+  ],
+  "unchanged": ["No business UI", "No version or signing change", "No release"]
+}

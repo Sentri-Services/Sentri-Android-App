@@ -1,0 +1,156 @@
+{
+  "com.sentri.nativeapp.CareFoundationTest": {
+    "tests": 6,
+    "passed": 6,
+    "skipped": 0,
+    "failures": 0,
+    "errors": 0
+  },
+  "com.sentri.nativeapp.CareProcessRestoreTest": {
+    "tests": 1,
+    "passed": 0,
+    "skipped": 1,
+    "failures": 0,
+    "errors": 0
+  },
+  "com.sentri.nativeapp.ConnectionScreenTest": {
+    "tests": 2,
+    "passed": 2,
+    "skipped": 0,
+    "failures": 0,
+    "errors": 0
+  },
+  "com.sentri.nativeapp.DeviceInputTest": {
+    "tests": 2,
+    "passed": 2,
+    "skipped": 0,
+    "failures": 0,
+    "errors": 0
+  },
+  "com.sentri.nativeapp.EstrusQueueTest": {
+    "tests": 6,
+    "passed": 6,
+    "skipped": 0,
+    "failures": 0,
+    "errors": 0
+  },
+  "com.sentri.nativeapp.FoundationProcessRestoreTest": {
+    "tests": 1,
+    "passed": 0,
+    "skipped": 1,
+    "failures": 0,
+    "errors": 0
+  },
+  "com.sentri.nativeapp.LanguageFoundationTest": {
+    "tests": 2,
+    "passed": 2,
+    "skipped": 0,
+    "failures": 0,
+    "errors": 0
+  },
+  "com.sentri.nativeapp.LivePigReadTest": {
+    "tests": 2,
+    "passed": 0,
+    "skipped": 2,
+    "failures": 0,
+    "errors": 0
+  },
+  "com.sentri.nativeapp.OidcRequestTest": {
+    "tests": 2,
+    "passed": 2,
+    "skipped": 0,
+    "failures": 0,
+    "errors": 0
+  },
+  "com.sentri.nativeapp.PigCacheTest": {
+    "tests": 10,
+    "passed": 10,
+    "skipped": 0,
+    "failures": 0,
+    "errors": 0
+  },
+  "com.sentri.nativeapp.ProductionCommandQueueTest": {
+    "tests": 5,
+    "passed": 5,
+    "skipped": 0,
+    "failures": 0,
+    "errors": 0
+  },
+  "com.sentri.nativeapp.ProductionProcessRestoreTest": {
+    "tests": 1,
+    "passed": 0,
+    "skipped": 1,
+    "failures": 0,
+    "errors": 0
+  },
+  "com.sentri.nativeapp.ProductionTaskCacheTest": {
+    "tests": 6,
+    "passed": 6,
+    "skipped": 0,
+    "failures": 0,
+    "errors": 0
+  },
+  "com.sentri.nativeapp.SessionStoreTest": {
+    "tests": 2,
+    "passed": 2,
+    "skipped": 0,
+    "failures": 0,
+    "errors": 0
+  },
+  "com.sentri.nativeapp.StageFoundationTest": {
+    "tests": 6,
+    "passed": 6,
+    "skipped": 0,
+    "failures": 0,
+    "errors": 0
+  },
+  "com.sentri.nativeapp.StageProcessRestoreTest": {
+    "tests": 1,
+    "passed": 0,
+    "skipped": 1,
+    "failures": 0,
+    "errors": 0
+  },
+  "com.sentri.nativeapp.TaskCatalogCacheTest": {
+    "tests": 5,
+    "passed": 5,
+    "skipped": 0,
+    "failures": 0,
+    "errors": 0
+  },
+  "com.sentri.nativeapp.TaskCommonProcessRestoreTest": {
+    "tests": 1,
+    "passed": 0,
+    "skipped": 1,
+    "failures": 0,
+    "errors": 0
+  },
+  "com.sentri.nativeapp.TaskCommonQueueTest": {
+    "tests": 7,
+    "passed": 7,
+    "skipped": 0,
+    "failures": 0,
+    "errors": 0
+  },
+  "com.sentri.nativeapp.UnitRoundQueueTest": {
+    "tests": 4,
+    "passed": 4,
+    "skipped": 0,
+    "failures": 0,
+    "errors": 0
+  },
+  "com.sentri.nativeapp.UpdateContractTest": {
+    "tests": 3,
+    "passed": 3,
+    "skipped": 0,
+    "failures": 0,
+    "errors": 0
+  },
+  "com.sentri.nativeapp.UpdateDownloadTest": {
+    "tests": 1,
+    "passed": 1,
+    "skipped": 0,
+    "failures": 0,
+    "errors": 0
+  }
+}
